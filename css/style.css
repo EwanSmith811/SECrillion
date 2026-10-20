@@ -226,6 +226,8 @@ main { position: fixed; inset: 0; z-index: 2; }
 .answer input.shake { animation: shake .35s steps(6); border-color: var(--pink); }
 @keyframes shake { 20% { transform: translateX(-6px); } 40% { transform: translateX(5px); } 60% { transform: translateX(-4px); } 80% { transform: translateX(3px); } }
 .try-again { margin: 10px 0 0; font-size: 13px; color: var(--pink); letter-spacing: .03em; }
+.try-again.suggest { color: var(--ink-2); }
+.try-again.suggest b { color: var(--cyan); font-weight: 600; }
 .btn-dive { height: 58px; padding: 0 22px; font-size: 16px; letter-spacing: .25em; }
 
 .link-btn { background: none; border: 0; padding: 0; color: var(--muted); font-size: 12px; letter-spacing: .12em; text-decoration: underline; text-underline-offset: 3px; }

@@ -1,7 +1,7 @@
 import { CONFIG } from './config.js';
 import { Scene, METERS_PER_POINT } from './scene.js';
 import { renderKrill, krillURL, spriteURL, SKINS } from './sprites.js';
-import { matchAnswer, pointsFor, tierForPrompt } from './scoring.js';
+import { findAnswer, matchAnswer, pointsFor, tierForPrompt } from './scoring.js';
 import { createStore } from './store.js';
 import { loadBank, diveNumberFor, dateForDive, dailyIds, pick } from './bank.js';
 import { renderResults, distribution, shareText, esc, meters } from './results.js';
@@ -142,11 +142,24 @@ function startTimer() {
 }
 const stopTimer = () => { clearInterval(timer); timer = null; };
 
+// Close to a listed answer: put it in the box so Enter confirms it, or they can keep typing.
+function suggest(v, answer) {
+  const msg = $('#tryAgain');
+  msg.innerHTML = `“${esc(v)}” isn't on the list. Did you mean <b>${esc(answer)}</b>? Press Enter to dive with it.`;
+  msg.classList.add('suggest');
+  msg.hidden = false;
+  const input = $('#answerInput');
+  input.value = answer;
+  input.focus();
+  input.select();
+}
+
 // Not on the list: say so and let them try again while the clock keeps running.
 function reject(v) {
   sfx.miss();
   const msg = $('#tryAgain');
   msg.textContent = `“${v}” isn't on the list. Try again.`;
+  msg.classList.remove('suggest');
   msg.hidden = false;
   const input = $('#answerInput');
   input.value = '';
@@ -435,7 +448,10 @@ function bind() {
     const input = $('#answerInput');
     const v = input.value.trim();
     if (!v || dive?.phase !== 'answering') { input.focus(); return; }
-    if (matchAnswer(dive.prompts[dive.i], v) < 0) return reject(v);
+    const p = dive.prompts[dive.i];
+    const m = findAnswer(p, v);
+    if (m.i < 0) return reject(v);
+    if (!m.exact) return suggest(v, p.answers[m.i].a);
     sfx.submit();
     resolve(v, 'ok');
   };

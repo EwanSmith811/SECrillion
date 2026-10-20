@@ -50,7 +50,8 @@ Each prompt is a list of accepted answers, and each answer has a **seed count**:
 - `Canonical | alias | alias = seed`. The first name is the one players see. Aliases are other spellings that also count.
 - The **seed** is how many imaginary divers gave that answer. The most common answer scores **10**. Rarer answers score more (`10 + 88·(1 − √(count/top))`). A valid answer with seed **0** scores the full **100**.
 - If what a player types isn't on the list, they're told and can try again until the timer runs out. So **the list is the rules**. Be generous: list every valid answer you can think of, and mark the obscure ones `= 0`.
-- Matching ignores case, accents, punctuation, a leading "the", trailing plurals and small typos (1 edit for 5+ letters, 2 edits for 8+).
+- Matching ignores case, accents, punctuation, a leading "the" and trailing plurals. Any name or alias counts, so SHPE and Society of Hispanic Professional Engineers are the same answer.
+- A near miss isn't scored right away. Like Krillion's answer corrections, the game puts the closest answer in the box ("Did you mean Society of Hispanic Professional Engineers?") and the player presses Enter to dive with it or keeps typing. Near misses are typos and swapped letters (SPHE), word-form slips ("Engineering" for "Engineers"), a missing word ("Society of Hispanic Engineers") and the start of exactly one answer's name ("Ellicott Dredge"). An alias that's only a letter or two off a different answer can trigger a surprising suggestion, so keep aliases distinct.
 - Plain objects work too: `{ "a": "Zachry", "aka": ["ZACH"], "n": 30 }`.
 
 ### Scheduling
@@ -82,14 +83,10 @@ Each prompt is a list of accepted answers, and each answer has a **seed count**:
 
 No org publishes a member count. The tiers are estimates anchored on these data points: SPE (1,300+ members in 2015), SHPE (National Large Chapter of the Year in 2019 and 2021), SWE (300+ active members) and PAID (called one of A&M's largest orgs). SEC officers should adjust them, and once the database is live, real answers take over.
 
-## The career fair prompt
+## The career fair prompts
 
-`career-fair-f26` asks players to "Name a company at the Fall 2026 SEC Career Fair". Seeds rank how niche each company is: 20–30 for household names (TI, NASA, Verizon), 10–15 for big engineering employers, 2–8 for companies known in their industry, and 0–1 for niche ones.
+`career-fair-s26` and `career-fair-f26` ask players to name a company at the Spring 2026 and Fall 2026 SEC Career Fairs. Both come from the confirmed-registration list (`Companies_at_S26_or_F26.csv`: 270 Spring companies, 512 Fall; "SEC Test Employer" is left out). Seeds rank name recognition among engineering students: 20–30 for household names (TI, Boeing, ExxonMobil), 10–18 for big engineering employers, 3–8 for companies known in their industry, and 1–2 for niche ones.
 
-HireAggies only shows a fair's employer list publicly while the fair is upcoming. The main fair (Sept 9–10) is over, so the current list comes from the SEC Career Discovery Fair (Nov 17) plus companies confirmed for the main fair. To merge in the full main-fair roster:
+Each prompt has exactly one seed-0 company, the "one in a SECrillion" worth the full 100: **Sazerac** (Spring) and **Ellicott Dredge Enterprises** (Fall). Keep it to one per prompt; `node tools/check-questions.mjs` shows the unseen count.
 
-1. Log in to HireAggies, open the SEC Fall 2026 fair's employer list, and set **Show 250**.
-2. Copy the company names into a text file, one per line.
-3. Run `node tools/import-fair.mjs main-fair.txt`.
-
-Companies already in the prompt keep their ranking. New ones are seeded by name recognition (or 1 if unknown) and listed so you can adjust them. While a fair is still upcoming, you can import it directly by its HireAggies nickname, e.g. `node tools/import-fair.mjs sec_f26_cdf`.
+To merge a new roster into a prompt, put one company per line in a text file and run `node tools/import-fair.mjs roster.txt --prompt career-fair-f26`. Companies already in the prompt keep their ranking. New ones are seeded by name recognition (or 1 if unknown) and listed so you can adjust them. While a fair is still upcoming on HireAggies, you can import it directly by its nickname, e.g. `node tools/import-fair.mjs sec_f26_cdf`.

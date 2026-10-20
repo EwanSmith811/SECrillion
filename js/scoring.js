@@ -55,32 +55,82 @@ export function preparePrompt(id, raw) {
   return { id, prompt: raw.prompt, answers, index };
 }
 
-function lev(a, b) {
-  if (Math.abs(a.length - b.length) > 2) return 99;
+// Optimal string alignment distance (Levenshtein plus adjacent swaps); anything past `max` returns max + 1.
+function editDistance(a, b, max) {
+  if (Math.abs(a.length - b.length) > max) return max + 1;
+  let before = null;
   let prev = Array.from({ length: b.length + 1 }, (_, j) => j);
   for (let i = 1; i <= a.length; i++) {
     const cur = [i];
+    let rowMin = i;
     for (let j = 1; j <= b.length; j++) {
-      cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+      let v = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+      if (i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1]) v = Math.min(v, before[j - 2] + 1);
+      cur[j] = v;
+      rowMin = Math.min(rowMin, v);
     }
+    if (rowMin > max) return max + 1;
+    before = prev;
     prev = cur;
   }
   return prev[b.length];
 }
 
-// Returns the index of the matched answer, or -1.
-export function matchAnswer(prompt, input) {
-  const k = matchKey(input);
-  if (!k) return -1;
-  if (prompt.index.has(k)) return prompt.index.get(k);
-  const tol = k.length >= 8 ? 2 : k.length >= 5 ? 1 : 0;
-  if (!tol) return -1;
-  let best = -1, bestD = tol + 1;
-  for (const [key, i] of prompt.index) {
-    const d = lev(k, key);
-    if (d < bestD) { bestD = d; best = i; }
+// How many typos a name of this length can carry and still get a suggestion.
+const tolerance = (len) => (len < 4 ? 0 : len < 7 ? 1 : Math.max(2, Math.floor(len / 5)));
+const stem = (w) => (w.length > 5 ? w.replace(/(ing|ers|er|es|s)$/, '') : w);
+const sameWord = (a, b) => a === b || stem(a) === stem(b) || editDistance(a, b, tolerance(Math.min(a.length, b.length))) <= tolerance(Math.min(a.length, b.length));
+
+// Share of words the two names have in common, in order ("society of hispanic engineers" vs SHPE's full name = 0.8).
+function wordOverlap(a, b) {
+  const x = a.split(' '), y = b.split(' ');
+  if (Math.min(x.length, y.length) < 2) return 0;
+  let hits = 0, j = 0;
+  for (const w of x) {
+    const k = y.findIndex((v, n) => n >= j && sameWord(w, v));
+    if (k >= 0) { hits++; j = k + 1; }
   }
-  return best;
+  return hits / Math.max(x.length, y.length);
+}
+
+// An exact hit on a name or alias returns { i, exact: true }. Otherwise returns the closest answer
+// worth suggesting ({ i, exact: false }), or i = -1 when nothing is close.
+export function findAnswer(prompt, input) {
+  const k = matchKey(input);
+  if (!k) return { i: -1, exact: false };
+  if (prompt.index.has(k)) return { i: prompt.index.get(k), exact: true };
+  let best = -1, bestScore = Infinity;
+  const consider = (i, score) => {
+    if (score < bestScore || (score === bestScore && prompt.answers[i].n > prompt.answers[best].n)) { best = i; bestScore = score; }
+  };
+  for (const [key, i] of prompt.index) {
+    const tol = tolerance(Math.min(k.length, key.length));
+    const d = tol ? editDistance(k, key, tol) : tol + 1;
+    if (d <= tol) consider(i, d / key.length);
+  }
+  if (best < 0) {
+    for (const [key, i] of prompt.index) {
+      const overlap = wordOverlap(k, key);
+      if (overlap > 0.75) consider(i, 1 - overlap);
+    }
+  }
+  if (best < 0 && k.length >= 4) {
+    // The start of exactly one answer's name ("ellicott dredge" → Ellicott Dredge Enterprises).
+    const words = k.split(' ');
+    const hits = new Set();
+    for (const [key, i] of prompt.index) {
+      const kw = key.split(' ');
+      if (kw.length > words.length && words.every((w, n) => sameWord(w, kw[n]))) hits.add(i);
+    }
+    if (hits.size === 1) best = [...hits][0];
+  }
+  return { i: best, exact: false };
+}
+
+// Index of the answer this input names exactly (by name or alias), or -1.
+export function matchAnswer(prompt, input) {
+  const m = findAnswer(prompt, input);
+  return m.exact ? m.i : -1;
 }
 
 // The most popular answer scores 10; never-seen valid answers score 100.
