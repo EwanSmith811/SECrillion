@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>SECrillion · the daily dive</title>
+  <meta name="description" content="The Student Engineers' Council daily dive: 7 prompts, 25 seconds each — rarer answers sink deeper.">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' shape-rendering='crispEdges'%3E%3Cpath fill='%237a1a2e' d='M5 1h5v1h2v1H3V2h2z'/%3E%3Cpath fill='%23ff4f64' d='M3 4h9v1h1v2h1v3h-1v2h-2v1H8v1H6v-1h2v-1h2v-1H5V9H4V8H3z'/%3E%3Cpath fill='%23fff' d='M4 5h1v1H4z'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Silkscreen&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-mode="title">
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <canvas id="krill" aria-hidden="true"></canvas>
+
+  <button id="menuBtn" class="sq-btn menu-btn" aria-label="Menu">
+    <svg viewBox="0 0 16 16"><path d="M2 3h12v2H2zM2 7h12v2H2zM2 11h12v2H2z"/></svg>
+  </button>
+  <div class="side-btns">
+    <button id="soundBtn" class="sq-btn" aria-label="Mute sound">
+      <svg viewBox="0 0 16 16"><path d="M1 6h3l4-3v10l-4-3H1z"/><path class="wave" d="M10 6h1v4h-1zM12 4h1v8h-1z"/><path class="x" d="M10 5h1v1h1v1h1V6h1V5h1v1h-1v1h-1v2h1v1h1v1h-1v-1h-1V9h-1v1h-1v1h-1v-1h1V9h1V7h-1V6h-1z"/></svg>
+    </button>
+    <button id="settingsBtn" class="sq-btn" aria-label="Settings">
+      <svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 1h4v2h1v1h1V3h1v1h1v1h-1v1h1v4h-1v1h1v1h-1v1h-1v-1h-1v1h-1v2H6v-2H5v1H4v-1H3v-1H2v-1h1v-1H2V6h1V5H2V4h1V3h1v1h1V3h1zM7 6v1H6v2h1v1h2V9h1V7H9V6z"/></svg>
+    </button>
+    <button id="skinBtn" class="sq-btn" aria-label="Wardrobe">
+      <svg viewBox="0 0 16 16"><path d="M5 2h2v1h2V2h2l4 3-2 3-2-1v7H5V7L3 8 1 5z"/></svg>
+    </button>
+  </div>
+
+  <main>
+    <!-- TITLE -->
+    <section id="screen-title" class="screen active">
+      <div class="hero">
+        <p class="org-line">TEXAS A&amp;M · STUDENT ENGINEERS' COUNCIL</p>
+        <h1 class="logo"><span class="sec">SEC</span>RILLION</h1>
+        <p class="subtitle">THE DAILY DIVE</p>
+        <p class="tagline">7 prompts · 25 seconds each · rarer answers sink deeper</p>
+      </div>
+
+      <div class="dock">
+        <details class="howto">
+          <summary>HOW TO PLAY</summary>
+          <div id="howtoBody" class="howto-body"></div>
+        </details>
+        <a href="#" id="privacyLink" class="privacy">Privacy</a>
+        <button id="partyBtn" class="btn btn-party">
+          <span class="tag">BETA · LIMITED TIME</span>
+          <img alt=""> PUFFER PARTY
+        </button>
+        <button id="beginBtn" class="btn btn-begin"><span class="tri">▼</span><span class="label">BEGIN DESCENT</span><span class="tri">▼</span></button>
+        <div class="dock-row">
+          <span id="diveNo" class="dive-no">DIVE #1</span>
+          <div class="dock-links">
+            <button id="archiveBtn" class="btn-sm">ARCHIVE ◌</button>
+            <button id="packsBtn" class="btn-sm">THEMED PACKS</button>
+            <button id="unlimitedBtn" class="btn-sm">UNLIMITED ∞</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIVE -->
+    <section id="screen-dive" class="screen">
+      <div class="hud">
+        <span class="mini-logo">SECRILLION</span>
+        <span id="hudDepth" class="hud-depth">0m</span>
+        <span id="hudCount" class="hud-count">1 / 7</span>
+      </div>
+      <div class="card">
+        <div id="promptLabel" class="prompt-label">PROMPT 01</div>
+        <h2 id="promptText" class="prompt-text" aria-live="polite"></h2>
+        <div id="timer" class="timer">
+          <div class="timer-track"><div id="timerBar" class="timer-bar"></div></div>
+          <span id="timerNum" class="timer-num">25</span>
+        </div>
+        <form id="answerForm" class="answer" autocomplete="off">
+          <input id="answerInput" type="text" maxlength="60" spellcheck="false" autocapitalize="off" placeholder="type your answer…" aria-label="Your answer">
+          <button type="submit" class="btn btn-dive">DIVE ▼</button>
+        </form>
+        <p id="tryAgain" class="try-again" role="alert" hidden></p>
+        <div id="feedback" class="feedback" aria-live="polite" hidden></div>
+        <button id="skipBtn" class="link-btn skip">skip →</button>
+      </div>
+      <div id="pips" class="pips"></div>
+    </section>
+
+    <!-- RESULTS -->
+    <section id="screen-results" class="screen"></section>
+  </main>
+
+  <div class="crt" aria-hidden="true"></div>
+
+  <dialog id="modal" class="modal">
+    <header><span class="modal-title"></span><button class="modal-close" aria-label="Close">✕</button></header>
+    <div class="modal-body"></div>
+  </dialog>
+
+  <dialog id="drawer" class="drawer">
+    <div class="drawer-inner">
+      <div class="mini-logo">SECRILLION</div>
+      <div class="drawer-stats"></div>
+      <nav>
+        <button data-go="daily">▼ DAILY DIVE</button>
+        <button data-go="unlimited">∞ UNLIMITED</button>
+        <button data-go="party">◍ PUFFER PARTY</button>
+        <button data-go="packs">▤ THEMED PACKS</button>
+        <button data-go="archive">◌ ARCHIVE</button>
+        <hr>
+        <button data-go="howto">HOW TO PLAY</button>
+        <button data-go="about">ABOUT SEC</button>
+        <button data-go="privacy">PRIVACY</button>
+        <button data-go="abandon" class="warn">▲ ABANDON DIVE</button>
+      </nav>
+    </div>
+  </dialog>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

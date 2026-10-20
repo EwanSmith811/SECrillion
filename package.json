@@ -1,0 +1,13 @@
+{
+  "name": "secrillion",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "check": "node tools/check-questions.mjs",
+    "migrate": "node --env-file=.env.local tools/migrate.mjs"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.0"
+  }
+}

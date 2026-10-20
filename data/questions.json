@@ -1,0 +1,625 @@
+{
+  "_format": "Each answer is \"Canonical | alias | alias = seed\". The seed is how many imaginary divers gave that answer — big = common = shallow, 0 = nobody = full 100 points. See README.md.",
+
+  "daily": [
+    ["sec-committees", "aggie-traditions", "programming-languages", "campus-buildings", "bridge-types", "greek-letters", "sec-schools"],
+    ["sec-events", "engineering-majors", "elements", "texas-cities", "famous-engineers", "logic-gates", "career-fair-companies"],
+    ["sec-divisions", "eso", "renewable-energy", "physics-laws", "polygons", "metals", "lab-equipment"],
+    ["sec-committees", "career-fair-companies", "simple-machines", "nasa", "hand-tools", "planets", "aggie-slang"]
+  ],
+
+  "packs": [
+    { "id": "sec-insider", "name": "SEC Insider", "blurb": "Committees, divisions, events — how well do you know the Council?",
+      "prompts": ["sec-committees", "sec-divisions", "sec-events", "eso", "career-fair-companies", "engineering-majors", "campus-buildings"] },
+    { "id": "aggieland", "name": "Aggieland", "blurb": "Traditions, buildings, slang and the other SEC.",
+      "prompts": ["aggie-traditions", "aggie-slang", "campus-buildings", "sec-schools", "engineering-majors", "texas-cities", "famous-engineers"] },
+    { "id": "lab-rats", "name": "Lab Rats", "blurb": "Elements, units, laws and the stuff on the lab bench.",
+      "prompts": ["elements", "si-base-units", "lab-equipment", "physics-laws", "greek-letters", "metals", "polygons", "logic-gates"] },
+    { "id": "build-it", "name": "Build It", "blurb": "Bridges, machines, tools and materials.",
+      "prompts": ["bridge-types", "simple-machines", "hand-tools", "metals", "renewable-energy", "campus-buildings", "engineering-majors"] },
+    { "id": "code-and-cosmos", "name": "Code & Cosmos", "blurb": "Languages, logic and launch pads.",
+      "prompts": ["programming-languages", "logic-gates", "nasa", "planets", "famous-engineers", "greek-letters", "si-base-units"] }
+  ],
+
+  "prompts": {
+    "sec-committees": {
+      "prompt": "Name a Student Engineers' Council committee",
+      "answers": [
+        "Career Fair = 30",
+        "EnVision Conference | EnVision = 18",
+        "Corporate Relations = 12",
+        "Philanthropy = 12",
+        "Marketing = 12",
+        "Finance = 10",
+        "Membership = 10",
+        "Special Events = 8",
+        "Engineering Activities = 6",
+        "Engineering Development = 6",
+        "ProTrip | Pro Trip = 5",
+        "Legislation = 5",
+        "Student Relations = 5",
+        "Internal Relations = 4",
+        "Systems Administration | SysAd | Sys Admin = 3",
+        "Society and Graduate Relations | Society & Graduate Relations = 2"
+      ]
+    },
+
+    "sec-divisions": {
+      "prompt": "Name one of the Student Engineers' Council's four divisions",
+      "answers": [
+        "Development = 20", "External = 16", "Internal = 16", "Operations = 10"
+      ]
+    },
+
+    "sec-events": {
+      "prompt": "Name an event or program run by the Student Engineers' Council",
+      "answers": [
+        "Career Fair | Engineering Career Fair | SEC Career Fair = 35",
+        "EnVision Conference | EnVision = 18",
+        "Industry Nights | Industry Night = 10",
+        "ProTrip | Pro Trip = 6",
+        "DI Saturday = 3",
+        "Freshman Materials = 1"
+      ]
+    },
+
+    "eso": {
+      "prompt": "Name an ESO (engineering student organization) at Texas A&M",
+      "_tiers": "Seeds rank orgs by size: 25-30 flagship, 10-15 large, 2-5 mid-size, 1 small, 0 niche/graduate/advisory. Sizes are estimates; see README.",
+      "answers": [
+        "Student Engineers' Council | SEC = 30",
+        "Society of Women Engineers | SWE = 30",
+        "Society of Hispanic Professional Engineers | SHPE = 30",
+        "Institute of Electrical and Electronics Engineers | IEEE = 28",
+        "American Society of Mechanical Engineers | ASME = 28",
+        "Society of Petroleum Engineers | SPE = 25",
+
+        "Professional Association of Industrial Distribution | Professional Association for Industrial Distribution | PAID = 15",
+        "American Institute of Chemical Engineers | AIChE = 15",
+        "American Institute of Aeronautics and Astronautics | AIAA = 15",
+        "American Society of Civil Engineers | ASCE = 15",
+        "National Society of Black Engineers | NSBE = 15",
+        "Biomedical Engineering Society | BMES = 14",
+        "Tau Beta Pi | TBP = 14",
+        "Engineers Without Borders | EWB = 12",
+        "Society of Automotive Engineers | SAE | Formula SAE = 12",
+        "TAMUhack = 12",
+        "Aggie Coding Club = 10",
+        "Theta Tau = 10",
+
+        "Institute of Industrial and Systems Engineers | IISE = 5",
+        "Texas A&M Computing Society = 5",
+        "Aggie Data Science Club = 5",
+        "Texas A&M Cybersecurity Club | Cybersecurity Club = 5",
+        "Aggie Women in Computer Science | AWiCS = 5",
+        "MAES | MAES Latinos in Science and Engineering = 4",
+        "American Nuclear Society | ANS = 4",
+        "Students for the Exploration and Development of Space | SEDS = 4",
+        "Sounding Rocketry Team | SRT = 4",
+        "Robomaster Robotics | Robomaster = 4",
+        "ASCE Concrete Canoe | Concrete Canoe = 4",
+        "Texas A&M Steel Bridge Team | Steel Bridge = 4",
+        "Aggie Artificial Intelligence Society | AAIS = 4",
+        "Society of Manufacturing Engineers | SME = 3",
+        "Texas Aggie Game Developers | Game Developers = 3",
+        "Eta Kappa Nu | HKN = 3",
+        "Chi Epsilon = 3",
+        "Pi Tau Sigma = 3",
+        "oSTEM = 3",
+        "AggieSat Laboratory | AggieSat = 3",
+        "Upsilon Pi Epsilon | UPE = 2",
+        "Women in IEEE = 2",
+        "Aggie Competitive Programming Club = 2",
+        "Aggie Web Developers = 2",
+        "Aggie Hispanics in Computing = 2",
+        "Materials Advantage = 2",
+        "ASHRAE | American Society of Heating, Refrigerating and Air-Conditioning Engineers = 2",
+        "SAE AERO Design Team | SAE Aero = 2",
+        "TURTLE | Texas A&M University Robotics Team and Leadership Experience = 2",
+        "Women in Cybersecurity | WiCyS = 2",
+        "Sling Health = 2",
+        "Institute of Transportation Engineers | ITE = 2",
+        "MEEN Girls = 2",
+        "Aggie Aerospace Women in Engineering | AAWE = 2",
+
+        "Ignitors Rocketry = 1",
+        "Texas A&M University Rocket Engine Design | TAMU RED = 1",
+        "Society of Mechatronics Engineering Technology | SOMTECH = 1",
+        "Society of Women in Industrial Distribution | SWID = 1",
+        "IEEE-TECH | IEEE Tech = 1",
+        "QuantA&M = 1",
+        "Freshmen Aspiring to be Civil Engineers | FACE = 1",
+        "Women in Industrial and Systems Engineering | WISEN = 1",
+        "INFORMS | Institute for Operations Research and the Management Sciences = 1",
+        "Omega Chi Epsilon = 1",
+        "Alpha Pi Mu = 1",
+        "Sigma Gamma Tau = 1",
+        "Alpha Eta Mu Beta = 1",
+        "Pi Epsilon Tau = 1",
+        "Sigma Delta = 1",
+        "Amateur Radio Club | W5AC = 1",
+        "Women in Nuclear = 1",
+        "Vertical Flight Society = 1",
+        "Women in Aviation = 1",
+        "Karura = 1",
+        "TAMU ThinkTank | ThinkTank = 1",
+
+        "American Concrete Institute | ACI = 0",
+        "American Water Resources Association | AWRA = 0",
+        "Association of Civil Engineering Doctoral Students | ACEDocS = 0",
+        "Association of Environmental Engineering Students | AEES = 0",
+        "Civil and Environmental Engineering Graduate Student Association = 0",
+        "Civil Materials Student Organization | CMSO = 0",
+        "CVEN/EVEN Ambassadors | CVEN Ambassadors = 0",
+        "GeoInstitute | Geo-Institute | TAMU G-I = 0",
+        "G-I GeoWall | GeoWall = 0",
+        "Structural Engineers Association of Texas | SEAoT = 0",
+        "Aerospace Engineering Graduate Student Association | AEGSA = 0",
+        "Aerospace Engineering Student Ambassadors = 0",
+        "Society of Flight Test Engineers | SFTE = 0",
+        "Society of Sonic Flight Engineers | SSFE = 0",
+        "Chemical Engineering Graduate Student Association | CheGSA = 0",
+        "Chemical Engineering Undergraduate Student Advisory Council | USAC = 0",
+        "Biomedical Engineering Graduate Student Association | BMEGSA = 0",
+        "Society for Biomaterials = 0",
+        "SPIE | International Society for Optics and Photonics = 0",
+        "American Association of Drilling Engineers | AADE = 0",
+        "International Association of Drilling Contractors | IADC = 0",
+        "Health Physics Society | HPS = 0",
+        "Institute of Nuclear Materials Management | INMM = 0",
+        "Nuclear Engineering Student Advisory Council = 0",
+        "Electrical and Computer Engineering Graduate Student Association | ECEGSA = 0",
+        "IEEE PELS/IAS/PES Joint Student Chapter | IEEE PES | IEEE PELS | IEEE IAS = 0",
+        "Mechanical Engineering Graduate Student Organization | MEGSO = 0",
+        "Mechanical Engineering Female Graduate Students = 0",
+        "Computer Science and Engineering Graduate Student Association | CSEGSA = 0",
+        "American Society for Engineering Management | ASEM = 0",
+        "Human Factors and Ergonomics Society | HFES = 0",
+        "International Council on Systems Engineering | INCOSE = 0",
+        "Women in Materials Science | WIMS = 0",
+        "National Association of Corrosion Engineers | NACE = 0",
+        "ElectroChemical Society | ECS = 0",
+        "Texas A&M ACM SIGGRAPH | ACM SIGGRAPH | SIGGRAPH = 0"
+      ]
+    },
+
+    "career-fair-companies": {
+      "prompt": "Name a company you might meet at an engineering career fair",
+      "answers": [
+        "ExxonMobil | Exxon = 25", "Lockheed Martin | Lockheed = 22", "Texas Instruments | TI = 20", "SpaceX = 20",
+        "Chevron = 18", "Boeing = 16", "Shell = 14", "Microsoft = 12", "Google = 12", "Amazon = 12", "Tesla = 10",
+        "Raytheon | RTX = 10", "Northrop Grumman | Northrop = 8", "Dow = 8", "Apple = 8", "Intel = 8",
+        "Phillips 66 = 6", "Schlumberger | SLB = 6", "Halliburton = 6", "Baker Hughes = 5", "Kiewit = 6",
+        "General Motors | GM = 5", "Ford = 5", "Toyota = 5", "Dell = 5", "Nvidia = 5", "Meta | Facebook = 5",
+        "IBM = 4", "Bechtel = 4", "Fluor = 4", "ConocoPhillips = 4", "Valero = 4", "Entergy = 4", "Bell | Bell Textron = 4",
+        "General Electric | GE | GE Aerospace | GE Vernova = 4", "Honeywell = 4", "Siemens = 4", "Caterpillar | CAT = 4",
+        "Accenture = 3", "Deloitte = 3", "AMD = 3", "Qualcomm = 3", "Cisco = 3", "Oracle = 3", "Samsung = 3",
+        "BP = 3", "Marathon Petroleum | Marathon = 3", "Occidental | Oxy = 3", "L3Harris = 3", "General Dynamics = 3",
+        "Blue Origin = 3", "John Deere | Deere = 3", "Collins Aerospace = 2", "Pratt & Whitney = 2", "BAE Systems = 2",
+        "KBR = 2", "Jacobs = 2", "AECOM = 2", "Burns & McDonnell = 2", "Black & Veatch = 2", "Kimley-Horn = 2",
+        "Zachry Group = 1", "Emerson = 2", "Schneider Electric = 2", "ABB = 1", "National Instruments | NI = 2",
+        "Garmin = 1", "HP | Hewlett Packard | HPE = 2", "Salesforce = 1", "Intuitive Machines = 1", "Axiom Space = 1",
+        "Firefly Aerospace | Firefly = 1", "CenterPoint Energy | CenterPoint = 1", "Oncor = 1", "ERCOT = 1",
+        "TxDOT | Texas Department of Transportation = 1", "US Army Corps of Engineers | Army Corps = 1",
+        "Freese and Nichols = 0", "HDR = 0", "Walter P Moore = 0", "Fugro = 0", "Air Liquide = 0", "Linde = 0",
+        "LyondellBasell = 0", "Celanese = 0", "Chevron Phillips | CPChem = 0", "Westlake = 0",
+        "Enterprise Products = 0", "Kinder Morgan = 0", "Cheniere = 0", "Duke Energy = 0", "NextEra = 0"
+      ]
+    },
+
+    "engineering-majors": {
+      "prompt": "Name an engineering major at Texas A&M",
+      "answers": [
+        "Mechanical Engineering | Mechanical | MechE | MEEN = 40",
+        "Computer Science | CS | CSCE = 30",
+        "Electrical Engineering | Electrical | EE | ECEN = 22",
+        "Aerospace Engineering | Aerospace | Aero | AERO = 22",
+        "Civil Engineering | Civil | CVEN = 20",
+        "Computer Engineering | CompE | CECN = 18",
+        "Chemical Engineering | Chemical | ChemE | CHEN = 18",
+        "Biomedical Engineering | Biomedical | BME | BMEN = 15",
+        "Petroleum Engineering | Petroleum | PETE = 12",
+        "Industrial and Systems Engineering | Industrial Engineering | Industrial | ISEN | ISE = 10",
+        "Nuclear Engineering | Nuclear | NUEN = 8",
+        "Ocean Engineering | Ocean | OCEN = 5",
+        "Materials Science and Engineering | Materials Science | Materials Engineering | MSEN = 5",
+        "Biological and Agricultural Engineering | Agricultural Engineering | Biological Engineering | BAEN = 4",
+        "Environmental Engineering | Environmental | EVEN = 4",
+        "Architectural Engineering | AREN = 3",
+        "Electronic Systems Engineering Technology | ESET = 3",
+        "Manufacturing and Mechanical Engineering Technology | MMET | Manufacturing Engineering = 3",
+        "Multidisciplinary Engineering Technology | MXET = 2",
+        "Industrial Distribution | IDIS = 2",
+        "Interdisciplinary Engineering = 2"
+      ]
+    },
+
+    "aggie-traditions": {
+      "prompt": "Name an Aggie tradition",
+      "answers": [
+        "Midnight Yell | Midnight Yell Practice | Yell Practice = 30",
+        "12th Man | Twelfth Man = 24",
+        "Howdy | Saying Howdy = 22",
+        "Bonfire | Aggie Bonfire | Student Bonfire = 20",
+        "Aggie Ring | The Ring = 20",
+        "Silver Taps = 18",
+        "Gig 'em = 18",
+        "Muster | Aggie Muster = 16",
+        "Ring Dunk | Dunking your ring = 14",
+        "Reveille | Rev = 12",
+        "Ring Day = 10",
+        "Fish Camp = 10",
+        "The Big Event | Big Event = 9",
+        "Elephant Walk = 8",
+        "Staying off the MSC grass | MSC grass | Not walking on the MSC grass = 7",
+        "Maroon Out = 6",
+        "Pennies on Sully | Sully | Pennies on Sul Ross = 6",
+        "Century Tree = 6",
+        "Whoop | Whooping = 5",
+        "Kissing your date after a touchdown | Kiss your date = 5",
+        "Corps of Cadets | Corps = 5",
+        "Yell Leaders = 4",
+        "Aggie War Hymn | War Hymn = 4",
+        "Saw 'em Off = 4",
+        "Standing the whole game | Standing at games = 4",
+        "Fightin' Texas Aggie Band | Aggie Band = 3",
+        "Bonfire Memorial = 3",
+        "Boot Line = 1",
+        "Ross Volunteers = 1",
+        "Replant = 1",
+        "Hump It = 1"
+      ]
+    },
+
+    "aggie-slang": {
+      "prompt": "Name a piece of Aggie slang",
+      "answers": [
+        "Howdy = 35",
+        "Gig 'em = 30",
+        "Whoop = 22",
+        "Fish = 12",
+        "Old Army = 12",
+        "Good Bull = 10",
+        "Two-percenter | 2 percenter | Two percenter = 8",
+        "t.u. | tu | Texas University = 8",
+        "Ags = 6",
+        "Aggieland = 6",
+        "Former Student | Former Students = 5",
+        "Old Ags = 3",
+        "Bad Bull = 3",
+        "Hump It = 3",
+        "Frog = 2",
+        "Zip = 2",
+        "Highway 6 runs both ways = 2",
+        "Saw varsity's horns off | Saw 'em Off = 2",
+        "Elephant = 1",
+        "Rev = 1"
+      ]
+    },
+
+    "campus-buildings": {
+      "prompt": "Name a building on the Texas A&M campus in College Station",
+      "answers": [
+        "Zachry | Zachry Engineering Education Complex | ZACH = 30",
+        "Memorial Student Center | MSC = 26",
+        "Evans Library | Evans | Sterling C. Evans Library = 20",
+        "Kyle Field = 20",
+        "Academic Building | Academic = 14",
+        "Rudder Tower | Rudder = 14",
+        "Student Recreation Center | Rec Center | Rec = 12",
+        "Reed Arena | Reed = 8",
+        "Sbisa | Sbisa Dining Hall = 8",
+        "The Commons | Commons = 6",
+        "H.R. Bright Building | Bright Building | HRBB = 6",
+        "Engineering Activity Building | EABA | EABB | EABC | EAB = 5",
+        "Wisenbaker Engineering Building | Wisenbaker | WEB = 5",
+        "Blocker Building | Blocker = 5",
+        "Jack E. Brown Building | Jack E Brown | JEB = 4",
+        "Emerging Technologies Building | ETB = 4",
+        "Heldenfels Hall | Heldenfels = 4",
+        "Koldus Building | Koldus = 4",
+        "Chemistry Building | Chem Building = 4",
+        "George Bush Presidential Library | Bush Library = 4",
+        "Richardson Petroleum Engineering Building | Richardson = 3",
+        "Harrington Tower | Harrington = 3",
+        "Cushing Library | Cushing = 3",
+        "Langford Architecture Center | Langford = 3",
+        "Mitchell Physics Building | Mitchell = 3",
+        "Fermier Hall | Fermier = 3",
+        "Duncan Dining Hall | Duncan = 3",
+        "Albritton Bell Tower | Bell Tower = 3",
+        "Thompson Hall = 2",
+        "Halbouty Geosciences Building | Halbouty = 2",
+        "Peterson Building | PETR = 2",
+        "Interdisciplinary Life Sciences Building | ILSB = 2",
+        "Bizzell Hall = 2",
+        "Hart Hall = 2",
+        "Francis Hall = 1",
+        "Walton Hall = 1",
+        "Cain Hall = 1"
+      ]
+    },
+
+    "sec-schools": {
+      "prompt": "Name a school in the SEC (the conference, not the council)",
+      "answers": [
+        "Texas A&M | A&M | TAMU = 30",
+        "Alabama | Bama = 28",
+        "LSU | Louisiana State = 22",
+        "Texas | UT | UT Austin | University of Texas | Longhorns = 20",
+        "Georgia | UGA = 18",
+        "Florida | UF | Gators = 14",
+        "Tennessee = 12",
+        "Auburn = 12",
+        "Oklahoma | OU = 10",
+        "Ole Miss | Mississippi = 8",
+        "Arkansas = 8",
+        "Kentucky = 7",
+        "South Carolina = 7",
+        "Missouri | Mizzou = 6",
+        "Vanderbilt | Vandy = 6",
+        "Mississippi State | Miss State = 5"
+      ]
+    },
+
+    "programming-languages": {
+      "prompt": "Name a programming language",
+      "answers": [
+        "Python = 40", "Java = 25", "C++ | cpp = 22", "JavaScript | JS = 20", "C = 12", "MATLAB = 12",
+        "C# | C sharp = 10", "Rust = 6", "Go | Golang = 5", "Swift = 4", "TypeScript | TS = 4", "R = 4", "SQL = 4",
+        "Kotlin = 3", "Ruby = 3", "PHP = 3", "Assembly | ASM = 3", "Verilog = 2", "Fortran = 2", "Julia = 2",
+        "Haskell = 2", "Bash | Shell = 2", "VHDL = 1", "Lua = 1", "Perl = 1", "Scala = 1", "Lisp = 1", "COBOL = 1",
+        "Dart = 1", "Scratch = 1", "Visual Basic | BASIC = 1", "Zig = 0", "Prolog = 0", "OCaml = 0", "Elixir = 0",
+        "Erlang = 0", "Pascal = 0", "Ada = 0", "Clojure = 0", "F# = 0", "Objective-C = 0", "LabVIEW = 0", "Simulink = 0"
+      ]
+    },
+
+    "elements": {
+      "prompt": "Name an element on the periodic table",
+      "answers": [
+        "Hydrogen | H = 30", "Oxygen | O = 30", "Carbon | C = 28", "Helium | He = 20", "Nitrogen | N = 14",
+        "Gold | Au = 12", "Iron | Fe = 12", "Sodium | Na = 8", "Silver | Ag = 6", "Copper | Cu = 6", "Lithium | Li = 6",
+        "Uranium | U = 5", "Neon | Ne = 4", "Calcium | Ca = 4", "Aluminum | Aluminium | Al = 4", "Silicon | Si = 4",
+        "Chlorine | Cl = 3", "Potassium | K = 3", "Magnesium | Mg = 3", "Mercury | Hg = 3", "Lead | Pb = 3", "Titanium | Ti = 3",
+        "Zinc | Zn = 2", "Plutonium | Pu = 2", "Argon | Ar = 2", "Sulfur | Sulphur | S = 2", "Phosphorus | P = 2",
+        "Tungsten | W = 2", "Platinum | Pt = 2", "Nickel | Ni = 2", "Fluorine | F = 2",
+        "Tin | Sn = 1", "Radon | Rn = 1", "Cobalt | Co = 1", "Boron | B = 1", "Krypton | Kr = 1", "Xenon | Xe = 1",
+        "Iodine | I = 1", "Radium | Ra = 1", "Chromium | Cr = 1", "Manganese | Mn = 1", "Beryllium | Be = 1",
+        "Bismuth | Bi = 1", "Cesium | Caesium | Cs = 1",
+        "Scandium | Sc = 0", "Vanadium | V = 0", "Gallium | Ga = 0", "Germanium | Ge = 0", "Arsenic | As = 0",
+        "Selenium | Se = 0", "Bromine | Br = 0", "Rubidium | Rb = 0", "Strontium | Sr = 0", "Yttrium | Y = 0",
+        "Zirconium | Zr = 0", "Niobium | Nb = 0", "Molybdenum | Mo = 0", "Technetium | Tc = 0", "Ruthenium | Ru = 0",
+        "Rhodium | Rh = 0", "Palladium | Pd = 0", "Cadmium | Cd = 0", "Indium | In = 0", "Antimony | Sb = 0",
+        "Tellurium | Te = 0", "Barium | Ba = 0", "Lanthanum | La = 0", "Cerium | Ce = 0", "Praseodymium | Pr = 0",
+        "Neodymium | Nd = 0", "Promethium | Pm = 0", "Samarium | Sm = 0", "Europium | Eu = 0", "Gadolinium | Gd = 0",
+        "Terbium | Tb = 0", "Dysprosium | Dy = 0", "Holmium | Ho = 0", "Erbium | Er = 0", "Thulium | Tm = 0",
+        "Ytterbium | Yb = 0", "Lutetium | Lu = 0", "Hafnium | Hf = 0", "Tantalum | Ta = 0", "Rhenium | Re = 0",
+        "Osmium | Os = 0", "Iridium | Ir = 0", "Thallium | Tl = 0", "Polonium | Po = 0", "Astatine | At = 0",
+        "Francium | Fr = 0", "Actinium | Ac = 0", "Thorium | Th = 0", "Protactinium | Pa = 0", "Neptunium | Np = 0",
+        "Americium | Am = 0", "Curium | Cm = 0", "Berkelium | Bk = 0", "Californium | Cf = 0", "Einsteinium | Es = 0",
+        "Fermium | Fm = 0", "Mendelevium | Md = 0", "Nobelium | No = 0", "Lawrencium | Lr = 0", "Rutherfordium | Rf = 0",
+        "Dubnium | Db = 0", "Seaborgium | Sg = 0", "Bohrium | Bh = 0", "Hassium | Hs = 0", "Meitnerium | Mt = 0",
+        "Darmstadtium | Ds = 0", "Roentgenium | Rg = 0", "Copernicium | Cn = 0", "Nihonium | Nh = 0", "Flerovium | Fl = 0",
+        "Moscovium | Mc = 0", "Livermorium | Lv = 0", "Tennessine | Ts = 0", "Oganesson | Og = 0"
+      ]
+    },
+
+    "greek-letters": {
+      "prompt": "Name a letter of the Greek alphabet",
+      "answers": [
+        "Pi = 22", "Alpha = 20", "Delta = 18", "Omega = 16", "Beta = 14", "Sigma = 14", "Gamma = 12", "Theta = 12",
+        "Lambda = 10", "Epsilon = 8", "Mu = 6", "Phi = 6", "Tau = 5", "Zeta = 4", "Kappa = 4", "Rho = 4", "Psi = 4",
+        "Eta = 3", "Omicron = 3", "Chi = 3", "Iota = 2", "Nu = 2", "Xi = 2", "Upsilon = 2"
+      ]
+    },
+
+    "si-base-units": {
+      "prompt": "Name an SI base unit",
+      "answers": [
+        "Meter | Metre | m = 30", "Kilogram | kg = 25", "Second | s = 25", "Kelvin | K = 15",
+        "Ampere | Amp | A = 12", "Mole | mol = 8", "Candela | cd = 3"
+      ]
+    },
+
+    "logic-gates": {
+      "prompt": "Name a logic gate",
+      "answers": [
+        "AND = 25", "OR = 22", "NOT | Inverter = 18", "NAND = 12", "XOR | Exclusive OR = 10", "NOR = 9",
+        "XNOR | Exclusive NOR = 4", "Buffer = 2"
+      ]
+    },
+
+    "simple-machines": {
+      "prompt": "Name one of the six classical simple machines",
+      "answers": [
+        "Lever = 25", "Pulley = 22", "Wheel and axle | Wheel = 18", "Inclined plane | Ramp = 15", "Screw = 10", "Wedge = 10"
+      ]
+    },
+
+    "bridge-types": {
+      "prompt": "Name a type of bridge",
+      "answers": [
+        "Suspension = 30", "Arch = 18", "Beam | Girder = 14", "Truss = 12", "Cable-stayed = 10", "Cantilever = 8",
+        "Drawbridge | Bascule = 6", "Pontoon | Floating = 3", "Covered = 2", "Rope bridge | Rope = 2", "Viaduct = 2",
+        "Swing = 1", "Vertical lift | Lift = 1", "Tied arch | Bowstring = 1", "Footbridge | Pedestrian = 1",
+        "Aqueduct = 1", "Box girder = 1", "Trestle = 1", "Tilt = 0", "Transporter = 0", "Clapper = 0",
+        "Stressed ribbon = 0", "Bailey = 0", "Log = 0", "Moon bridge = 0"
+      ]
+    },
+
+    "famous-engineers": {
+      "prompt": "Name a famous engineer, inventor, or scientist",
+      "answers": [
+        "Nikola Tesla | Tesla = 30", "Albert Einstein | Einstein = 25", "Thomas Edison | Edison = 25", "Isaac Newton | Newton = 22",
+        "Leonardo da Vinci | Da Vinci | Leonardo = 10", "Marie Curie | Curie = 10", "Elon Musk | Musk = 8",
+        "Wright Brothers | Wright = 6", "Galileo | Galileo Galilei = 6", "Alexander Graham Bell | Bell = 5",
+        "Ada Lovelace | Lovelace = 5", "Alan Turing | Turing = 5", "Henry Ford | Ford = 4", "Archimedes = 4",
+        "Benjamin Franklin | Franklin = 4", "Richard Feynman | Feynman = 4", "Stephen Hawking | Hawking = 4",
+        "J. Robert Oppenheimer | Oppenheimer = 4", "Steve Jobs | Jobs = 3", "Bill Gates | Gates = 3",
+        "Michael Faraday | Faraday = 3", "James Watt | Watt = 3", "Grace Hopper | Hopper = 3",
+        "Steve Wozniak | Wozniak | Woz = 2", "Hedy Lamarr | Lamarr = 2", "Katherine Johnson = 2",
+        "Neil Armstrong | Armstrong = 2", "James Clerk Maxwell | Maxwell = 2", "Niels Bohr | Bohr = 2",
+        "Charles Darwin | Darwin = 2", "Blaise Pascal | Pascal = 2", "Leonhard Euler | Euler = 2",
+        "Margaret Hamilton = 1", "Robert Goddard | Goddard = 1", "Wernher von Braun | von Braun = 1",
+        "Isambard Kingdom Brunel | Brunel = 1", "Werner Heisenberg | Heisenberg = 1", "Johannes Kepler | Kepler = 1",
+        "Nicolaus Copernicus | Copernicus = 1", "Carl Friedrich Gauss | Gauss = 1", "Daniel Bernoulli | Bernoulli = 1",
+        "Georg Ohm | Ohm = 1", "Alessandro Volta | Volta = 1", "Andre-Marie Ampere | Ampere = 1", "Lord Kelvin | Kelvin = 1",
+        "Charles Babbage | Babbage = 1", "John von Neumann | von Neumann = 1", "Claude Shannon | Shannon = 1",
+        "Heinrich Hertz | Hertz = 1", "Guglielmo Marconi | Marconi = 1", "George Westinghouse | Westinghouse = 1",
+        "James Dyson | Dyson = 1", "Gustave Eiffel | Eiffel = 1", "Tim Berners-Lee | Berners-Lee = 1",
+        "Linus Torvalds | Torvalds = 1", "Johannes Gutenberg | Gutenberg = 1", "Rosalind Franklin = 1",
+        "Mae Jemison | Jemison = 1", "Sally Ride = 1",
+        "George Stephenson | Stephenson = 0", "John Roebling | Roebling = 0", "Dennis Ritchie | Ritchie = 0",
+        "Lise Meitner | Meitner = 0", "Hypatia = 0", "Emily Roebling = 0", "Lillian Gilbreth | Gilbreth = 0",
+        "Jack Kilby | Kilby = 0", "Robert Noyce | Noyce = 0", "Fazlur Rahman Khan | Fazlur Khan = 0"
+      ]
+    },
+
+    "texas-cities": {
+      "prompt": "Name a city in Texas",
+      "answers": [
+        "Houston = 30", "Dallas = 25", "Austin = 25", "San Antonio = 22", "College Station | CStat = 20",
+        "Fort Worth = 10", "El Paso = 8", "Bryan = 8", "Waco = 6", "Lubbock = 5", "Corpus Christi = 5", "Galveston = 5",
+        "Arlington = 4", "Plano = 4", "Amarillo = 4", "Katy = 4", "Frisco = 3", "The Woodlands | Woodlands = 3",
+        "Sugar Land = 3", "McKinney = 2", "Round Rock = 2", "Denton = 2", "Tyler = 2", "Midland = 2", "Odessa = 2",
+        "Abilene = 2", "Beaumont = 2", "Laredo = 2", "Brownsville = 2", "McAllen = 2", "San Marcos = 2",
+        "Killeen = 1", "Temple = 1", "Georgetown = 1", "Pearland = 1", "Irving = 1", "Garland = 1", "Grand Prairie = 1",
+        "Pasadena = 1", "Conroe = 1", "Huntsville = 1", "Navasota = 1", "Brenham = 1", "Nacogdoches = 1",
+        "Fredericksburg = 1", "New Braunfels = 1", "Marfa = 1", "Port Aransas = 1", "South Padre Island | South Padre = 1",
+        "Texarkana = 1", "Wichita Falls = 1", "San Angelo = 1", "Kingsville = 1", "Richardson = 1",
+        "Mesquite = 0", "League City = 0", "Kerrville = 0", "Alpine = 0", "Victoria = 0", "Lufkin = 0", "Longview = 0",
+        "Sherman = 0", "Allen = 0", "Carrollton = 0", "Lewisville = 0", "Flower Mound = 0", "Southlake = 0",
+        "Bastrop = 0", "Lockhart = 0", "Commerce = 0", "Stephenville = 0", "Prairie View = 0", "Canyon = 0",
+        "Denison = 0", "Harlingen = 0", "Edinburg = 0", "Mission = 0", "Pharr = 0", "Rockport = 0", "Port Arthur = 0",
+        "Baytown = 0", "Friendswood = 0", "Missouri City = 0", "Hempstead = 0", "Caldwell = 0", "Hearne = 0",
+        "Madisonville = 0", "Calvert = 0", "Del Rio = 0", "Eagle Pass = 0", "Uvalde = 0", "Big Spring = 0", "Pecos = 0",
+        "Fort Stockton = 0", "Dumas = 0", "Pampa = 0", "Borger = 0", "Plainview = 0", "Snyder = 0", "Sweetwater = 0",
+        "Brownwood = 0", "Gatesville = 0", "Belton = 0", "Salado = 0", "Cleburne = 0", "Granbury = 0", "Weatherford = 0",
+        "Mineral Wells = 0", "Corsicana = 0", "Ennis = 0", "Waxahachie = 0", "Palestine = 0", "Athens = 0",
+        "Jacksonville = 0", "Marshall = 0", "Paris = 0", "Greenville = 0", "Rockwall = 0", "Kyle = 0", "Buda = 0",
+        "Dripping Springs = 0", "Wimberley = 0", "Boerne = 0", "Seguin = 0", "Cuero = 0", "Bay City = 0", "Freeport = 0",
+        "Lake Jackson = 0", "Angleton = 0", "Texas City = 0"
+      ]
+    },
+
+    "renewable-energy": {
+      "prompt": "Name a renewable energy source",
+      "answers": [
+        "Solar | Solar power | Sun = 35", "Wind | Wind power = 30", "Hydroelectric | Hydro | Hydropower | Water = 20",
+        "Geothermal = 14", "Tidal = 7", "Biomass | Wood = 6", "Wave = 4", "Biofuel | Biodiesel | Ethanol = 3",
+        "Biogas | Landfill gas = 1", "Ocean thermal | OTEC = 0", "Osmotic | Salinity gradient | Blue energy = 0"
+      ]
+    },
+
+    "hand-tools": {
+      "prompt": "Name a hand tool",
+      "answers": [
+        "Hammer = 30", "Screwdriver = 25", "Wrench | Spanner = 18", "Pliers = 14", "Saw | Handsaw = 10",
+        "Tape measure | Measuring tape = 8", "Level | Spirit level = 5", "Allen key | Allen wrench | Hex key = 5",
+        "Chisel = 4", "Socket wrench | Ratchet = 4", "Mallet = 3", "Utility knife | Box cutter = 3",
+        "Crowbar | Pry bar = 3", "File = 2", "Clamp | C-clamp = 2", "Vise grips | Locking pliers = 2",
+        "Wire cutters | Diagonal cutters | Dikes = 2", "Wire strippers = 2", "Hacksaw = 2", "Sledgehammer = 2",
+        "Axe | Hatchet = 2", "Shovel = 2", "Square | Speed square | Try square = 1", "Awl = 1", "Hand plane | Plane = 1",
+        "Rake = 1", "Pickaxe = 1", "Trowel = 1", "Staple gun = 1", "Pipe wrench = 1", "Torque wrench = 1",
+        "Calipers = 1", "Scissors = 1", "Stud finder = 1", "Tin snips = 0", "Nail set = 0", "Center punch | Punch = 0",
+        "Putty knife = 0", "Rasp = 0", "Wire brush = 0", "Chalk line = 0", "Caulk gun = 0", "Hand drill | Brace = 0"
+      ]
+    },
+
+    "lab-equipment": {
+      "prompt": "Name a piece of lab equipment",
+      "answers": [
+        "Beaker = 30", "Test tube = 20", "Bunsen burner = 18", "Microscope = 18", "Erlenmeyer flask | Flask | Conical flask = 14",
+        "Pipette | Pipet = 12", "Graduated cylinder = 10", "Safety goggles | Goggles = 8", "Burette | Buret = 6",
+        "Petri dish = 6", "Oscilloscope = 6", "Multimeter = 6", "Centrifuge = 5", "Fume hood = 4", "Lab coat = 4",
+        "Balance | Scale | Analytical balance = 4", "Breadboard = 3", "Hot plate = 3", "Thermometer = 3", "Gloves = 2",
+        "Crucible tongs | Tongs = 2", "Crucible = 2", "Funnel = 2", "Ring stand | Retort stand = 2",
+        "Mortar and pestle = 2", "Volumetric flask = 2", "Spectrophotometer | Spectrometer = 2",
+        "Function generator | Signal generator = 2", "Power supply = 2", "Soldering iron = 2",
+        "Spatula | Scoopula = 1", "Watch glass = 1", "Desiccator = 1", "Autoclave = 1", "Wind tunnel = 1",
+        "Eyewash station = 1", "Magnetic stirrer | Stir bar | Stir plate = 1", "Wash bottle | Squeeze bottle = 1",
+        "3D printer = 1", "pH meter = 1", "Calorimeter = 1", "Thermocouple = 1", "Dropper | Eye dropper = 1",
+        "Stirring rod | Glass rod = 1", "Kimwipes = 1", "Logic analyzer = 0", "Cuvette = 0", "Vacuum chamber = 0",
+        "Lathe = 0", "Bench vise = 0", "Fire extinguisher = 0"
+      ]
+    },
+
+    "physics-laws": {
+      "prompt": "Name a law, equation, or principle from physics or engineering",
+      "answers": [
+        "Newton's laws | Newton's second law | Newton's first law | Newton's third law | F=ma | fma = 30",
+        "Ohm's law | V=IR = 25", "E=mc2 | E=mc² | emc2 | Mass-energy equivalence = 16", "Ideal gas law | PV=nRT | pvnrt = 12",
+        "Bernoulli's principle | Bernoulli's equation | Bernoulli = 10", "Hooke's law = 10",
+        "Conservation of energy | First law of thermodynamics = 10", "Pythagorean theorem = 8",
+        "Kirchhoff's laws | Kirchhoff's voltage law | Kirchhoff's current law | KVL | KCL = 8",
+        "Second law of thermodynamics | Entropy = 6", "Maxwell's equations = 5", "Coulomb's law = 4",
+        "Faraday's law = 4", "Archimedes' principle = 4", "Boyle's law = 4",
+        "Newton's law of universal gravitation | Law of gravity | Law of gravitation = 4",
+        "Snell's law = 3", "Pascal's law | Pascal's principle = 3", "Navier-Stokes equations | Navier-Stokes = 3",
+        "Schrodinger equation = 3", "Moore's law = 3", "Charles's law | Charles law = 2", "Gauss's law = 2",
+        "Kepler's laws = 2", "Murphy's law = 2", "Heisenberg uncertainty principle | Uncertainty principle = 2",
+        "Euler's formula | Euler's identity = 2", "Fourier's law = 1", "Lenz's law = 1", "Newton's law of cooling = 1",
+        "Stefan-Boltzmann law = 1", "Pauli exclusion principle = 1", "Ampere's law = 1", "Joule's law = 1",
+        "Le Chatelier's principle = 1", "Hubble's law = 0", "Planck's law = 0", "Biot-Savart law = 0", "Fick's law = 0",
+        "Darcy's law = 0", "Hess's law = 0", "Dalton's law = 0", "Henry's law = 0", "Beer-Lambert law = 0", "Stokes' law = 0",
+        "Third law of thermodynamics = 0", "Zeroth law of thermodynamics = 0", "Wien's law = 0", "Bragg's law = 0"
+      ]
+    },
+
+    "nasa": {
+      "prompt": "Name a NASA mission, program, or spacecraft",
+      "answers": [
+        "Apollo = 30", "Artemis = 18", "Hubble | Hubble Space Telescope = 14", "James Webb | JWST | Webb = 12",
+        "Voyager = 12", "Space Shuttle | Shuttle = 10", "Curiosity = 10", "Perseverance = 10", "Apollo 11 = 8",
+        "International Space Station | ISS = 8", "Gemini = 8", "Mercury = 8", "Apollo 13 = 5", "Opportunity = 5",
+        "Challenger = 4", "Cassini | Cassini-Huygens = 4", "New Horizons = 4", "Columbia = 3", "Discovery = 3",
+        "Atlantis = 3", "Skylab = 3", "Juno = 3", "Pioneer = 3", "Viking = 3", "Spirit = 3", "Ingenuity = 3", "Orion = 3",
+        "Endeavour | Endeavor = 2", "Sojourner = 2", "Galileo = 2", "Kepler = 2", "DART = 2",
+        "Parker Solar Probe | Parker = 2", "Space Launch System | SLS = 2", "Chandra = 1", "Spitzer = 1",
+        "OSIRIS-REx = 1", "Europa Clipper = 1", "Psyche = 1", "Dawn = 1", "Deep Impact = 1", "InSight = 1",
+        "Phoenix = 1", "Mars Pathfinder | Pathfinder = 1", "Landsat = 1", "Explorer 1 = 1",
+        "Mars Reconnaissance Orbiter | MRO = 1", "Lucy = 0", "MESSENGER = 0", "Magellan = 0", "Stardust = 0",
+        "Lunar Reconnaissance Orbiter | LRO = 0", "TESS = 0", "Ranger = 0", "Surveyor = 0", "Dragonfly = 0",
+        "Mars Odyssey | Odyssey = 0", "MAVEN = 0", "Genesis = 0", "GRAIL = 0", "Ulysses = 0", "WISE = 0"
+      ]
+    },
+
+    "polygons": {
+      "prompt": "Name a polygon",
+      "answers": [
+        "Triangle = 30", "Square = 25", "Pentagon = 18", "Hexagon = 18", "Octagon = 14", "Rectangle = 14",
+        "Parallelogram = 8", "Heptagon | Septagon = 6", "Decagon = 6", "Rhombus = 6", "Trapezoid | Trapezium = 6",
+        "Quadrilateral = 5", "Nonagon | Enneagon = 4", "Dodecagon = 4", "Kite = 3", "Hendecagon | Undecagon = 1",
+        "Icosagon = 1", "Chiliagon = 1", "Pentagram | Star = 1", "Myriagon = 0", "Megagon = 0", "Tridecagon = 0",
+        "Tetradecagon = 0", "Pentadecagon = 0", "Hexadecagon = 0", "Heptadecagon = 0", "Octadecagon = 0",
+        "Enneadecagon = 0", "Triacontagon = 0", "Hectogon = 0", "Googolgon = 0", "Apeirogon = 0"
+      ]
+    },
+
+    "metals": {
+      "prompt": "Name a metal or alloy",
+      "answers": [
+        "Steel = 30", "Iron = 22", "Aluminum | Aluminium = 22", "Copper = 18", "Gold = 15", "Silver = 12", "Titanium = 12",
+        "Bronze = 8", "Brass = 8", "Stainless steel = 8", "Nickel = 4", "Zinc = 4", "Tin = 4", "Lead = 4", "Platinum = 4",
+        "Tungsten = 4", "Cast iron = 3", "Chromium | Chrome = 3", "Mercury = 2", "Magnesium = 2", "Cobalt = 2",
+        "Pewter = 2", "Solder = 2", "Sterling silver = 1", "Inconel = 1", "Nitinol = 1", "Wrought iron = 1",
+        "Carbon steel = 1", "Tool steel = 1", "Damascus steel = 1", "Rose gold = 1", "White gold = 1", "Lithium = 1",
+        "Sodium = 1", "Uranium = 1", "Palladium = 1", "Gallium = 1", "Nichrome = 1", "Invar = 0", "Duralumin = 0",
+        "Monel = 0", "Babbitt = 0", "Electrum = 0", "Potassium = 0", "Calcium = 0", "Plutonium = 0", "Rhodium = 0",
+        "Iridium = 0", "Osmium = 0", "Beryllium = 0", "Vanadium = 0", "Molybdenum = 0", "Manganese = 0", "Bismuth = 0",
+        "Indium = 0", "Cadmium = 0", "Niobium = 0", "Tantalum = 0", "Zirconium = 0", "Hafnium = 0", "Rhenium = 0",
+        "Galinstan = 0", "Constantan = 0", "Alnico = 0", "Mild steel = 0", "Gunmetal = 0", "Bell metal = 0",
+        "Hastelloy = 0", "Stellite = 0", "Kovar = 0", "Field's metal = 0", "Wood's metal = 0", "Mu-metal = 0",
+        "Cupronickel = 0"
+      ]
+    },
+
+    "planets": {
+      "prompt": "Name a planet or dwarf planet in our solar system",
+      "answers": [
+        "Earth = 30", "Mars = 28", "Jupiter = 22", "Saturn = 20", "Mercury = 18", "Venus = 18", "Pluto = 15",
+        "Neptune = 12", "Uranus = 10", "Ceres = 3", "Eris = 2", "Haumea = 1", "Makemake = 1"
+      ]
+    }
+  }
+}
