@@ -7,8 +7,21 @@ export const TIERS = [
   { id: 'schooler', name: 'Schooler', min: 151, max: 250,      color: '#5ad1e6', emoji: '🐟', line: 'Schooler. Blending into the Career Fair line.' },
   { id: 'rare',     name: 'Rare',     min: 251, max: 350,      color: '#ff4d6d', emoji: '🪸', line: 'Rare. Industry Nights material.' },
   { id: 'deep',     name: 'Deep cut', min: 351, max: 449,      color: '#a08cff', emoji: '🦑', line: 'Deep cut. EnVision keynote energy.' },
-  { id: 'trench',   name: 'Trench',   min: 450, max: Infinity, color: '#ffb547', emoji: '🦐', line: 'One in a SECrillion. Council-certified absurd.' },
+  { id: 'trench',   name: 'One in a SECrillion', min: 450, max: Infinity, color: '#ffb547', emoji: '🦐', line: 'One in a SECrillion. Council-certified absurd.' },
 ];
+
+// An answer can be ranked by depth level instead of a raw seed ("Tristan Forks = plankton").
+// Each seed lands the answer in that level's band when the prompt's top answer is a plankton (30):
+// plankton 10 pts · schooler 30 · rare 42 · deep cut 62 · one in a SECrillion 82.
+export const LEVELS = { plankton: 30, schooler: 18, rare: 12, 'deep cut': 5, secrillion: 1 };
+// Lowest seed that still counts as each level, for turning raw seeds into levels.
+const LEVEL_FLOORS = [['plankton', 20], ['schooler', 13], ['rare', 7], ['deep cut', 2]];
+const LEVEL_ALIASES = { deep: 'deep cut', deepcut: 'deep cut', 'one in a secrillion': 'secrillion' };
+const levelSeed = (word) => {
+  const w = word.toLowerCase().replace(/\s+/g, ' ').trim();
+  return LEVELS[LEVEL_ALIASES[w] || w];
+};
+export const levelFor = (seed) => LEVEL_FLOORS.find(([, floor]) => seed >= floor)?.[0] ?? 'secrillion';
 export const MISS = { id: 'miss', name: 'Miss', color: '#4c5c70', emoji: '⬛' };
 
 export const tierForTotal = (score) => TIERS.find((t) => score <= t.max) || TIERS[TIERS.length - 1];
@@ -32,12 +45,18 @@ export function matchKey(s) {
   return n.length > 3 && n.endsWith('s') && !n.endsWith('ss') ? n.slice(0, -1) : n;
 }
 
-// "Name | alias | alias = 40"  or  { a: "Name", aka: ["alias"], n: 40 }
+// "Name | alias | alias = 40", "Name | alias = rare"  or  { a: "Name", aka: ["alias"], n: 40 }
 export function parseAnswer(entry) {
   if (typeof entry === 'string') {
-    const m = entry.match(/^(.*?)\s*=\s*(\d+)\s*$/);
+    let m = entry.match(/^(.*?)\s*=\s*(\d+)\s*$/);
+    let n = m ? Number(m[2]) : null;
+    if (!m) {
+      // A level word only counts if it's a real level, so "PV=nRT" stays a name.
+      const lm = entry.match(/^(.*?)\s*=\s*([a-z][a-z ]*)\s*$/i);
+      if (lm && levelSeed(lm[2]) != null) { m = lm; n = levelSeed(lm[2]); }
+    }
     const names = (m ? m[1] : entry).split('|').map((s) => s.trim()).filter(Boolean);
-    return { a: names[0], aka: names.slice(1), n: m ? Number(m[2]) : 1, key: normalize(names[0]) };
+    return { a: names[0], aka: names.slice(1), n: n ?? 1, key: normalize(names[0]) };
   }
   return { a: entry.a, aka: entry.aka || [], n: entry.n ?? 1, key: normalize(entry.a) };
 }

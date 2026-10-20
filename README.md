@@ -52,6 +52,7 @@ Each prompt is a list of accepted answers, and each answer has a **seed count**:
 - If what a player types isn't on the list, they're told and can try again until the timer runs out. So **the list is the rules**. Be generous: list every valid answer you can think of, and mark the obscure ones `= 0`.
 - Matching ignores case, accents, punctuation, a leading "the" and trailing plurals. Any name or alias counts, so SHPE and Society of Hispanic Professional Engineers are the same answer.
 - A near miss isn't scored right away. Like Krillion's answer corrections, the game puts the closest answer in the box ("Did you mean Society of Hispanic Professional Engineers?") and the player presses Enter to dive with it or keeps typing. Near misses are typos and swapped letters (SPHE), word-form slips ("Engineering" for "Engineers"), a missing word ("Society of Hispanic Engineers") and the start of exactly one answer's name ("Ellicott Dredge"). An alias that's only a letter or two off a different answer can trigger a surprising suggestion, so keep aliases distinct.
+- Instead of a number, an answer can name its depth level: `Tristan Forks = plankton`. The levels are `plankton`, `schooler`, `rare`, `deep cut` and `secrillion` (One in a SECrillion). They score 10, 30, 42, 62 and 82 points, as long as the prompt has at least one `plankton` answer.
 - Plain objects work too: `{ "a": "Zachry", "aka": ["ZACH"], "n": 30 }`.
 
 ### Scheduling

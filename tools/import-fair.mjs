@@ -11,7 +11,7 @@
 // FAME below (well-known = common answer = shallow) or 1 if unknown, and are printed so
 // someone can adjust how niche they really are.
 import { readFileSync, writeFileSync } from 'node:fs';
-import { parseAnswer, matchKey } from '../js/scoring.js';
+import { parseAnswer, matchKey, levelFor } from '../js/scoring.js';
 
 const FILE = new URL('../data/questions.json', import.meta.url);
 const API = 'https://tamu-csm.symplicity.com/api/v3/external-events';
@@ -78,7 +78,7 @@ for (const src of args) {
 }
 
 existing.sort((x, y) => y.n - x.n || x.a.localeCompare(y.a));
-const line = (a) => `        ${JSON.stringify([a.a, ...a.aka].join(' | ') + ` = ${a.n}`)}`;
+const line = (a) => `        ${JSON.stringify([a.a, ...a.aka].join(' | ') + ` = ${levelFor(a.n)}`)}`;
 const block = `    ${JSON.stringify(promptId)}: {
       "prompt": ${JSON.stringify(bank.prompts[promptId]?.prompt || 'Name a company at the Fall 2026 SEC Career Fair')},
       "answers": [
@@ -94,4 +94,4 @@ JSON.parse(out); // never write broken JSON
 writeFileSync(FILE, out);
 
 console.log(`${promptId}: ${existing.length} companies (${added.length} new)`);
-for (const a of added) console.log(`  + ${a.a}${a.aka.length ? ` (${a.aka.join(', ')})` : ''} = ${a.n}`);
+for (const a of added) console.log(`  + ${a.a}${a.aka.length ? ` (${a.aka.join(', ')})` : ''} = ${levelFor(a.n)}`);
