@@ -275,6 +275,8 @@ main { position: fixed; inset: 0; z-index: 2; }
 .curve .you-label { fill: var(--pink); font-weight: 600; letter-spacing: .1em; }
 .better { margin: 8px 0 0; font-size: 12px; letter-spacing: .3em; color: var(--cyan); }
 .better.pending { color: var(--muted); margin-top: 18px; }
+.place { margin: 14px 0 0; font-size: 13px; letter-spacing: .3em; color: var(--ink-2); }
+.place b { font-family: var(--num); font-size: 30px; letter-spacing: .02em; font-weight: 400; color: var(--pink); vertical-align: -3px; }
 
 .res section { margin-top: 44px; }
 .res h3 {

@@ -4,7 +4,7 @@ import { renderKrill, krillURL, spriteURL, SKINS } from './sprites.js';
 import { findAnswer, matchAnswer, pointsFor, tierForPrompt } from './scoring.js';
 import { createStore } from './store.js';
 import { loadBank, diveNumberFor, dateForDive, dailyIds, pick } from './bank.js';
-import { renderResults, distribution, shareText, esc, meters } from './results.js';
+import { renderResults, distribution, placement, shareText, esc, meters } from './results.js';
 import { sfx, setSound } from './audio.js';
 
 const $ = (s, root = document) => root.querySelector(s);
@@ -245,8 +245,10 @@ async function showResults(run, fresh = false) {
   el.innerHTML = '<p class="loading">SURFACING…</p>';
   el.scrollTop = 0;
   const rows = await withTimeout(store.scores(run.key), 3000, null);
-  const dist = distribution(rows?.map((r) => r.score), run.total);
-  renderResults(el, { run, dist, live: store.live });
+  const scores = rows?.map((r) => r.score) ?? null;
+  const dist = distribution(scores, run.total);
+  const place = placement(scores, run.total);
+  renderResults(el, { run, dist, place, live: store.live });
   if (fresh) sfx.done();
   el.querySelector('[data-act="share"]').onclick = async (e) => {
     const text = shareText(run);

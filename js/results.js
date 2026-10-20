@@ -21,6 +21,20 @@ export function distribution(scores, total) {
     n: scores.length,
   };
 }
+// Where this score lands among everyone who has played the dive (ties share a rank).
+// `scores` normally already holds the player's own score; if it didn't land yet, count it in.
+export function placement(scores, total) {
+  if (!scores) return null;
+  const all = scores.includes(total) ? scores : [...scores, total];
+  return { rank: 1 + all.filter((s) => s > total).length, of: all.length };
+}
+
+function placeLine(place) {
+  if (!place) return `<p class="better pending">YOUR RANK SHOWS UP WHEN YOU'RE ONLINE</p>`;
+  if (place.of === 1) return `<p class="place">YOU'RE THE FIRST DIVER · <b>#1</b> OF 1</p>`;
+  return `<p class="place">YOU PLACED <b>#${place.rank}</b> OF ${place.of.toLocaleString()} DIVERS</p>`;
+}
+
 function std(a) {
   const m = a.reduce((x, y) => x + y, 0) / a.length;
   return Math.sqrt(a.reduce((x, y) => x + (y - m) ** 2, 0) / a.length) || 1;
@@ -96,7 +110,7 @@ function catchList(results) {
   }).join('');
 }
 
-export function renderResults(el, { run, dist, live }) {
+export function renderResults(el, { run, dist, place, live }) {
   const tier = tierForTotal(run.total);
   el.innerHTML = `
   <div class="res">
@@ -108,12 +122,13 @@ export function renderResults(el, { run, dist, live }) {
       <span class="big" data-count="${run.total}">0</span>
       <span class="meters">${meters(run.total)}</span>
     </div>
+    ${placeLine(place)}
     ${dist ? `<div class="dist">
       <div class="ghost-logo" aria-hidden="true">${esc(CONFIG.name.toUpperCase())}</div>
       ${curveSVG(dist, run.total)}
     </div>
     <p class="better">BETTER THAN ${dist.pct}% OF ${esc(run.audience)}</p>`
-    : `<p class="better pending">RANKING UNLOCKS ONCE ${MIN_SCORES} DIVERS HAVE FINISHED</p>`}
+    : place ? `<p class="better pending">THE DEPTH CHART APPEARS ONCE ${MIN_SCORES} DIVERS HAVE FINISHED</p>` : ''}
 
     <section>
       <h3>DIVE LOG <span>DEEPER = RARER</span></h3>
