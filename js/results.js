@@ -96,7 +96,7 @@ function catchList(results) {
   }).join('');
 }
 
-export function renderResults(el, { run, dist, board, live }) {
+export function renderResults(el, { run, dist, live }) {
   const tier = tierForTotal(run.total);
   el.innerHTML = `
   <div class="res">
@@ -114,11 +114,6 @@ export function renderResults(el, { run, dist, board, live }) {
     </div>
     <p class="better">BETTER THAN ${dist.pct}% OF ${esc(run.audience)}</p>`
     : `<p class="better pending">RANKING UNLOCKS ONCE ${MIN_SCORES} DIVERS HAVE FINISHED</p>`}
-
-    ${board && board.length ? `<section>
-      <h3>PARTY BOARD <span>${board.length} DIVER${board.length === 1 ? '' : 'S'}</span></h3>
-      <ol class="board">${board.map((b, i) => `<li class="${b.me ? 'on' : ''}"><span>${i + 1}</span><span>${esc(b.name || 'anon')}</span><span>${b.score}</span></li>`).join('')}</ol>
-    </section>` : ''}
 
     <section>
       <h3>DIVE LOG <span>DEEPER = RARER</span></h3>
@@ -157,6 +152,6 @@ export function renderResults(el, { run, dist, board, live }) {
 
 export function shareText(run) {
   const icons = run.results.map((r) => tierForPrompt(r.points).emoji).join('');
-  const where = run.number ? `#${run.number}` : run.kind === 'party' ? 'party' : run.kind;
+  const where = run.number ? `#${run.number}` : run.kind;
   return `${CONFIG.name} ${where} · ${run.total} (${meters(run.total)})\n${icons}\n${location.origin}${location.pathname}`;
 }

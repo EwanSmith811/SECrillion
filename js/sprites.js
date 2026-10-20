@@ -101,19 +101,7 @@ const SPRITES = {
       'a...a',
     ],
   },
-  puffer: {
-    pal: { a: '#f2c14e', b: '#c8902a', w: '#ffffff', k: '#1a0f1a', s: '#fff1c2' },
-    rows: [
-      '...b..b.b..',
-      '..aaaaaaa..',
-      '.aaaaaaaaab',
-      'bawkaaaaaa.',
-      '.akkaasaaab',
-      '.aasssssaa.',
-      '..aaaaaaab.',
-      '...b..b....',
-    ],
-  },
+
 };
 
 export const SKINS = {

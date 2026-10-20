@@ -57,7 +57,7 @@ Each prompt is a list of accepted answers, and each answer has a **seed count**:
 
 ### Scheduling
 
-- `pool` lists the SEC / Aggie-engineering prompts. Daily dives, Unlimited and Puffer Party only draw from it. The general engineering prompts (elements, polygons, …) are only reachable through their themed packs.
+- `pool` lists the SEC / Aggie-engineering prompts. Daily dives and Unlimited only draw from it. The general engineering prompts (elements, polygons, …) are only reachable through their themed packs.
 
 - `daily[0]` is Dive #1, `daily[1]` is Dive #2, and so on, counted from `launchDate`. Once the schedule runs out, each day gets a random set of prompts, seeded by the date so everyone gets the same ones.
 - `packs` show up under **Themed Packs**. Each play draws 7 of the pack's prompts.
@@ -67,7 +67,7 @@ Each prompt is a list of accepted answers, and each answer has a **seed count**:
 
 - When a player gives an accepted answer, `/api/answer` adds one to that prompt's tally in `answer_counts`. The server checks the answer against its own copy of `questions.json`, so junk can't get in, and what players type is never stored.
 - At the start of a dive, `/api/counts` returns those tallies. They're added to your seed counts, so rarity makes sense from day one and then follows real play.
-- `/api/score` and `/api/scores` drive the "better than X%" curve, which appears only once 5 real scores exist (no estimates) and the Puffer Party board.
+- `/api/score` and `/api/scores` drive the "better than X%" curve, which appears only once 5 real scores exist (no estimates).
 - There's no rate limiting, so a determined player could inflate tallies. If that ever matters, add Vercel's firewall rate limits to `/api/*`.
 
 ## The ESO prompt

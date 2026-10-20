@@ -67,16 +67,12 @@ function dailySpec(n) {
   };
 }
 const unlimitedSpec = () => ({
-  kind: 'unlimited', key: 'unlimited', ids: pick(bank.pool, CONFIG.promptsPerDive, Math.random() * 1e9 | 0),
+  kind: 'unlimited', key: 'unlimited', ids: pick(bank.pool, CONFIG.promptsPerDive, Math.random() * 1e9 | 0, [], bank.apart),
   headline: 'UNLIMITED DIVE COMPLETE', audience: 'UNLIMITED DIVERS',
 });
 const packSpec = (p) => ({
-  kind: 'pack', key: `pack-${p.id}`, ids: pick(p.prompts.filter((id) => bank.prompts[id]), CONFIG.promptsPerDive, Math.random() * 1e9 | 0, bank.ids),
+  kind: 'pack', key: `pack-${p.id}`, ids: pick(p.prompts.filter((id) => bank.prompts[id]), CONFIG.promptsPerDive, Math.random() * 1e9 | 0, bank.ids, bank.apart),
   headline: `${p.name.toUpperCase()} COMPLETE`, audience: `${p.name.toUpperCase()} DIVERS`,
-});
-const partySpec = (code, name) => ({
-  kind: 'party', key: `party-${code}`, ids: pick(bank.pool, CONFIG.promptsPerDive, `party-${code}`), name,
-  headline: `PARTY ${code} COMPLETE`, audience: 'YOUR PARTY',
 });
 
 // ---------- the dive ----------
@@ -238,7 +234,7 @@ async function finish() {
   if (spec.number) { history[spec.key] = run; save('history', history); }
   plays.push({ date: run.date, total: run.total, kind: spec.kind, number: spec.number });
   save('plays', plays);
-  await withTimeout(store.recordScore(spec.key, run.total, spec.name), 2000);
+  await withTimeout(store.recordScore(spec.key, run.total), 2000);
   dive = null;
   showResults(run, true);
 }
@@ -250,12 +246,7 @@ async function showResults(run, fresh = false) {
   el.scrollTop = 0;
   const rows = await withTimeout(store.scores(run.key), 3000, null);
   const dist = distribution(rows?.map((r) => r.score), run.total);
-  let board = null;
-  if (run.kind === 'party' && rows) {
-    board = rows.filter((r) => r.name).sort((a, b) => b.score - a.score).slice(0, 25)
-      .map((r) => ({ ...r, me: r.name === run.name && r.score === run.total }));
-  }
-  renderResults(el, { run, dist, board, live: store.live });
+  renderResults(el, { run, dist, live: store.live });
   if (fresh) sfx.done();
   el.querySelector('[data-act="share"]').onclick = async (e) => {
     const text = shareText(run);
@@ -314,36 +305,6 @@ function openPacks() {
       <span class="right">PLAY ▼</span>
     </button>`).join('')}</div>`, (body) => {
     body.querySelectorAll('[data-i]').forEach((b) => (b.onclick = () => { modal.close(); startDive(packSpec(bank.packs[b.dataset.i])); }));
-  });
-}
-
-function openParty(prefill = '') {
-  openModal('PUFFER PARTY', `
-    <p>Everyone with the same code gets the same 7 prompts. ${store.live ? 'Scores land on a shared party board.' : 'Compare scores by sharing your result.'}</p>
-    <label class="field"><span>YOUR NAME</span><input id="pName" maxlength="20" value="${esc(prefs.name)}" placeholder="Reveille"></label>
-    <label class="field"><span>PARTY CODE</span><input id="pCode" maxlength="6" value="${esc(prefill)}" placeholder="ABC123" style="text-transform:uppercase"></label>
-    <div class="row">
-      <button class="btn btn-sm2" id="pJoin">JOIN ▼</button>
-      <button class="btn btn-sm2" id="pHost">HOST NEW</button>
-    </div>
-    <p class="dim" id="pLink"></p>`, (body) => {
-    const go = (code) => {
-      prefs.name = $('#pName', body).value.trim().slice(0, 20);
-      save('prefs', prefs);
-      modal.close();
-      startDive(partySpec(code, prefs.name));
-    };
-    $('#pJoin', body).onclick = () => {
-      const code = $('#pCode', body).value.trim().toUpperCase().replace(/[^A-Z0-9]/g, '');
-      if (code.length >= 4) go(code); else $('#pCode', body).focus();
-    };
-    $('#pHost', body).onclick = () => {
-      const code = Array.from({ length: 6 }, () => 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'[Math.random() * 32 | 0]).join('');
-      $('#pCode', body).value = code;
-      const link = `${location.origin}${location.pathname}?party=${code}`;
-      navigator.clipboard?.writeText(link).catch(() => {});
-      $('#pLink', body).innerHTML = `Invite link copied: <code>${esc(link)}</code><br>Press JOIN when you're ready to dive.`;
-    };
   });
 }
 
@@ -414,7 +375,7 @@ function openMenu() {
 }
 
 const PRIVACY = `<p>${esc(CONFIG.name)} has no accounts. Your scores, history and settings stay in this browser's local storage.</p>
-  <p>${store.live ? 'To work out how rare each answer is, we keep an anonymous tally of which listed answers people give, plus each final score (with the party name you choose, if you join a Puffer Party). What you type is never stored as-is.' : 'In this build nothing you type leaves your device.'}</p>`;
+  <p>${store.live ? 'To work out how rare each answer is, we keep an anonymous tally of which listed answers people give, plus each final score. What you type is never stored as-is.' : 'In this build nothing you type leaves your device.'}</p>`;
 
 const ABOUT = `<p><b>${esc(CONFIG.name)}</b> is the daily dive from the ${esc(CONFIG.org)}.</p>
   <p>Since ${CONFIG.founded}, SEC has been the voice of engineering students at Texas A&amp;M. It works with the College of Engineering, raises engineering awareness, and helps students grow professionally.</p>
@@ -436,7 +397,6 @@ function bind() {
   $('#archiveBtn').onclick = openArchive;
   $('#packsBtn').onclick = openPacks;
   $('#unlimitedBtn').onclick = () => startDive(unlimitedSpec());
-  $('#partyBtn').onclick = () => openParty();
   $('#privacyLink').onclick = (e) => { e.preventDefault(); openModal('PRIVACY', PRIVACY); };
   $('#settingsBtn').onclick = openSettings;
   $('#skinBtn').onclick = openSkins;
@@ -472,7 +432,6 @@ function bind() {
     ({
       daily: () => { const h = saved(today); h ? showResults(h) : startDive(dailySpec(today)); },
       unlimited: () => startDive(unlimitedSpec()),
-      party: () => { surface(); openParty(); },
       packs: () => { surface(); openPacks(); },
       archive: () => { surface(); openArchive(); },
       howto: () => openModal('HOW TO PLAY', HOWTO),
@@ -484,7 +443,6 @@ function bind() {
 
 async function init() {
   $('#howtoBody').innerHTML = HOWTO;
-  $('#partyBtn img').src = spriteURL('puffer', 3);
   applyPrefs();
   bind();
   show('title');
@@ -498,8 +456,6 @@ async function init() {
     return;
   }
   refreshTitle();
-  const party = new URLSearchParams(location.search).get('party');
-  if (party) openParty(party.toUpperCase().slice(0, 6));
 }
 
 init();

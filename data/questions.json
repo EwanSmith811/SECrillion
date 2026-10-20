@@ -4,10 +4,13 @@
   "_pool": "Daily dives, Unlimited and Puffer Party only draw from these SEC / Aggie-engineering prompts. Everything else is reachable only through its themed pack.",
   "pool": ["eb-members", "sec-committees", "sec-events", "eso", "career-fair-s26", "career-fair-f26", "engineering-majors", "engineering-buildings", "course-prefixes", "campus-buildings", "aggie-traditions", "aggie-slang", "sec-schools"],
 
+  "_apart": "Prompts in the same group never share a dive.",
+  "apart": [["career-fair-f26", "career-fair-s26"]],
+
   "daily": [
     ["sec-committees", "eso", "engineering-buildings", "aggie-traditions", "course-prefixes", "sec-schools", "engineering-majors"],
-    ["sec-events", "career-fair-f26", "engineering-majors", "campus-buildings", "career-fair-s26", "aggie-slang", "eso"],
-    ["career-fair-s26", "eso", "sec-committees", "course-prefixes", "engineering-buildings", "aggie-traditions", "career-fair-f26"],
+    ["sec-events", "career-fair-f26", "engineering-majors", "campus-buildings", "eb-members", "aggie-slang", "eso"],
+    ["career-fair-f26", "eso", "sec-committees", "course-prefixes", "engineering-buildings", "aggie-traditions", "eb-members"],
     ["career-fair-f26", "sec-committees", "sec-events", "engineering-buildings", "campus-buildings", "aggie-slang", "sec-schools"]
   ],
 

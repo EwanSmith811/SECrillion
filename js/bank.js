@@ -15,7 +15,8 @@ export async function loadBank() {
   if (raw.pool) check(raw.pool, 'pool');
   // Daily dives, Unlimited and parties draw only from the pool; other prompts live in themed packs.
   const pool = (raw.pool || ids).filter((id) => prompts[id]);
-  return { prompts, ids, pool, daily: raw.daily || [], packs: raw.packs || [] };
+  const apart = (raw.apart || []).map((g) => g.filter((id) => prompts[id]));
+  return { prompts, ids, pool, apart, daily: raw.daily || [], packs: raw.packs || [] };
 }
 
 const midnight = (d) => new Date(d.getFullYear(), d.getMonth(), d.getDate());
@@ -41,23 +42,25 @@ export function rng(seed) {
 }
 
 // Pick `count` ids from `pool` (seeded), topping up from `fallback` if the pool is short.
-export function pick(pool, count, seed, fallback = []) {
+// `apart` lists groups of prompts too alike to share a dive (e.g. two career fairs); only one of each group is used.
+export function pick(pool, count, seed, fallback = [], apart = []) {
   const r = rng(seed);
   const shuffle = (arr) => {
     const a = [...arr];
     for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
     return a;
   };
-  const chosen = shuffle(pool).slice(0, count);
-  for (const id of shuffle(fallback)) {
+  const clashes = (id, chosen) => apart.some((g) => g.includes(id) && chosen.some((c) => c !== id && g.includes(c)));
+  const chosen = [];
+  for (const id of [...shuffle(pool), ...shuffle(fallback)]) {
     if (chosen.length >= count) break;
-    if (!chosen.includes(id)) chosen.push(id);
+    if (!chosen.includes(id) && !clashes(id, chosen)) chosen.push(id);
   }
   return chosen;
 }
 
 export function dailyIds(bank, n) {
   const scheduled = bank.daily[n - 1];
-  if (scheduled) return pick(scheduled, CONFIG.promptsPerDive, `daily-${n}`, bank.pool).sort((a, b) => scheduled.indexOf(a) - scheduled.indexOf(b));
-  return pick(bank.pool, CONFIG.promptsPerDive, `daily-${n}`);
+  if (scheduled) return pick(scheduled, CONFIG.promptsPerDive, `daily-${n}`, bank.pool, bank.apart).sort((a, b) => scheduled.indexOf(a) - scheduled.indexOf(b));
+  return pick(bank.pool, CONFIG.promptsPerDive, `daily-${n}`, [], bank.apart);
 }

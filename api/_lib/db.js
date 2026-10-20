@@ -12,7 +12,7 @@ export async function db() {
   return client;
 }
 
-export const DIVE_KEY = /^(dive-\d{1,5}|unlimited|pack-[a-z0-9-]{1,30}|party-[A-Z0-9]{4,6})$/;
+export const DIVE_KEY = /^(dive-\d{1,5}|unlimited|pack-[a-z0-9-]{1,30})$/;
 
 export function fail(res, status, error) {
   res.status(status).json({ error });
