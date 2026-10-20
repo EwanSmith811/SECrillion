@@ -79,3 +79,15 @@ Each prompt is a list of accepted answers, and each answer has a **seed count**:
 | 0 | Niche | graduate associations, advisory councils, small technical chapters |
 
 No org publishes a member count. The tiers are estimates anchored on these data points: SPE (1,300+ members in 2015), SHPE (National Large Chapter of the Year in 2019 and 2021), SWE (300+ active members) and PAID (called one of A&M's largest orgs). SEC officers should adjust them, and once the database is live, real answers take over.
+
+## The career fair prompt
+
+`career-fair-f26` asks players to "Name a company at the Fall 2026 SEC Career Fair". Seeds rank how niche each company is: 20–30 for household names (TI, NASA, Verizon), 10–15 for big engineering employers, 2–8 for companies known in their industry, and 0–1 for niche ones.
+
+HireAggies only shows a fair's employer list publicly while the fair is upcoming. The main fair (Sept 9–10) is over, so the current list comes from the SEC Career Discovery Fair (Nov 17) plus companies confirmed for the main fair. To merge in the full main-fair roster:
+
+1. Log in to HireAggies, open the SEC Fall 2026 fair's employer list, and set **Show 250**.
+2. Copy the company names into a text file, one per line.
+3. Run `node tools/import-fair.mjs main-fair.txt`.
+
+Companies already in the prompt keep their ranking. New ones are seeded by name recognition (or 1 if unknown) and listed so you can adjust them. While a fair is still upcoming, you can import it directly by its HireAggies nickname, e.g. `node tools/import-fair.mjs sec_f26_cdf`.

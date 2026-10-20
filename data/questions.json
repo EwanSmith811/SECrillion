@@ -5,12 +5,12 @@
     ["sec-committees", "aggie-traditions", "programming-languages", "campus-buildings", "bridge-types", "greek-letters", "sec-schools"],
     ["sec-events", "engineering-majors", "elements", "texas-cities", "famous-engineers", "logic-gates", "career-fair-companies"],
     ["sec-divisions", "eso", "renewable-energy", "physics-laws", "polygons", "metals", "lab-equipment"],
-    ["sec-committees", "career-fair-companies", "simple-machines", "nasa", "hand-tools", "planets", "aggie-slang"]
+    ["career-fair-f26", "sec-committees", "simple-machines", "nasa", "hand-tools", "planets", "aggie-slang"]
   ],
 
   "packs": [
     { "id": "sec-insider", "name": "SEC Insider", "blurb": "Committees, divisions, events — how well do you know the Council?",
-      "prompts": ["sec-committees", "sec-divisions", "sec-events", "eso", "career-fair-companies", "engineering-majors", "campus-buildings"] },
+      "prompts": ["sec-committees", "sec-divisions", "sec-events", "eso", "career-fair-f26", "engineering-majors", "campus-buildings"] },
     { "id": "aggieland", "name": "Aggieland", "blurb": "Traditions, buildings, slang and the other SEC.",
       "prompts": ["aggie-traditions", "aggie-slang", "campus-buildings", "sec-schools", "engineering-majors", "texas-cities", "famous-engineers"] },
     { "id": "lab-rats", "name": "Lab Rats", "blurb": "Elements, units, laws and the stuff on the lab bench.",
@@ -22,6 +22,62 @@
   ],
 
   "prompts": {
+    "career-fair-f26": {
+      "prompt": "Name a company at the Fall 2026 SEC Career Fair",
+      "_source": "HireAggies public roster for the SEC Career Discovery Fair (Fall 2026) plus companies confirmed for the main Sept 9-10 fair (Textron, CACI). Add the full main-fair roster with tools/import-fair.mjs. Seeds rank nicheness: 20-30 household names, 10-15 big engineering employers, 2-8 industry-known, 0-1 niche.",
+      "answers": [
+        "Texas Instruments | TI = 30",
+        "NASA Johnson Space Center | NASA | Johnson Space Center | JSC = 30",
+        "Verizon = 25",
+        "Dow Chemical | Dow = 22",
+        "RTX | Raytheon | Raytheon Technologies = 20",
+        "U.S. Navy | America's Navy | Navy | US Navy = 15",
+        "L3Harris Technologies | L3Harris | L3 Harris = 15",
+        "Textron | Bell Textron = 12",
+        "Marathon Petroleum | Marathon | Marathon Petroleum Company = 12",
+        "Texas Department of Transportation | TxDOT = 10",
+        "Nucor = 8",
+        "ABB = 8",
+        "Kimley-Horn | Kimley-Horn & Associates | Kimley Horn = 7",
+        "OxyChem | Occidental Chemical | Oxy = 6",
+        "Freese and Nichols | Freese & Nichols = 6",
+        "HDR | HDR Engineering = 6",
+        "Daikin | Daikin Comfort Technologies = 6",
+        "CACI = 5",
+        "American Electric Power | AEP = 5",
+        "Wood | Wood PLC = 4",
+        "U.S. Department of the Interior | Department of the Interior | Depart of the Interior | DOI = 4",
+        "Sazerac = 3",
+        "GAF = 3",
+        "Tenaris = 3",
+        "CB&I | CBI | Chicago Bridge & Iron = 3",
+        "Stress Engineering Services | Stress Engineering = 3",
+        "Pape-Dawson Engineers | Pape-Dawson | Pape Dawson = 3",
+        "Lower Colorado River Authority | LCRA = 3",
+        "Naval Surface Warfare Center Carderock | NSWC Carderock | Carderock = 2",
+        "Teacher Retirement System of Texas | TRS = 2",
+        "Hoffman Construction | Hoffman = 2",
+        "Sulzer Turbo Services | Sulzer = 2",
+        "GHD = 2",
+        "LJA Engineering | LJA = 2",
+        "Orion Marine Group | Orion Marine = 1",
+        "Ketjen | Ketjen Corporation = 1",
+        "Harvest Midstream | Harvest Midstream Company = 1",
+        "HMH = 1",
+        "Atlas Energy Solutions | Atlas Energy = 1",
+        "Quiddity Engineering | Quiddity = 1",
+        "Walker Partners = 1",
+        "Othon Consulting Engineers | Othon | Othon, Inc. Consulting Engineers = 0",
+        "Elevation Land Solutions = 0",
+        "Evers and Sons | Evers & Sons | Evers and Sons, Inc = 0",
+        "GMcivil | GM Civil = 0",
+        "Proceanic | Proceanic LLC = 0",
+        "Ragle | Ragle Inc = 0",
+        "Smith Seckman Reid | SSR = 0",
+        "WR Transformers | WR Transformers Corp. = 0"
+      ]
+    },
+
     "sec-committees": {
       "prompt": "Name a Student Engineers' Council committee",
       "answers": [
