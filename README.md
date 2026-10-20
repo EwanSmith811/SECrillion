@@ -55,6 +55,8 @@ Each prompt is a list of accepted answers, and each answer has a **seed count**:
 
 ### Scheduling
 
+- `pool` lists the SEC / Aggie-engineering prompts. Daily dives, Unlimited and Puffer Party only draw from it. The general engineering prompts (elements, polygons, …) are only reachable through their themed packs.
+
 - `daily[0]` is Dive #1, `daily[1]` is Dive #2, and so on, counted from `launchDate`. Once the schedule runs out, each day gets a random set of prompts, seeded by the date so everyone gets the same ones.
 - `packs` show up under **Themed Packs**. Each play draws 7 of the pack's prompts.
 - Run `node tools/check-questions.mjs` after editing. It flags duplicate aliases and unknown prompt ids.

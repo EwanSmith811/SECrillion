@@ -1,11 +1,14 @@
 {
   "_format": "Each answer is \"Canonical | alias | alias = seed\". The seed is how many imaginary divers gave that answer — big = common = shallow, 0 = nobody = full 100 points. See README.md.",
 
+  "_pool": "Daily dives, Unlimited and Puffer Party only draw from these SEC / Aggie-engineering prompts. Everything else is reachable only through its themed pack.",
+  "pool": ["sec-committees", "sec-divisions", "sec-events", "eso", "career-fair-f26", "engineering-majors", "engineering-buildings", "course-prefixes", "campus-buildings", "aggie-traditions", "aggie-slang", "sec-schools"],
+
   "daily": [
-    ["sec-committees", "aggie-traditions", "programming-languages", "campus-buildings", "bridge-types", "greek-letters", "sec-schools"],
-    ["sec-events", "engineering-majors", "elements", "texas-cities", "famous-engineers", "logic-gates", "career-fair-companies"],
-    ["sec-divisions", "eso", "renewable-energy", "physics-laws", "polygons", "metals", "lab-equipment"],
-    ["career-fair-f26", "sec-committees", "simple-machines", "nasa", "hand-tools", "planets", "aggie-slang"]
+    ["sec-committees", "eso", "engineering-buildings", "aggie-traditions", "course-prefixes", "sec-schools", "engineering-majors"],
+    ["sec-events", "career-fair-f26", "engineering-majors", "campus-buildings", "sec-divisions", "aggie-slang", "eso"],
+    ["sec-divisions", "eso", "sec-committees", "course-prefixes", "engineering-buildings", "aggie-traditions", "career-fair-f26"],
+    ["career-fair-f26", "sec-committees", "sec-events", "engineering-buildings", "campus-buildings", "aggie-slang", "sec-schools"]
   ],
 
   "packs": [
@@ -22,6 +25,33 @@
   ],
 
   "prompts": {
+    "engineering-buildings": {
+      "prompt": "Name a College of Engineering building at Texas A&M",
+      "answers": [
+        "Zachry Engineering Education Complex | Zachry | ZACH = 30",
+        "Wisenbaker Engineering Building | Wisenbaker | WEB = 12",
+        "Engineering Activity Building | EABA | EABB | EABC | EAB = 10",
+        "H.R. Bright Building | Bright Building | Bright | HRBB = 10",
+        "Jack E. Brown Engineering Building | Jack E. Brown | JEB = 8",
+        "Emerging Technologies Building | ETB = 8",
+        "Fermier Hall | Fermier = 6",
+        "Richardson Petroleum Engineering Building | Richardson | RICH = 5",
+        "Thompson Hall = 3",
+        "Haynes Engineering Building | Haynes = 3",
+        "Scoates Hall | Scoates = 2",
+        "Bush Combat Development Complex | BCDC = 1"
+      ]
+    },
+
+    "course-prefixes": {
+      "prompt": "Name a College of Engineering course prefix (like ENGR)",
+      "answers": [
+        "ENGR = 30", "MEEN = 22", "CSCE = 22", "ECEN = 20", "AERO = 14", "CVEN = 12", "CHEN = 12",
+        "PETE = 8", "BMEN = 8", "ISEN = 6", "NUEN = 5", "MSEN = 4", "OCEN = 3", "BAEN = 3",
+        "EVEN = 2", "ESET = 2", "MMET = 2", "MXET = 1", "IDIS = 1", "AREN = 1"
+      ]
+    },
+
     "career-fair-f26": {
       "prompt": "Name a company at the Fall 2026 SEC Career Fair",
       "_source": "HireAggies public roster for the SEC Career Discovery Fair (Fall 2026) plus companies confirmed for the main Sept 9-10 fair (Textron, CACI). Add the full main-fair roster with tools/import-fair.mjs. Seeds rank nicheness: 20-30 household names, 10-15 big engineering employers, 2-8 industry-known, 0-1 niche.",

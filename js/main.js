@@ -35,9 +35,18 @@ function show(mode) {
   scene.setMode(mode);
 }
 
+// A saved log only counts if it was played on the dive's current questions,
+// so a schedule change shows the new questions instead of an old result.
+function saved(n) {
+  const h = history[`dive-${n}`];
+  if (!h || !bank) return h;
+  const now = dailyIds(bank, n).map((id) => bank.prompts[id].prompt).join('|');
+  return h.results.map((r) => r.prompt).join('|') === now ? h : null;
+}
+
 function refreshTitle() {
   $('#diveNo').textContent = `DIVE #${today}`;
-  $('#beginBtn .label').textContent = history[`dive-${today}`] ? "VIEW TODAY'S LOG" : 'BEGIN DESCENT';
+  $('#beginBtn .label').textContent = saved(today) ? "VIEW TODAY'S LOG" : 'BEGIN DESCENT';
 }
 
 function applyPrefs() {
@@ -58,7 +67,7 @@ function dailySpec(n) {
   };
 }
 const unlimitedSpec = () => ({
-  kind: 'unlimited', key: 'unlimited', ids: pick(bank.ids, CONFIG.promptsPerDive, Math.random() * 1e9 | 0),
+  kind: 'unlimited', key: 'unlimited', ids: pick(bank.pool, CONFIG.promptsPerDive, Math.random() * 1e9 | 0),
   headline: 'UNLIMITED DIVE COMPLETE', audience: 'UNLIMITED DIVERS',
 });
 const packSpec = (p) => ({
@@ -66,7 +75,7 @@ const packSpec = (p) => ({
   headline: `${p.name.toUpperCase()} COMPLETE`, audience: `${p.name.toUpperCase()} DIVERS`,
 });
 const partySpec = (code, name) => ({
-  kind: 'party', key: `party-${code}`, ids: pick(bank.ids, CONFIG.promptsPerDive, `party-${code}`), name,
+  kind: 'party', key: `party-${code}`, ids: pick(bank.pool, CONFIG.promptsPerDive, `party-${code}`), name,
   headline: `PARTY ${code} COMPLETE`, audience: 'YOUR PARTY',
 });
 
@@ -270,7 +279,7 @@ $('.modal-close', modal).onclick = () => modal.close();
 function openArchive() {
   const items = [];
   for (let n = today - 1; n >= 1; n--) {
-    const h = history[`dive-${n}`];
+    const h = saved(n);
     items.push(`<button class="list-item" data-n="${n}">
       <span>DIVE #${n}</span><span class="dim">${fmtDate(dateForDive(n))}</span>
       <span class="right">${h ? `${h.total} · ${meters(h.total)}` : 'PLAY ▼'}</span></button>`);
@@ -278,7 +287,7 @@ function openArchive() {
   openModal('ARCHIVE', items.length ? `<div class="list">${items.join('')}</div>` : `<p>No past dives yet — Dive #${today} is the first one. Come back tomorrow.</p>`, (body) => {
     body.querySelectorAll('[data-n]').forEach((b) => (b.onclick = () => {
       modal.close();
-      const n = Number(b.dataset.n), h = history[`dive-${n}`];
+      const n = Number(b.dataset.n), h = saved(n);
       h ? showResults(h) : startDive(dailySpec(n));
     }));
   });
@@ -408,7 +417,7 @@ const ABOUT = `<p><b>${esc(CONFIG.name)}</b> is the daily dive from the ${esc(CO
 // ---------- wiring ----------
 function bind() {
   $('#beginBtn').onclick = () => {
-    const h = history[`dive-${today}`];
+    const h = saved(today);
     h ? showResults(h) : startDive(dailySpec(today));
   };
   $('#archiveBtn').onclick = openArchive;
@@ -445,7 +454,7 @@ function bind() {
     if (dive && !confirm('Leave your current dive? It won\'t be scored.')) return;
     if (dive) { stopTimer(); dive = null; }
     ({
-      daily: () => { const h = history[`dive-${today}`]; h ? showResults(h) : startDive(dailySpec(today)); },
+      daily: () => { const h = saved(today); h ? showResults(h) : startDive(dailySpec(today)); },
       unlimited: () => startDive(unlimitedSpec()),
       party: () => { surface(); openParty(); },
       packs: () => { surface(); openPacks(); },
@@ -472,6 +481,7 @@ async function init() {
     $('#beginBtn').disabled = true;
     return;
   }
+  refreshTitle();
   const party = new URLSearchParams(location.search).get('party');
   if (party) openParty(party.toUpperCase().slice(0, 6));
 }

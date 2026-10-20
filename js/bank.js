@@ -11,7 +11,11 @@ export async function loadBank() {
   const check = (ids, where) => ids.forEach((id) => { if (!prompts[id]) console.warn(`[questions] unknown prompt "${id}" in ${where}`); });
   (raw.daily || []).forEach((ids, i) => check(ids, `daily #${i + 1}`));
   (raw.packs || []).forEach((p) => check(p.prompts, `pack ${p.id}`));
-  return { prompts, ids: Object.keys(prompts), daily: raw.daily || [], packs: raw.packs || [] };
+  const ids = Object.keys(prompts);
+  if (raw.pool) check(raw.pool, 'pool');
+  // Daily dives, Unlimited and parties draw only from the pool; other prompts live in themed packs.
+  const pool = (raw.pool || ids).filter((id) => prompts[id]);
+  return { prompts, ids, pool, daily: raw.daily || [], packs: raw.packs || [] };
 }
 
 const midnight = (d) => new Date(d.getFullYear(), d.getMonth(), d.getDate());
@@ -54,6 +58,6 @@ export function pick(pool, count, seed, fallback = []) {
 
 export function dailyIds(bank, n) {
   const scheduled = bank.daily[n - 1];
-  if (scheduled) return pick(scheduled, CONFIG.promptsPerDive, `daily-${n}`, bank.ids).sort((a, b) => scheduled.indexOf(a) - scheduled.indexOf(b));
-  return pick(bank.ids, CONFIG.promptsPerDive, `daily-${n}`);
+  if (scheduled) return pick(scheduled, CONFIG.promptsPerDive, `daily-${n}`, bank.pool).sort((a, b) => scheduled.indexOf(a) - scheduled.indexOf(b));
+  return pick(bank.pool, CONFIG.promptsPerDive, `daily-${n}`);
 }
