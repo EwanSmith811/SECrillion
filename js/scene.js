@@ -15,6 +15,11 @@ const OCEAN = [
 ];
 const OCEAN_SPAN = 16000;
 
+// How fast the background lives: barely drifting while you're idle, picking up only while diving.
+const IDLE_PACE = 0.12;
+const DIVE_PACE = 1.6;
+const DIVE_SPEED = 500; // camera px/s that counts as full diving speed
+
 // Background sea life: each kind lives in a depth band (px below the surface) and drifts across.
 const CRITTERS = {
   school: { band: [80, 2400], count: 3, speed: [30, 55], scale: 2 },
@@ -76,7 +81,7 @@ export class Scene {
   constructor(canvas) {
     this.c = canvas;
     this.ctx = canvas.getContext('2d');
-    this.cam = 0; this.camTarget = 0; this.vel = 0;
+    this.cam = 0; this.camTarget = 0; this.vel = 0; this.pace = IDLE_PACE;
     this.marks = [{ d: 0, m: 0 }];   // depth below the surface (px) → meters, one mark per answer
     this.dim = 0; this.dimTarget = 0;
     this.t = 0;
@@ -225,7 +230,6 @@ export class Scene {
   frame = (now) => {
     const dt = Math.min(0.05, (now - this.last) / 1000);
     this.last = now;
-    this.t += dt * (this.reduced ? 0.3 : 1);
     const before = this.cam;
     if (this.tween && this.tween.to === this.camTarget) {
       const k = Math.min(1, (now - this.tween.t0) / this.tween.ms);
@@ -234,7 +238,12 @@ export class Scene {
     } else this.cam += (this.camTarget - this.cam) * Math.min(1, dt * 1.8);
     this.vel = dt > 0 ? (this.cam - before) / dt : 0;
     this.dim += (this.dimTarget - this.dim) * Math.min(1, dt * 2.5);
-    this.draw(dt);
+    // Everything animated (waves, clouds, motes, fish, sea life) runs on paced time.
+    const target = IDLE_PACE + (DIVE_PACE - IDLE_PACE) * Math.min(1, Math.abs(this.vel) / DIVE_SPEED);
+    this.pace += (target - this.pace) * Math.min(1, dt * 3);
+    const paced = dt * this.pace * (this.reduced ? 0.3 : 1);
+    this.t += paced;
+    this.draw(paced);
     requestAnimationFrame(this.frame);
   };
 
