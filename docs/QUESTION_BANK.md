@@ -2,7 +2,49 @@
 
 Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fair prompts are left out. Points per tier: Plankton 10 · Schooler 30 · Rare 60 · Deep cut 85 · One in a SECrillion 100.
 
-37 prompts.
+40 prompts.
+
+## Name a player on Texas A&M's 2026 football roster
+
+`football-roster` · 122 answers · Daily / Unlimited pool · Packs: Campus Life
+
+**Plankton (10) · 5:** Marcel Reed; KJ Edwards; Rueben Owens II (Rueben Owens); Isaiah Horton; Mario Craver
+
+**Schooler (30) · 17:** TK Norman; Carsyn Baker; Brady Hart; Aaron Gregory; Jamarion Morrow; Terry Bussey; Kiotti Armstrong; Ray Coney; Noah Mikhail; Dalton Brooks; Marcus Ratcliffe; Tawfiq Byard; T.J. Searcy (TJ Searcy); Marco Jones; Dezz Ricks; Julio Humphrey; Jordan Shaw
+
+**Rare (60) · 29:** Houston Thomas; Ashton Bethel-Roman; Kelshaun Johnson; DeDe Murray; Richie Anderson III (Richie Anderson); Micah Riley; Jayden Warren; Landon Rink; Daymion Sanford; KK Johnson; CJ Mims; Brandon Davis-Swain; DJ Hicks; Bravion Rogers; Jordan Lockhart; Bryce Perry-Wright; Tamarion Watkins; Anto Saka; DJ Sanders; Ryan Henderson; Rickey Gibson III (Rickey Gibson); Chance Collins; Myles Davis; Tristian Givens; Tylan Wilson; Sam M'Pemba; David Olano; Tyler White; Trovon Baugh
+
+**Deep cut (85) · 69:** Bryce Anderson; Tiger Riden Jr. (Tiger Riden); Nana Boadi-Owusu; Eli Morcos; Caleb Tafua; Helaman Casuga; Jamar Beal-Goines; Madden Williams; Paxton Land; Mike Brown; Adonyss Currie; Vic Singleton; Tom Tom Johnson Jr. (Tom Tom Johnson); Brandon Arrington; Camren Hamiel; Ramarian Tillman; Layne Gerke; Jackson Hebert; Justin Echols; TJ Smith; Deyjhon Pettaway; Loia Valade; Tank King; Storm Miller; Kyle Garvis; Scott Fishpaw; Peyton Gay; Whitaker Williams; Jared White; Adam Graham; Gray Evans; Kendall Jackson; Carter Braugh; Jeremiah Searcy; Tommy Colligan; Qui Beck; Isendre "Papa" Ahfua (Isendre Ahfua, Papa Ahfua); Blake Ivy; Mark Nabou Jr. (Mark Nabou); Samu Moala; Hunter McKinney; Jonas Grimm; Chace Sims; Marcus Garcia; Sam Roseborough; Avery Morcho; Robert Bourdon; Tyree Adams; Joshua Moses; Ashton Funk; Zaden Krempin; Wilkin Formby; Tyler Thomas; Coen Echols; Lamont Rogers; Luke Braden; Colton Chmelar; Will Hargett; Chase Burton; Ryan Burtin; Evan Jacobson; Kade Stewart; Asher Murray; Nathan Mabon; Angelo McCullom; Alex Abbott; Waylon Peters; Jermaine Kinsler; Jesse Chukwu
+
+**One in a SECrillion (100) · 2:** Boomer Graham; Shea Freibaum
+
+## Name a player on Texas A&M's 2026-27 men's basketball roster
+
+`mbb-roster` · 17 answers · Daily / Unlimited pool · Packs: Campus Life
+
+**Plankton (10) · 3:** Rylan Griffen; Mackenzie Mgbako; PJ Haggerty
+
+**Schooler (30) · 2:** Zach Clemence; Jordan Pope
+
+**Rare (60) · 4:** Jamie Vinson; Jalen Shelley; Preston Clark; Cade Phillips
+
+**Deep cut (85) · 6:** Jeremiah Green; Jalen Reece; Neiko Mundey; Tyshawn Archie; Josh Irving; Lukas Walls
+
+**One in a SECrillion (100) · 2:** Chris McDermott; Kyle Moran
+
+## Name an EC member from 2025-2026
+
+`ec-members` · 29 answers · Daily / Unlimited pool · Packs: SEC Insider
+
+**Plankton (10) · 4:** Cooper Calk; Caitlin Dorn; Ittiyanam Tomichan; Tristan Forks
+
+**Schooler (30) · 6:** Braeden Cochran; Nathan Lam; Josh Huye; Matthew Monroy; Aniket Shirodkar; Vaishnavi Bhat
+
+**Rare (60) · 5:** Pranav Nandakumar; Aadit Shah; Anika Palacharla; Ella Norton; Caroline Holtman
+
+**Deep cut (85) · 12:** Lacy Duncan; David Hunt; Ewan Smith; Afiya Dhanani; Yusuf Ali; Afiz Ashittu; Jorge Garcia; Janice Thomas; Biya Mary Cham (Biya Cham); Reese Billedo; Bella Colgan; Katelyn Ta
+
+**One in a SECrillion (100) · 2:** Carissa Ng; Isabelle Planty
 
 ## Name a residence hall at Texas A&M
 
