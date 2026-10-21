@@ -2,7 +2,133 @@
 
 Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fair prompts are left out. Points per tier: Plankton 10 · Schooler 30 · Rare 60 · Deep cut 85 · One in a SECrillion 100.
 
-28 prompts.
+37 prompts.
+
+## Name a residence hall at Texas A&M
+
+`residence-halls` · 39 answers · Daily / Unlimited pool · Packs: Campus Life
+
+**Plankton (10) · 4:** Hullabaloo Hall (Hullabaloo, Hullabaloo Residence Hall); Krueger Hall (Krueger, Krueger Residence Hall); Mosher Hall (Mosher, Mosher Residence Hall); Aston Hall (Aston, Aston Residence Hall)
+
+**Schooler (30) · 8:** Dunn Hall (Dunn, Dunn Residence Hall); Lechner Hall (Lechner, Lechner Residence Hall); McFadden Hall (McFadden, McFadden Residence Hall); Moses Hall (Moses, Moses Residence Hall); Hobby Hall (Hobby, Hobby Residence Hall); Neeley Hall (Neeley, Neeley Residence Hall); White Creek (White Creek Apartments); The Gardens (Gardens, The Gardens Apartments)
+
+**Rare (60) · 8:** Eppright Hall (Eppright, Eppright Residence Hall); Clements Hall (Clements, Clements Residence Hall); Underwood Hall (Underwood, Underwood Residence Hall); Wells Hall (Wells, Wells Residence Hall); Davis-Gary Hall (Davis-Gary, Davis Gary); Fowler Hall (Fowler, Fowler Residence Hall); Hughes Hall (Hughes, Hughes Residence Hall); Keathley Hall (Keathley, Keathley Residence Hall)
+
+**Deep cut (85) · 17:** Haas Hall (Haas, Haas Residence Hall); Legett Hall (Legett, Legett Residence Hall); Hart Hall (Hart, Hart Residence Hall); Walton Hall (Walton, Walton Residence Hall); Appelt Hall (Appelt, Appelt Residence Hall); Rudder Hall (Rudder Residence Hall); Schuhmacher Hall (Schuhmacher, Schuhmacher Residence Hall); Spence Hall (Spence, Dorm 1); Kiest Hall (Kiest, Dorm 2); Briggs Hall (Briggs, Dorm 3); Fountain Hall (Fountain, Dorm 4); Gainer Hall (Gainer, Dorm 5); Lacy Hall (Lacy, Dorm 6); Leonard Hall (Leonard, Dorm 7); Harrell Hall (Harrell, Dorm 8); White Hall (Dorm 10); Harrington Hall (Dorm 11)
+
+**One in a SECrillion (100) · 2:** Whiteley Hall (Whiteley, Dorm 9); Utay Hall (Utay, Dorm 12)
+
+## Name a varsity sport Texas A&M competes in
+
+`aggie-sports` · 12 answers · Daily / Unlimited pool · Packs: Campus Life
+
+**Plankton (10) · 2:** Football (Aggie Football); Basketball (Men's Basketball, Women's Basketball)
+
+**Schooler (30) · 4:** Baseball; Volleyball; Soccer (Women's Soccer); Softball
+
+**Rare (60) · 4:** Track and Field (Track & Field, Track); Tennis (Men's Tennis, Women's Tennis); Golf (Men's Golf, Women's Golf); Swimming and Diving (Swimming & Diving, Swimming, Diving)
+
+**Deep cut (85) · 1:** Cross Country (XC)
+
+**One in a SECrillion (100) · 1:** Equestrian (Horse Riding)
+
+## Name a Texas A&M athletics or rec sports facility
+
+`athletic-facilities` · 19 answers · Daily / Unlimited pool · Packs: Campus Life
+
+**Plankton (10) · 2:** Kyle Field; Reed Arena (Reed)
+
+**Schooler (30) · 3:** Olsen Field (Olsen Field at Blue Bell Park, Blue Bell Park, Olsen); Davis Diamond (Davis Diamond Softball Stadium); Student Recreation Center (Rec Center, Rec, Student Rec Center)
+
+**Rare (60) · 5:** Ellis Field (Julia and Mark Ellis Soccer Building); E.B. Cushing Stadium (Cushing Stadium, EB Cushing); George P. Mitchell Tennis Center (Mitchell Tennis Center); Penberthy Rec Sports Complex (Penberthy, Penberthy Intramural Sports Center, Penberthy RecSports Pavilion); Bright Football Complex (Bright-Slocum Center, Bright-Slocum)
+
+**Deep cut (85) · 7:** Southside Recreation Center (Southside Rec); Cox-McFerrin Center for Aggie Basketball (Cox-McFerrin Center, Cox-McFerrin); Coolidge Football Indoor Performance Center (Coolidge Center, Indoor Performance Center); Davis Football Player Development Center (Davis Player Development Center); Fasken Indoor Track & Field (R.A. Murray Fasken Indoor Track & Field, Fasken Indoor); Omar Smith Instructional Tennis Center (Omar Smith Tennis Center); Physical Education Boot Camp and Archery Annex (Archery Annex)
+
+**One in a SECrillion (100) · 2:** Hunt Seat Arena; Houston Livestock Show & Rodeo Western Arena (Western Arena)
+
+## Name a college or school at Texas A&M
+
+`tamu-colleges` · 15 answers · Daily / Unlimited pool · Packs: Campus Life
+
+**Plankton (10) · 2:** College of Engineering (Engineering, Look College); Mays Business School (Mays, Business, Business School)
+
+**Schooler (30) · 4:** College of Arts and Sciences (Arts and Sciences, Arts & Sciences); College of Agriculture and Life Sciences (Agriculture and Life Sciences, AgriLife, Agriculture, Ag); School of Architecture (College of Architecture, Architecture, Arch); School of Veterinary Medicine and Biomedical Sciences (Veterinary Medicine, Vet School, Vet Med, CVM)
+
+**Rare (60) · 4:** School of Education and Human Development (Education and Human Development, Education, College of Education); Bush School of Government and Public Service (Bush School); College of Medicine (Medicine, Medical School, Med School); School of Law (Texas A&M Law, Law School, Law)
+
+**Deep cut (85) · 3:** College of Nursing (Nursing); School of Public Health (Public Health); College of Dentistry (Dentistry, Dental School)
+
+**One in a SECrillion (100) · 2:** Irma Lerma Rangel College of Pharmacy (College of Pharmacy, Pharmacy); School of Performance, Visualization and Fine Arts (Performance Visualization and Fine Arts, PVFA)
+
+## Name a place where Texas A&M University has a campus or center
+
+`tamu-campuses` · 10 answers · Daily / Unlimited pool · Packs: Campus Life
+
+**Plankton (10) · 2:** College Station; Galveston (Texas A&M Galveston, TAMUG)
+
+**Schooler (30) · 2:** Qatar (Texas A&M Qatar, Doha); RELLIS (RELLIS Campus, Bryan)
+
+**Rare (60) · 2:** McAllen (Higher Education Center at McAllen, HECM); Fort Worth (Texas A&M Fort Worth, Fort Worth Campus)
+
+**Deep cut (85) · 2:** Houston (Texas Medical Center); Round Rock
+
+**One in a SECrillion (100) · 2:** Dallas; Washington, D.C. (Washington DC, DC, Washington)
+
+## Name a Texas A&M engineering competition team
+
+`competition-teams` · 17 answers · Daily / Unlimited pool · Packs: Engineering Life
+
+**Plankton (10) · 2:** Formula SAE (Texas A&M Formula SAE, FSAE, Formula); Solar Car (Texas A&M Solar Car Racing Team, Solar Car Racing)
+
+**Schooler (30) · 4:** Robomaster (Robomaster Robotics); Sounding Rocketry Team (SRT); Steel Bridge (Steel Bridge Team); Concrete Canoe (ASCE Concrete Canoe)
+
+**Rare (60) · 4:** AggieSat (AggieSat Lab, AggieSat Laboratory); SAE Aero Design (SAE Aero, Aero Design); TURTLE (Texas A&M University Robotics Team and Leadership Experience); TAMUhack
+
+**Deep cut (85) · 5:** Karura (Karura Mars Rover); Ignitors Rocketry (Ignitors); TAMU Rocket Engine Design (TAMU RED, Rocket Engine Design); Aggie Robotics; Aggie Lemon Racing (Lemon Racing)
+
+**One in a SECrillion (100) · 2:** TAMUG Aquatic Robotics Team (TART); Aggie Pullers
+
+## Name software you might use in an engineering class
+
+`engineering-software` · 40 answers · Daily / Unlimited pool · Packs: Engineering Life
+
+**Plankton (10) · 3:** MATLAB; Excel (Microsoft Excel); SolidWorks
+
+**Schooler (30) · 6:** Python; AutoCAD; Fusion 360 (Fusion); Simulink; Visual Studio Code (VS Code, VSCode); Jupyter (Jupyter Notebook)
+
+**Rare (60) · 9:** ANSYS; LabVIEW; Arduino IDE (Arduino); Autodesk Inventor (Inventor); Creo; Git (GitHub); LTspice; Multisim; Revit
+
+**Deep cut (85) · 20:** CATIA; COMSOL; Aspen Plus (Aspen HYSYS, HYSYS, Aspen); Civil 3D; KiCad; Altium (Altium Designer); Vivado; Quartus; Abaqus; NX (Siemens NX); Mathematica; Maple; R (RStudio); Minitab; Cadence; SAP2000; ArcGIS; Onshape; Overleaf (LaTeX); Eagle
+
+**One in a SECrillion (100) · 2:** OpenFOAM; Mathcad
+
+## Name a calculator an engineering student might use
+
+`engineering-calculators` · 19 answers · Daily / Unlimited pool · Packs: Engineering Life
+
+**Plankton (10) · 2:** TI-84 (TI 84, TI-84 Plus, TI-84 Plus CE); TI-36X Pro (TI 36X Pro, TI-36)
+
+**Schooler (30) · 4:** TI-89 (TI 89, TI-89 Titanium); Casio fx-115ES (fx-115, Casio fx-115); TI-83 (TI 83, TI-83 Plus); TI-30X (TI 30X, TI-30XS, TI-30X IIS)
+
+**Rare (60) · 4:** Casio fx-991EX (fx-991, Casio fx-991); TI-Nspire (Nspire, TI-Nspire CX); HP Prime; HP 35s (HP 35)
+
+**Deep cut (85) · 7:** HP 33s (HP 33); Casio ClassWiz; NumWorks; Desmos; Wolfram Alpha (WolframAlpha); Casio fx-9750; TI-86 (TI 86)
+
+**One in a SECrillion (100) · 2:** HP 12C (HP-12C); Slide rule
+
+## Name a math topic every engineering student learns
+
+`engineering-math` · 32 answers · Daily / Unlimited pool · Packs: Engineering Life
+
+**Plankton (10) · 3:** Derivatives (Derivative, Differentiation); Integrals (Integral, Integration); Calculus (Calc)
+
+**Schooler (30) · 6:** Differential equations (Diff EQ, DiffEq, ODEs); Linear algebra (Matrices, Matrix); Limits (Limit); Vectors (Vector); Statistics (Stats); Trigonometry (Trig)
+
+**Rare (60) · 8:** Laplace transforms (Laplace transform, Laplace); Fourier series (Fourier transform, Fourier); Eigenvalues (Eigenvectors, Eigen); Taylor series (Taylor); Partial derivatives (Partials); Multivariable calculus (Calc 3, Calculus 3); Probability; Series (Sequences and series)
+
+**Deep cut (85) · 13:** Divergence (Curl, Gradient); Line integrals (Line integral); Double integrals (Triple integrals, Multiple integrals); Green's theorem (Stokes' theorem, Divergence theorem); Numerical methods; Complex numbers (Imaginary numbers); Polar coordinates; Jacobian; Partial differential equations (PDEs); L'Hôpital's rule (L'Hopital's rule, Lhopital); Chain rule; Related rates; Optimization
+
+**One in a SECrillion (100) · 2:** Z-transform (Z transform); Lagrange multipliers (Lagrange multiplier)
 
 ## Name an EB member from the last 5 years
 
@@ -20,7 +146,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name a College of Engineering building at Texas A&M
 
-`engineering-buildings` · 29 answers · Daily / Unlimited pool · Scheduled dives 1, 3, 4
+`engineering-buildings` · 29 answers · Daily / Unlimited pool · Scheduled dives 1, 3, 4 · Packs: Engineering Life
 
 **Plankton (10) · 4:** Zachry Engineering Education Complex (Zachry, ZACH, Zachary); Dwight Look Engineering Building (Dwight Look, Look Engineering Building, DLEB); Jack E. Brown Chemical Engineering Building (Jack E. Brown Engineering Building, Jack E. Brown, JEB); Wisenbaker Engineering Building (Wisenbaker, WEB)
 
@@ -34,7 +160,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name a College of Engineering course prefix (like ENGR)
 
-`course-prefixes` · 20 answers · Daily / Unlimited pool · Scheduled dives 1, 3
+`course-prefixes` · 20 answers · Daily / Unlimited pool · Scheduled dives 1, 3 · Packs: Engineering Life
 
 **Plankton (10) · 1:** ENGR
 
@@ -104,7 +230,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name an Aggie tradition
 
-`aggie-traditions` · 31 answers · Daily / Unlimited pool · Scheduled dives 1, 3 · Packs: Aggieland
+`aggie-traditions` · 31 answers · Daily / Unlimited pool · Scheduled dives 1, 3 · Packs: Campus Life, Aggieland
 
 **Plankton (10) · 2:** Midnight Yell (Midnight Yell Practice, Yell Practice); 12th Man (Twelfth Man)
 
@@ -118,7 +244,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name a piece of Aggie slang
 
-`aggie-slang` · 20 answers · Daily / Unlimited pool · Scheduled dives 2, 4 · Packs: Aggieland
+`aggie-slang` · 20 answers · Daily / Unlimited pool · Scheduled dives 2, 4 · Packs: Campus Life, Aggieland
 
 **Plankton (10) · 2:** Howdy; Gig 'em
 
@@ -132,7 +258,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name a building on the Texas A&M campus in College Station
 
-`campus-buildings` · 635 answers · Daily / Unlimited pool · Scheduled dives 2, 4 · Packs: SEC Insider, Aggieland, Build It
+`campus-buildings` · 635 answers · Daily / Unlimited pool · Scheduled dives 2, 4 · Packs: Campus Life, SEC Insider, Aggieland, Build It
 
 **Plankton (10) · 5:** Zachry (Zachry Engineering Education Complex, ZACH); Memorial Student Center (MSC); Evans Library (Evans, Sterling C. Evans Library, LIBR); Kyle Field (KYLE); The Commons (Commons, COMM)
 
