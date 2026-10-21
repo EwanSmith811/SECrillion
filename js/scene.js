@@ -238,8 +238,9 @@ export class Scene {
     } else this.cam += (this.camTarget - this.cam) * Math.min(1, dt * 1.8);
     this.vel = dt > 0 ? (this.cam - before) / dt : 0;
     this.dim += (this.dimTarget - this.dim) * Math.min(1, dt * 2.5);
-    // Everything animated (waves, clouds, motes, fish, sea life) runs on paced time.
-    const target = IDLE_PACE + (DIVE_PACE - IDLE_PACE) * Math.min(1, Math.abs(this.vel) / DIVE_SPEED);
+    // Everything animated (waves, clouds, motes, fish, sea life) runs on paced time. Only sinking
+    // deeper speeds it up; floating back to the surface after a dive stays calm.
+    const target = IDLE_PACE + (DIVE_PACE - IDLE_PACE) * Math.min(1, Math.max(0, this.vel) / DIVE_SPEED);
     this.pace += (target - this.pace) * Math.min(1, dt * 3);
     const paced = dt * this.pace * (this.reduced ? 0.3 : 1);
     this.t += paced;

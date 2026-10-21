@@ -1249,11 +1249,11 @@
         "Membership = 10",
         "Special Events = 8",
         "Engineering Activities = 6",
-        "Engineering Development = 6",
+        "Engineering Development | Eng Dev | ED = schooler",
         "ProTrip | Pro Trip = 5",
         "Legislation = 5",
         "Student Relations = 5",
-        "Internal Relations = 4",
+        "Internal Relations | IR = schooler",
         "Systems Administration | SysAd | Sys Admin = 3",
         "Society and Graduate Relations | Society & Graduate Relations = 2"
       ]

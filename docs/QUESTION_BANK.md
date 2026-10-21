@@ -178,11 +178,11 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 **Plankton (10) · 1:** Career Fair
 
-**Schooler (30) · 1:** EnVision Conference (EnVision)
+**Schooler (30) · 3:** EnVision Conference (EnVision); Engineering Development (Eng Dev, ED); Internal Relations (IR)
 
 **Rare (60) · 5:** Corporate Relations; Philanthropy; Marketing; Finance; Membership
 
-**Deep cut (85) · 7:** Special Events; Engineering Activities; Engineering Development; ProTrip (Pro Trip); Legislation; Student Relations; Internal Relations
+**Deep cut (85) · 5:** Special Events; Engineering Activities; ProTrip (Pro Trip); Legislation; Student Relations
 
 **One in a SECrillion (100) · 2:** Systems Administration (SysAd, Sys Admin); Society and Graduate Relations (Society & Graduate Relations)
 
