@@ -66,13 +66,13 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 **Plankton (10) · 2:** College Station; Galveston (Texas A&M Galveston, TAMUG)
 
-**Schooler (30) · 2:** Qatar (Texas A&M Qatar, Doha); RELLIS (RELLIS Campus, Bryan)
+**Schooler (30) · 3:** RELLIS (RELLIS Campus, Bryan); Houston (Texas Medical Center); Dallas
 
 **Rare (60) · 2:** McAllen (Higher Education Center at McAllen, HECM); Fort Worth (Texas A&M Fort Worth, Fort Worth Campus)
 
-**Deep cut (85) · 2:** Houston (Texas Medical Center); Round Rock
+**Deep cut (85) · 2:** Qatar (Texas A&M Qatar, Doha); Round Rock
 
-**One in a SECrillion (100) · 2:** Dallas; Washington, D.C. (Washington DC, DC, Washington)
+**One in a SECrillion (100) · 1:** Washington, D.C. (Washington DC, DC, Washington)
 
 ## Name a Texas A&M engineering competition team
 
@@ -192,11 +192,11 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 **Plankton (10) · 2:** Career Fair (Engineering Career Fair, SEC Career Fair); EnVision Conference (EnVision)
 
-**Schooler (30) · 4:** Industry Nights (Industry Night); First-Year Survey (First Year Survey, Freshman Survey); Town Hall (Engineering Town Hall, SEC Town Hall); E-Day (Engineering Day, E Day)
+**Schooler (30) · 3:** Industry Nights (Industry Night); First-Year Survey (First Year Survey, Freshman Survey); Town Hall (Engineering Town Hall, SEC Town Hall)
 
-**Rare (60) · 4:** E-Week (Engineering Week, E Week); Monsters and Masterpieces (Monsters & Masterpieces); Random Acts of Kindness (RAK); ProTrip (Pro Trip)
+**Rare (60) · 5:** E-Day (Engineering Day, E Day); E-Week (Engineering Week, E Week); Random Acts of Kindness (RAK); ProTrip (Pro Trip); Pre-Career Fair Week (Pre Career Fair Week, PCFW)
 
-**Deep cut (85) · 7:** Engineering Student Survey; Presidents' Round Table (Presidents Round Table, President's Round Table, Presidents Roundtable); Society Competitions (Society Competition); Pre-Career Fair Week (Pre Career Fair Week, PCFW); Welcome Social; DI Saturday; Freshman Materials
+**Deep cut (85) · 7:** Monsters and Masterpieces (Monsters & Masterpieces); Engineering Student Survey; Presidents' Round Table (Presidents Round Table, President's Round Table, Presidents Roundtable); Society Competitions (Society Competition); Welcome Social; DI Saturday; Freshman Materials
 
 **One in a SECrillion (100) · 2:** Division Olympics; All Member Retreat (All-Member Retreat, AMR)
 

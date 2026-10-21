@@ -191,8 +191,8 @@ function resolve(raw, reason) {
   showFeedback(r);
   // Deeper answers plunge further and take longer; the camera follows at the same pace.
   const secrillion = tierForPrompt(r.points).id === 'trench';
-  const ms = diveKrill($('#krill'), r.points, { reduced: prefs.reduced, flip: secrillion });
-  scene.plunge(r.points, ms);
+  diveKrill($('#krill'), r.points, { reduced: prefs.reduced, flip: secrillion });
+  scene.plunge(r.points);
   $('#hudDepth').textContent = meters(dive.total);
   renderPips();
 }

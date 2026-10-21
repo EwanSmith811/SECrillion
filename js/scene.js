@@ -4,16 +4,18 @@ import { drawSprite, spriteSize } from './sprites.js';
 export const PX_PER_POINT = 6;     // ruler scale (world pixels per point) where no answer has set it
 export const METERS_PER_POINT = 10;
 
-// How far the camera falls for one answer, as a share of the screen height. It grows much faster
-// than the points: a plankton (10) barely nudges the water, a One in a SECrillion (100) plunges ~1.8 screens.
-const plungeScreens = (points) => 1.8 * (Math.max(0, points) / 100) ** 1.8;
+// How far the camera falls for one answer, as a share of the screen height, and how long it takes.
+// Distance grows much faster than the points: a Plankton (10) barely nudges the water in 0.5 s,
+// a One in a SECrillion (100) plunges 4 screens in 2 s.
+const plungeScreens = (points) => 4 * (Math.max(0, points) / 100) ** 2.2;
+const plungeMs = (points) => 450 + 1550 * (Math.max(0, points) / 100) ** 1.2;
 
 // The water darkens gradually over the whole dive, from surface blue to near-black at a perfect score.
 const OCEAN = [
-  [0, [45, 95, 142]], [300, [39, 86, 131]], [900, [33, 74, 116]], [1800, [27, 62, 101]],
-  [3200, [21, 49, 83]], [5200, [15, 37, 65]], [8000, [10, 26, 47]], [11500, [6, 16, 31]], [16000, [3, 8, 17]],
+  [0, [45, 95, 142]], [300, [39, 86, 131]], [900, [33, 74, 116]], [3000, [27, 62, 101]],
+  [6000, [21, 49, 83]], [10000, [15, 37, 65]], [16000, [10, 26, 47]], [23000, [6, 16, 31]], [32000, [3, 8, 17]],
 ];
-const OCEAN_SPAN = 16000;
+const OCEAN_SPAN = 32000;
 
 // How fast the background lives: barely drifting while you're idle, picking up only while diving.
 const IDLE_PACE = 0.12;
@@ -22,12 +24,12 @@ const DIVE_SPEED = 500; // camera px/s that counts as full diving speed
 
 // Background sea life: each kind lives in a depth band (px below the surface) and drifts across.
 const CRITTERS = {
-  school: { band: [80, 2400], count: 3, speed: [30, 55], scale: 2 },
-  turtle: { band: [150, 2600], count: 1, speed: [14, 22], scale: 3 },
-  jelly:  { band: [500, 9000], count: 5, speed: [4, 10], scale: 3 },
-  squid:  { band: [2200, 10000], count: 2, speed: [14, 26], scale: 3 },
-  whale:  { band: [2800, 11000], count: 1, speed: [10, 16], scale: 5 },
-  angler: { band: [6500, 30000], count: 3, speed: [5, 11], scale: 3 },
+  school: { band: [80, 3500], count: 3, speed: [30, 55], scale: 2 },
+  turtle: { band: [150, 3800], count: 1, speed: [14, 22], scale: 3 },
+  jelly:  { band: [500, 16000], count: 5, speed: [4, 10], scale: 3 },
+  squid:  { band: [3500, 18000], count: 2, speed: [14, 26], scale: 3 },
+  whale:  { band: [5000, 22000], count: 1, speed: [10, 16], scale: 5 },
+  angler: { band: [12000, 60000], count: 3, speed: [5, 11], scale: 3 },
 };
 const rgb = ([r, g, b]) => `rgb(${r},${g},${b})`;
 const rand = (a, b) => a + Math.random() * (b - a);
@@ -126,7 +128,7 @@ export class Scene {
 
   // One answer: the water scrolls down by an amount that grows steeply with its points,
   // easing over `ms` so it keeps pace with the krill's dive.
-  plunge(points, ms = 0) {
+  plunge(points, ms = plungeMs(points)) {
     const last = this.marks[this.marks.length - 1];
     const d = last.d + Math.round(this.H * plungeScreens(points));
     this.marks.push({ d, m: last.m + points * METERS_PER_POINT });
@@ -296,7 +298,8 @@ export class Scene {
       }
 
       // Keep each mote/fish within one screen-and-a-bit of the camera (wrapping), so the ocean never runs out.
-      const wrap = (d, span) => -sy + ((((d + sy) % span) + span) % span) - (span - H) / 2;
+      // (Leaves anything already in that band untouched, so it only wraps what drifts out.)
+      const wrap = (d, span) => { const off = (span - H) / 2; return -sy + ((((d + sy + off) % span) + span) % span) - off; };
       // While the camera is moving fast, motes streak like bubbles rushing past.
       const streak = this.reduced ? 0 : Math.min(70, Math.abs(this.vel) * 0.035);
       this.drawRays(sy);
@@ -305,7 +308,7 @@ export class Scene {
         const y = sy + m.d;
         if (y < sy + 12 || y > H) continue;
         // Deep down, the drifting motes become twinkling bioluminescence.
-        const glow = Math.min(1, Math.max(0, (m.d - 5000) / 4000));
+        const glow = Math.min(1, Math.max(0, (m.d - 10000) / 8000));
         const a = (streak > 2 ? m.a * 0.8 : m.a) * (1 - glow) + glow * (0.35 + 0.35 * Math.sin(this.t * 2.5 + m.tw));
         ctx.fillStyle = glow > 0.05 ? `rgba(${180 - 70 * glow},${215 + 40 * glow},${240 - 20 * glow},${a})` : `rgba(180,215,240,${a})`;
         ctx.fillRect(Math.round(m.x), Math.round(y), 2, 2 + Math.round(streak));

@@ -11,7 +11,7 @@ export function diveKrill(krill, points, { reduced = false, flip = false } = {})
   const room = Math.max(60, innerHeight - krill.getBoundingClientRect().bottom - 24);
   const maxDepth = Math.min(room, 244), minDepth = Math.min(14, maxDepth / 6);
   const depth = minDepth + (maxDepth - minDepth) * k;
-  const ms = (600 + 2600 * k) * (reduced ? 0.5 : 1);
+  const ms = (500 + 1700 * k) * (reduced ? 0.5 : 1);
   const tilt = 10 + 22 * k;
   krill.getAnimations().filter((a) => a.id === 'dive').forEach((a) => a.cancel());
   const frames = flip && !reduced
