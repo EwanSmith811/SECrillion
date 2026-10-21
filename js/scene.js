@@ -1,5 +1,5 @@
 // The pixel-art world: sky, sun, clouds, boat, ocean, fish and the depth ruler.
-import { drawSprite } from './sprites.js';
+import { drawSprite, spriteSize } from './sprites.js';
 
 export const PX_PER_POINT = 6;     // ruler scale (world pixels per point) where no answer has set it
 export const METERS_PER_POINT = 10;
@@ -8,12 +8,22 @@ export const METERS_PER_POINT = 10;
 // than the points: a plankton (10) barely nudges the water, a One in a SECrillion (100) plunges ~1.8 screens.
 const plungeScreens = (points) => 1.8 * (Math.max(0, points) / 100) ** 1.8;
 
-// The water keeps darkening the deeper a dive goes.
+// The water darkens gradually over the whole dive, from surface blue to near-black at a perfect score.
 const OCEAN = [
-  [0, [45, 95, 142]], [120, [35, 80, 124]], [280, [23, 52, 86]], [650, [14, 29, 51]],
-  [1600, [10, 20, 36]], [4600, [7, 13, 25]], [9000, [4, 8, 16]], [14000, [2, 4, 9]],
+  [0, [45, 95, 142]], [300, [39, 86, 131]], [900, [33, 74, 116]], [1800, [27, 62, 101]],
+  [3200, [21, 49, 83]], [5200, [15, 37, 65]], [8000, [10, 26, 47]], [11500, [6, 16, 31]], [16000, [3, 8, 17]],
 ];
-const OCEAN_SPAN = 14000;
+const OCEAN_SPAN = 16000;
+
+// Background sea life: each kind lives in a depth band (px below the surface) and drifts across.
+const CRITTERS = {
+  school: { band: [80, 2400], count: 3, speed: [30, 55], scale: 2 },
+  turtle: { band: [150, 2600], count: 1, speed: [14, 22], scale: 3 },
+  jelly:  { band: [500, 9000], count: 5, speed: [4, 10], scale: 3 },
+  squid:  { band: [2200, 10000], count: 2, speed: [14, 26], scale: 3 },
+  whale:  { band: [2800, 11000], count: 1, speed: [10, 16], scale: 5 },
+  angler: { band: [6500, 30000], count: 3, speed: [5, 11], scale: 3 },
+};
 const rgb = ([r, g, b]) => `rgb(${r},${g},${b})`;
 const rand = (a, b) => a + Math.random() * (b - a);
 
@@ -91,7 +101,9 @@ export class Scene {
     });
     // Fish and drifting motes wrap around the camera, so there's always water life scrolling past.
     this.fish = Array.from({ length: 10 }, () => ({ x: rand(0, this.W), d: rand(60, this.H * 1.5), v: rand(8, 26) * (Math.random() < 0.5 ? -1 : 1), s: Math.random() < 0.3 ? 3 : 2 }));
-    this.motes = Array.from({ length: Math.round(this.W * this.H / 4500) }, () => ({ x: rand(0, this.W), d: rand(10, this.H * 1.5), v: rand(2, 7), a: rand(0.15, 0.5) }));
+    this.motes = Array.from({ length: Math.round(this.W * this.H / 4500) }, () => ({ x: rand(0, this.W), d: rand(10, this.H * 1.5), v: rand(2, 7), a: rand(0.15, 0.5), tw: rand(0, 6.28) }));
+    this.critters = [];
+    for (const [kind, k] of Object.entries(CRITTERS)) for (let i = 0; i < k.count; i++) this.critters.push(this.spawn({ kind }, true));
   }
 
   setMode(mode) {
@@ -115,6 +127,88 @@ export class Scene {
     this.marks.push({ d, m: last.m + points * METERS_PER_POINT });
     this.camTarget = this.surface - this.H * 0.26 + d;
     this.tween = ms > 0 ? { from: this.cam, to: this.camTarget, t0: performance.now(), ms } : null;
+  }
+
+  // Place a critter in its depth band, preferably near what the camera can see, entering from a side.
+  spawn(c, anywhere = false) {
+    const k = CRITTERS[c.kind];
+    const top = this.cam - this.surface, near = [top - this.H * 0.5, top + this.H * 1.5];
+    const lo = Math.max(k.band[0], near[0]), hi = Math.min(k.band[1], near[1]);
+    c.d = lo < hi ? rand(lo, hi) : rand(k.band[0], k.band[1]);
+    c.vx = rand(...k.speed) * (Math.random() < 0.5 ? -1 : 1);
+    const w = spriteSize(c.kind === 'school' ? 'fish' : c.kind).w * k.scale + 120;
+    c.x = anywhere ? rand(0, this.W) : c.vx > 0 ? -w : this.W + w;
+    c.phase = rand(0, 6.28);
+    return c;
+  }
+
+  drawCritters(sy, dt) {
+    const { ctx, W, H } = this;
+    const pace = this.reduced ? 0.3 : 1;
+    for (const c of this.critters) {
+      const k = CRITTERS[c.kind];
+      c.x += c.vx * dt * pace;
+      c.phase += dt * pace;
+      const { w, h } = spriteSize(c.kind === 'school' ? 'fish' : c.kind);
+      const pw = w * k.scale, ph = h * k.scale;
+      const top = this.cam - this.surface;
+      // Off the side, or left far behind by the camera: respawn somewhere the camera is heading.
+      if (c.x < -pw - 160 || c.x > W + pw + 160 || c.d < top - H * 2 || c.d > top + H * 3) { this.spawn(c); continue; }
+      let y = sy + c.d;
+      if (y < sy + 30 || y > H + ph + 40 || y < -ph - 40) continue;
+      const flip = c.vx > 0;
+      if (c.kind === 'school') {
+        // Seven small fish swimming in a loose formation.
+        for (let i = 0; i < 7; i++) {
+          const ox = (i % 4) * 18 * (flip ? -1 : 1) + (i > 3 ? 9 : 0), oy = Math.floor(i / 4) * 10 + Math.sin(c.phase * 3 + i) * 2;
+          drawSprite(ctx, 'fish', Math.round(c.x + ox), Math.round(y + oy), k.scale, { flip, tint: 'rgba(150,195,225,0.45)' });
+        }
+      } else if (c.kind === 'jelly') {
+        // Drifts up and down and pulses as it swims.
+        y += Math.sin(c.phase * 0.8) * 14;
+        const squash = 1 + Math.sin(c.phase * 3) * 0.12;
+        ctx.save();
+        ctx.globalAlpha = 0.5;
+        ctx.translate(Math.round(c.x), Math.round(y));
+        ctx.scale(1 / squash, squash);
+        drawSprite(ctx, 'jelly', 0, 0, k.scale);
+        ctx.restore();
+      } else if (c.kind === 'whale') {
+        ctx.globalAlpha = 0.55;
+        drawSprite(ctx, 'whale', Math.round(c.x), Math.round(y + Math.sin(c.phase * 0.5) * 6), k.scale, { flip });
+        ctx.globalAlpha = 1;
+      } else if (c.kind === 'angler') {
+        const lx = Math.round(c.x + (flip ? pw - 6 * k.scale : 6 * k.scale)), ly = Math.round(y);
+        const glow = ctx.createRadialGradient(lx, ly, 1, lx, ly, 26);
+        const a = 0.55 + Math.sin(c.phase * 4) * 0.2;
+        glow.addColorStop(0, `rgba(190,255,230,${a})`); glow.addColorStop(1, 'rgba(190,255,230,0)');
+        ctx.fillStyle = glow;
+        ctx.fillRect(lx - 26, ly - 26, 52, 52);
+        drawSprite(ctx, 'angler', Math.round(c.x), Math.round(y), k.scale, { flip });
+        ctx.fillStyle = '#e8fff6';
+        ctx.fillRect(lx - 2, ly - 2, 4, 4);
+      } else {
+        drawSprite(ctx, c.kind, Math.round(c.x), Math.round(y + Math.sin(c.phase) * 3), k.scale, { flip });
+      }
+    }
+  }
+
+  // Shafts of sunlight slanting down from the surface, fading with depth.
+  drawRays(sy) {
+    const { ctx, W, H, t } = this;
+    if (sy < -H) return;
+    const fade = Math.min(1, Math.max(0, 1 + sy / H));
+    for (let i = 0; i < 6; i++) {
+      const x = ((i + 0.5) / 6) * W + Math.sin(t * 0.25 + i * 1.7) * 40;
+      const top = Math.max(0, sy + 8), len = H * 1.1;
+      const g = ctx.createLinearGradient(0, top, 0, sy + len);
+      g.addColorStop(0, `rgba(190,225,245,${0.07 * fade})`); g.addColorStop(1, 'rgba(190,225,245,0)');
+      ctx.fillStyle = g;
+      ctx.beginPath();
+      ctx.moveTo(x - 18, top); ctx.lineTo(x + 18, top);
+      ctx.lineTo(x + 18 + len * 0.35, sy + len); ctx.lineTo(x - 18 + len * 0.15, sy + len);
+      ctx.closePath(); ctx.fill();
+    }
   }
 
   // Meters at a depth below the surface, following the answers' marks (linear beyond them).
@@ -195,13 +289,18 @@ export class Scene {
       const wrap = (d, span) => -sy + ((((d + sy) % span) + span) % span) - (span - H) / 2;
       // While the camera is moving fast, motes streak like bubbles rushing past.
       const streak = this.reduced ? 0 : Math.min(70, Math.abs(this.vel) * 0.035);
+      this.drawRays(sy);
       for (const m of this.motes) {
         m.d = wrap(m.d - m.v * dt, H + 40);
         const y = sy + m.d;
         if (y < sy + 12 || y > H) continue;
-        ctx.fillStyle = `rgba(180,215,240,${streak > 2 ? m.a * 0.8 : m.a})`;
+        // Deep down, the drifting motes become twinkling bioluminescence.
+        const glow = Math.min(1, Math.max(0, (m.d - 5000) / 4000));
+        const a = (streak > 2 ? m.a * 0.8 : m.a) * (1 - glow) + glow * (0.35 + 0.35 * Math.sin(this.t * 2.5 + m.tw));
+        ctx.fillStyle = glow > 0.05 ? `rgba(${180 - 70 * glow},${215 + 40 * glow},${240 - 20 * glow},${a})` : `rgba(180,215,240,${a})`;
         ctx.fillRect(Math.round(m.x), Math.round(y), 2, 2 + Math.round(streak));
       }
+      this.drawCritters(sy, dt);
 
       for (const f of this.fish) {
         f.x += f.v * dt * (this.reduced ? 0.3 : 1);
