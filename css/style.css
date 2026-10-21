@@ -439,7 +439,7 @@ body.reduced .logo, body.reduced .crt, body.reduced #krill { animation: none; }
   .hud { width: calc(100% - 110px); left: 56px; transform: none; }
   .hud .mini-logo { display: none; }
   .pip { width: 30px; height: 30px; }
-  body[data-mode="dive"] #krill { left: auto; right: 14px; top: auto; bottom: 80px; }
+  body[data-mode="dive"] #krill { left: auto; right: 14px; top: 56%; bottom: auto; }
   body[data-mode="title"] #krill { left: 72%; top: 62%; }
   .bearing li { grid-template-columns: 24px 70px 1fr; font-size: 11.5px; }
 }

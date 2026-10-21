@@ -7,8 +7,10 @@ const layer = () => document.getElementById('fx');
 // a plankton answer is a quick dip, a One in a SECrillion is a long plunge with a flip.
 export function diveKrill(krill, points, { reduced = false, flip = false } = {}) {
   const k = Math.max(0, Math.min(1, points / 100));
-  const room = Math.max(40, innerHeight - krill.getBoundingClientRect().bottom - 24);
-  const depth = Math.min(room, 14 + 230 * k);
+  // Scale the dive into whatever room is below the krill, so rarer answers always go visibly further.
+  const room = Math.max(60, innerHeight - krill.getBoundingClientRect().bottom - 24);
+  const maxDepth = Math.min(room, 244), minDepth = Math.min(14, maxDepth / 6);
+  const depth = minDepth + (maxDepth - minDepth) * k;
   const ms = (600 + 2600 * k) * (reduced ? 0.5 : 1);
   const tilt = 10 + 22 * k;
   krill.getAnimations().filter((a) => a.id === 'dive').forEach((a) => a.cancel());
