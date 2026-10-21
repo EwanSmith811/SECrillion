@@ -82,7 +82,7 @@ async function startDive(spec) {
   const prompts = spec.ids.map((id) => bank.prompts[id]).filter(Boolean);
   dive = { spec, prompts, i: 0, results: [], total: 0, counts: {}, phase: 'loading' };
   show('dive');
-  scene.diveTo(0);
+  scene.startDive();
   $('#hudDepth').textContent = '0m';
   $('#promptText').textContent = 'Descending…';
   $('#feedback').hidden = true;
@@ -192,7 +192,7 @@ function resolve(raw, reason) {
   // Deeper answers plunge further and take longer; the camera follows at the same pace.
   const secrillion = tierForPrompt(r.points).id === 'trench';
   const ms = diveKrill($('#krill'), r.points, { reduced: prefs.reduced, flip: secrillion });
-  scene.diveTo(dive.total, ms);
+  scene.plunge(r.points, ms);
   $('#hudDepth').textContent = meters(dive.total);
   renderPips();
 }

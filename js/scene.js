@@ -1,14 +1,19 @@
 // The pixel-art world: sky, sun, clouds, boat, ocean, fish and the depth ruler.
 import { drawSprite } from './sprites.js';
 
-export const PX_PER_POINT = 6;     // world pixels the camera sinks per point scored
+export const PX_PER_POINT = 6;     // ruler scale (world pixels per point) where no answer has set it
 export const METERS_PER_POINT = 10;
 
+// How far the camera falls for one answer, as a share of the screen height. It grows much faster
+// than the points: a plankton (10) barely nudges the water, a One in a SECrillion (100) plunges ~1.8 screens.
+const plungeScreens = (points) => 1.8 * (Math.max(0, points) / 100) ** 1.8;
+
+// The water keeps darkening the deeper a dive goes.
 const OCEAN = [
-  [0, [45, 95, 142]], [120, [35, 80, 124]], [280, [23, 52, 86]],
-  [650, [14, 29, 51]], [1600, [10, 20, 36]], [4600, [5, 8, 15]],
+  [0, [45, 95, 142]], [120, [35, 80, 124]], [280, [23, 52, 86]], [650, [14, 29, 51]],
+  [1600, [10, 20, 36]], [4600, [7, 13, 25]], [9000, [4, 8, 16]], [14000, [2, 4, 9]],
 ];
-const OCEAN_SPAN = 4600;
+const OCEAN_SPAN = 14000;
 const rgb = ([r, g, b]) => `rgb(${r},${g},${b})`;
 const rand = (a, b) => a + Math.random() * (b - a);
 
@@ -61,7 +66,8 @@ export class Scene {
   constructor(canvas) {
     this.c = canvas;
     this.ctx = canvas.getContext('2d');
-    this.cam = 0; this.camTarget = 0;
+    this.cam = 0; this.camTarget = 0; this.vel = 0;
+    this.marks = [{ d: 0, m: 0 }];   // depth below the surface (px) → meters, one mark per answer
     this.dim = 0; this.dimTarget = 0;
     this.t = 0;
     this.reduced = false;
@@ -83,31 +89,56 @@ export class Scene {
       const w = Math.round(rand(150, 440) / 8) * 8, h = Math.round((w * rand(0.28, 0.4)) / 8) * 8;
       return { img: cloudCanvas(w, h), x: rand(-w, this.W), y: rand(-10, this.surface * 0.62), v: rand(3, 9), a: rand(0.8, 1) };
     });
-    this.fish = Array.from({ length: 18 }, () => ({ x: rand(0, this.W), d: rand(60, 4200), v: rand(8, 26) * (Math.random() < 0.5 ? -1 : 1), s: Math.random() < 0.3 ? 3 : 2 }));
-    this.motes = Array.from({ length: 160 }, () => ({ x: rand(0, this.W), d: rand(10, 4600), v: rand(2, 7), a: rand(0.15, 0.5) }));
+    // Fish and drifting motes wrap around the camera, so there's always water life scrolling past.
+    this.fish = Array.from({ length: 10 }, () => ({ x: rand(0, this.W), d: rand(60, this.H * 1.5), v: rand(8, 26) * (Math.random() < 0.5 ? -1 : 1), s: Math.random() < 0.3 ? 3 : 2 }));
+    this.motes = Array.from({ length: Math.round(this.W * this.H / 4500) }, () => ({ x: rand(0, this.W), d: rand(10, this.H * 1.5), v: rand(2, 7), a: rand(0.15, 0.5) }));
   }
 
   setMode(mode) {
     this.mode = mode;
-    if (mode !== 'dive') this.camTarget = 0;
+    if (mode !== 'dive') { this.camTarget = 0; this.marks = [{ d: 0, m: 0 }]; }
     this.dimTarget = mode === 'results' ? 0.8 : 0;
   }
 
-  // With `ms`, the camera eases to the new depth over that long, so it keeps pace with the krill's dive.
-  diveTo(points, ms = 0) {
-    this.camTarget = this.surface - this.H * 0.26 + points * PX_PER_POINT;
+  // Start of a dive: the surface sits near the top of the screen.
+  startDive() {
+    this.marks = [{ d: 0, m: 0 }];
+    this.camTarget = this.surface - this.H * 0.26;
+    this.tween = null;
+  }
+
+  // One answer: the water scrolls down by an amount that grows steeply with its points,
+  // easing over `ms` so it keeps pace with the krill's dive.
+  plunge(points, ms = 0) {
+    const last = this.marks[this.marks.length - 1];
+    const d = last.d + Math.round(this.H * plungeScreens(points));
+    this.marks.push({ d, m: last.m + points * METERS_PER_POINT });
+    this.camTarget = this.surface - this.H * 0.26 + d;
     this.tween = ms > 0 ? { from: this.cam, to: this.camTarget, t0: performance.now(), ms } : null;
+  }
+
+  // Meters at a depth below the surface, following the answers' marks (linear beyond them).
+  metersAt(d) {
+    const marks = this.marks;
+    for (let i = 1; i < marks.length; i++) {
+      const a = marks[i - 1], b = marks[i];
+      if (d <= b.d) return b.d === a.d ? b.m : a.m + ((d - a.d) / (b.d - a.d)) * (b.m - a.m);
+    }
+    const last = marks[marks.length - 1];
+    return last.m + ((d - last.d) / PX_PER_POINT) * METERS_PER_POINT;
   }
 
   frame = (now) => {
     const dt = Math.min(0.05, (now - this.last) / 1000);
     this.last = now;
     this.t += dt * (this.reduced ? 0.3 : 1);
+    const before = this.cam;
     if (this.tween && this.tween.to === this.camTarget) {
       const k = Math.min(1, (now - this.tween.t0) / this.tween.ms);
       this.cam = this.tween.from + (this.tween.to - this.tween.from) * (k < 0.5 ? 2 * k * k : 1 - (-2 * k + 2) ** 2 / 2);
       if (k >= 1) this.tween = null;
     } else this.cam += (this.camTarget - this.cam) * Math.min(1, dt * 1.8);
+    this.vel = dt > 0 ? (this.cam - before) / dt : 0;
     this.dim += (this.dimTarget - this.dim) * Math.min(1, dt * 2.5);
     this.draw(dt);
     requestAnimationFrame(this.frame);
@@ -160,19 +191,23 @@ export class Scene {
         }
       }
 
+      // Keep each mote/fish within one screen-and-a-bit of the camera (wrapping), so the ocean never runs out.
+      const wrap = (d, span) => -sy + ((((d + sy) % span) + span) % span) - (span - H) / 2;
+      // While the camera is moving fast, motes streak like bubbles rushing past.
+      const streak = this.reduced ? 0 : Math.min(70, Math.abs(this.vel) * 0.035);
       for (const m of this.motes) {
-        m.d -= m.v * dt;
-        if (m.d < 10) m.d = 4600;
+        m.d = wrap(m.d - m.v * dt, H + 40);
         const y = sy + m.d;
         if (y < sy + 12 || y > H) continue;
-        ctx.fillStyle = `rgba(180,215,240,${m.a})`;
-        ctx.fillRect(Math.round(m.x), Math.round(y), 2, 2);
+        ctx.fillStyle = `rgba(180,215,240,${streak > 2 ? m.a * 0.8 : m.a})`;
+        ctx.fillRect(Math.round(m.x), Math.round(y), 2, 2 + Math.round(streak));
       }
 
       for (const f of this.fish) {
         f.x += f.v * dt * (this.reduced ? 0.3 : 1);
         if (f.x > W + 40) f.x = -40;
         if (f.x < -40) f.x = W + 40;
+        f.d = wrap(f.d, H + 120);
         const y = sy + f.d;
         if (y < sy + 20 || y > H + 20) continue;
         drawSprite(ctx, 'fish', Math.round(f.x), Math.round(y), f.s, { flip: f.v > 0, tint: 'rgba(5,10,22,0.72)' });
@@ -219,7 +254,7 @@ export class Scene {
       const major = d % (step * 5) === 0;
       ctx.fillStyle = major ? 'rgba(160,190,215,0.45)' : 'rgba(140,175,205,0.28)';
       ctx.fillRect(x - (major ? 10 : 5), y, major ? 10 : 5, 1);
-      if (major) ctx.fillText(d === 0 ? '0m' : `-${Math.round((d / PX_PER_POINT) * METERS_PER_POINT).toLocaleString()}m`, x - 14, y + 3);
+      if (major) ctx.fillText(d === 0 ? '0m' : `-${(Math.round(this.metersAt(d) / 10) * 10).toLocaleString()}m`, x - 14, y + 3);
     }
   }
 }
