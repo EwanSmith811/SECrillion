@@ -1,6 +1,10 @@
 // Answer parsing, fuzzy matching and scoring (Krillion-style: every answer sits in a fixed tier worth fixed points).
 
 export const MAX_PER_PROMPT = 100;
+// Like Krillion's gem: a prompt has at most this many One in a SECrillion answers.
+export const MAX_GEMS = 2;
+// Seed-ranked prompts keep Rare at about this share of Rare + Deep cut (Deep cut stays the bigger group).
+const RARE_SHARE = 0.3;
 
 export const TIERS = [
   { id: 'plankton', name: 'Plankton', points: 10,  min: 0,   max: 150,      color: '#b9c6d3', emoji: '🫧', line: 'Plankton. Still reading the Freshman Materials.' },
@@ -77,6 +81,18 @@ export function preparePrompt(id, raw) {
   // Prompts still written with raw seeds get a fixed tier from how common each seed is.
   const max = Math.max(1, ...answers.map((a) => a.n));
   for (const a of answers) a.tier = a.level || seedTier(a.n, max);
+  // Too many gems? Keep the rarest (lowest seed, then furthest down the list); the rest become deep cuts.
+  const gems = answers.map((a, i) => [a, i]).filter(([a]) => a.tier === 'trench');
+  if (gems.length > MAX_GEMS) {
+    gems.sort(([a, i], [b, j]) => a.n - b.n || j - i);
+    for (const [a] of gems.slice(MAX_GEMS)) a.tier = 'deep';
+  }
+  // Seed-ranked answers: promote the most common deep cuts until Rare is about RARE_SHARE of the two.
+  const seeded = answers.filter((a) => !a.level);
+  const rare = seeded.filter((a) => a.tier === 'rare').length;
+  const deep = seeded.filter((a) => a.tier === 'deep').sort((a, b) => b.n - a.n);
+  const promote = Math.round(RARE_SHARE * (rare + deep.length)) - rare;
+  for (const a of deep.slice(0, Math.max(0, promote))) a.tier = 'rare';
   return { id, prompt: raw.prompt, answers, index };
 }
 
