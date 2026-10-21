@@ -1,11 +1,12 @@
 import { CONFIG } from './config.js';
 import { Scene, METERS_PER_POINT } from './scene.js';
 import { renderKrill, krillURL, spriteURL, SKINS } from './sprites.js';
-import { findAnswer, matchAnswer, pointsFor, tierForPrompt } from './scoring.js';
+import { findAnswer, matchAnswer, scoreAnswer, tierForPrompt } from './scoring.js';
 import { createStore } from './store.js';
 import { loadBank, diveNumberFor, dateForDive, dailyIds, pick } from './bank.js';
 import { renderResults, distribution, placement, shareText, esc, meters } from './results.js';
 import { sfx, setSound } from './audio.js';
+import { diveKrill, celebrate } from './fx.js';
 
 const $ = (s, root = document) => root.querySelector(s);
 const SECS = CONFIG.secondsPerPrompt;
@@ -178,7 +179,7 @@ function resolve(raw, reason) {
     const i = matchAnswer(p, raw);
     if (i >= 0) {
       r.answer = p.answers[i].a;
-      r.points = pointsFor(counts, i);
+      r.points = scoreAnswer(p, i);
       r.reason = 'ok';
       store.recordAnswer(dive.spec.key, p.id, p.answers[i].key);
       counts[i]++;
@@ -188,9 +189,11 @@ function resolve(raw, reason) {
   dive.results.push(r);
   dive.total += r.points;
   showFeedback(r);
-  scene.diveTo(dive.total);
+  // Deeper answers plunge further and take longer; the camera follows at the same pace.
+  const secrillion = tierForPrompt(r.points).id === 'trench';
+  const ms = diveKrill($('#krill'), r.points, { reduced: prefs.reduced, flip: secrillion });
+  scene.diveTo(dive.total, ms);
   $('#hudDepth').textContent = meters(dive.total);
-  $('#krill').classList.remove('dip'); void $('#krill').offsetWidth; $('#krill').classList.add('dip');
   renderPips();
 }
 
@@ -206,12 +209,13 @@ function showFeedback(r) {
     ? `<b>${esc(r.answer)}</b> — on the list.`
     : r.reason === 'unknown' ? `We couldn't find “${esc(r.input)}” on the chart.` : 'No answer, no depth.';
   fb.innerHTML = `
-    <div class="fb-head" style="color:${t.color}"><img src="${spriteURL(t.id, 3)}" alt=""> ${head}</div>
+    <div class="fb-head${t.id === 'trench' ? ' fb-secrillion' : ''}" style="color:${t.color}"><img src="${spriteURL(t.id, 3)}" alt=""> ${head}</div>
     <div class="fb-detail">${detail}</div>
     <div class="fb-top">Most common: ${r.top.map(esc).join(' · ')}</div>
     <button class="btn btn-next" id="nextBtn">${dive.i + 1 < dive.prompts.length ? 'NEXT ▼' : 'SURFACE THE LOG ▲'}</button>`;
   fb.hidden = false;
-  r.points ? sfx.tier(t.id) : sfx.miss();
+  if (t.id === 'trench') { sfx.secrillion(); celebrate({ skin: prefs.skin, reduced: prefs.reduced }); }
+  else r.points ? sfx.tier(t.id) : sfx.miss();
   $('#nextBtn').onclick = next;
   $('#nextBtn').focus();
 }
@@ -362,7 +366,7 @@ const HOWTO = `
   <ol class="rules">
     <li>Each dive is <b>${CONFIG.promptsPerDive} prompts</b>, like “Name an Aggie tradition.”</li>
     <li>You get <b>${SECS} seconds</b> per prompt. Type any answer that fits and press Enter.</li>
-    <li><b>Rarer answers sink deeper.</b> The answer everyone gives scores 10. A valid answer nobody else thought of scores up to 100.</li>
+    <li><b>Rarer answers sink deeper.</b> Every answer sits in a tier: Plankton 10 · Schooler 30 · Rare 60 · Deep cut 85 · One in a SECrillion 100.</li>
     <li>If an answer isn't on the list, you'll be told and can try again until time runs out. Small typos are forgiven.</li>
     <li>Max depth is ${CONFIG.promptsPerDive * 100} (${meters(CONFIG.promptsPerDive * 100)}). A new dive drops every midnight.</li>
   </ol>`;

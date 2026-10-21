@@ -93,13 +93,21 @@ export class Scene {
     this.dimTarget = mode === 'results' ? 0.8 : 0;
   }
 
-  diveTo(points) { this.camTarget = this.surface - this.H * 0.26 + points * PX_PER_POINT; }
+  // With `ms`, the camera eases to the new depth over that long, so it keeps pace with the krill's dive.
+  diveTo(points, ms = 0) {
+    this.camTarget = this.surface - this.H * 0.26 + points * PX_PER_POINT;
+    this.tween = ms > 0 ? { from: this.cam, to: this.camTarget, t0: performance.now(), ms } : null;
+  }
 
   frame = (now) => {
     const dt = Math.min(0.05, (now - this.last) / 1000);
     this.last = now;
     this.t += dt * (this.reduced ? 0.3 : 1);
-    this.cam += (this.camTarget - this.cam) * Math.min(1, dt * 1.8);
+    if (this.tween && this.tween.to === this.camTarget) {
+      const k = Math.min(1, (now - this.tween.t0) / this.tween.ms);
+      this.cam = this.tween.from + (this.tween.to - this.tween.from) * (k < 0.5 ? 2 * k * k : 1 - (-2 * k + 2) ** 2 / 2);
+      if (k >= 1) this.tween = null;
+    } else this.cam += (this.camTarget - this.cam) * Math.min(1, dt * 1.8);
     this.dim += (this.dimTarget - this.dim) * Math.min(1, dt * 2.5);
     this.draw(dt);
     requestAnimationFrame(this.frame);

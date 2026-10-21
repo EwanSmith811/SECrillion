@@ -1,32 +1,34 @@
-// Answer parsing, fuzzy matching and rarity scoring.
+// Answer parsing, fuzzy matching and scoring (Krillion-style: every answer sits in a fixed tier worth fixed points).
 
 export const MAX_PER_PROMPT = 100;
 
 export const TIERS = [
-  { id: 'plankton', name: 'Plankton', min: 0,   max: 150,      color: '#b9c6d3', emoji: '🫧', line: 'Plankton. Still reading the Freshman Materials.' },
-  { id: 'schooler', name: 'Schooler', min: 151, max: 250,      color: '#5ad1e6', emoji: '🐟', line: 'Schooler. Blending into the Career Fair line.' },
-  { id: 'rare',     name: 'Rare',     min: 251, max: 350,      color: '#ff4d6d', emoji: '🪸', line: 'Rare. Industry Nights material.' },
-  { id: 'deep',     name: 'Deep cut', min: 351, max: 449,      color: '#a08cff', emoji: '🦑', line: 'Deep cut. EnVision keynote energy.' },
-  { id: 'trench',   name: 'One in a SECrillion', min: 450, max: Infinity, color: '#ffb547', emoji: '🦐', line: 'One in a SECrillion. Council-certified absurd.' },
+  { id: 'plankton', name: 'Plankton', points: 10,  min: 0,   max: 150,      color: '#b9c6d3', emoji: '🫧', line: 'Plankton. Still reading the Freshman Materials.' },
+  { id: 'schooler', name: 'Schooler', points: 30,  min: 151, max: 250,      color: '#5ad1e6', emoji: '🐟', line: 'Schooler. Blending into the Career Fair line.' },
+  { id: 'rare',     name: 'Rare',     points: 60,  min: 251, max: 350,      color: '#ff4d6d', emoji: '🪸', line: 'Rare. Industry Nights material.' },
+  { id: 'deep',     name: 'Deep cut', points: 85,  min: 351, max: 449,      color: '#a08cff', emoji: '🦑', line: 'Deep cut. EnVision keynote energy.' },
+  { id: 'trench',   name: 'One in a SECrillion', points: 100, min: 450, max: Infinity, color: '#ffb547', emoji: '🦐', line: 'One in a SECrillion. Council-certified absurd.' },
 ];
 
-// An answer can be ranked by depth level instead of a raw seed ("Tristan Forks = plankton").
-// Each seed lands the answer in that level's band when the prompt's top answer is a plankton (30):
-// plankton 10 pts · schooler 30 · rare 42 · deep cut 62 · one in a SECrillion 82.
+// An answer names its level ("Tristan Forks = plankton") and scores that tier's points:
+// plankton 10 · schooler 30 · rare 60 · deep cut 85 · one in a SECrillion 100.
+// The seed beside each level only orders the "Most common" list.
 export const LEVELS = { plankton: 30, schooler: 18, rare: 12, 'deep cut': 5, secrillion: 1 };
+const LEVEL_TIER = { plankton: 'plankton', schooler: 'schooler', rare: 'rare', 'deep cut': 'deep', secrillion: 'trench' };
 // Lowest seed that still counts as each level, for turning raw seeds into levels.
 const LEVEL_FLOORS = [['plankton', 20], ['schooler', 13], ['rare', 7], ['deep cut', 2]];
 const LEVEL_ALIASES = { deep: 'deep cut', deepcut: 'deep cut', 'one in a secrillion': 'secrillion' };
-const levelSeed = (word) => {
+const levelName = (word) => {
   const w = word.toLowerCase().replace(/\s+/g, ' ').trim();
-  return LEVELS[LEVEL_ALIASES[w] || w];
+  const name = LEVEL_ALIASES[w] || w;
+  return name in LEVELS ? name : null;
 };
 export const levelFor = (seed) => LEVEL_FLOORS.find(([, floor]) => seed >= floor)?.[0] ?? 'secrillion';
 export const MISS = { id: 'miss', name: 'Miss', color: '#4c5c70', emoji: '⬛' };
 
 export const tierForTotal = (score) => TIERS.find((t) => score <= t.max) || TIERS[TIERS.length - 1];
-// A single prompt is scored 0–100; map it onto the same bands as a 7-prompt total.
-export const tierForPrompt = (points) => (points <= 0 ? MISS : tierForTotal(points * 7));
+// The tier a single answer's points came from (deepest tier those points reach).
+export const tierForPrompt = (points) => (points <= 0 ? MISS : [...TIERS].reverse().find((t) => points >= t.points) || TIERS[0]);
 
 export function normalize(s) {
   return String(s)
@@ -50,15 +52,16 @@ export function parseAnswer(entry) {
   if (typeof entry === 'string') {
     let m = entry.match(/^(.*?)\s*=\s*(\d+)\s*$/);
     let n = m ? Number(m[2]) : null;
+    let level = null;
     if (!m) {
       // A level word only counts if it's a real level, so "PV=nRT" stays a name.
       const lm = entry.match(/^(.*?)\s*=\s*([a-z][a-z ]*)\s*$/i);
-      if (lm && levelSeed(lm[2]) != null) { m = lm; n = levelSeed(lm[2]); }
+      if (lm && levelName(lm[2])) { m = lm; level = LEVEL_TIER[levelName(lm[2])]; n = LEVELS[levelName(lm[2])]; }
     }
     const names = (m ? m[1] : entry).split('|').map((s) => s.trim()).filter(Boolean);
-    return { a: names[0], aka: names.slice(1), n: n ?? 1, key: normalize(names[0]) };
+    return { a: names[0], aka: names.slice(1), n: n ?? 1, level, key: normalize(names[0]) };
   }
-  return { a: entry.a, aka: entry.aka || [], n: entry.n ?? 1, key: normalize(entry.a) };
+  return { a: entry.a, aka: entry.aka || [], n: entry.n ?? 1, level: entry.level ? LEVEL_TIER[levelName(entry.level)] ?? null : null, key: normalize(entry.a) };
 }
 
 export function preparePrompt(id, raw) {
@@ -71,6 +74,9 @@ export function preparePrompt(id, raw) {
       else index.set(k, i);
     }
   });
+  // Prompts still written with raw seeds get a fixed tier from how common each seed is.
+  const max = Math.max(1, ...answers.map((a) => a.n));
+  for (const a of answers) a.tier = a.level || seedTier(a.n, max);
   return { id, prompt: raw.prompt, answers, index };
 }
 
@@ -152,10 +158,12 @@ export function matchAnswer(prompt, input) {
   return m.exact ? m.i : -1;
 }
 
-// The most popular answer scores 10; never-seen valid answers score 100.
-export function pointsFor(counts, i) {
-  const c = counts[i];
-  if (c <= 0) return MAX_PER_PROMPT;
-  const max = Math.max(1, ...counts);
-  return Math.round(10 + 88 * (1 - Math.sqrt(c / max)));
+// Seed → tier for prompts written with numbers: the top answer is plankton, a seed of 0 is One in a SECrillion.
+function seedTier(n, max) {
+  if (n <= 0) return 'trench';
+  const legacy = 10 + 88 * (1 - Math.sqrt(n / max)); // the old 10–98 rarity curve
+  return tierForTotal(legacy * 7).id;
 }
+
+// Points for answer i: its tier's fixed value, as in Krillion. Live tallies never change it.
+export const scoreAnswer = (prompt, i) => TIERS.find((t) => t.id === prompt.answers[i].tier).points;

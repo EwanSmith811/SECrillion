@@ -43,9 +43,7 @@ a { color: inherit; }
 }
 body[data-mode="dive"] #krill { left: 80%; top: 26%; }
 body[data-mode="results"] #krill { left: 74%; top: 21%; }
-#krill.dip { animation: dip .9s ease-out, bob 3.2s ease-in-out .9s infinite; }
 @keyframes bob { 50% { transform: translateY(-7px) rotate(-3deg); } }
-@keyframes dip { 30% { transform: translateY(26px) rotate(8deg); } }
 
 /* ---------- CRT overlay ---------- */
 .crt {
@@ -388,6 +386,35 @@ dialog::backdrop { background: rgba(5, 8, 15, .6); }
 .drawer nav button { text-align: left; background: none; border: 0; padding: 11px 6px; font-size: 12px; letter-spacing: .25em; color: var(--ink-2); }
 .drawer nav button:hover { color: #fff; background: #152238; }
 .drawer nav .warn { color: var(--pink); }
+
+/* ---------- One in a SECrillion ---------- */
+#fx { position: fixed; inset: 0; z-index: 45; pointer-events: none; overflow: hidden; }
+.sb-bit, .sb-krill { position: absolute; image-rendering: pixelated; }
+.sb-krill { width: auto; height: 22px; filter: drop-shadow(0 0 6px rgba(255, 181, 71, .8)); }
+.sb-flash { position: absolute; inset: 0; background: radial-gradient(circle at 50% 42%, rgba(255, 226, 150, .85), rgba(255, 181, 71, .25) 45%, transparent 75%); animation: sb-flash .9s ease-out forwards; }
+@keyframes sb-flash { from { opacity: 1; } to { opacity: 0; } }
+.secrillion-banner {
+  position: absolute; left: 50%; top: 42%; transform: translate(-50%, -50%);
+  width: min(720px, calc(100% - 32px)); text-align: center;
+  padding: 26px 20px 22px; background: rgba(10, 17, 30, .9);
+  border: 3px solid #ffb547; box-shadow: 0 0 0 3px #0b1220, 0 0 60px rgba(255, 181, 71, .55), inset 0 0 40px rgba(255, 181, 71, .12);
+  animation: sb-in .55s cubic-bezier(.2, 1.6, .4, 1) both;
+}
+.secrillion-banner.out { animation: sb-out .7s ease-in forwards; }
+@keyframes sb-in { from { transform: translate(-50%, -50%) scale(.2) rotate(-6deg); opacity: 0; } }
+@keyframes sb-out { to { transform: translate(-50%, -60%) scale(.9); opacity: 0; } }
+.secrillion-banner img { height: 64px; image-rendering: pixelated; filter: drop-shadow(0 0 12px rgba(255, 181, 71, .9)); animation: bob 1.2s ease-in-out infinite; }
+.sb-kicker { margin-top: 10px; font-size: 12px; letter-spacing: .5em; color: #ffd27a; }
+.sb-title {
+  margin-top: 8px; font-family: var(--pixel); font-size: clamp(26px, 5.4vw, 54px); line-height: 1.05; color: #fff6e0;
+  text-shadow: -.05em -.02em 0 var(--pink), .05em .02em 0 var(--cyan), 0 0 24px rgba(255, 181, 71, .8);
+  animation: glitch 1.4s steps(1) infinite;
+}
+.sb-sub { margin-top: 10px; font-size: 13px; color: var(--ink-2); letter-spacing: .08em; }
+.fb-secrillion { text-shadow: 0 0 14px rgba(255, 181, 71, .8); animation: sb-pulse 1s ease-in-out 3; }
+@keyframes sb-pulse { 50% { transform: scale(1.06); } }
+body.quake #scene, body.quake main { animation: quake .6s steps(8); }
+@keyframes quake { 25% { transform: translate(-6px, 3px); } 50% { transform: translate(5px, -4px); } 75% { transform: translate(-3px, 2px); } }
 
 /* ---------- reduced motion ---------- */
 body.reduced .logo, body.reduced .crt, body.reduced #krill { animation: none; }
