@@ -59,8 +59,29 @@ export function pick(pool, count, seed, fallback = [], apart = []) {
   return chosen;
 }
 
+// A prompt used in any of the last COOLDOWN daily dives sits out (with anything it's kept apart from),
+// so the same questions don't come back day after day. Scheduled dives are used as written.
+const COOLDOWN = 3;
+const dailyCache = new WeakMap();
+
 export function dailyIds(bank, n) {
+  let cache = dailyCache.get(bank);
+  if (!cache) dailyCache.set(bank, (cache = new Map()));
+  if (!cache.has(n)) cache.set(n, chooseDaily(bank, n));
+  return cache.get(n);
+}
+
+function chooseDaily(bank, n) {
   const scheduled = bank.daily[n - 1];
   if (scheduled) return pick(scheduled, CONFIG.promptsPerDive, `daily-${n}`, bank.pool, bank.apart).sort((a, b) => scheduled.indexOf(a) - scheduled.indexOf(b));
-  return pick(bank.pool, CONFIG.promptsPerDive, `daily-${n}`, [], bank.apart);
+  const recent = new Set();
+  for (let k = Math.max(1, n - COOLDOWN); k < n; k++) {
+    for (const id of dailyIds(bank, k)) {
+      recent.add(id);
+      for (const group of bank.apart) if (group.includes(id)) group.forEach((other) => recent.add(other));
+    }
+  }
+  const fresh = bank.pool.filter((id) => !recent.has(id));
+  // If the pool is ever too small to fill a dive, recently used prompts top it up.
+  return pick(fresh, CONFIG.promptsPerDive, `daily-${n}`, bank.pool.filter((id) => recent.has(id)), bank.apart);
 }

@@ -2,7 +2,77 @@
 
 Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fair prompts are left out. Points per tier: Plankton 10 · Schooler 30 · Rare 60 · Deep cut 85 · One in a SECrillion 100.
 
-40 prompts.
+44 prompts.
+
+## Name an SEC (conference) football stadium
+
+`sec-stadiums` · 16 answers · Daily / Unlimited pool · Packs: Aggieland
+
+**Plankton (10) · 4:** Kyle Field; Tiger Stadium (Death Valley); Bryant-Denny Stadium (Bryant-Denny); Darrell K Royal-Texas Memorial Stadium (Darrell K Royal Stadium, DKR, DKR-Texas Memorial Stadium)
+
+**Schooler (30) · 4:** Sanford Stadium; Ben Hill Griffin Stadium (The Swamp, Florida Field); Neyland Stadium; Jordan-Hare Stadium (Jordan-Hare)
+
+**Rare (60) · 4:** Gaylord Family Oklahoma Memorial Stadium (Oklahoma Memorial Stadium, Owen Field); Williams-Brice Stadium (Williams-Brice); Kroger Field (Commonwealth Stadium); Donald W. Reynolds Razorback Stadium (Razorback Stadium, Reynolds Razorback Stadium)
+
+**Deep cut (85) · 3:** Vaught-Hemingway Stadium (Vaught-Hemingway); Davis Wade Stadium (Scott Field, Davis Wade); Faurot Field (Faurot Field at Memorial Stadium)
+
+**One in a SECrillion (100) · 1:** FirstBank Stadium (Vanderbilt Stadium, Dudley Field)
+
+## Name an SEC team nickname or mascot
+
+`sec-nicknames` · 27 answers · Daily / Unlimited pool · Packs: Aggieland
+
+**Plankton (10) · 4:** Aggies; Longhorns; Crimson Tide (Tide); Tigers
+
+**Schooler (30) · 6:** Bulldogs (Dawgs); Gators; Sooners; Volunteers (Vols); Reveille (Rev); Bevo
+
+**Rare (60) · 7:** Razorbacks (Hogs); Rebels; Wildcats; Gamecocks; Mike the Tiger (Mike); Uga; Big Al
+
+**Deep cut (85) · 8:** Commodores (Dores); Albert and Alberta (Albert, Alberta); Smokey; Aubie; Truman the Tiger (Truman); Cocky; Tusk; Sooner Schooner
+
+**One in a SECrillion (100) · 2:** Mr. Commodore; Bully
+
+## Name a Texas A&M head football coach
+
+`aggie-coaches` · 14 answers · Daily / Unlimited pool · Packs: Aggieland
+
+**Plankton (10) · 2:** Mike Elko (Elko); Jimbo Fisher (Jimbo)
+
+**Schooler (30) · 3:** Kevin Sumlin (Sumlin); R.C. Slocum (RC Slocum, Slocum); Bear Bryant (Paul Bryant, Paul "Bear" Bryant)
+
+**Rare (60) · 4:** Dennis Franchione (Franchione, Coach Fran); Mike Sherman; Jackie Sherrill (Sherrill); Gene Stallings (Stallings)
+
+**Deep cut (85) · 3:** Emory Bellard (Bellard); Tom Wilson; Homer Norton (Norton)
+
+**One in a SECrillion (100) · 2:** Dana X. Bible (Dana Bible); Elijah Robinson
+
+## Name an SI derived unit
+
+`si-derived-units` · 22 answers · Daily / Unlimited pool · Packs: Lab Rats
+
+**Plankton (10) · 3:** Newton (N); Joule (J); Watt (W)
+
+**Schooler (30) · 4:** Volt (V); Pascal (Pa); Hertz (Hz); Ohm (Ω)
+
+**Rare (60) · 5:** Coulomb (C); Farad (F); Tesla (T); Henry (H); Degree Celsius (Celsius)
+
+**Deep cut (85) · 8:** Weber (Wb); Siemens (S); Lumen (lm); Lux (lx); Becquerel (Bq); Gray (Gy); Sievert (Sv); Radian (rad)
+
+**One in a SECrillion (100) · 2:** Katal (kat); Steradian (sr)
+
+## Name a famous engineering failure or disaster
+
+`engineering-failures` · 41 answers · Daily / Unlimited pool · Packs: Build It
+
+**Plankton (10) · 4:** Titanic (RMS Titanic); Challenger (Space Shuttle Challenger, Challenger disaster); Chernobyl; Tacoma Narrows Bridge (Tacoma Narrows, Galloping Gertie)
+
+**Schooler (30) · 7:** Hindenburg; Columbia (Space Shuttle Columbia, Columbia disaster); Deepwater Horizon (BP oil spill); Boeing 737 MAX (737 MAX); Fukushima (Fukushima Daiichi); Three Mile Island (TMI); Hyatt Regency walkway collapse (Hyatt Regency, Kansas City Hyatt)
+
+**Rare (60) · 9:** Apollo 13; Apollo 1; Ford Pinto; Mars Climate Orbiter; I-35W bridge collapse (I-35W Mississippi River bridge, Minneapolis bridge collapse); Surfside condo collapse (Champlain Towers South, Surfside); Bhopal disaster (Bhopal); Johnstown Flood; Big Dig ceiling collapse (Big Dig)
+
+**Deep cut (85) · 19:** Quebec Bridge; St. Francis Dam (Saint Francis Dam); Teton Dam; Silver Bridge; Therac-25; Ariane 5 (Ariane 5 Flight 501); Banqiao Dam; Morandi Bridge (Ponte Morandi, Genoa bridge collapse); de Havilland Comet (Comet airliner); Liberty ships; Citicorp Center (Citigroup Center); Sampoong Department Store (Sampoong); Vajont Dam; Malpasset Dam; Hartford Civic Center roof collapse (Hartford Civic Center); FIU pedestrian bridge collapse (FIU bridge); Millennium Bridge; Northeast blackout of 2003 (2003 blackout); 2021 Texas power crisis (Winter Storm Uri, 2021 Texas blackout)
+
+**One in a SECrillion (100) · 2:** Boston Molasses Flood (Great Molasses Flood, Molasses Flood); Tay Bridge (Tay Bridge disaster)
 
 ## Name a player on Texas A&M's 2026 football roster
 
@@ -48,7 +118,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name a residence hall at Texas A&M
 
-`residence-halls` · 39 answers · Daily / Unlimited pool · Packs: Campus Life
+`residence-halls` · 39 answers · Daily / Unlimited pool · Scheduled dives 2 · Packs: Campus Life, Aggieland
 
 **Plankton (10) · 4:** Hullabaloo Hall (Hullabaloo, Hullabaloo Residence Hall); Krueger Hall (Krueger, Krueger Residence Hall); Mosher Hall (Mosher, Mosher Residence Hall); Aston Hall (Aston, Aston Residence Hall)
 
@@ -90,7 +160,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name a college or school at Texas A&M
 
-`tamu-colleges` · 15 answers · Daily / Unlimited pool · Packs: Campus Life
+`tamu-colleges` · 15 answers · Daily / Unlimited pool · Scheduled dives 5 · Packs: Campus Life
 
 **Plankton (10) · 2:** College of Engineering (Engineering, Look College); Mays Business School (Mays, Business, Business School)
 
@@ -174,7 +244,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name an EB member from the last 5 years
 
-`eb-members` · 28 answers · Daily / Unlimited pool · Scheduled dives 2, 3 · Packs: SEC Insider
+`eb-members` · 28 answers · Daily / Unlimited pool · Scheduled dives 2, 3, 5 · Packs: SEC Insider
 
 **Plankton (10) · 2:** Tristan Forks; Savannah Giron
 
@@ -188,7 +258,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name a College of Engineering building at Texas A&M
 
-`engineering-buildings` · 29 answers · Daily / Unlimited pool · Scheduled dives 1, 3, 4 · Packs: Engineering Life
+`engineering-buildings` · 29 answers · Daily / Unlimited pool · Scheduled dives 1, 3, 4, 5 · Packs: Engineering Life
 
 **Plankton (10) · 4:** Zachry Engineering Education Complex (Zachry, ZACH, Zachary); Dwight Look Engineering Building (Dwight Look, Look Engineering Building, DLEB); Jack E. Brown Chemical Engineering Building (Jack E. Brown Engineering Building, Jack E. Brown, JEB); Wisenbaker Engineering Building (Wisenbaker, WEB)
 
@@ -202,7 +272,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name a College of Engineering course prefix (like ENGR)
 
-`course-prefixes` · 20 answers · Daily / Unlimited pool · Scheduled dives 1, 3 · Packs: Engineering Life
+`course-prefixes` · 20 answers · Daily / Unlimited pool · Scheduled dives 1, 3, 5 · Packs: Engineering Life
 
 **Plankton (10) · 1:** ENGR
 
@@ -230,11 +300,11 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name an event or program run by the Student Engineers' Council
 
-`sec-events` · 19 answers · Daily / Unlimited pool · Scheduled dives 2, 4 · Packs: SEC Insider
+`sec-events` · 20 answers · Daily / Unlimited pool · Scheduled dives 2, 4 · Packs: SEC Insider
 
 **Plankton (10) · 2:** Career Fair (Engineering Career Fair, SEC Career Fair); EnVision Conference (EnVision)
 
-**Schooler (30) · 3:** Industry Nights (Industry Night); First-Year Survey (First Year Survey, Freshman Survey); Town Hall (Engineering Town Hall, SEC Town Hall)
+**Schooler (30) · 4:** Industry Nights (Industry Night); First-Year Survey (First Year Survey, Freshman Survey); Town Hall (Engineering Town Hall, SEC Town Hall); Career Discovery Fair (CDF, SEC Career Discovery Fair, Engineering Career Discovery Fair)
 
 **Rare (60) · 5:** E-Day (Engineering Day, E Day); E-Week (Engineering Week, E Week); Random Acts of Kindness (RAK); ProTrip (Pro Trip); Pre-Career Fair Week (Pre Career Fair Week, PCFW)
 
@@ -244,7 +314,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name an ESO (engineering student organization) at Texas A&M
 
-`eso` · 167 answers · Daily / Unlimited pool · Scheduled dives 1, 2, 3 · Packs: SEC Insider
+`eso` · 167 answers · Daily / Unlimited pool · Scheduled dives 1, 2, 3, 5 · Packs: SEC Insider
 
 **Plankton (10) · 6:** Student Engineers' Council (SEC); Society of Women Engineers (SWE); Society of Hispanic Professional Engineers (SHPE); Institute of Electrical and Electronics Engineers (IEEE); American Society of Mechanical Engineers (ASME); Society of Petroleum Engineers (SPE)
 
@@ -272,7 +342,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name an Aggie tradition
 
-`aggie-traditions` · 31 answers · Daily / Unlimited pool · Scheduled dives 1, 3 · Packs: Campus Life, Aggieland
+`aggie-traditions` · 31 answers · Daily / Unlimited pool · Scheduled dives 1, 3, 4, 5 · Packs: Campus Life, Aggieland
 
 **Plankton (10) · 2:** Midnight Yell (Midnight Yell Practice, Yell Practice); 12th Man (Twelfth Man)
 
@@ -283,20 +353,6 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 **Deep cut (85) · 15:** Staying off the MSC grass (MSC grass, Not walking on the MSC grass); Maroon Out; Pennies on Sully (Sully, Pennies on Sul Ross); Century Tree; Whoop (Whooping); Kissing your date after a touchdown (Kiss your date); Corps of Cadets (Corps); Yell Leaders; Aggie War Hymn (War Hymn); Saw 'em Off; Standing the whole game (Standing at games); Fightin' Texas Aggie Band (Aggie Band); Bonfire Memorial; Boot Line; Ross Volunteers
 
 **One in a SECrillion (100) · 2:** Replant; Hump It (Hump It, Ags, Hump it Ags, Hump it Ag, Hump it Aggies)
-
-## Name a piece of Aggie slang
-
-`aggie-slang` · 20 answers · Daily / Unlimited pool · Scheduled dives 2, 4 · Packs: Campus Life, Aggieland
-
-**Plankton (10) · 2:** Howdy; Gig 'em
-
-**Schooler (30) · 1:** Whoop
-
-**Rare (60) · 5:** Fish; Old Army; Good Bull; Two-percenter (2 percenter, Two percenter); t.u. (tu, Texas University)
-
-**Deep cut (85) · 10:** Ags; Aggieland; Former Student (Former Students); Old Ags; Bad Bull; Hump It (Hump It, Ags, Hump it Ags, Hump it Ag, Hump it Aggies); Frog; Zip; Highway 6 runs both ways; Saw varsity's horns off (Saw 'em Off)
-
-**One in a SECrillion (100) · 2:** Elephant; Rev
 
 ## Name a building on the Texas A&M campus in College Station
 

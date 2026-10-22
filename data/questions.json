@@ -2,36 +2,191 @@
   "_format": "Each answer is \"Canonical | alias | alias = seed\". The seed is how many imaginary divers gave that answer — big = common = shallow, 0 = nobody = full 100 points. See README.md.",
 
   "_pool": "Daily dives, Unlimited and Puffer Party only draw from these SEC / Aggie-engineering prompts. Everything else is reachable only through its themed pack.",
-  "pool": ["ec-members", "eb-members", "sec-committees", "sec-events", "eso", "career-fair-s26", "career-fair-f26", "engineering-majors", "engineering-buildings", "course-prefixes", "campus-buildings", "aggie-traditions", "aggie-slang", "sec-schools", "residence-halls", "aggie-sports", "athletic-facilities", "tamu-colleges", "tamu-campuses", "career-fair-swag", "career-fair-prep", "competition-teams", "engineering-software", "engineering-calculators", "engineering-math", "football-roster", "mbb-roster"],
+  "pool": ["ec-members", "eb-members", "sec-committees", "sec-events", "eso", "career-fair-s26", "career-fair-f26", "engineering-majors", "engineering-buildings", "course-prefixes", "campus-buildings", "aggie-traditions", "sec-schools", "residence-halls", "aggie-sports", "athletic-facilities", "tamu-colleges", "tamu-campuses", "career-fair-swag", "career-fair-prep", "competition-teams", "engineering-software", "engineering-calculators", "engineering-math", "football-roster", "mbb-roster", "sec-stadiums", "sec-nicknames", "aggie-coaches", "si-derived-units", "engineering-failures"],
 
   "_apart": "Prompts in the same group never share a dive.",
   "apart": [["career-fair-f26", "career-fair-s26"]],
 
   "daily": [
     ["sec-committees", "eso", "engineering-buildings", "aggie-traditions", "course-prefixes", "sec-schools", "engineering-majors"],
-    ["sec-events", "career-fair-f26", "engineering-majors", "campus-buildings", "eb-members", "aggie-slang", "eso"],
+    ["sec-events", "career-fair-f26", "engineering-majors", "campus-buildings", "eb-members", "residence-halls", "eso"],
     ["career-fair-f26", "eso", "sec-committees", "course-prefixes", "engineering-buildings", "aggie-traditions", "eb-members"],
-    ["career-fair-f26", "sec-committees", "sec-events", "engineering-buildings", "campus-buildings", "aggie-slang", "sec-schools"]
+    ["career-fair-f26", "sec-committees", "sec-events", "engineering-buildings", "campus-buildings", "aggie-traditions", "sec-schools"],
+    ["tamu-colleges", "engineering-buildings", "eso", "eb-members", "course-prefixes", "aggie-traditions", "career-fair-f26"]
   ],
 
   "packs": [
     { "id": "campus-life", "name": "Campus Life", "blurb": "Dorms, sports, venues and the colleges of Aggieland.",
-      "prompts": ["football-roster", "mbb-roster", "residence-halls", "aggie-sports", "athletic-facilities", "tamu-colleges", "tamu-campuses", "campus-buildings", "aggie-traditions", "aggie-slang"] },
+      "prompts": ["football-roster", "mbb-roster", "residence-halls", "aggie-sports", "athletic-facilities", "tamu-colleges", "tamu-campuses", "campus-buildings", "aggie-traditions"] },
     { "id": "engineering-life", "name": "Engineering Life", "blurb": "Software, calculators, math, competition teams and career fair survival.",
       "prompts": ["engineering-software", "engineering-calculators", "engineering-math", "competition-teams", "career-fair-swag", "career-fair-prep", "course-prefixes", "engineering-buildings"] },
     { "id": "sec-insider", "name": "SEC Insider", "blurb": "Committees, divisions, events — how well do you know the Council?",
       "prompts": ["ec-members", "eb-members", "sec-committees", "sec-events", "eso", "career-fair-s26", "career-fair-f26", "engineering-majors", "campus-buildings"] },
     { "id": "aggieland", "name": "Aggieland", "blurb": "Traditions, buildings, slang and the other SEC.",
-      "prompts": ["aggie-traditions", "aggie-slang", "campus-buildings", "sec-schools", "engineering-majors", "texas-cities", "famous-engineers"] },
+      "prompts": ["sec-stadiums", "sec-nicknames", "aggie-coaches", "aggie-traditions", "residence-halls", "campus-buildings", "sec-schools", "engineering-majors", "texas-cities", "famous-engineers"] },
     { "id": "lab-rats", "name": "Lab Rats", "blurb": "Elements, units, laws and the stuff on the lab bench.",
-      "prompts": ["elements", "si-base-units", "lab-equipment", "physics-laws", "greek-letters", "metals", "polygons", "logic-gates"] },
+      "prompts": ["si-derived-units", "elements", "si-base-units", "lab-equipment", "physics-laws", "greek-letters", "metals", "polygons", "logic-gates"] },
     { "id": "build-it", "name": "Build It", "blurb": "Bridges, machines, tools and materials.",
-      "prompts": ["bridge-types", "simple-machines", "hand-tools", "metals", "renewable-energy", "campus-buildings", "engineering-majors"] },
+      "prompts": ["engineering-failures", "bridge-types", "simple-machines", "hand-tools", "metals", "renewable-energy", "campus-buildings", "engineering-majors"] },
     { "id": "code-and-cosmos", "name": "Code & Cosmos", "blurb": "Languages, logic and launch pads.",
       "prompts": ["programming-languages", "logic-gates", "nasa", "planets", "famous-engineers", "greek-letters", "si-base-units"] }
   ],
 
   "prompts": {
+    "sec-stadiums": {
+      "prompt": "Name an SEC (conference) football stadium",
+      "_tiers": "Home stadiums of the 16 SEC football programs.",
+      "answers": [
+        "Kyle Field = plankton",
+        "Tiger Stadium | Death Valley = plankton",
+        "Bryant-Denny Stadium | Bryant-Denny = plankton",
+        "Darrell K Royal-Texas Memorial Stadium | Darrell K Royal Stadium | DKR | DKR-Texas Memorial Stadium = plankton",
+        "Sanford Stadium = schooler",
+        "Ben Hill Griffin Stadium | The Swamp | Florida Field = schooler",
+        "Neyland Stadium = schooler",
+        "Jordan-Hare Stadium | Jordan-Hare = schooler",
+        "Gaylord Family Oklahoma Memorial Stadium | Oklahoma Memorial Stadium | Owen Field = rare",
+        "Williams-Brice Stadium | Williams-Brice = rare",
+        "Kroger Field | Commonwealth Stadium = rare",
+        "Donald W. Reynolds Razorback Stadium | Razorback Stadium | Reynolds Razorback Stadium = rare",
+        "Vaught-Hemingway Stadium | Vaught-Hemingway = deep cut",
+        "Davis Wade Stadium | Scott Field | Davis Wade = deep cut",
+        "Faurot Field | Faurot Field at Memorial Stadium = deep cut",
+        "FirstBank Stadium | Vanderbilt Stadium | Dudley Field = secrillion"
+      ]
+    },
+
+    "sec-nicknames": {
+      "prompt": "Name an SEC team nickname or mascot",
+      "_tiers": "Team nicknames of the 16 SEC schools plus their well-known live and costumed mascots.",
+      "answers": [
+        "Aggies = plankton",
+        "Longhorns = plankton",
+        "Crimson Tide | Tide = plankton",
+        "Tigers = plankton",
+        "Bulldogs | Dawgs = schooler",
+        "Gators = schooler",
+        "Sooners = schooler",
+        "Volunteers | Vols = schooler",
+        "Reveille | Rev = schooler",
+        "Bevo = schooler",
+        "Razorbacks | Hogs = rare",
+        "Rebels = rare",
+        "Wildcats = rare",
+        "Gamecocks = rare",
+        "Mike the Tiger | Mike = rare",
+        "Uga = rare",
+        "Big Al = rare",
+        "Commodores | Dores = deep cut",
+        "Albert and Alberta | Albert | Alberta = deep cut",
+        "Smokey = deep cut",
+        "Aubie = deep cut",
+        "Truman the Tiger | Truman = deep cut",
+        "Cocky = deep cut",
+        "Tusk = deep cut",
+        "Sooner Schooner = deep cut",
+        "Mr. Commodore = secrillion",
+        "Bully = secrillion"
+      ]
+    },
+
+    "aggie-coaches": {
+      "prompt": "Name a Texas A&M head football coach",
+      "_tiers": "Head coaches, including interim coach Elijah Robinson (2023 bowl).",
+      "answers": [
+        "Mike Elko | Elko = plankton",
+        "Jimbo Fisher | Jimbo = plankton",
+        "Kevin Sumlin | Sumlin = schooler",
+        "R.C. Slocum | RC Slocum | Slocum = schooler",
+        "Bear Bryant | Paul Bryant | Paul \"Bear\" Bryant = schooler",
+        "Dennis Franchione | Franchione | Coach Fran = rare",
+        "Mike Sherman = rare",
+        "Jackie Sherrill | Sherrill = rare",
+        "Gene Stallings | Stallings = rare",
+        "Emory Bellard | Bellard = deep cut",
+        "Tom Wilson = deep cut",
+        "Homer Norton | Norton = deep cut",
+        "Dana X. Bible | Dana Bible = secrillion",
+        "Elijah Robinson = secrillion"
+      ]
+    },
+
+    "si-derived-units": {
+      "prompt": "Name an SI derived unit",
+      "_tiers": "The 22 named SI derived units (symbols accepted).",
+      "answers": [
+        "Newton | N = plankton",
+        "Joule | J = plankton",
+        "Watt | W = plankton",
+        "Volt | V = schooler",
+        "Pascal | Pa = schooler",
+        "Hertz | Hz = schooler",
+        "Ohm | Ω = schooler",
+        "Coulomb | C = rare",
+        "Farad | F = rare",
+        "Tesla | T = rare",
+        "Henry | H = rare",
+        "Degree Celsius | Celsius = rare",
+        "Weber | Wb = deep cut",
+        "Siemens | S = deep cut",
+        "Lumen | lm = deep cut",
+        "Lux | lx = deep cut",
+        "Becquerel | Bq = deep cut",
+        "Gray | Gy = deep cut",
+        "Sievert | Sv = deep cut",
+        "Radian | rad = deep cut",
+        "Katal | kat = secrillion",
+        "Steradian | sr = secrillion"
+      ]
+    },
+
+    "engineering-failures": {
+      "prompt": "Name a famous engineering failure or disaster",
+      "answers": [
+        "Titanic | RMS Titanic = plankton",
+        "Challenger | Space Shuttle Challenger | Challenger disaster = plankton",
+        "Chernobyl = plankton",
+        "Tacoma Narrows Bridge | Tacoma Narrows | Galloping Gertie = plankton",
+        "Hindenburg = schooler",
+        "Columbia | Space Shuttle Columbia | Columbia disaster = schooler",
+        "Deepwater Horizon | BP oil spill = schooler",
+        "Boeing 737 MAX | 737 MAX = schooler",
+        "Fukushima | Fukushima Daiichi = schooler",
+        "Three Mile Island | TMI = schooler",
+        "Hyatt Regency walkway collapse | Hyatt Regency | Kansas City Hyatt = schooler",
+        "Apollo 13 = rare",
+        "Apollo 1 = rare",
+        "Ford Pinto = rare",
+        "Mars Climate Orbiter = rare",
+        "I-35W bridge collapse | I-35W Mississippi River bridge | Minneapolis bridge collapse = rare",
+        "Surfside condo collapse | Champlain Towers South | Surfside = rare",
+        "Bhopal disaster | Bhopal = rare",
+        "Johnstown Flood = rare",
+        "Big Dig ceiling collapse | Big Dig = rare",
+        "Quebec Bridge = deep cut",
+        "St. Francis Dam | Saint Francis Dam = deep cut",
+        "Teton Dam = deep cut",
+        "Silver Bridge = deep cut",
+        "Therac-25 = deep cut",
+        "Ariane 5 | Ariane 5 Flight 501 = deep cut",
+        "Banqiao Dam = deep cut",
+        "Morandi Bridge | Ponte Morandi | Genoa bridge collapse = deep cut",
+        "de Havilland Comet | Comet airliner = deep cut",
+        "Liberty ships = deep cut",
+        "Citicorp Center | Citigroup Center = deep cut",
+        "Sampoong Department Store | Sampoong = deep cut",
+        "Vajont Dam = deep cut",
+        "Malpasset Dam = deep cut",
+        "Hartford Civic Center roof collapse | Hartford Civic Center = deep cut",
+        "FIU pedestrian bridge collapse | FIU bridge = deep cut",
+        "Millennium Bridge = deep cut",
+        "Northeast blackout of 2003 | 2003 blackout = deep cut",
+        "2021 Texas power crisis | Winter Storm Uri | 2021 Texas blackout = deep cut",
+        "Boston Molasses Flood | Great Molasses Flood | Molasses Flood = secrillion",
+        "Tay Bridge | Tay Bridge disaster = secrillion"
+      ]
+    },
+
     "football-roster": {
       "prompt": "Name a player on Texas A&M's 2026 football roster",
       "_tiers": "Whole posted 2026 roster from 12thman.com (122 players; A&M does not mark scholarship status). Levels from 2026 stats via ESPN: headline playmakers are plankton, key starters schooler, other contributors and the kicker, punter and a starting lineman rare, the rest deep cut; the two long snappers are the gems.",
@@ -1457,6 +1612,7 @@
         "Industry Nights | Industry Night = schooler",
         "First-Year Survey | First Year Survey | Freshman Survey = schooler",
         "Town Hall | Engineering Town Hall | SEC Town Hall = schooler",
+        "Career Discovery Fair | CDF | SEC Career Discovery Fair | Engineering Career Discovery Fair = schooler",
         "E-Day | Engineering Day | E Day = rare",
         "E-Week | Engineering Week | E Week = rare",
         "Monsters and Masterpieces | Monsters & Masterpieces = deep cut",
@@ -1733,32 +1889,6 @@
         "Ross Volunteers = 1",
         "Replant = 1",
         "Hump It | Hump It, Ags | Hump it Ags | Hump it Ag | Hump it Aggies = 1"
-      ]
-    },
-
-    "aggie-slang": {
-      "prompt": "Name a piece of Aggie slang",
-      "answers": [
-        "Howdy = 35",
-        "Gig 'em = 30",
-        "Whoop = 22",
-        "Fish = 12",
-        "Old Army = 12",
-        "Good Bull = 10",
-        "Two-percenter | 2 percenter | Two percenter = 8",
-        "t.u. | tu | Texas University = 8",
-        "Ags = 6",
-        "Aggieland = 6",
-        "Former Student | Former Students = 5",
-        "Old Ags = 3",
-        "Bad Bull = 3",
-        "Hump It | Hump It, Ags | Hump it Ags | Hump it Ag | Hump it Aggies = 3",
-        "Frog = 2",
-        "Zip = 2",
-        "Highway 6 runs both ways = 2",
-        "Saw varsity's horns off | Saw 'em Off = 2",
-        "Elephant = 1",
-        "Rev = 1"
       ]
     },
 
