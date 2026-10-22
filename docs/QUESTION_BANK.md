@@ -2,7 +2,49 @@
 
 Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fair prompts are left out. Points per tier: Plankton 10 · Schooler 30 · Rare 60 · Deep cut 85 · One in a SECrillion 100.
 
-44 prompts.
+47 prompts.
+
+## Name a school in the Texas A&M University System
+
+`tamus-schools` · 13 answers · Daily / Unlimited pool · Packs: Aggieland
+
+**Plankton (10) · 1:** Texas A&M University (Texas A&M, TAMU, A&M College Station)
+
+**Schooler (30) · 4:** Prairie View A&M University (Prairie View A&M, Prairie View, PVAMU); Texas A&M University-Corpus Christi (Texas A&M Corpus Christi, TAMUCC, Corpus Christi); Texas A&M University-Kingsville (Texas A&M Kingsville, TAMUK, Kingsville); Tarleton State University (Tarleton State, Tarleton)
+
+**Rare (60) · 4:** West Texas A&M University (West Texas A&M, WTAMU, WT); Texas A&M International University (Texas A&M International, TAMIU); East Texas A&M University (East Texas A&M, Texas A&M University-Commerce, Texas A&M Commerce, Commerce); Texas A&M University-San Antonio (Texas A&M San Antonio, TAMUSA)
+
+**Deep cut (85) · 3:** Texas A&M University-Central Texas (Texas A&M Central Texas, TAMUCT); Texas A&M University-Texarkana (Texas A&M Texarkana, TAMUT, Texarkana); Sul Ross State University (Sul Ross)
+
+**One in a SECrillion (100) · 1:** Texas A&M University-Victoria (Texas A&M Victoria, Victoria)
+
+## Name a sorting algorithm
+
+`sorting-algorithms` · 28 answers · Daily / Unlimited pool · Packs: Code & Cosmos
+
+**Plankton (10) · 3:** Bubble sort (Bubble); Quicksort (Quick sort, Quick); Merge sort (Mergesort, Merge)
+
+**Schooler (30) · 3:** Insertion sort (Insertion); Selection sort (Selection); Heap sort (Heapsort, Heap)
+
+**Rare (60) · 6:** Radix sort (Radix); Counting sort (Counting); Bucket sort (Bucket); Bogosort (Bogo sort, Bogo); Shell sort (Shellsort, Shell); Timsort (Tim sort)
+
+**Deep cut (85) · 14:** Cocktail shaker sort (Cocktail sort, Shaker sort); Gnome sort; Comb sort; Introsort (Introspective sort); Cycle sort; Pancake sort; Sleep sort; Stooge sort; Odd-even sort (Brick sort); Bitonic sort; Tree sort; Topological sort (Topological sorting); Pigeonhole sort; Block sort
+
+**One in a SECrillion (100) · 2:** Smoothsort (Smooth sort); Patience sorting (Patience sort)
+
+## Name a data structure
+
+`data-structures` · 39 answers · Daily / Unlimited pool · Packs: Code & Cosmos
+
+**Plankton (10) · 3:** Array; Linked list; Stack
+
+**Schooler (30) · 5:** Queue; Hash table (Hash map, Hashmap, Dictionary); Binary tree; Tree; Graph
+
+**Rare (60) · 8:** Binary search tree (BST); Heap (Binary heap); Priority queue; Set (Hash set); Map; Trie (Prefix tree); Deque (Double-ended queue); Vector (Dynamic array, ArrayList)
+
+**Deep cut (85) · 21:** AVL tree; Red-black tree; B-tree; B+ tree; Segment tree; Fenwick tree (Binary indexed tree); Skip list; Bloom filter; Disjoint set (Union-find); Circular buffer (Ring buffer); Doubly linked list; Matrix (2D array); Tuple; Adjacency list; Adjacency matrix; Splay tree; Quadtree; k-d tree (KD tree); Suffix tree; Suffix array; Struct (Record)
+
+**One in a SECrillion (100) · 2:** Treap; Rope
 
 ## Name an SEC (conference) football stadium
 
@@ -104,17 +146,17 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name an EC member from 2025-2026
 
-`ec-members` · 29 answers · Daily / Unlimited pool · Packs: SEC Insider
+`ec-members` · 30 answers · Daily / Unlimited pool · Packs: SEC Insider
 
-**Plankton (10) · 4:** Cooper Calk; Caitlin Dorn; Ittiyanam Tomichan; Tristan Forks
+**Plankton (10) · 3:** Cooper Calk; Tristan Forks; Josh Huye
 
-**Schooler (30) · 6:** Braeden Cochran; Nathan Lam; Josh Huye; Matthew Monroy; Aniket Shirodkar; Vaishnavi Bhat
+**Schooler (30) · 7:** Braeden Cochran; Nathan Lam; Matthew Monroy; Aniket Shirodkar; Aadit Shah; Anika Palacharla; Ewan Smith
 
-**Rare (60) · 5:** Pranav Nandakumar; Aadit Shah; Anika Palacharla; Ella Norton; Caroline Holtman
+**Rare (60) · 8:** Caitlin Dorn; Ittiyanam Tomichan; Pranav Nandakumar; Ella Norton; David Hunt; Carissa Ng; Isabelle Planty; Skanda Nagaraja
 
-**Deep cut (85) · 12:** Lacy Duncan; David Hunt; Ewan Smith; Afiya Dhanani; Yusuf Ali; Afiz Ashittu; Jorge Garcia; Janice Thomas; Biya Mary Cham (Biya Cham); Reese Billedo; Bella Colgan; Katelyn Ta
+**Deep cut (85) · 11:** Vaishnavi Bhat; Caroline Holtman; Lacy Duncan; Afiya Dhanani; Yusuf Ali; Afiz Ashittu; Jorge Garcia; Janice Thomas; Biya Mary Cham (Biya Cham); Reese Billedo; Katelyn Ta
 
-**One in a SECrillion (100) · 2:** Carissa Ng; Isabelle Planty
+**One in a SECrillion (100) · 1:** Bella Colgan
 
 ## Name a residence hall at Texas A&M
 
