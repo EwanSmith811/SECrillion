@@ -55,6 +55,7 @@ Each prompt is a list of accepted answers, and each answer has a **seed count**:
 - A near miss isn't scored right away. Like Krillion's answer corrections, the game puts the closest answer in the box ("Did you mean Society of Hispanic Professional Engineers?") and the player presses Enter to dive with it or keeps typing. Near misses are typos and swapped letters (SPHE), word-form slips ("Engineering" for "Engineers"), a missing word ("Society of Hispanic Engineers") and the start of exactly one answer's name ("Ellicott Dredge"). An alias that's only a letter or two off a different answer can trigger a surprising suggestion, so keep aliases distinct.
 - Instead of a number, an answer can name its depth level: `Tristan Forks = plankton`. The levels are `plankton`, `schooler`, `rare`, `deep cut` and `secrillion` (One in a SECrillion). They score 10, 30, 60, 85 and 100 points.
 - Plain objects work too: `{ "a": "Zachry", "aka": ["ZACH"], "n": 30 }`.
+- For prompts whose answers are whole sentences, add `"loose": true` (see `sec-quotes`). Matching then compares key words instead of the exact wording, ignoring filler like "I", "the" and "just". A guess that covers about three quarters of an answer's key words counts right away ("medium rare chicken" scores *We should make a medium rare chicken*). A partial one, or one that hits two distinctive words ("shave my head"), gets the "Did you mean…?" suggestion with the real quote filled in.
 
 ### Scheduling
 
@@ -84,6 +85,20 @@ Each prompt is a list of accepted answers, and each answer has a **seed count**:
 | 0 | Niche | graduate associations, advisory councils, small technical chapters |
 
 No org publishes a member count. The tiers are estimates anchored on these data points: SPE (1,300+ members in 2015), SHPE (National Large Chapter of the Year in 2019 and 2021), SWE (300+ active members) and PAID (called one of A&M's largest orgs). SEC officers should adjust them, and once the database is live, real answers take over.
+
+## The Slack prompts
+
+Five prompts come from the SEC Slack, pulled on Oct 23, 2026. They're in the daily pool and the **Slack Lore** pack.
+
+| Prompt | Source | How levels are set |
+|---|---|---|
+| `sec-quotes` | 199 posts in #quotes from Oct 23, 2025 to Oct 22, 2026 | Reactions plus half the reply count: the top 12% are plankton, the next 20% schooler, the next third rare, the rest deep cut. Two unreacted quotes are the gems. Only the quote counts, not who said it. |
+| `sec-slack-channels` | 49 public, non-archived channels | 55% member count on a log scale (119 people are in the default channels) and 45% how obscure the name is. The two 2023 summer channels, with no active members left, are the gems. |
+| `sec-quoted` | Everyone quoted in that #quotes window | Quoted 8+ times plankton, 4–7 schooler, 2–3 rare, once deep cut. Dr. Hogan and Dr. Taele are the gems. |
+| `sec-quotes-food` | Foods and drinks named in those quotes | By how often they came up, then how guessable. |
+| `sec-quotes-characters` | Celebrities and characters named in those quotes | By how often they came up, then how guessable. |
+
+To refresh them for a new year, re-pull #quotes and the channel list and regenerate the five prompts.
 
 ## The career fair prompts
 

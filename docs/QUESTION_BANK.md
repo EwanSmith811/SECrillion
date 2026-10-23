@@ -2,7 +2,7 @@
 
 Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fair prompts are left out. Points per tier: Plankton 10 · Schooler 30 · Rare 60 · Deep cut 85 · One in a SECrillion 100.
 
-47 prompts.
+52 prompts.
 
 ## Name a school in the Texas A&M University System
 
@@ -146,7 +146,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name an EC member from 2025-2026
 
-`ec-members` · 30 answers · Daily / Unlimited pool · Packs: SEC Insider
+`ec-members` · 30 answers · Daily / Unlimited pool · Packs: SEC Insider, Slack Lore
 
 **Plankton (10) · 3:** Cooper Calk; Tristan Forks; Josh Huye
 
@@ -342,7 +342,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name an event or program run by the Student Engineers' Council
 
-`sec-events` · 20 answers · Daily / Unlimited pool · Scheduled dives 2, 4 · Packs: SEC Insider
+`sec-events` · 20 answers · Daily / Unlimited pool · Scheduled dives 2, 4 · Packs: SEC Insider, Slack Lore
 
 **Plankton (10) · 2:** Career Fair (Engineering Career Fair, SEC Career Fair); EnVision Conference (EnVision)
 
@@ -421,6 +421,76 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 **Rare (60) · 4:** Florida (UF, Gators); Tennessee; Auburn; Oklahoma (OU)
 
 **Deep cut (85) · 7:** Ole Miss (Mississippi); Arkansas; Kentucky; South Carolina; Missouri (Mizzou); Vanderbilt (Vandy); Mississippi State (Miss State)
+
+## Name a quote from the SEC Slack's #quotes channel this past year
+
+`sec-quotes` · 199 answers · Daily / Unlimited pool · Packs: Slack Lore
+
+**Plankton (10) · 24:** Back in my day; Is this world even real?; What do y'all do with the extra bananas? I can convert them to muffins; Everything since kindergarten; Is McDonald's open?; If I make this shot, I'm joining the Corps; I saw '26 in the EWeek email and thought that was a mistake; Oh I forgot about her; Sean Bolger is now irrelevant to the council; Lowkey, these goats remind me of my dog; It's an NBA team on the east coast. Stanford?; I'm a pretty princess; AFIZ IS A SENIOR?! REALLY?!; That will be all.; That looks like an among us from this angle... sussy!; There's no bad grades, only bad curves; I saw Afiz once with lab glasses and he looked like an aquarium; I got my hoodie on. I got my headphones on. I felt like Batman walking into here; We get a certified unc!; I thought that was the moon for a second; Everyone needs an Afiz in their lives, I'm glad I'm y'all's Afiz; I'm going to make them oreo tiramisu and bring it to all member retreat; Thank you SEC for the donut because that lab just took everything I had; They said 'Elizabeth and Thomas' and I thought they said my full legal name
+
+**Schooler (30) · 40:** Can we have Pranul?; You know who Arjun looks like? Luigi.; There's an app?! (there's a slack app); Would you rather have a Maylun daughter or a Caitlin son?; I really like your fit today... I just don't know why he put it all together (I really like your fit today); Once you fill out the first year survey, you unlock facial hair; Avi would be Scooby Doo, yea because he eats a lot; The S.S. Marcel Reed (name the next nasa spacecraft the ss marcel reed); You're the muffin man; If you grow a curly moustache I will shave my head and go bald (curly mustache); Wait you're a senior?!; I'm jealous of people who can read; Wait I don't know how to use the camera... oh it's off!; If I'm the Grinch then you're the little dog; Is he still here with us?; Are turtles hydrophobic?; I thought it was pigment of your imagination (figment of your imagination); I feel like LeBron James is such a generational human being, like he unified the world; Oh, Sai wants to connect! ... No thanks; I can't wait to put that wasp in my truck for the ride home Ewan; I thought he was a sophomore; Sometimes I wish I were a 6'2 man (six two man); I thought Hotworx was some form of hibachi; I just finished the extra bread from career fair; I'm soooooo hungryyyyy (I'm so hungry); Hot chocolate is like a fire inside you; Why are you going to be in Washington? I thought you were moving to Seattle; I didn't choose consulting, it chose me; It feels like a celery stick; Being performative is a lifestyle for me, it's not fake. I actually live it; Imma buy the Laufey skin later tonight (laufey fortnite skin); I had to switch to a new toothpaste cause mine was too minty; You're not being very Laura Givens right now, you're being very Laura Takens; I can't believe I'm still doing this; What if I come back... as a child (your last envision); All my friends are 19 so I think I'm turning 19 too (all my friends are nineteen so i think i'm turning nineteen too); I just wanna see Nathan Lam airborne; The Wicked album was my most listened to album; I sometimes wish I was a dolphin; Wait you don't ever have to be alone, you can just talk to Gemini
+
+**Rare (60) · 65:** Close your eyes and they can't see you; The two chilliest 6'5 guys in SEC (two chillest six five guys); It's what Nelson Mandela figured out when an apple fell on his head; I was born for the cubicles; I could live a fulfilling mango life; LinkedIn is love, LinkedIn is life; Sometimes I just be tapping on stuff; Wait are you actually 4'6 (are you actually four six); What a revolutionary experience; I thought you were Caitlin Dorn; What's wrong with you??; For a while I didn't even have Carissa's number saved; External validation is all that matters; Kyle is SpongeBob cause he laughs like SpongeBob; Do you need a life vest sir? We don't want anyone drowning!; We should market Town Hall as in person Reddit; No chance left already; I don't eat anymore so...; I hate scooter people too, I hate myself; Honestly, I'm having a whole bunch of bananas for dinner; Justin is your Raul???; I used to be young; Washington D.C. is not in Washington?! Is it Arizona...? (no that sounds right washington dc arizona); B as in debt; I just ate cereal as an appetizer; It would not be Eng Dev Nation without its people; Thomas you give Bella from Twilight; Wheeeeee (Whee, Wheee); So you and him are like, the final bosses of Ignite?; Are you going to career fair?; I don't know if Korean skincare will work on my skin. I'm not Korean.; I was scared of the outside; I'm more unc than I am neph; He has a girlfriend???; Hey it's Morbius!; This bird looks like they brought the dodo birds back. Wait they did??; I don't understand all this new slang; I'm the most cultured Indian ever; I love hospitalizing people; Me no no wanna... I'm just a small bean; You are kenough; We should make a medium rare chicken; It's women's history month? I thought that was March?!; I'm so excited for the SEC raffle; You know I'm banned from the SpongeBob exhibit at Universal; Honestly, I had a whole bunch of bananas for breakfast; They need to make a metal pipe pre scratched Owala so I can destroy it more easily; Wait what's my name again; You give me Patrick Star vibes; I'm more of a Tri Delt (tridelt); Wait this is ketchup??; I was doing everything so midly (mildly); I think I used Cava, I mean Canva for EB presentation. Oh wow I'm hungry; Guess what I'm listening to right now... 2010 Toyota Corolla, by 2003 Toyota Corolla. (toyota corolla by toyota corolla, 2010 toyota corolla); Hullabaloo caneck caneck? (hullabaloo cacheck cacheck, it didn't say hullabaloo caneck caneck); I'm so small and petite guys; Toe surgery; Wait, I forget his name. Raul? Yeah that sounds right.; You don't look tall; How many words does 'fire' have?; I lowkey be eating tomatoes; I don't brush my teeth; What is that... God crying?; Is bacon not already made outta beef; You know what's my curse? I always sit on a wobbly table
+
+**Deep cut (85) · 68:** I shower in overalls; I'm a big back not a monster; I didn't know we had a quotes channel; Wait so did Afiz graduate early??; I wish I was named Afiz Afiz; You're missing some life experiences; I've never seen a pecan in real life; Our chairs are Elizabeth Thomas?... and Savannah Giron?; It only has to make sense to me for me to do it (Hey so it actually only has to make sense to me for me to do it and I don't feel like explaining it to anyone else.); I've never actually gone bowling; No her FLO is special, it's meant for freshman; I tried pasta this week; It's a ham. (it's not a cow it's a ham); Yea Pranav was useless; Objectively, the album you showed me is something I would listen to in 6th grade when I was sad; Did you ground that beef... bad beef; So I can't read; Drake's humor is my humor... anita max wynn (anita max win); I'm not Drake I'm Pranav; I know nothing about circles.; We got some smart cookies in here; I do be chudding around; I'm so eepy (are you eepy, i'm gonna put in some airpods because i'm so eepy); I could make matcha now; I have a slur when I speech.; I don't think I've ever boiled an egg; The Cocomelon theme song was my number one song on Spotify Wrapped; I forgot you can get a hamburger at McDonald's; ...cuz I slept on the floor; I think the world actually revolves around me; Thankfully, my feet are very durable; I wanna play the racing game, what's it called? Mario Kart?; That's why I don't study; I'm playing checkers you guys are playing chess; I'm 6'7 honestly (i'm six seven honestly, i'm 6 7 honestly); I'm hungry... I should just go to sleep now so I can eat tomorrow; I wish I was a millennial; If you're taller the pool length is shorter you know; We're eating up a feast. We're picking up Afiz?; Put the materials in the bag.; Soup is Italian water; Braeden embodifies cringe (braeden embodies cringe); You're wearing a Scooby Doo fit; How do y'all sit in chairs?; She is highly short; I'm allergic to sandwiches; Oh it's a Jackson's Deli cookie?; Isn't this so me? I'm just so goofy vibes; You're just so cool and inspiring; If this was an app this would cost like a million tokens; Aadit isn't Adi's roommate?!; I'm a chomp chomp fairy; I don't really care about jobs not gonna lie; Is this bread or chicken; They are one in the same (my dad and kevin the minion are one and the same); You know the swing was my favorite apparatus as a child; I wish there was a playground on campus so engineers could go touch grass; I am just a force of nature; You haven't eaten healthy your whole life; Aadit and I are one and the same fr; Kyle gives me gremlin vibes; Me and Mr. Webster live in the future; Oh I have so much aura; Operations is not a game, it's a creed; Indubitably; That was a hee hee ha ha moment; We're table maxxing right now (table maxing); I'll make you orange juice and milk. That's like orange chicken!!
+
+**One in a SECrillion (100) · 2:** I'll send you my longitude and langitude (longitude and latitude); Splenda??? Is it not already sweet enough??
+
+## Name a public channel in the SEC Slack
+
+`sec-slack-channels` · 49 answers · Daily / Unlimited pool · Packs: Slack Lore
+
+**Plankton (10) · 5:** #announcements (announcements); #general (general); #important_documents (important_documents, important documents, importantdocuments, important docs); #professional_opportunities (professional_opportunities, professional opportunities, professionalopportunities, professional opps, pro opportunities); #quotes (quotes)
+
+**Schooler (30) · 18:** #celebration_station (celebration_station, celebration station, celebrationstation); #gc_meeting_slides (gc_meeting_slides, gc meeting slides, gcmeetingslides, general council meeting slides, gc slides); #meeting_reminder (meeting_reminder, meeting reminder, meetingreminder, meeting reminders); #photo-drives (photo-drives, photo drives, photodrives, photo drive); #weekly_reminders (weekly_reminders, weekly reminders, weeklyreminders); #pics-around-campus (pics-around-campus, pics around campus, picsaroundcampus); #chomp_chomp (chomp_chomp, chomp chomp, chompchomp, chomp); #pics-in-zach (pics-in-zach, pics in zach, picsinzach); #intramurals (intramurals, imls, intramural); #movies (movies, movie); #pics-in-zachbucks (pics-in-zachbucks, pics in zachbucks, picsinzachbucks, zachbucks, pics in zach starbucks); #cooking (cooking); #book_club (book_club, book club, bookclub, books); #ootd (ootd, outfit of the day); #run_club (run_club, run club, runclub, running); #houston_summer26 (houston_summer26, houston summer26, houston summer 26, houstonsummer26, houston summer 2026, houston summer); #music (music); #basketball (basketball, bball)
+
+**Rare (60) · 17:** #amr_spring_26 (amr_spring_26, amr spring 26, amrspring26, amr, all member retreat spring 26, all member retreat 2026, amr spring 2026); #all_member_retreat_2025 (all_member_retreat_2025, all member retreat 2025, allmemberretreat2025, all member retreat, amr 2025, all member retreat 25); #pickle-and-tennis-and-badminton (pickle-and-tennis-and-badminton, pickle and tennis and badminton, pickleandtennisandbadminton, pickleball, pickle, tennis, badminton, pickle and tennis); #swole-engineers-club (swole-engineers-club, swole engineers club, swoleengineersclub, swole engineers, swole, gym); #cs_x_cpen (cs_x_cpen, cs x cpen, csxcpen, cs cpen, computer science computer engineering); #pics-away-from-campus (pics-away-from-campus, pics away from campus, picsawayfromcampus); #dfw_summer26 (dfw_summer26, dfw summer26, dfw summer 26, dfwsummer26, dfw summer 2026, dfw summer, dallas summer); #nyt_linkedin_games (nyt_linkedin_games, nyt linkedin games, nytlinkedingames, nyt, nyt games, linkedin games, nyt linkedin, wordle); #austin_summer26 (austin_summer26, austin summer26, austin summer 26, austinsummer26, austin summer 2026, austin summer); #fantasyfootball (fantasyfootball, fantasy football, fantasy); #cstat_summer26 (cstat_summer26, cstat summer26, cstat summer 26, cstatsummer26, cstat summer 2026, cstat summer, college station summer); #dfw_summer_2025 (dfw_summer_2025, dfw summer 2025, dfwsummer2025, dfw summer 25); #austin_summer_2025 (austin_summer_2025, austin summer 2025, austinsummer2025, austin summer 25); #gaming (gaming, games, video games); #west-coast_summer26 (west-coast_summer26, west coast summer26, west coast summer 26, westcoastsummer26, west coast summer 2026, west coast summer); #east-coast_summer26 (east-coast_summer26, east coast summer26, east coast summer 26, eastcoastsummer26, east coast summer 2026, east coast summer); #houston_summer_2025 (houston_summer_2025, houston summer 2025, houstonsummer2025, houston summer 25)
+
+**Deep cut (85) · 7:** #p-town (p-town, p town, ptown); #cstat_summer_2025 (cstat_summer_2025, cstat summer 2025, cstatsummer2025, cstat summer 25); #west_coast_summer_2025 (west_coast_summer_2025, west coast summer 2025, westcoastsummer2025, west coast summer 25); #international_summer26 (international_summer26, international summer26, international summer 26, internationalsummer26, international summer 2026, international summer); #mid-west_summer26 (mid-west_summer26, mid west summer26, mid west summer 26, midwestsummer26, midwest summer 2026, midwest summer, mid west summer 2026); #west-texas_summer26 (west-texas_summer26, west texas summer26, west texas summer 26, westtexassummer26, west texas summer 2026, west texas summer); #hayday (hayday, hay day)
+
+**One in a SECrillion (100) · 2:** #austin_summer_2023 (austin_summer_2023, austin summer 2023, austinsummer2023, austin summer 23); #cstat_summer_2023 (cstat_summer_2023, cstat summer 2023, cstatsummer2023, cstat summer 23)
+
+## Name someone who got quoted in #quotes this past year
+
+`sec-quoted` · 72 answers · Daily / Unlimited pool · Packs: Slack Lore
+
+**Plankton (10) · 7:** Afiz Ashittu (Afiz, Ashittu); Avi Vedala (Avi, Vedala); Sai Ram Challapalli (Sai Ram, Sai, Challapalli); Ameya Khond (Ameya, Khond); John Lehan (John, Lehan); Jorge Garcia Garza (Jorge Garcia, Jorge, Garza); Pranav Nandakumar (Pranav N, Pranav, Nandakumar)
+
+**Schooler (30) · 9:** Carissa Ng (Carissa, Ng); Isabelle Planty (Isabelle, Planty); Braeden Cochran (Braeden, Cochran); Emmanuel Mendoza (Emmanuel, Mendoza); Landon Bargainer (Landon, Bargainer); Aadit Shah (Aadit, Shah); Arjun Sugunan (Arjun, Sugunan); Jackson Connor (Jackson, Connor); Savannah Giron (Savannah, Giron)
+
+**Rare (60) · 26:** Afiya Dhanani (Afiya, Dhanani); Cathy Molyneux (Cathy, Molyneux); Elizabeth Thomas (Elizabeth Ann Thomas, Elizabeth); Janice Thomas (Janice); Jaydon Castillo (Jaydon); Kaori Shioyama (Kaori, Shioyama); Laura Latt (Laura, Latt); Thomas Ankner (Thomas, Ankner); Abi Nair (Abi); Aditya Nair (Aditya); Anika Palacharla (Anika, Palacharla); Aniket Shirodkar (Aniket, Shirodkar); Dreux Larsen (Dreux, Larsen); Ewan Smith (Ewan, Smith); Hannah Crisp (Hannah, Crisp); Justin Gao (Justin, Gao); Katelyn Ta (Katelyn, Ta); Lucas Hwang (Lucas, Hwang); Manasa Kilaru (Manasa, Kilaru); Matthew Monroy (Matthew, Monroy); Nathan Lam (Nathan, Lam); Nikhila Manikandan (Nikhila, Manikandan); Peter Castillo (Peter); Raul Lozano (Raúl Lozano, Raul, Raúl, Lozano); Riley Wallis (Riley, Wallis); Vinathi Golkonda (Vinathi, Golkonda)
+
+**Deep cut (85) · 28:** Aryana Rabee (Aryana, Rabee); Biya Mary Cham (Biya Cham, Biya, Cham); Colton Landon (Colton); Cooper Calk (Cooper, Calk); David Hunt (David, Hunt); Ella Joliet (Ella, Joliet); Emily Abraham (Emily, Abraham); Hannah Chen (Chen); Ittiyanam Tomichan (Ittiyanam, Tomichan); James Bodiford (James, Bodiford); Jennings Garrett (Jennings, Garrett); Josh Huye (Josh, Huye); Kevin Johnson (Kevin, Johnson); Kyle Oubre (Kyle, Oubre); Lacy Duncan (Lacy, Duncan); Lakshya Vason (Lakshya, Vason); Maylun Huang (Maylun, Huang); Nayeon Lee (Nayeon, Lee); Nitin Achuta (Nitin, Achuta); Peyton LeBlanc (Peyton, LeBlanc); Reese Billedo (Reese, Billedo); Reina Khang (Reina, Khang); Ryan Kappil (Ryan, Kappil); Skanda Nagaraja (Skanda, Nagaraja); Sofia Irahola Vallejos (Sofia Irahola, Sofia, Vallejos); Tanvi Devineni (Tanvi, Devineni); Tristan Forks (Tristan, Forks); Vaishnavi Bhat (Vaishnavi, Bhat)
+
+**One in a SECrillion (100) · 2:** Dr. Hogan (Dr Hogan, Hogan, Doctor Hogan); Dr. Taele (Dr Taele, Taele, Doctor Taele)
+
+## Name a food or drink that came up in a #quotes quote this past year
+
+`sec-quotes-food` · 28 answers · Daily / Unlimited pool · Packs: Slack Lore
+
+**Plankton (10) · 2:** Bananas (Banana); Chicken (Medium rare chicken, Orange chicken)
+
+**Schooler (30) · 4:** Muffins (Muffin); Bread; Beef (Ground beef); Cookies (Cookie, Jackson's Deli cookie)
+
+**Rare (60) · 12:** Hamburger (Burger); Hot chocolate (Hot cocoa); Matcha; Cereal; Ketchup; Sandwiches (Sandwich); Soup; Pasta; Eggs (Egg, Boiled egg); Milk; Orange juice (OJ); Apple (Apples)
+
+**Deep cut (85) · 8:** Ice cream (SpongeBob ice cream); Tomatoes (Tomato); Mango (Mangoes, Mangos); Bacon; Celery (Celery stick); Donut (Doughnut, Donuts); Pecans (Pecan); Hibachi
+
+**One in a SECrillion (100) · 2:** Oreo tiramisu (Tiramisu, Oreo); Splenda
+
+## Name a celebrity or fictional character name-dropped in #quotes this past year
+
+`sec-quotes-characters` · 21 answers · Daily / Unlimited pool · Packs: Slack Lore
+
+**Plankton (10) · 3:** SpongeBob (SpongeBob SquarePants, Sponge Bob); Drake (Anita Max Wynn, Anita Max Win); Scooby-Doo (Scooby Doo, Scooby)
+
+**Schooler (30) · 4:** LeBron James (LeBron); Batman; Mario (Mario Kart); The Grinch (Grinch)
+
+**Rare (60) · 7:** Patrick Star (Patrick); Luigi; Kevin the Minion (Minion, Minions, Kevin); Among Us crewmate (Among Us, Amogus, Crewmate); Marcel Reed (S.S. Marcel Reed); Nelson Mandela (Mandela); Cocomelon
+
+**Deep cut (85) · 5:** Morbius; Bella Swan (Bella from Twilight, Bella); Ken (Kenough); The Muffin Man (Muffin Man); Gremlin (Gremlins)
+
+**One in a SECrillion (100) · 2:** Mr. Webster (Webster, Merriam-Webster); Laufey
 
 ## Name a programming language
 

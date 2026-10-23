@@ -93,7 +93,57 @@ export function preparePrompt(id, raw) {
   const deep = seeded.filter((a) => a.tier === 'deep').sort((a, b) => b.n - a.n);
   const promote = Math.round(RARE_SHARE * (rare + deep.length)) - rare;
   for (const a of deep.slice(0, Math.max(0, promote))) a.tier = 'rare';
-  return { id, prompt: raw.prompt, answers, index };
+  const loose = !!raw.loose;
+  const df = new Map();
+  if (loose) {
+    for (const a of answers) {
+      a.words = [a.a, ...a.aka].map((name) => looseWords(normalize(name)));
+      for (const w of new Set(a.words.flat().map(stem))) df.set(w, (df.get(w) || 0) + 1);
+    }
+  }
+  return { id, prompt: raw.prompt, answers, index, loose, df };
+}
+
+const FILLER = new Set(('a an the and or but so of to in on at for with is are was were be been am i im id ill ive ' +
+  'you youre your it its this that these those my me we us our they them he him his she her ' +
+  'do does did dont didnt not just like if then than as by from up out about all can cant will would ' +
+  'could should have has had oh wait yeah yea ok okay there theres here really very too also some any').split(' '));
+const LOOSE_SUGGEST = 0.4;
+const LOOSE_ACCEPT = 0.75;
+
+function looseWords(key) {
+  const words = key.split(' ').filter(Boolean).map((w) => w.replace(/(.)\1{2,}/g, '$1$1'));
+  const content = words.filter((w) => !FILLER.has(w));
+  return content.length ? content : words;
+}
+
+function looseSame(a, b) {
+  if (a === b || stem(a) === stem(b)) return true;
+  const len = Math.min(a.length, b.length);
+  if (len < 5) return false;
+  const tol = len < 9 ? 1 : 2;
+  return editDistance(a, b, tol) <= tol;
+}
+
+function looseMatch(prompt, key) {
+  const guess = looseWords(key);
+  if (!guess.length) return null;
+  let best = null;
+  prompt.answers.forEach((ans, i) => {
+    for (const words of ans.words) {
+      const matched = words.filter((w) => guess.some((g) => looseSame(g, w)));
+      const hits = matched.length;
+      if (hits < Math.min(2, words.length) && !(words.length === 2 && hits === 1)) continue;
+      const cover = hits / words.length;
+      const rare = matched.filter((w) => w.length >= 4 && (prompt.df.get(stem(w)) || 0) <= 2).length;
+      if (cover < LOOSE_SUGGEST && rare < 2) continue;
+      const used = guess.filter((g) => words.some((w) => looseSame(g, w))).length / guess.length;
+      const score = cover + 0.25 * used;
+      if (!best || score > best.score || (score === best.score && ans.n > prompt.answers[best.i].n)) best = { i, score, cover, used };
+    }
+  });
+  if (!best) return null;
+  return { i: best.i, exact: best.cover >= LOOSE_ACCEPT && best.used >= 0.5 };
 }
 
 // Optimal string alignment distance (Levenshtein plus adjacent swaps); anything past `max` returns max + 1.
@@ -140,6 +190,10 @@ export function findAnswer(prompt, input) {
   const k = matchKey(input);
   if (!k) return { i: -1, exact: false };
   if (prompt.index.has(k)) return { i: prompt.index.get(k), exact: true };
+  if (prompt.loose) {
+    const m = looseMatch(prompt, normalize(input));
+    if (m) return m;
+  }
   let best = -1, bestScore = Infinity;
   const consider = (i, score) => {
     if (score < bestScore || (score === bestScore && prompt.answers[i].n > prompt.answers[best].n)) { best = i; bestScore = score; }
