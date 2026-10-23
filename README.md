@@ -88,7 +88,7 @@ No org publishes a member count. The tiers are estimates anchored on these data 
 
 ## The Slack prompts
 
-Five prompts come from the SEC Slack, pulled on Oct 23, 2026. They're in the daily pool and the **Slack Lore** pack.
+Seven prompts come from the SEC Slack, pulled on Oct 23, 2026. They're in the daily pool and the **Slack Lore** pack.
 
 | Prompt | Source | How levels are set |
 |---|---|---|
@@ -98,7 +98,14 @@ Five prompts come from the SEC Slack, pulled on Oct 23, 2026. They're in the dai
 | `sec-emojis` | 157 custom emojis in the workspace (the 74 alphabet-letter emojis count as one answer) | How often each shows up as a reaction in #quotes this past year, then how guessable the name is. :party_blob:, :sai-clops: and :hungrykevin: are plankton; :etwithet: and :vpdvpivpo: are the gems. |
 | `sec-quotes-characters` | Celebrities and characters named in those quotes | By how often they came up, then how guessable. |
 
-To refresh them for a new year, re-pull #quotes and the channel list and regenerate the five prompts.
+Two more come from the reminder channels (#weekly_reminders and the weekly recaps in #meeting_reminder), covering Aug 2025 to Oct 2026:
+
+| Prompt | Source | How levels are set |
+|---|---|---|
+| `sec-lunch-and-learns` | 33 companies that hosted a Lunch & Learn or Dine & Discuss | Name recognition plus how often they came back. TI, Amazon, Boeing, Tesla, Google and Lockheed are plankton; Worley and Venture Global are the gems. |
+| `sec-events-2526` | 67 events, socials and volunteer shifts | Flagship events (Career Fair, EnVision, AMR) are plankton; one-off socials go deeper. Sonic Run and Breakroom Takeover are the gems. It's kept `apart` from `sec-events` so the two never share a dive. |
+
+To refresh them for a new year, re-pull #quotes, the channel list and the reminder channels, and regenerate these prompts.
 
 ## The career fair prompts
 

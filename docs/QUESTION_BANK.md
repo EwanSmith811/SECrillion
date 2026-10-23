@@ -2,7 +2,7 @@
 
 Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fair prompts are left out. Points per tier: Plankton 10 · Schooler 30 · Rare 60 · Deep cut 85 · One in a SECrillion 100.
 
-52 prompts.
+54 prompts.
 
 ## Name a school in the Texas A&M University System
 
@@ -342,7 +342,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name an event or program run by the Student Engineers' Council
 
-`sec-events` · 20 answers · Daily / Unlimited pool · Scheduled dives 2, 4 · Packs: SEC Insider, Slack Lore
+`sec-events` · 20 answers · Daily / Unlimited pool · Scheduled dives 2, 4 · Packs: SEC Insider
 
 **Plankton (10) · 2:** Career Fair (Engineering Career Fair, SEC Career Fair); EnVision Conference (EnVision)
 
@@ -491,6 +491,34 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 **Deep cut (85) · 5:** Morbius; Bella Swan (Bella from Twilight, Bella); Ken (Kenough); The Muffin Man (Muffin Man); Gremlin (Gremlins)
 
 **One in a SECrillion (100) · 2:** Mr. Webster (Webster, Merriam-Webster); Laufey
+
+## Name a company that hosted an SEC Lunch & Learn or Dine & Discuss since fall 2025
+
+`sec-lunch-and-learns` · 33 answers · Daily / Unlimited pool · Packs: SEC Insider, Slack Lore
+
+**Plankton (10) · 6:** Texas Instruments (TI); Amazon; Boeing; Tesla; Google; Lockheed Martin (Lockheed)
+
+**Schooler (30) · 10:** Patterson-UTI (Patterson UTI, Patterson); RTX (Raytheon, Raytheon Technologies); Johnson & Johnson (J&J, JNJ); Intel; McKinsey (McKinsey & Company); Deloitte; PepsiCo (Pepsi); PwC (PricewaterhouseCoopers); HP (Hewlett-Packard, HP Inc); Garmin
+
+**Rare (60) · 12:** BAE Systems (BAE); Burns & McDonnell (Burns McDonnell, BurnsMcD, Burns, Burns & McDonald, Burns McDonald); Kiewit; L3Harris (L3 Harris, L3Harris Technologies); AbbVie; Applied Materials (AMAT); Bain (Bain & Company); Emerson NI (Emerson, NI, National Instruments); ABB; Textron; Sandia National Laboratories (Sandia, Sandia National Labs, Sandia Labs); Webber
+
+**Deep cut (85) · 3:** Tenaris; Alvarez & Marsal (Alvarez and Marsal, Alvarez); CACI-NASA (CACI, CACI NASA, NASA)
+
+**One in a SECrillion (100) · 2:** Worley; Venture Global
+
+## Name an SEC event held since fall 2025
+
+`sec-events-2526` · 67 answers · Daily / Unlimited pool · Packs: SEC Insider, Slack Lore
+
+**Plankton (10) · 5:** Career Fair (SEC Career Fair, Engineering Career Fair, Fall Career Fair, Spring Career Fair, CF); EnVision Conference (EnVision, Spring EnVision, Spring EnVision Conference, Envision); All Member Retreat (All-Member Retreat, AMR, All Members Retreat); GC Meeting (General Council Meeting, GC); Lunch & Learn (Lunch and Learns, Lunch & Learns)
+
+**Schooler (30) · 11:** E-Week (Engineering Week, E Week, EWeek); Pre-Career Fair Week (PCFW, Pre Career Fair Week); Industry Night (Industry Nights); Dine & Discuss (Dine and Discuss); Engineering Town Hall (Town Hall, Spring Town Hall, SEC Town Hall); Ignite Design Challenge (Ignite, Ignite Closing Ceremony, Ignite Kickoff); Career Discovery Fair (CDF); Banquet (Fall Banquet, SEC Banquet); Friendsgiving; New Member Social; Pickleball Social (Pickleball)
+
+**Rare (60) · 27:** Welcome Social; Company Chat; E-Day (Engineering Day, E Day); DI Saturday (Discover Day Saturday); Engineering Student Survey (ESS, ESS Tabling); First Year Survey (First Year Entry Survey, First Year Exit Survey, FYS, FYS Exit, First-Year Survey); Random Acts of Kindness (RAK, Halloween Candy Handout); Wellness Week; Pumpkin Painting Social (Pumpkin Painting); New Member Retreat; Alumni Game Day Brunch (Game Day Brunch, Alumni Brunch); Alumni Panel (Alumni Panel Workshop); SEC Football Social (Football Social, Football Game Pull); Presidents' Round Table (PRT, Presidents Round Table); ESO Open House; Club Crawl (MSC Club Crawl); SEC Informationals (Informationals, Membership Informationals); Study Hours; Lunch Buddies; Enrichment Tutoring (Lincoln Center Tutoring, Lincoln Center); The Big Event (Big Event); GDC Test Day (Grand Design Challenge Test Day); ProTrip (Pro Trip, ProTrip 2025, Seattle ProTrip); Yell Practice; Snow Cone Day (Snowcone Day, Snow Cone); Dunk Tank; Donut Day
+
+**Deep cut (85) · 22:** Monsters and Masterpieces (Monsters & Masterpieces); Problem Pitch Competition (Problem Pitch); Take a Note, Leave a Note (Take a Note Leave a Note); Alumni Crawfish Boil (Crawfish Boil); Hispanic Heritage Month Dinner (Hispanic Heritage Dinner); SEC x SASE Social (SASE Social); Winter Movie Night (Movie Night, Hot Chocolate Bar); Cocoa & Crafts (Cocoa and Crafts); Speaker Series (Jim Donnell Speaker Series); Digital Literacy Workshop (Hudson Oaks, Senior Citizen Digital Literacy Workshop); ESO Sand Volleyball Tournament (Sand Volleyball, Volleyball Tournament); Mini-GDC (Mini GDC); Engineering Entrepreneurship Summit (Entrepreneurship Summit); Graduate Student Roundtable (Grad Student Roundtable); Coffee & Conversations with the CIA (Coffee and Conversations, CIA Event); Baseball Social; First Friday; SEC x BSC Leadership Seminar (BSC Leadership Seminar, Leadership Seminar); Boba Bash (Boba); Resume Workshop (LinkedIn Workshop, Elevator Pitch Workshop, Career Fair Office Hours); Career Fair Need-to-Know (Need to Know); MembershipHub Redesign Competition (Membership Hub Redesign)
+
+**One in a SECrillion (100) · 2:** Sonic Run; Breakroom Takeover
 
 ## Name a programming language
 
