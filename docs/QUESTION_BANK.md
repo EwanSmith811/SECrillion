@@ -464,19 +464,19 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 **One in a SECrillion (100) · 2:** Dr. Hogan (Dr Hogan, Hogan, Doctor Hogan); Dr. Taele (Dr Taele, Taele, Doctor Taele)
 
-## Name a food or drink that came up in a #quotes quote this past year
+## Name a custom emoji in the SEC Slack
 
-`sec-quotes-food` · 28 answers · Daily / Unlimited pool · Packs: Slack Lore
+`sec-emojis` · 157 answers · Daily / Unlimited pool · Packs: Slack Lore
 
-**Plankton (10) · 2:** Bananas (Banana); Chicken (Medium rare chicken, Orange chicken)
+**Plankton (10) · 12:** :party_blob: (partyblob); :catjam: (cat jam); :among-us: (amongus); :happy-monkey: (happymonkey); :sai-clops: (saiclops, sai cyclops); :hungrykevin: (hungry kevin); :this-is-fine-fire: (thisisfinefire, this is fine); :sai:; :tamu:; :sec:; :slack:; :thankyou:
 
-**Schooler (30) · 4:** Muffins (Muffin); Bread; Beef (Ground beef); Cookies (Cookie, Jackson's Deli cookie)
+**Schooler (30) · 38:** :carissaboba: (carissa boba); :emmanuel:; :sean:; :avi_npc: (avinpc); :smileyarjun: (smiley arjun); :av-yay: (avyay); :sai-no: (saino); :its_pbj_time: (itspbjtime, pbj time, pbj); :tubby:; :ben:; :pranav:; :aadit:; :braeden:; :josh:; :kyle:; :anika:; :goats:; :lebron:; :birthday_party_parrot: (birthdaypartyparrot); :facepalm:; :sheesh:; :slay:; :pog:; :oprah:; :shaq_shimmy: (shaqshimmy); :thomas-headshot: (thomasheadshot); :sean-headshot: (seanheadshot); :elizabeth-headshot: (elizabethheadshot); :avi-headshot: (aviheadshot); :john-headshot: (johnheadshot); :savannah-headshot: (savannahheadshot); :try-not-to-laugh-apple: (trynottolaughapple); :trying-not-to-laugh-lemon: (tryingnottolaughlemon); :fortnite:; :yoshi:; :done:; :upvote:; :woohoo:
 
-**Rare (60) · 12:** Hamburger (Burger); Hot chocolate (Hot cocoa); Matcha; Cereal; Ketchup; Sandwiches (Sandwich); Soup; Pasta; Eggs (Egg, Boiled egg); Milk; Orange juice (OJ); Apple (Apples)
+**Rare (60) · 66:** :pran:; :betterpran: (better pran); :tiki-braeden: (tikibraeden); :kawaiibraeden: (kawaii braeden); :67braeden: (67 braeden, six seven braeden); :braedo:; :braedon't: (braedon t); :afizshakingchipotlebowl: (afiz shaking chipotle bowl, afiz chipotle); :afiz_rolling_on_the_floor: (afizrollingonthefloor); :angryjohn: (angry john); :happyjohn: (happy john); :happyjustin: (happy justin); :happy-raul: (happyraul); :joyful-jorge: (joyfuljorge); :prof-jorge: (profjorge); :emmanuel_grumpy: (emmanuelgrumpy); :anika-woah: (anikawoah); :avi-sai-heart: (avisaiheart); :sad-nathan: (sadnathan); :sadnathanatchipotle: (sad nathan at chipotle, sad nathan chipotle); :smileylandon: (smiley landon); :smileyyusuf: (smiley yusuf); :mryusuf: (mr yusuf); :josh-belly-smack: (joshbellysmack); :josh_skanda: (joshskanda); :skanda:; :reese:; :megha:; :megha_there's_no_way: (meghatheresnoway, theres no way); :dreuxbear: (dreux bear); :ittiy_gigs: (ittiygigs); :kyleface: (kyle face); :carissa-corner: (carissacorner); :evil-adi: (eviladi); :fernando:; :fernando-headshot: (fernandoheadshot); :bailey:; :sassy_bailey: (sassybailey); :envision_fall26: (envision fall 26, envisionfall26); :envision_spring26: (envision spring 26, envisionspring26); :envision2025: (envision 2025); :thanks_and_gigem: (thanksandgigem); :headbanging_parrot: (headbangingparrot); :charmander_dancing: (charmanderdancing); :ditto:; :el-gato: (elgato); :cat-with-juice: (catwithjuice); :yuh-cat: (yuhcat); :meow_heart_bongo: (meowheartbongo, bongo cat); :bongo_blob: (bongoblob); :sad-monkey: (sadmonkey); :piggy:; :tony_stark: (tonystark); :monopoly:; :interesting:; :smart:; :bowtie:; :squirrel: (shipit); :simple_smile: (simplesmile); :thumbsup_all: (thumbsupall, thumbs up all); :success:; :ack:; :afk:; :uh-oh: (uhoh); :working-from-home: (workingfromhome); Alphabet letters (alphabet, alphabet white, alphabet yellow, alphabet-white, alphabet-yellow, letters)
 
-**Deep cut (85) · 8:** Ice cream (SpongeBob ice cream); Tomatoes (Tomato); Mango (Mangoes, Mangos); Bacon; Celery (Celery stick); Donut (Doughnut, Donuts); Pecans (Pecan); Hibachi
+**Deep cut (85) · 39:** :aaditvpo: (aadit vpo); :yasss_eb: (yassseb); :keeley_envision: (keeleyenvision); :career_fair_josh_thomas: (careerfairjoshthomas); :career_fair_thomas_bailey: (careerfairthomasbailey); :philanthropy_cole_olivia: (philanthropycoleolivia); :roland_block_career_center: (rolandblockcareercenter); :uh_oh_dean: (uhohdean); :one-sec-cooking: (oneseccooking); :legislation:; :pride:; :oil_rig: (oilrig); :time-zone-fyi: (timezonefyi); :np-noproblem: (npnoproblem); :gratitude-thank-you: (gratitudethankyou); :fellow:; :dusty_stick: (dustystick); :bunny-slippers: (bunnyslippers); :cubimal_chick: (cubimalchick); :glitch_crab: (glitchcrab); :slack_call: (slackcall); :slackbot:; :working-from-coffee-shop: (workingfromcoffeeshop); :working-in-office: (workinginoffice); :tubby_bun: (tubbybun); :tubby_ok: (tubbyok); :prof-snoopy: (profsnoopy); :levivian:; :jonty:; :shaham:; :samlo:; :sarika:; :sona:; :stefano:; :tristan:; :vinisha:; :reed:; :sagr:; :sr:
 
-**One in a SECrillion (100) · 2:** Oreo tiramisu (Tiramisu, Oreo); Splenda
+**One in a SECrillion (100) · 2:** :etwithet: (et with et); :vpdvpivpo: (vpd vpi vpo)
 
 ## Name a celebrity or fictional character name-dropped in #quotes this past year
 

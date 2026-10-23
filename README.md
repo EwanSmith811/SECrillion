@@ -95,7 +95,7 @@ Five prompts come from the SEC Slack, pulled on Oct 23, 2026. They're in the dai
 | `sec-quotes` | 199 posts in #quotes from Oct 23, 2025 to Oct 22, 2026 | Reactions plus half the reply count: the top 12% are plankton, the next 20% schooler, the next third rare, the rest deep cut. Two unreacted quotes are the gems. Only the quote counts, not who said it. |
 | `sec-slack-channels` | 49 public, non-archived channels | 55% member count on a log scale (119 people are in the default channels) and 45% how obscure the name is. The two 2023 summer channels, with no active members left, are the gems. |
 | `sec-quoted` | Everyone quoted in that #quotes window | Quoted 8+ times plankton, 4–7 schooler, 2–3 rare, once deep cut. Dr. Hogan and Dr. Taele are the gems. |
-| `sec-quotes-food` | Foods and drinks named in those quotes | By how often they came up, then how guessable. |
+| `sec-emojis` | 157 custom emojis in the workspace (the 74 alphabet-letter emojis count as one answer) | How often each shows up as a reaction in #quotes this past year, then how guessable the name is. :party_blob:, :sai-clops: and :hungrykevin: are plankton; :etwithet: and :vpdvpivpo: are the gems. |
 | `sec-quotes-characters` | Celebrities and characters named in those quotes | By how often they came up, then how guessable. |
 
 To refresh them for a new year, re-pull #quotes and the channel list and regenerate the five prompts.
