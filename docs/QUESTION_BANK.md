@@ -172,17 +172,17 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 **One in a SECrillion (100) · 2:** Whiteley Hall (Whiteley, Dorm 9); Utay Hall (Utay, Dorm 12)
 
-## Name a varsity sport Texas A&M competes in
+## Name a sport Texas A&M competes in at the varsity, club or competitive-team level
 
-`aggie-sports` · 14 answers · Daily / Unlimited pool · Packs: Campus Life
+`aggie-sports` · 49 answers · Daily / Unlimited pool · Packs: Campus Life
 
-**Plankton (10) · 2:** Football (Aggie Football); Basketball (Men's Basketball, Women's Basketball)
+**Plankton (10) · 3:** Football (Aggie Football); Basketball (Men's Basketball, Women's Basketball); Baseball
 
-**Schooler (30) · 4:** Baseball; Volleyball; Soccer (Women's Soccer); Softball
+**Schooler (30) · 7:** Volleyball (Beach Volleyball); Soccer (Women's Soccer, Men's Soccer); Softball; Track and Field (Track & Field, Track, Indoor Track, Outdoor Track); Tennis (Men's Tennis, Women's Tennis); Golf (Men's Golf, Women's Golf); Swimming and Diving (Swimming & Diving, Swimming, Diving, Swim)
 
-**Rare (60) · 5:** Track and Field (Track & Field, Track); Tennis (Men's Tennis, Women's Tennis); Golf (Men's Golf, Women's Golf); Swimming and Diving (Swimming & Diving, Swimming, Diving); Equestrian (Horse Riding)
+**Rare (60) · 15:** Cross Country (XC); Equestrian (Horse Riding); Rugby; Lacrosse (Lax); Ice Hockey (Hockey); Ultimate Frisbee (Ultimate, Frisbee); Cheer (Cheerleading, Cheer Squad); Rodeo; Wrestling; Gymnastics; Climbing (Rock Climbing, Climbing Team, Bouldering); Bowling; Cycling (Bike Racing, Biking); Water Polo; Powerlifting
 
-**Deep cut (85) · 1:** Cross Country (XC)
+**Deep cut (85) · 22:** Crew (Rowing); Archery; Cricket; Disc Golf (Frisbee Golf, Frolf); Fencing; Judo; Pistol (Pistol Shooting, Shooting); Polo; Racquetball; Sailing; Taekwondo (Tae Kwon Do, TKD); Trap & Skeet (Trap and Skeet, Skeet, Clay Shooting); Triathlon (Triathalon); Wakeboarding (Wakeboard); Water Ski (Water Skiing, Waterskiing); Horse Judging; Wool Judging; Dairy Challenge (Dairy Judging); Animal Welfare Judging (Animal Welfare); Meat Animal Evaluation (MAE); Academic Quadrathlon (Quadrathlon); Ranch Horse (Ranch Horse Team)
 
 **One in a SECrillion (100) · 2:** Meat Judging (Meat Judging Team); Livestock Judging (Livestock Judging Team)
 
