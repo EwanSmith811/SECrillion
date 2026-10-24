@@ -11863,7 +11863,7 @@
         "Welcome Social = rare",
         "Company Chat = rare",
         "E-Day | Engineering Day | E Day = rare",
-        "DI Saturday | Discover Day Saturday = rare",
+        "DI Saturday | Discover Day Saturday = schooler",
         "Engineering Student Survey | ESS | ESS Tabling = rare",
         "First Year Survey | First Year Entry Survey | First Year Exit Survey | FYS | FYS Exit | First-Year Survey = rare",
         "Random Acts of Kindness | RAK | Halloween Candy Handout = rare",
@@ -11878,7 +11878,7 @@
         "Club Crawl | MSC Club Crawl = rare",
         "SEC Informationals | Informationals | Membership Informationals = rare",
         "Study Hours = rare",
-        "Lunch Buddies = rare",
+        "Lunch Buddies = schooler",
         "Enrichment Tutoring | Lincoln Center Tutoring | Lincoln Center = rare",
         "The Big Event | Big Event = rare",
         "GDC Test Day | Grand Design Challenge Test Day = rare",
@@ -11908,7 +11908,7 @@
         "Boba Bash | Boba = deep cut",
         "Resume Workshop | LinkedIn Workshop | Elevator Pitch Workshop | Career Fair Office Hours = deep cut",
         "Career Fair Need-to-Know | Need to Know = deep cut",
-        "MembershipHub Redesign Competition | Membership Hub Redesign = deep cut",
+        "MembershipHub Redesign Competition | Membership Hub Redesign = secrillion",
         "Sonic Run = plankton",
         "Breakroom Takeover = rare"
       ]
