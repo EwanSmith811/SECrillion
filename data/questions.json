@@ -569,14 +569,14 @@
         "Wakeboarding | Wakeboard = deep cut",
         "Water Ski | Water Skiing | Waterskiing = deep cut",
         "Horse Judging = deep cut",
-        "Wool Judging = deep cut",
+        "Wool Judging = secrillion",
         "Dairy Challenge | Dairy Judging = deep cut",
         "Animal Welfare Judging | Animal Welfare = deep cut",
         "Meat Animal Evaluation | MAE = deep cut",
-        "Academic Quadrathlon | Quadrathlon = deep cut",
+        "Academic Quadrathlon | Quadrathlon = secrillion",
         "Ranch Horse | Ranch Horse Team = deep cut",
-        "Meat Judging | Meat Judging Team = secrillion",
-        "Livestock Judging | Livestock Judging Team = secrillion"
+        "Meat Judging | Meat Judging Team = deep cut",
+        "Livestock Judging | Livestock Judging Team = deep cut"
       ]
     },
 

@@ -182,9 +182,9 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 **Rare (60) · 15:** Cross Country (XC); Equestrian (Horse Riding); Rugby; Lacrosse (Lax); Ice Hockey (Hockey); Ultimate Frisbee (Ultimate, Frisbee); Cheer (Cheerleading, Cheer Squad); Rodeo; Wrestling; Gymnastics; Climbing (Rock Climbing, Climbing Team, Bouldering); Bowling; Cycling (Bike Racing, Biking); Water Polo; Powerlifting
 
-**Deep cut (85) · 22:** Crew (Rowing); Archery; Cricket; Disc Golf (Frisbee Golf, Frolf); Fencing; Judo; Pistol (Pistol Shooting, Shooting); Polo; Racquetball; Sailing; Taekwondo (Tae Kwon Do, TKD); Trap & Skeet (Trap and Skeet, Skeet, Clay Shooting); Triathlon (Triathalon); Wakeboarding (Wakeboard); Water Ski (Water Skiing, Waterskiing); Horse Judging; Wool Judging; Dairy Challenge (Dairy Judging); Animal Welfare Judging (Animal Welfare); Meat Animal Evaluation (MAE); Academic Quadrathlon (Quadrathlon); Ranch Horse (Ranch Horse Team)
+**Deep cut (85) · 22:** Crew (Rowing); Archery; Cricket; Disc Golf (Frisbee Golf, Frolf); Fencing; Judo; Pistol (Pistol Shooting, Shooting); Polo; Racquetball; Sailing; Taekwondo (Tae Kwon Do, TKD); Trap & Skeet (Trap and Skeet, Skeet, Clay Shooting); Triathlon (Triathalon); Wakeboarding (Wakeboard); Water Ski (Water Skiing, Waterskiing); Horse Judging; Dairy Challenge (Dairy Judging); Animal Welfare Judging (Animal Welfare); Meat Animal Evaluation (MAE); Ranch Horse (Ranch Horse Team); Meat Judging (Meat Judging Team); Livestock Judging (Livestock Judging Team)
 
-**One in a SECrillion (100) · 2:** Meat Judging (Meat Judging Team); Livestock Judging (Livestock Judging Team)
+**One in a SECrillion (100) · 2:** Wool Judging; Academic Quadrathlon (Quadrathlon)
 
 ## Name a Texas A&M athletics or rec sports facility
 
