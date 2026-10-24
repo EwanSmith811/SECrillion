@@ -538,7 +538,9 @@
         "Golf | Men's Golf | Women's Golf = rare",
         "Swimming and Diving | Swimming & Diving | Swimming | Diving = rare",
         "Cross Country | XC = deep cut",
-        "Equestrian | Horse Riding = secrillion"
+        "Equestrian | Horse Riding = rare",
+        "Meat Judging | Meat Judging Team = secrillion",
+        "Livestock Judging | Livestock Judging Team = secrillion"
       ]
     },
 

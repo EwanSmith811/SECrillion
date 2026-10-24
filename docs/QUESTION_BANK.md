@@ -174,17 +174,17 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name a varsity sport Texas A&M competes in
 
-`aggie-sports` · 12 answers · Daily / Unlimited pool · Packs: Campus Life
+`aggie-sports` · 14 answers · Daily / Unlimited pool · Packs: Campus Life
 
 **Plankton (10) · 2:** Football (Aggie Football); Basketball (Men's Basketball, Women's Basketball)
 
 **Schooler (30) · 4:** Baseball; Volleyball; Soccer (Women's Soccer); Softball
 
-**Rare (60) · 4:** Track and Field (Track & Field, Track); Tennis (Men's Tennis, Women's Tennis); Golf (Men's Golf, Women's Golf); Swimming and Diving (Swimming & Diving, Swimming, Diving)
+**Rare (60) · 5:** Track and Field (Track & Field, Track); Tennis (Men's Tennis, Women's Tennis); Golf (Men's Golf, Women's Golf); Swimming and Diving (Swimming & Diving, Swimming, Diving); Equestrian (Horse Riding)
 
 **Deep cut (85) · 1:** Cross Country (XC)
 
-**One in a SECrillion (100) · 1:** Equestrian (Horse Riding)
+**One in a SECrillion (100) · 2:** Meat Judging (Meat Judging Team); Livestock Judging (Livestock Judging Team)
 
 ## Name a Texas A&M athletics or rec sports facility
 
