@@ -103,7 +103,7 @@ Two more come from the reminder channels (#weekly_reminders and the weekly recap
 | Prompt | Source | How levels are set |
 |---|---|---|
 | `sec-lunch-and-learns` | 33 companies that hosted a Lunch & Learn or Dine & Discuss | Name recognition plus how often they came back. TI, Amazon, Boeing, Tesla, Google and Lockheed are plankton; Worley and Venture Global are the gems. |
-| `sec-events-2526` | 67 events, socials and volunteer shifts | Flagship events (Career Fair, EnVision, AMR) are plankton; one-off socials go deeper. Sonic Run and Breakroom Takeover are the gems. It's kept `apart` from `sec-events` so the two never share a dive. |
+| `sec-events-2526` | 67 internal and external events, socials and volunteer shifts | Flagship events (Career Fair, EnVision, AMR) and Sonic Run are plankton; one-off socials like Pumpkin Painting and Friendsgiving are deep cuts. It's kept `apart` from `sec-events` so the two never share a dive. |
 
 To refresh them for a new year, re-pull #quotes, the channel list and the reminder channels, and regenerate these prompts.
 

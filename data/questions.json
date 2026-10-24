@@ -11841,8 +11841,8 @@
       ]
     },
     "sec-events-2526": {
-      "prompt": "Name an SEC event held since fall 2025",
-      "_tiers": "Events, socials and volunteer shifts named in #weekly_reminders and the #meeting_reminder recaps from Aug 2025 to Oct 2026. Flagship events are plankton; one-off socials and volunteer shifts go deeper.",
+      "prompt": "Name an SEC event held since fall 2025, internal or external",
+      "_tiers": "Events, socials and volunteer shifts named in #weekly_reminders and the #meeting_reminder recaps from Aug 2025 to Oct 2026. Internal events (socials, retreats, GC traditions) and external ones (Career Fair, EnVision, outreach) both count. Levels set by SEC.",
       "answers": [
         "Career Fair | SEC Career Fair | Engineering Career Fair | Fall Career Fair | Spring Career Fair | CF = plankton",
         "EnVision Conference | EnVision | Spring EnVision | Spring EnVision Conference | Envision = plankton",
@@ -11857,7 +11857,7 @@
         "Ignite Design Challenge | Ignite | Ignite Closing Ceremony | Ignite Kickoff = schooler",
         "Career Discovery Fair | CDF = schooler",
         "Banquet | Fall Banquet | SEC Banquet = schooler",
-        "Friendsgiving = schooler",
+        "Friendsgiving = deep cut",
         "New Member Social = schooler",
         "Pickleball Social | Pickleball = schooler",
         "Welcome Social = rare",
@@ -11868,7 +11868,7 @@
         "First Year Survey | First Year Entry Survey | First Year Exit Survey | FYS | FYS Exit | First-Year Survey = rare",
         "Random Acts of Kindness | RAK | Halloween Candy Handout = rare",
         "Wellness Week = rare",
-        "Pumpkin Painting Social | Pumpkin Painting = rare",
+        "Pumpkin Painting Social | Pumpkin Painting = deep cut",
         "New Member Retreat = rare",
         "Alumni Game Day Brunch | Game Day Brunch | Alumni Brunch = rare",
         "Alumni Panel | Alumni Panel Workshop = rare",
@@ -11909,8 +11909,8 @@
         "Resume Workshop | LinkedIn Workshop | Elevator Pitch Workshop | Career Fair Office Hours = deep cut",
         "Career Fair Need-to-Know | Need to Know = deep cut",
         "MembershipHub Redesign Competition | Membership Hub Redesign = deep cut",
-        "Sonic Run = secrillion",
-        "Breakroom Takeover = secrillion"
+        "Sonic Run = plankton",
+        "Breakroom Takeover = rare"
       ]
     }
   }
