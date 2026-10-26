@@ -2,7 +2,77 @@
 
 Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fair prompts are left out. Points per tier: Plankton 10 · Schooler 30 · Rare 60 · Deep cut 85 · One in a SECrillion 100.
 
-60 prompts.
+65 prompts.
+
+## Name the home city of an SEC (conference) school
+
+`sec-cities` · 15 answers · Daily / Unlimited pool · Packs: Aggieland
+
+**Plankton (10) · 4:** College Station; Austin; Baton Rouge; Tuscaloosa
+
+**Schooler (30) · 4:** Gainesville; Athens; Knoxville; Norman
+
+**Rare (60) · 4:** Auburn; Fayetteville; Columbia; Lexington
+
+**Deep cut (85) · 2:** Nashville; Oxford
+
+**One in a SECrillion (100) · 1:** Starkville
+
+## Name a street in College Station or on the Texas A&M campus
+
+`cstat-streets` · 39 answers · Daily / Unlimited pool · Packs: Aggieland
+
+**Plankton (10) · 4:** Texas Avenue (Texas Ave); University Drive (University Dr); Wellborn Road (Wellborn Rd, Wellborn); George Bush Drive (George Bush Dr, Bush Drive)
+
+**Schooler (30) · 7:** Harvey Road (Harvey Rd); Southwest Parkway (Southwest Pkwy); Holleman Drive (Holleman Dr, Holleman); Earl Rudder Freeway (Highway 6, Hwy 6, State Highway 6); Harvey Mitchell Parkway (FM 2818, Harvey Mitchell); Rock Prairie Road (Rock Prairie Rd, Rock Prairie); College Main
+
+**Rare (60) · 9:** Spence Street (Spence St); Ireland Street (Ireland St); Lamar Street (Lamar St); Bizzell Street (Bizzell St); Joe Routt Boulevard (Joe Routt Blvd, Joe Routt); Old Main Drive (Old Main Dr, Old Main); Church Avenue (Church Ave); Barron Road (Barron Rd); Greens Prairie Road (Greens Prairie Rd, Greens Prairie)
+
+**Deep cut (85) · 17:** Olsen Boulevard (Olsen Blvd); Kimbrough Boulevard (Kimbrough Blvd); Raymond Stotzer Parkway (Raymond Stotzer Pkwy, Raymond Stotzer); Tauber Street (Tauber St); Nagle Street (Nagle St); Lewis Street (Lewis St); Coke Street (Coke St); Jersey Street (Jersey St); Anderson Street (Anderson St); Welsh Avenue (Welsh Ave); Luther Street (Luther St); Graham Road (Graham Rd); Longmire Drive (Longmire Dr); Deacon Drive (Deacon Dr); Dominik Drive (Dominik Dr); Stasney Street (Stasney St); Patricia Street (Patricia St)
+
+**One in a SECrillion (100) · 2:** Tarrow Street (Tarrow St); Marion Pugh Drive (Marion Pugh Dr, Marion Pugh)
+
+## Name a famous former Texas A&M student
+
+`famous-aggies` · 24 answers · Daily / Unlimited pool · Packs: Aggieland
+
+**Plankton (10) · 3:** Johnny Manziel (Johnny Football, Manziel); Rick Perry (Perry); Von Miller
+
+**Schooler (30) · 6:** Myles Garrett; Mike Evans; Ryan Tannehill (Tannehill); Lyle Lovett; John David Crow; Khris Middleton
+
+**Rare (60) · 8:** Robert Earl Keen; Rip Torn; DeAndre Jordan; Christian Kirk; De'Von Achane (Devon Achane, Achane); Kellen Mond; Jake Matthews; Michael Wacha
+
+**Deep cut (85) · 6:** Dat Nguyen; Luke Joeckel; Granger Smith; Chennedy Carter; Gene Stallings; Michael Fossum
+
+**One in a SECrillion (100) · 1:** Randy Barnes
+
+## Name an electronic circuit component
+
+`circuit-components` · 39 answers · Daily / Unlimited pool · Packs: Build It
+
+**Plankton (10) · 4:** Resistor; Capacitor; Transistor; Battery
+
+**Schooler (30) · 5:** Diode; LED (Light-emitting diode); Inductor; Switch; Wire
+
+**Rare (60) · 8:** Op-amp (Operational amplifier, Op amp); Transformer; Integrated circuit (IC, Chip); Potentiometer (Pot); Fuse; Relay; MOSFET; Microcontroller (MCU)
+
+**Deep cut (85) · 20:** BJT (Bipolar junction transistor); Zener diode; Voltage regulator; Crystal oscillator (Crystal); Thermistor; Photoresistor (LDR); Varistor; Thyristor (SCR); Triac; Solenoid; Buzzer (Piezo buzzer); Speaker; Motor; Circuit breaker; Optocoupler (Optoisolator); Schottky diode; Photodiode; Hall effect sensor; Logic gate; 555 timer
+
+**One in a SECrillion (100) · 2:** Memristor; Varactor
+
+## Name a part of an airplane
+
+`airplane-parts` · 36 answers · Daily / Unlimited pool · Packs: Build It
+
+**Plankton (10) · 4:** Wing (Wings); Engine (Jet engine); Tail; Cockpit
+
+**Schooler (30) · 5:** Fuselage; Landing gear (Wheels); Propeller; Rudder; Flaps
+
+**Rare (60) · 8:** Aileron; Elevator; Vertical stabilizer (Tail fin); Horizontal stabilizer (Stabilizer); Winglet; Spoiler (Spoilers); Black box (Flight recorder); Cabin
+
+**Deep cut (85) · 17:** Slats; Nacelle; Empennage; Pitot tube; Trim tab; Nose cone (Radome); Cargo hold; Auxiliary power unit (APU); Strut; Yoke (Control column); Throttle; Fuel tank; Turbofan; Thrust reverser; Galley; Overhead bin; Emergency exit
+
+**One in a SECrillion (100) · 2:** Krueger flap; Vortex generator
 
 ## Name a school in the Texas A&M University System
 
@@ -192,11 +262,11 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 **Plankton (10) · 2:** Kyle Field; Reed Arena (Reed)
 
-**Schooler (30) · 3:** Olsen Field (Olsen Field at Blue Bell Park, Blue Bell Park, Olsen); Davis Diamond (Davis Diamond Softball Stadium); Student Recreation Center (Rec Center, Rec, Student Rec Center)
+**Schooler (30) · 4:** Olsen Field (Olsen Field at Blue Bell Park, Blue Bell Park, Olsen); Davis Diamond (Davis Diamond Softball Stadium); Student Recreation Center (Rec Center, Rec, Student Rec Center); Southside Recreation Center (Southside Rec)
 
 **Rare (60) · 5:** Ellis Field (Julia and Mark Ellis Soccer Building); E.B. Cushing Stadium (Cushing Stadium, EB Cushing); George P. Mitchell Tennis Center (Mitchell Tennis Center); Penberthy Rec Sports Complex (Penberthy, Penberthy Intramural Sports Center, Penberthy RecSports Pavilion); Bright Football Complex (Bright-Slocum Center, Bright-Slocum)
 
-**Deep cut (85) · 7:** Southside Recreation Center (Southside Rec); Cox-McFerrin Center for Aggie Basketball (Cox-McFerrin Center, Cox-McFerrin); Coolidge Football Indoor Performance Center (Coolidge Center, Indoor Performance Center); Davis Football Player Development Center (Davis Player Development Center); Fasken Indoor Track & Field (R.A. Murray Fasken Indoor Track & Field, Fasken Indoor); Omar Smith Instructional Tennis Center (Omar Smith Tennis Center); Physical Education Boot Camp and Archery Annex (Archery Annex)
+**Deep cut (85) · 6:** Cox-McFerrin Center for Aggie Basketball (Cox-McFerrin Center, Cox-McFerrin); Coolidge Football Indoor Performance Center (Coolidge Center, Indoor Performance Center); Davis Football Player Development Center (Davis Player Development Center); Fasken Indoor Track & Field (R.A. Murray Fasken Indoor Track & Field, Fasken Indoor); Omar Smith Instructional Tennis Center (Omar Smith Tennis Center); Physical Education Boot Camp and Archery Annex (Archery Annex)
 
 **One in a SECrillion (100) · 2:** Hunt Seat Arena; Houston Livestock Show & Rodeo Western Arena (Western Arena)
 
