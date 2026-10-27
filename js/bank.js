@@ -6,6 +6,10 @@ const DAY = 864e5;
 
 export async function loadBank() {
   const raw = await fetch(CONFIG.questionsUrl, { cache: 'no-cache' }).then((r) => r.json());
+  return buildBank(raw);
+}
+
+export function buildBank(raw) {
   const prompts = {};
   for (const [id, p] of Object.entries(raw.prompts)) prompts[id] = preparePrompt(id, p);
   const check = (ids, where) => ids.forEach((id) => { if (!prompts[id]) console.warn(`[questions] unknown prompt "${id}" in ${where}`); });
@@ -16,7 +20,9 @@ export async function loadBank() {
   // Daily dives, Unlimited and parties draw only from the pool; other prompts live in themed packs.
   const pool = (raw.pool || ids).filter((id) => prompts[id]);
   const apart = (raw.apart || []).map((g) => g.filter((id) => prompts[id]));
-  return { prompts, ids, pool, apart, daily: raw.daily || [], packs: raw.packs || [] };
+  const poolFrom = {};
+  for (const [id, n] of Object.entries(raw.poolFrom || {})) if (prompts[id]) poolFrom[id] = n;
+  return { prompts, ids, pool, poolFrom, apart, daily: raw.daily || [], packs: raw.packs || [] };
 }
 
 const midnight = (d) => new Date(d.getFullYear(), d.getMonth(), d.getDate());
@@ -59,29 +65,30 @@ export function pick(pool, count, seed, fallback = [], apart = []) {
   return chosen;
 }
 
-// A prompt used in any of the last COOLDOWN daily dives sits out (with anything it's kept apart from),
-// so the same questions don't come back day after day. Scheduled dives are used as written.
-const COOLDOWN = 3;
+const LEGACY_GAP = 3;
 const dailyCache = new WeakMap();
 
 export function dailyIds(bank, n) {
   let cache = dailyCache.get(bank);
   if (!cache) dailyCache.set(bank, (cache = new Map()));
-  if (!cache.has(n)) cache.set(n, chooseDaily(bank, n));
+  for (let k = 1; k <= n; k++) if (!cache.has(k)) cache.set(k, chooseDaily(bank, k, cache));
   return cache.get(n);
 }
 
-function chooseDaily(bank, n) {
+function chooseDaily(bank, n, cache) {
   const scheduled = bank.daily[n - 1];
   if (scheduled) return pick(scheduled, CONFIG.promptsPerDive, `daily-${n}`, bank.pool, bank.apart).sort((a, b) => scheduled.indexOf(a) - scheduled.indexOf(b));
+  const strict = n >= CONFIG.repeatGapFromDive;
+  const gap = strict ? CONFIG.repeatGapDays : LEGACY_GAP;
   const recent = new Set();
-  for (let k = Math.max(1, n - COOLDOWN); k < n; k++) {
-    for (const id of dailyIds(bank, k)) {
+  for (let k = Math.max(1, n - gap); k < n; k++) {
+    for (const id of cache.get(k)) {
       recent.add(id);
       for (const group of bank.apart) if (group.includes(id)) group.forEach((other) => recent.add(other));
     }
   }
-  const fresh = bank.pool.filter((id) => !recent.has(id));
-  // If the pool is ever too small to fill a dive, recently used prompts top it up.
-  return pick(fresh, CONFIG.promptsPerDive, `daily-${n}`, bank.pool.filter((id) => recent.has(id)), bank.apart);
+  const pool = bank.pool.filter((id) => (bank.poolFrom[id] || 1) <= n);
+  const chosen = pick(pool.filter((id) => !recent.has(id)), CONFIG.promptsPerDive, `daily-${n}`, pool.filter((id) => recent.has(id)), bank.apart);
+  if (strict && chosen.some((id) => recent.has(id))) console.warn(`[questions] dive #${n} had to reuse a prompt from the last ${gap} days; the pool is too small`);
+  return chosen;
 }

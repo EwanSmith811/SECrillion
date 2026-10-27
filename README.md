@@ -59,9 +59,10 @@ Each prompt is a list of accepted answers, and each answer has a **seed count**:
 
 ### Scheduling
 
-- `pool` lists the SEC / Aggie-engineering prompts. Daily dives and Unlimited only draw from it. The general engineering prompts (elements, polygons, …) are only reachable through their themed packs.
+- `pool` lists the SEC / Aggie-engineering prompts, plus a few general engineering ones (programming languages, NASA, physics laws, …) that keep the rotation long enough. Daily dives and Unlimited only draw from it. The other general prompts (elements, polygons, …) are only reachable through their themed packs.
+- `poolFrom` maps a pool prompt to the first dive number allowed to use it (`"nasa": 11`). Adding a prompt to the pool reshuffles the random draw for every dive that can use it, so give any new pool prompt a `poolFrom` of tomorrow's dive number to keep today's and earlier dives exactly as they were played.
 
-- `daily[0]` is Dive #1, `daily[1]` is Dive #2, and so on, counted from `launchDate`. Once the schedule runs out, each day gets a random set of prompts from the pool, seeded by the dive number so everyone gets the same ones. A prompt used in any of the last 3 daily dives sits out (with anything it's kept `apart` from), so questions don't repeat day after day.
+- `daily[0]` is Dive #1, `daily[1]` is Dive #2, and so on, counted from `launchDate`. Once the schedule runs out, each day gets a random set of prompts from the pool, seeded by the dive number so everyone gets the same ones. A prompt asked in a daily dive can't come back for the next 5 days (`repeatGapDays` in `js/config.js`), and neither can anything it's kept `apart` from. That needs at least 7 × 6 = 42 slots in the pool, counting each `apart` group once. `node tools/check-questions.mjs` checks the pool size and simulates the next 400 dives, and fails if any prompt repeats inside the gap. The rule starts at dive `repeatGapFromDive` (11); earlier dives keep the 3-day rule they were played under so archives and saved logs stay valid. Scheduled dives are used as written, and Unlimited and themed packs stay random.
 - `packs` show up under **Themed Packs**. Each play draws 7 of the pack's prompts.
 - Run `node tools/check-questions.mjs` after editing. It flags duplicate aliases and unknown prompt ids.
 

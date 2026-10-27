@@ -12,6 +12,9 @@ export const CONFIG = {
   promptsPerDive: 7,
   secondsPerPrompt: 25,
 
+  repeatGapDays: 5,
+  repeatGapFromDive: 11,
+
   questionsUrl: 'data/questions.json',
 
   // 'api'   → answers and scores are pooled in Neon Postgres through the Vercel functions in /api.

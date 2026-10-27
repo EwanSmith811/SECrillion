@@ -422,6 +422,90 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 **Deep cut (85) · 7:** Ole Miss (Mississippi); Arkansas; Kentucky; South Carolina; Missouri (Mizzou); Vanderbilt (Vandy); Mississippi State (Miss State)
 
+## Name a programming language
+
+`programming-languages` · 43 answers · Daily / Unlimited pool · Packs: Code & Cosmos
+
+**Plankton (10) · 1:** Python
+
+**Schooler (30) · 2:** Java; C++ (cpp)
+
+**Rare (60) · 11:** JavaScript (JS); C; MATLAB; C# (C sharp); Rust; Go (Golang); Swift; TypeScript (TS); R; SQL; Kotlin
+
+**Deep cut (85) · 27:** Ruby; PHP; Assembly (ASM); Verilog; Fortran; Julia; Haskell; Bash (Shell); VHDL; Lua; Perl; Scala; Lisp; COBOL; Dart; Scratch; Visual Basic (BASIC); Zig; Prolog; OCaml; Elixir; Erlang; Pascal; Ada; Clojure; F#; Objective-C
+
+**One in a SECrillion (100) · 2:** LabVIEW; Simulink
+
+## Name a type of bridge
+
+`bridge-types` · 25 answers · Daily / Unlimited pool · Packs: Build It
+
+**Plankton (10) · 1:** Suspension
+
+**Schooler (30) · 1:** Arch
+
+**Rare (60) · 6:** Beam (Girder); Truss; Cable-stayed; Cantilever; Drawbridge (Bascule); Pontoon (Floating)
+
+**Deep cut (85) · 15:** Covered; Rope bridge (Rope); Viaduct; Swing; Vertical lift (Lift); Tied arch (Bowstring); Footbridge (Pedestrian); Aqueduct; Box girder; Trestle; Tilt; Transporter; Clapper; Stressed ribbon; Bailey
+
+**One in a SECrillion (100) · 2:** Log; Moon bridge
+
+## Name a famous engineer, inventor, or scientist
+
+`famous-engineers` · 69 answers · Daily / Unlimited pool · Packs: Aggieland, Code & Cosmos
+
+**Plankton (10) · 3:** Nikola Tesla (Tesla); Albert Einstein (Einstein); Thomas Edison (Edison)
+
+**Schooler (30) · 1:** Isaac Newton (Newton)
+
+**Rare (60) · 19:** Leonardo da Vinci (Da Vinci, Leonardo); Marie Curie (Curie); Elon Musk (Musk); Wright Brothers (Wright); Galileo (Galileo Galilei); Alexander Graham Bell (Bell); Ada Lovelace (Lovelace); Alan Turing (Turing); Henry Ford (Ford); Archimedes; Benjamin Franklin (Franklin); Richard Feynman (Feynman); Stephen Hawking (Hawking); J. Robert Oppenheimer (Oppenheimer); Steve Jobs (Jobs); Bill Gates (Gates); Michael Faraday (Faraday); James Watt (Watt); Grace Hopper (Hopper)
+
+**Deep cut (85) · 44:** Steve Wozniak (Wozniak, Woz); Hedy Lamarr (Lamarr); Katherine Johnson; Neil Armstrong (Armstrong); James Clerk Maxwell (Maxwell); Niels Bohr (Bohr); Charles Darwin (Darwin); Blaise Pascal (Pascal); Leonhard Euler (Euler); Margaret Hamilton; Robert Goddard (Goddard); Wernher von Braun (von Braun); Isambard Kingdom Brunel (Brunel); Werner Heisenberg (Heisenberg); Johannes Kepler (Kepler); Nicolaus Copernicus (Copernicus); Carl Friedrich Gauss (Gauss); Daniel Bernoulli (Bernoulli); Georg Ohm (Ohm); Alessandro Volta (Volta); Andre-Marie Ampere (Ampere); Lord Kelvin (Kelvin); Charles Babbage (Babbage); John von Neumann (von Neumann); Claude Shannon (Shannon); Heinrich Hertz (Hertz); Guglielmo Marconi (Marconi); George Westinghouse (Westinghouse); James Dyson (Dyson); Gustave Eiffel (Eiffel); Tim Berners-Lee (Berners-Lee); Linus Torvalds (Torvalds); Johannes Gutenberg (Gutenberg); Rosalind Franklin; Mae Jemison (Jemison); Sally Ride; George Stephenson (Stephenson); John Roebling (Roebling); Dennis Ritchie (Ritchie); Lise Meitner (Meitner); Hypatia; Emily Roebling; Lillian Gilbreth (Gilbreth); Jack Kilby (Kilby)
+
+**One in a SECrillion (100) · 2:** Robert Noyce (Noyce); Fazlur Rahman Khan (Fazlur Khan)
+
+## Name a piece of lab equipment
+
+`lab-equipment` · 51 answers · Daily / Unlimited pool · Packs: Lab Rats
+
+**Plankton (10) · 1:** Beaker
+
+**Schooler (30) · 3:** Test tube; Bunsen burner; Microscope
+
+**Rare (60) · 14:** Erlenmeyer flask (Flask, Conical flask); Pipette (Pipet); Graduated cylinder; Safety goggles (Goggles); Burette (Buret); Petri dish; Oscilloscope; Multimeter; Centrifuge; Fume hood; Lab coat; Balance (Scale, Analytical balance); Breadboard; Hot plate
+
+**Deep cut (85) · 31:** Thermometer; Gloves; Crucible tongs (Tongs); Crucible; Funnel; Ring stand (Retort stand); Mortar and pestle; Volumetric flask; Spectrophotometer (Spectrometer); Function generator (Signal generator); Power supply; Soldering iron; Spatula (Scoopula); Watch glass; Desiccator; Autoclave; Wind tunnel; Eyewash station; Magnetic stirrer (Stir bar, Stir plate); Wash bottle (Squeeze bottle); 3D printer; pH meter; Calorimeter; Thermocouple; Dropper (Eye dropper); Stirring rod (Glass rod); Kimwipes; Logic analyzer; Cuvette; Vacuum chamber; Lathe
+
+**One in a SECrillion (100) · 2:** Bench vise; Fire extinguisher
+
+## Name a law, equation, or principle from physics or engineering
+
+`physics-laws` · 49 answers · Daily / Unlimited pool · Packs: Lab Rats
+
+**Plankton (10) · 2:** Newton's laws (Newton's second law, Newton's first law, Newton's third law, F=ma, fma); Ohm's law (V=IR)
+
+**Schooler (30) · 1:** E=mc2 (E=mc², emc2, Mass-energy equivalence)
+
+**Rare (60) · 13:** Ideal gas law (PV=nRT, pvnrt); Bernoulli's principle (Bernoulli's equation, Bernoulli); Hooke's law; Conservation of energy (First law of thermodynamics); Pythagorean theorem; Kirchhoff's laws (Kirchhoff's voltage law, Kirchhoff's current law, KVL, KCL); Second law of thermodynamics (Entropy); Maxwell's equations; Coulomb's law; Faraday's law; Archimedes' principle; Boyle's law; Newton's law of universal gravitation (Law of gravity, Law of gravitation)
+
+**Deep cut (85) · 31:** Snell's law; Pascal's law (Pascal's principle); Navier-Stokes equations (Navier-Stokes); Schrodinger equation; Moore's law; Charles's law (Charles law); Gauss's law; Kepler's laws; Murphy's law; Heisenberg uncertainty principle (Uncertainty principle); Euler's formula (Euler's identity); Fourier's law; Lenz's law; Newton's law of cooling; Stefan-Boltzmann law; Pauli exclusion principle; Ampere's law; Joule's law; Le Chatelier's principle; Hubble's law; Planck's law; Biot-Savart law; Fick's law; Darcy's law; Hess's law; Dalton's law; Henry's law; Beer-Lambert law; Stokes' law; Third law of thermodynamics; Zeroth law of thermodynamics
+
+**One in a SECrillion (100) · 2:** Wien's law; Bragg's law
+
+## Name a NASA mission, program, or spacecraft
+
+`nasa` · 62 answers · Daily / Unlimited pool · Packs: Code & Cosmos
+
+**Plankton (10) · 1:** Apollo
+
+**Schooler (30) · 1:** Artemis
+
+**Rare (60) · 17:** Hubble (Hubble Space Telescope); James Webb (JWST, Webb); Voyager; Space Shuttle (Shuttle); Curiosity; Perseverance; Apollo 11; International Space Station (ISS); Gemini; Mercury; Apollo 13; Opportunity; Challenger; Cassini (Cassini-Huygens); New Horizons; Columbia; Discovery
+
+**Deep cut (85) · 41:** Atlantis; Skylab; Juno; Pioneer; Viking; Spirit; Ingenuity; Orion; Endeavour (Endeavor); Sojourner; Galileo; Kepler; DART; Parker Solar Probe (Parker); Space Launch System (SLS); Chandra; Spitzer; OSIRIS-REx; Europa Clipper; Psyche; Dawn; Deep Impact; InSight; Phoenix; Mars Pathfinder (Pathfinder); Landsat; Explorer 1; Mars Reconnaissance Orbiter (MRO); Lucy; MESSENGER; Magellan; Stardust; Lunar Reconnaissance Orbiter (LRO); TESS; Ranger; Surveyor; Dragonfly; Mars Odyssey (Odyssey); MAVEN; Genesis; GRAIL
+
+**One in a SECrillion (100) · 2:** Ulysses; WISE
+
 ## Name a quote from the SEC Slack's #quotes channel this past year
 
 `sec-quotes` · 199 answers · Daily / Unlimited pool · Packs: Slack Lore
@@ -520,20 +604,6 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 **One in a SECrillion (100) · 1:** MembershipHub Redesign Competition (Membership Hub Redesign)
 
-## Name a programming language
-
-`programming-languages` · 43 answers · Packs: Code & Cosmos
-
-**Plankton (10) · 1:** Python
-
-**Schooler (30) · 2:** Java; C++ (cpp)
-
-**Rare (60) · 11:** JavaScript (JS); C; MATLAB; C# (C sharp); Rust; Go (Golang); Swift; TypeScript (TS); R; SQL; Kotlin
-
-**Deep cut (85) · 27:** Ruby; PHP; Assembly (ASM); Verilog; Fortran; Julia; Haskell; Bash (Shell); VHDL; Lua; Perl; Scala; Lisp; COBOL; Dart; Scratch; Visual Basic (BASIC); Zig; Prolog; OCaml; Elixir; Erlang; Pascal; Ada; Clojure; F#; Objective-C
-
-**One in a SECrillion (100) · 2:** LabVIEW; Simulink
-
 ## Name an element on the periodic table
 
 `elements` · 118 answers · Packs: Lab Rats
@@ -598,34 +668,6 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 **Rare (60) · 2:** Screw; Wedge
 
-## Name a type of bridge
-
-`bridge-types` · 25 answers · Packs: Build It
-
-**Plankton (10) · 1:** Suspension
-
-**Schooler (30) · 1:** Arch
-
-**Rare (60) · 6:** Beam (Girder); Truss; Cable-stayed; Cantilever; Drawbridge (Bascule); Pontoon (Floating)
-
-**Deep cut (85) · 15:** Covered; Rope bridge (Rope); Viaduct; Swing; Vertical lift (Lift); Tied arch (Bowstring); Footbridge (Pedestrian); Aqueduct; Box girder; Trestle; Tilt; Transporter; Clapper; Stressed ribbon; Bailey
-
-**One in a SECrillion (100) · 2:** Log; Moon bridge
-
-## Name a famous engineer, inventor, or scientist
-
-`famous-engineers` · 69 answers · Packs: Aggieland, Code & Cosmos
-
-**Plankton (10) · 3:** Nikola Tesla (Tesla); Albert Einstein (Einstein); Thomas Edison (Edison)
-
-**Schooler (30) · 1:** Isaac Newton (Newton)
-
-**Rare (60) · 19:** Leonardo da Vinci (Da Vinci, Leonardo); Marie Curie (Curie); Elon Musk (Musk); Wright Brothers (Wright); Galileo (Galileo Galilei); Alexander Graham Bell (Bell); Ada Lovelace (Lovelace); Alan Turing (Turing); Henry Ford (Ford); Archimedes; Benjamin Franklin (Franklin); Richard Feynman (Feynman); Stephen Hawking (Hawking); J. Robert Oppenheimer (Oppenheimer); Steve Jobs (Jobs); Bill Gates (Gates); Michael Faraday (Faraday); James Watt (Watt); Grace Hopper (Hopper)
-
-**Deep cut (85) · 44:** Steve Wozniak (Wozniak, Woz); Hedy Lamarr (Lamarr); Katherine Johnson; Neil Armstrong (Armstrong); James Clerk Maxwell (Maxwell); Niels Bohr (Bohr); Charles Darwin (Darwin); Blaise Pascal (Pascal); Leonhard Euler (Euler); Margaret Hamilton; Robert Goddard (Goddard); Wernher von Braun (von Braun); Isambard Kingdom Brunel (Brunel); Werner Heisenberg (Heisenberg); Johannes Kepler (Kepler); Nicolaus Copernicus (Copernicus); Carl Friedrich Gauss (Gauss); Daniel Bernoulli (Bernoulli); Georg Ohm (Ohm); Alessandro Volta (Volta); Andre-Marie Ampere (Ampere); Lord Kelvin (Kelvin); Charles Babbage (Babbage); John von Neumann (von Neumann); Claude Shannon (Shannon); Heinrich Hertz (Hertz); Guglielmo Marconi (Marconi); George Westinghouse (Westinghouse); James Dyson (Dyson); Gustave Eiffel (Eiffel); Tim Berners-Lee (Berners-Lee); Linus Torvalds (Torvalds); Johannes Gutenberg (Gutenberg); Rosalind Franklin; Mae Jemison (Jemison); Sally Ride; George Stephenson (Stephenson); John Roebling (Roebling); Dennis Ritchie (Ritchie); Lise Meitner (Meitner); Hypatia; Emily Roebling; Lillian Gilbreth (Gilbreth); Jack Kilby (Kilby)
-
-**One in a SECrillion (100) · 2:** Robert Noyce (Noyce); Fazlur Rahman Khan (Fazlur Khan)
-
 ## Name a city in Texas
 
 `texas-cities` · 8375 answers · Packs: Aggieland
@@ -667,48 +709,6 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 **Deep cut (85) · 27:** Clamp (C-clamp); Vise grips (Locking pliers); Wire cutters (Diagonal cutters, Dikes); Wire strippers; Hacksaw; Sledgehammer; Axe (Hatchet); Shovel; Square (Speed square, Try square); Awl; Hand plane (Plane); Rake; Pickaxe; Trowel; Staple gun; Pipe wrench; Torque wrench; Calipers; Scissors; Stud finder; Tin snips; Nail set; Center punch (Punch); Putty knife; Rasp; Wire brush; Chalk line
 
 **One in a SECrillion (100) · 2:** Caulk gun; Hand drill (Brace)
-
-## Name a piece of lab equipment
-
-`lab-equipment` · 51 answers · Packs: Lab Rats
-
-**Plankton (10) · 1:** Beaker
-
-**Schooler (30) · 3:** Test tube; Bunsen burner; Microscope
-
-**Rare (60) · 14:** Erlenmeyer flask (Flask, Conical flask); Pipette (Pipet); Graduated cylinder; Safety goggles (Goggles); Burette (Buret); Petri dish; Oscilloscope; Multimeter; Centrifuge; Fume hood; Lab coat; Balance (Scale, Analytical balance); Breadboard; Hot plate
-
-**Deep cut (85) · 31:** Thermometer; Gloves; Crucible tongs (Tongs); Crucible; Funnel; Ring stand (Retort stand); Mortar and pestle; Volumetric flask; Spectrophotometer (Spectrometer); Function generator (Signal generator); Power supply; Soldering iron; Spatula (Scoopula); Watch glass; Desiccator; Autoclave; Wind tunnel; Eyewash station; Magnetic stirrer (Stir bar, Stir plate); Wash bottle (Squeeze bottle); 3D printer; pH meter; Calorimeter; Thermocouple; Dropper (Eye dropper); Stirring rod (Glass rod); Kimwipes; Logic analyzer; Cuvette; Vacuum chamber; Lathe
-
-**One in a SECrillion (100) · 2:** Bench vise; Fire extinguisher
-
-## Name a law, equation, or principle from physics or engineering
-
-`physics-laws` · 49 answers · Packs: Lab Rats
-
-**Plankton (10) · 2:** Newton's laws (Newton's second law, Newton's first law, Newton's third law, F=ma, fma); Ohm's law (V=IR)
-
-**Schooler (30) · 1:** E=mc2 (E=mc², emc2, Mass-energy equivalence)
-
-**Rare (60) · 13:** Ideal gas law (PV=nRT, pvnrt); Bernoulli's principle (Bernoulli's equation, Bernoulli); Hooke's law; Conservation of energy (First law of thermodynamics); Pythagorean theorem; Kirchhoff's laws (Kirchhoff's voltage law, Kirchhoff's current law, KVL, KCL); Second law of thermodynamics (Entropy); Maxwell's equations; Coulomb's law; Faraday's law; Archimedes' principle; Boyle's law; Newton's law of universal gravitation (Law of gravity, Law of gravitation)
-
-**Deep cut (85) · 31:** Snell's law; Pascal's law (Pascal's principle); Navier-Stokes equations (Navier-Stokes); Schrodinger equation; Moore's law; Charles's law (Charles law); Gauss's law; Kepler's laws; Murphy's law; Heisenberg uncertainty principle (Uncertainty principle); Euler's formula (Euler's identity); Fourier's law; Lenz's law; Newton's law of cooling; Stefan-Boltzmann law; Pauli exclusion principle; Ampere's law; Joule's law; Le Chatelier's principle; Hubble's law; Planck's law; Biot-Savart law; Fick's law; Darcy's law; Hess's law; Dalton's law; Henry's law; Beer-Lambert law; Stokes' law; Third law of thermodynamics; Zeroth law of thermodynamics
-
-**One in a SECrillion (100) · 2:** Wien's law; Bragg's law
-
-## Name a NASA mission, program, or spacecraft
-
-`nasa` · 62 answers · Packs: Code & Cosmos
-
-**Plankton (10) · 1:** Apollo
-
-**Schooler (30) · 1:** Artemis
-
-**Rare (60) · 17:** Hubble (Hubble Space Telescope); James Webb (JWST, Webb); Voyager; Space Shuttle (Shuttle); Curiosity; Perseverance; Apollo 11; International Space Station (ISS); Gemini; Mercury; Apollo 13; Opportunity; Challenger; Cassini (Cassini-Huygens); New Horizons; Columbia; Discovery
-
-**Deep cut (85) · 41:** Atlantis; Skylab; Juno; Pioneer; Viking; Spirit; Ingenuity; Orion; Endeavour (Endeavor); Sojourner; Galileo; Kepler; DART; Parker Solar Probe (Parker); Space Launch System (SLS); Chandra; Spitzer; OSIRIS-REx; Europa Clipper; Psyche; Dawn; Deep Impact; InSight; Phoenix; Mars Pathfinder (Pathfinder); Landsat; Explorer 1; Mars Reconnaissance Orbiter (MRO); Lucy; MESSENGER; Magellan; Stardust; Lunar Reconnaissance Orbiter (LRO); TESS; Ranger; Surveyor; Dragonfly; Mars Odyssey (Odyssey); MAVEN; Genesis; GRAIL
-
-**One in a SECrillion (100) · 2:** Ulysses; WISE
 
 ## Name a polygon
 
