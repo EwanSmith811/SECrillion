@@ -11519,7 +11519,7 @@
     },
     "sec-slack-channels": {
       "prompt": "Name a public channel in the SEC Slack",
-      "_tiers": "Every public, non-archived channel in the workspace as of Oct 28, 2026 (97 channels), including ones no one has joined; the three fantasy football channels count as one answer. Levels blend member count (log scale, 119 = everyone) with how obscure the name is. The one gem is #mazdacx-5, the Mazda CX-5 car channel.",
+      "_tiers": "Every public, non-archived channel in the workspace as of Oct 28, 2026 (97 channels), including ones no one has joined; the three fantasy football channels count as one answer. Levels blend member count (log scale, 119 = everyone) with how obscure the name is. The two gems are #mazdacx-5, the Mazda CX-5 car channel, and #philanthropy-sr, which nobody has joined.",
       "answers": [
         "#announcements | announcements = plankton",
         "#general | general = plankton",
@@ -11612,10 +11612,10 @@
         "#cstat_summer_2023 | cstat_summer_2023 | cstat summer 2023 | cstatsummer2023 | cstat summer 23 = deep cut",
         "#eso_open_house_greeters_and_event_monitors | eso_open_house_greeters_and_event_monitors | eso open house greeters and event monitors | esoopenhousegreetersandeventmonitors | eso open house greeters | eso open house = deep cut",
         "#new_member_mentors | new_member_mentors | new member mentors | newmembermentors = deep cut",
-        "#philanthropy-sr | philanthropy-sr | philanthropy sr | philanthropysr | philanthropy = deep cut",
         "#sugar-land | sugar-land | sugar land | sugarland = deep cut",
         "#welcome_social_volunteers | welcome_social_volunteers | welcome social volunteers | welcomesocialvolunteers = deep cut",
-        "#mazdacx-5 | mazdacx-5 | mazdacx 5 | mazdacx5 | mazda cx 5 | mazda cx5 | mazda | cx 5 | cx5 | mazda cx-5 = secrillion"
+        "#mazdacx-5 | mazdacx-5 | mazdacx 5 | mazdacx5 | mazda cx 5 | mazda cx5 | mazda | cx 5 | cx5 | mazda cx-5 = secrillion",
+        "#philanthropy-sr | philanthropy-sr | philanthropy sr | philanthropysr | philanthropy = secrillion"
       ]
     },
     "sec-quoted": {
