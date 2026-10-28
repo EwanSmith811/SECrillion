@@ -11519,7 +11519,7 @@
     },
     "sec-slack-channels": {
       "prompt": "Name a public channel in the SEC Slack",
-      "_tiers": "Every public, non-archived channel in the workspace as of Oct 28, 2026 (97 channels), including ones no one has joined; the three fantasy football channels count as one answer. Levels blend member count (log scale, 119 = everyone) with how obscure the name is. The two gems are #philanthropy-sr and #eso_open_house_greeters_and_event_monitors, which nobody has joined.",
+      "_tiers": "Every public, non-archived channel in the workspace as of Oct 28, 2026 (97 channels), including ones no one has joined; the three fantasy football channels count as one answer. Levels blend member count (log scale, 119 = everyone) with how obscure the name is. The one gem is #mazdacx-5, the Mazda CX-5 car channel.",
       "answers": [
         "#announcements | announcements = plankton",
         "#general | general = plankton",
@@ -11601,7 +11601,6 @@
         "#f25tabling_monday | f25tabling_monday | f25tabling monday | f 25tabling monday | f25tablingmonday | f25 tabling monday | fall 25 tabling monday = deep cut",
         "#f25tabling_wednesday | f25tabling_wednesday | f25tabling wednesday | f 25tabling wednesday | f25tablingwednesday | f25 tabling wednesday | fall 25 tabling wednesday = deep cut",
         "#houston-hot-chicken | houston-hot-chicken | houston hot chicken | houstonhotchicken | hot chicken = deep cut",
-        "#mazdacx-5 | mazdacx-5 | mazdacx 5 | mazdacx5 | mazda cx 5 | mazda cx5 | mazda = deep cut",
         "#cf_drinkcart2 | cf_drinkcart2 | cf drinkcart2 | cf drinkcart 2 | cfdrinkcart2 | cf drink cart 2 | drink cart 2 = deep cut",
         "#f25tabling_tuesday | f25tabling_tuesday | f25tabling tuesday | f 25tabling tuesday | f25tablingtuesday | f25 tabling tuesday | fall 25 tabling tuesday = deep cut",
         "#member_cohort_spring_23 | member_cohort_spring_23 | member cohort spring 23 | membercohortspring23 | member cohort | member cohort spring 2023 = deep cut",
@@ -11611,11 +11610,12 @@
         "#aggie_replant | aggie_replant | aggie replant | aggiereplant | replant = deep cut",
         "#austin_summer_2023 | austin_summer_2023 | austin summer 2023 | austinsummer2023 | austin summer 23 = deep cut",
         "#cstat_summer_2023 | cstat_summer_2023 | cstat summer 2023 | cstatsummer2023 | cstat summer 23 = deep cut",
+        "#eso_open_house_greeters_and_event_monitors | eso_open_house_greeters_and_event_monitors | eso open house greeters and event monitors | esoopenhousegreetersandeventmonitors | eso open house greeters | eso open house = deep cut",
         "#new_member_mentors | new_member_mentors | new member mentors | newmembermentors = deep cut",
+        "#philanthropy-sr | philanthropy-sr | philanthropy sr | philanthropysr | philanthropy = deep cut",
         "#sugar-land | sugar-land | sugar land | sugarland = deep cut",
         "#welcome_social_volunteers | welcome_social_volunteers | welcome social volunteers | welcomesocialvolunteers = deep cut",
-        "#eso_open_house_greeters_and_event_monitors | eso_open_house_greeters_and_event_monitors | eso open house greeters and event monitors | esoopenhousegreetersandeventmonitors | eso open house greeters | eso open house = secrillion",
-        "#philanthropy-sr | philanthropy-sr | philanthropy sr | philanthropysr | philanthropy = secrillion"
+        "#mazdacx-5 | mazdacx-5 | mazdacx 5 | mazdacx5 | mazda cx 5 | mazda cx5 | mazda | cx 5 | cx5 | mazda cx-5 = secrillion"
       ]
     },
     "sec-quoted": {
