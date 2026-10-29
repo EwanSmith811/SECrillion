@@ -2,7 +2,7 @@
 
 Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fair prompts are left out. Points per tier: Plankton 10 · Schooler 30 · Rare 60 · Deep cut 85 · One in a SECrillion 100.
 
-54 prompts.
+59 prompts.
 
 ## Name a school in the Texas A&M University System
 
@@ -603,6 +603,76 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 **Deep cut (85) · 23:** Friendsgiving; Pumpkin Painting Social (Pumpkin Painting); Monsters and Masterpieces (Monsters & Masterpieces); Problem Pitch Competition (Problem Pitch); Take a Note, Leave a Note (Take a Note Leave a Note); Alumni Crawfish Boil (Crawfish Boil); Hispanic Heritage Month Dinner (Hispanic Heritage Dinner); SEC x SASE Social (SASE Social); Winter Movie Night (Movie Night, Hot Chocolate Bar); Cocoa & Crafts (Cocoa and Crafts); Speaker Series (Jim Donnell Speaker Series); Digital Literacy Workshop (Hudson Oaks, Senior Citizen Digital Literacy Workshop); ESO Sand Volleyball Tournament (Sand Volleyball, Volleyball Tournament); Mini-GDC (Mini GDC); Engineering Entrepreneurship Summit (Entrepreneurship Summit); Graduate Student Roundtable (Grad Student Roundtable); Coffee & Conversations with the CIA (Coffee and Conversations, CIA Event); Baseball Social; First Friday; SEC x BSC Leadership Seminar (BSC Leadership Seminar, Leadership Seminar); Boba Bash (Boba); Resume Workshop (LinkedIn Workshop, Elevator Pitch Workshop, Career Fair Office Hours); Career Fair Need-to-Know (Need to Know)
 
 **One in a SECrillion (100) · 1:** MembershipHub Redesign Competition (Membership Hub Redesign)
+
+## Name a Git command
+
+`git-commands` · 45 answers · Daily / Unlimited pool · Packs: Code & Cosmos
+
+**Plankton (10) · 5:** git commit (commit); git push (push); git pull (pull); git add (add); git clone (clone)
+
+**Schooler (30) · 7:** git status (status); git branch (branch); git merge (merge); git checkout (checkout); git log (log); git init (init); git diff (diff)
+
+**Rare (60) · 8:** git rebase (rebase); git stash (stash); git fetch (fetch); git reset (reset); git remote (remote); git switch (switch); git tag (tag); git revert (revert)
+
+**Deep cut (85) · 23:** git cherry-pick (cherry-pick, cherry pick); git bisect (bisect); git blame (blame); git reflog (reflog); git restore (restore); git show (show); git rm (rm); git mv (mv); git clean (clean); git config (config); git submodule (submodule); git worktree (worktree); git grep (grep); git describe (describe); git apply (apply); git format-patch (format-patch, format patch); git shortlog (shortlog); git archive (archive); git gc (gc, garbage collect); git fsck (fsck); git am (am); git bundle (bundle); git notes (notes)
+
+**One in a SECrillion (100) · 2:** git filter-branch (filter-branch, filter branch); git instaweb (instaweb)
+
+## Name a thermodynamic cycle
+
+`thermodynamic-cycles` · 20 answers · Daily / Unlimited pool · Packs: Lab Rats
+
+**Plankton (10) · 3:** Carnot cycle (Carnot); Otto cycle (Otto); Rankine cycle (Rankine)
+
+**Schooler (30) · 3:** Diesel cycle (Diesel); Brayton cycle (Brayton, Joule cycle); Stirling cycle (Stirling)
+
+**Rare (60) · 4:** Vapor-compression refrigeration cycle (Refrigeration cycle, Vapor compression cycle, Vapor-compression cycle); Atkinson cycle (Atkinson); Ericsson cycle (Ericsson); Dual cycle (Sabathe cycle, Seiliger cycle)
+
+**Deep cut (85) · 8:** Miller cycle (Miller); Lenoir cycle (Lenoir); Kalina cycle (Kalina); Organic Rankine cycle (ORC); Bell-Coleman cycle (Bell Coleman cycle, Reverse Brayton cycle); Hirn cycle (Hirn); Humphrey cycle (Humphrey); Stoddard cycle (Stoddard)
+
+**One in a SECrillion (100) · 2:** Vuilleumier cycle (Vuilleumier); Allam cycle (Allam, Allam-Fetvedt cycle)
+
+## Name a river in Texas
+
+`texas-rivers` · 41 answers · Daily / Unlimited pool · Packs: Aggieland
+
+**Plankton (10) · 4:** Rio Grande; Brazos River (Brazos); Colorado River (Colorado); Trinity River (Trinity)
+
+**Schooler (30) · 8:** Guadalupe River (Guadalupe); San Antonio River; Red River; Sabine River (Sabine); Pecos River (Pecos); Nueces River (Nueces); San Jacinto River (San Jacinto); Neches River (Neches)
+
+**Rare (60) · 17:** Canadian River; Llano River (Llano); Frio River (Frio); Medina River (Medina); Concho River (Concho); Navasota River (Navasota); Angelina River (Angelina); San Marcos River; Comal River (Comal); Blanco River (Blanco); Lavaca River (Lavaca); Sulphur River; Leon River; Lampasas River (Lampasas); Bosque River (Bosque); Sabinal River (Sabinal); Devils River
+
+**Deep cut (85) · 10:** Pedernales River (Pedernales); San Saba River (San Saba); Paluxy River (Paluxy); Little River; Atascosa River (Atascosa); Wichita River; Pease River (Pease); Aransas River; Mission River; Arroyo Colorado
+
+**One in a SECrillion (100) · 2:** Little Wichita River; Double Mountain Fork Brazos River (Double Mountain Fork)
+
+## Name a Linux command
+
+`linux-commands` · 130 answers · Daily / Unlimited pool · Packs: Code & Cosmos
+
+**Plankton (10) · 7:** ls; cd; sudo; rm; mkdir; cat; grep
+
+**Schooler (30) · 17:** pwd; cp; mv; touch; chmod; echo; man; ssh; ps; kill; apt (apt-get); tar; curl; wget; top; vim (vi); nano
+
+**Rare (60) · 34:** find; sed; awk; chown; tail; head; less; df; du; ping; which; wc; sort; diff; scp; xargs; crontab (cron); systemctl; htop; ln; whoami; history; clear; export; unzip; zip; uname; free; dd; tee; nohup; netstat; ifconfig; ip
+
+**Deep cut (85) · 70:** lsof; strace; journalctl; rsync; tmux; screen; cut; tr; uniq; basename; dirname; mount; umount; fdisk; lsblk; iptables; nmap; traceroute; dig; nslookup; watch; stat; file; ldd; objdump; gdb; ltrace; sysctl; chroot; ulimit; jobs; disown; alias; source; env; printenv; seq; shuf; comm; paste; split; tac; rev; nl; od; hexdump; xxd; fold; column; truncate; sync; modprobe; lsmod; dmesg; uptime; last; who; id; groups; passwd; useradd; usermod; su; visudo; timeout; time; install; getent; mkfifo; losetup
+
+**One in a SECrillion (100) · 2:** fallocate; ldconfig
+
+## Name a manufacturing process
+
+`manufacturing-processes` · 63 answers · Daily / Unlimited pool · Packs: Build It
+
+**Plankton (10) · 4:** 3D printing (Additive manufacturing, FDM); Welding; Casting; CNC machining (CNC, Machining)
+
+**Schooler (30) · 8:** Injection molding (Injection moulding); Forging; Milling; Turning (Lathe, Lathe turning); Drilling; Extrusion; Stamping; Laser cutting
+
+**Rare (60) · 18:** Die casting; Sand casting; Rolling; Sintering; Soldering; Brazing; Grinding; Powder metallurgy; Blow molding (Blow moulding); Thermoforming; Sheet metal forming (Sheet metal bending, Bending); Electrical discharge machining (EDM); Waterjet cutting (Waterjet); Plasma cutting; Annealing; Heat treatment; Anodizing; Powder coating
+
+**Deep cut (85) · 31:** Investment casting (Lost-wax casting, Lost wax casting); Metal spinning (Spinning); Hydroforming; Deep drawing; Rotational molding (Rotomolding, Rotational moulding); Compression molding (Compression moulding); Transfer molding; Pultrusion; Electroforming; Electroplating; Galvanizing; Broaching; Honing; Lapping; Reaming; Tapping; Knurling; Swaging; Shot peening (Peening); Quenching; Tempering; Carburizing; Nitriding; Chemical vapor deposition (CVD); Photolithography; Selective laser sintering (SLS); Stereolithography (SLA); Friction stir welding; Ultrasonic welding; Explosive forming (Explosion forming); Electrochemical machining (ECM)
+
+**One in a SECrillion (100) · 2:** Magnetic pulse forming; Czochralski process (Czochralski)
 
 ## Name an element on the periodic table
 
