@@ -676,7 +676,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 **Plankton (10) · 3:** Kappa Alpha Theta (Theta, KAT); Chi Omega (ChiO, Chi O); Delta Delta Delta (Tri Delta, Tri-Delta, DDD)
 
-**Schooler (30) · 5:** Alpha Chi Omega (AXO, A Chi O); Alpha Delta Pi (ADPi, ADPI); Delta Gamma (DG); Pi Beta Phi (Pi Phi, PiPhi); Kappa Delta (KD)
+**Schooler (30) · 5:** Alpha Chi Omega (AXO); Alpha Delta Pi (ADPi, ADPI); Delta Gamma (DG); Pi Beta Phi (Pi Phi, PiPhi); Kappa Delta (KD)
 
 **Rare (60) · 4:** Gamma Phi Beta (Gamma Phi); Kappa Kappa Gamma (KKG, Kappa); Zeta Tau Alpha (ZTA, Zeta); Alpha Omicron Pi (AOPi, AOII)
 
