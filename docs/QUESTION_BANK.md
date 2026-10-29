@@ -670,17 +670,19 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 **Deep cut (85) · 3:** Lab Instructional Space; Maker spaces (Makerspace, Maker space); Outdoor green space (Zach green space, Zach lawn)
 
-## Name a Panhellenic sorority at Texas A&M
+## Name an IFC fraternity or Panhellenic sorority at Texas A&M
 
-`panhellenic-sororities` · 14 answers · Daily / Unlimited pool · Packs: Campus Life, Aggieland
+`greek-chapters` · 35 answers · Daily / Unlimited pool · Packs: Campus Life, Aggieland
 
-**Plankton (10) · 3:** Kappa Alpha Theta (Theta, KAT); Chi Omega (ChiO, Chi O); Delta Delta Delta (Tri Delta, Tri-Delta, DDD)
+**Plankton (10) · 5:** Sigma Chi (Sig Chi); Sigma Alpha Epsilon (SAE); Kappa Alpha Theta (Theta, KAT); Chi Omega (ChiO, Chi O); Delta Delta Delta (Tri Delta, Tri-Delta, DDD)
 
-**Schooler (30) · 5:** Alpha Chi Omega (AXO); Alpha Delta Pi (ADPi, ADPI); Delta Gamma (DG); Pi Beta Phi (Pi Phi, PiPhi); Kappa Delta (KD)
+**Schooler (30) · 12:** Pi Kappa Alpha (Pike, PKA); Phi Delta Theta (Phi Delt, Phi Delta); Kappa Alpha Order (KA); Beta Theta Pi (Beta); Delta Tau Delta (Delt, Delta Tau); Alpha Tau Omega (ATO); Phi Gamma Delta (FIJI); Alpha Chi Omega (AXO); Alpha Delta Pi (ADPi, ADPI); Delta Gamma (DG); Pi Beta Phi (Pi Phi, PiPhi); Kappa Delta (KD)
 
-**Rare (60) · 4:** Gamma Phi Beta (Gamma Phi); Kappa Kappa Gamma (KKG, Kappa); Zeta Tau Alpha (ZTA, Zeta); Alpha Omicron Pi (AOPi, AOII)
+**Rare (60) · 13:** Lambda Chi Alpha (Lambda Chi); Pi Kappa Phi (Pi Kapp); Sigma Phi Epsilon (SigEp); Phi Kappa Psi (Phi Psi); Alpha Sigma Phi (Alpha Sig); Alpha Gamma Rho (AGR); Tau Kappa Epsilon (TKE); Theta Chi; Delta Sigma Phi (Delta Sig); Gamma Phi Beta (Gamma Phi); Kappa Kappa Gamma (KKG); Zeta Tau Alpha (ZTA, Zeta); Alpha Omicron Pi (AOPi, AOII)
 
-**Deep cut (85) · 2:** Delta Zeta (DZ); Alpha Epsilon Phi (AEPhi, AEPi)
+**Deep cut (85) · 4:** Sigma Alpha Mu (Sammy, SAM); Phi Kappa Tau (Phi Tau); Delta Zeta (DZ); Alpha Epsilon Phi (AEPhi, AEPi)
+
+**One in a SECrillion (100) · 1:** Beta Upsilon Chi (BYX, Brothers Under Christ)
 
 ## Name an element on the periodic table
 

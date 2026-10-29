@@ -2,8 +2,8 @@
   "_format": "Each answer is \"Canonical | alias | alias = seed\". The seed is how many imaginary divers gave that answer — big = common = shallow, 0 = nobody = full 100 points. See README.md.",
 
   "_pool": "Daily dives, Unlimited and Puffer Party only draw from these SEC / Aggie-engineering prompts. Everything else is reachable only through its themed pack.",
-  "pool": ["ec-members", "sec-quotes", "sec-slack-channels", "sec-quoted", "sec-emojis", "sec-quotes-characters", "eb-members", "sec-committees", "sec-events", "sec-lunch-and-learns", "sec-events-2526", "eso", "career-fair-s26", "career-fair-f26", "engineering-majors", "engineering-buildings", "course-prefixes", "campus-buildings", "aggie-traditions", "sec-schools", "residence-halls", "aggie-sports", "athletic-facilities", "tamu-colleges", "tamu-campuses", "career-fair-swag", "career-fair-prep", "competition-teams", "engineering-software", "engineering-calculators", "engineering-math", "football-roster", "mbb-roster", "sec-stadiums", "sec-nicknames", "aggie-coaches", "si-derived-units", "engineering-failures", "tamus-schools", "sorting-algorithms", "data-structures", "programming-languages", "famous-engineers", "physics-laws", "nasa", "lab-equipment", "bridge-types", "texas-rivers", "sec-book-club", "sec-movies", "sec-summer-places", "zachry-spaces", "panhellenic-sororities"],
-  "poolFrom": {"programming-languages": 11, "famous-engineers": 11, "physics-laws": 11, "nasa": 11, "lab-equipment": 11, "bridge-types": 11, "texas-rivers": 13, "sec-book-club": 13, "sec-movies": 13, "sec-summer-places": 13, "zachry-spaces": 13, "panhellenic-sororities": 13},
+  "pool": ["ec-members", "sec-quotes", "sec-slack-channels", "sec-quoted", "sec-emojis", "sec-quotes-characters", "eb-members", "sec-committees", "sec-events", "sec-lunch-and-learns", "sec-events-2526", "eso", "career-fair-s26", "career-fair-f26", "engineering-majors", "engineering-buildings", "course-prefixes", "campus-buildings", "aggie-traditions", "sec-schools", "residence-halls", "aggie-sports", "athletic-facilities", "tamu-colleges", "tamu-campuses", "career-fair-swag", "career-fair-prep", "competition-teams", "engineering-software", "engineering-calculators", "engineering-math", "football-roster", "mbb-roster", "sec-stadiums", "sec-nicknames", "aggie-coaches", "si-derived-units", "engineering-failures", "tamus-schools", "sorting-algorithms", "data-structures", "programming-languages", "famous-engineers", "physics-laws", "nasa", "lab-equipment", "bridge-types", "texas-rivers", "sec-book-club", "sec-movies", "sec-summer-places", "zachry-spaces", "greek-chapters"],
+  "poolFrom": {"programming-languages": 11, "famous-engineers": 11, "physics-laws": 11, "nasa": 11, "lab-equipment": 11, "bridge-types": 11, "texas-rivers": 13, "sec-book-club": 13, "sec-movies": 13, "sec-summer-places": 13, "zachry-spaces": 13, "greek-chapters": 13},
 
   "_apart": "Prompts in the same group never share a dive.",
   "apart": [["career-fair-f26", "career-fair-s26"], ["sec-events", "sec-events-2526"]],
@@ -25,7 +25,7 @@
 
   "packs": [
     { "id": "campus-life", "name": "Campus Life", "blurb": "Dorms, sports, venues and the colleges of Aggieland.",
-      "prompts": ["football-roster", "mbb-roster", "residence-halls", "aggie-sports", "athletic-facilities", "tamu-colleges", "tamu-campuses", "campus-buildings", "aggie-traditions", "zachry-spaces", "panhellenic-sororities"] },
+      "prompts": ["football-roster", "mbb-roster", "residence-halls", "aggie-sports", "athletic-facilities", "tamu-colleges", "tamu-campuses", "campus-buildings", "aggie-traditions", "zachry-spaces", "greek-chapters"] },
     { "id": "engineering-life", "name": "Engineering Life", "blurb": "Software, calculators, math, competition teams and career fair survival.",
       "prompts": ["engineering-software", "engineering-calculators", "engineering-math", "competition-teams", "career-fair-swag", "career-fair-prep", "course-prefixes", "engineering-buildings", "zachry-spaces"] },
     { "id": "sec-insider", "name": "SEC Insider", "blurb": "Committees, divisions, events — how well do you know the Council?",
@@ -33,7 +33,7 @@
     { "id": "slack-lore", "name": "Slack Lore", "blurb": "#quotes, channels and the people who keep them going.",
       "prompts": ["sec-quotes", "sec-slack-channels", "sec-quoted", "sec-emojis", "sec-quotes-characters", "sec-lunch-and-learns", "sec-events-2526", "ec-members", "sec-book-club", "sec-movies", "sec-summer-places"] },
     { "id": "aggieland", "name": "Aggieland", "blurb": "Traditions, buildings, slang and the other SEC.",
-      "prompts": ["tamus-schools", "sec-stadiums", "sec-nicknames", "aggie-coaches", "aggie-traditions", "residence-halls", "campus-buildings", "sec-schools", "engineering-majors", "texas-cities", "famous-engineers", "texas-rivers", "panhellenic-sororities"] },
+      "prompts": ["tamus-schools", "sec-stadiums", "sec-nicknames", "aggie-coaches", "aggie-traditions", "residence-halls", "campus-buildings", "sec-schools", "engineering-majors", "texas-cities", "famous-engineers", "texas-rivers", "greek-chapters"] },
     { "id": "lab-rats", "name": "Lab Rats", "blurb": "Elements, units, laws and the stuff on the lab bench.",
       "prompts": ["si-derived-units", "elements", "si-base-units", "lab-equipment", "physics-laws", "greek-letters", "metals", "polygons", "logic-gates"] },
     { "id": "build-it", "name": "Build It", "blurb": "Bridges, machines, tools and materials.",
@@ -12124,24 +12124,45 @@
         "Outdoor green space | Zach green space | Zach lawn = deep cut"
       ]
     },
-    "panhellenic-sororities": {
-      "prompt": "Name a Panhellenic sorority at Texas A&M",
-      "_tiers": "The 14 National Panhellenic Conference sororities in Texas A&M's Collegiate Panhellenic Council (cpc.tamu.edu/chapters). Levels are an estimate of name recognition; the council posts no chapter sizes. Fraternities and the NPHC and MGC chapters are not in this prompt.",
+    "greek-chapters": {
+      "prompt": "Name an IFC fraternity or Panhellenic sorority at Texas A&M",
+      "_tiers": "The 14 Collegiate Panhellenic Council sororities (cpc.tamu.edu/chapters) and 21 Interfraternity Council fraternities: the 19 on the university's IFC page (getinvolved.tamu.edu/org/ifc) plus Sigma Alpha Epsilon and Delta Sigma Phi, which have chapter pages on aggieifc.org. NPHC and MGC chapters are not included. Levels are an estimate of name recognition; no chapter sizes are posted.",
       "answers": [
+        "Sigma Chi | Sig Chi = plankton",
+        "Sigma Alpha Epsilon | SAE = plankton",
         "Kappa Alpha Theta | Theta | KAT = plankton",
         "Chi Omega | ChiO | Chi O = plankton",
         "Delta Delta Delta | Tri Delta | Tri-Delta | DDD = plankton",
+        "Pi Kappa Alpha | Pike | PKA = schooler",
+        "Phi Delta Theta | Phi Delt | Phi Delta = schooler",
+        "Kappa Alpha Order | KA = schooler",
+        "Beta Theta Pi | Beta = schooler",
+        "Delta Tau Delta | Delt | Delta Tau = schooler",
+        "Alpha Tau Omega | ATO = schooler",
+        "Phi Gamma Delta | FIJI = schooler",
         "Alpha Chi Omega | AXO = schooler",
         "Alpha Delta Pi | ADPi | ADPI = schooler",
         "Delta Gamma | DG = schooler",
         "Pi Beta Phi | Pi Phi | PiPhi = schooler",
         "Kappa Delta | KD = schooler",
+        "Lambda Chi Alpha | Lambda Chi = rare",
+        "Pi Kappa Phi | Pi Kapp = rare",
+        "Sigma Phi Epsilon | SigEp = rare",
+        "Phi Kappa Psi | Phi Psi = rare",
+        "Alpha Sigma Phi | Alpha Sig = rare",
+        "Alpha Gamma Rho | AGR = rare",
+        "Tau Kappa Epsilon | TKE = rare",
+        "Theta Chi = rare",
+        "Delta Sigma Phi | Delta Sig = rare",
         "Gamma Phi Beta | Gamma Phi = rare",
-        "Kappa Kappa Gamma | KKG | Kappa = rare",
+        "Kappa Kappa Gamma | KKG = rare",
         "Zeta Tau Alpha | ZTA | Zeta = rare",
         "Alpha Omicron Pi | AOPi | AOII = rare",
+        "Sigma Alpha Mu | Sammy | SAM = deep cut",
+        "Phi Kappa Tau | Phi Tau = deep cut",
         "Delta Zeta | DZ = deep cut",
-        "Alpha Epsilon Phi | AEPhi | AEPi = deep cut"
+        "Alpha Epsilon Phi | AEPhi | AEPi = deep cut",
+        "Beta Upsilon Chi | BYX | Brothers Under Christ = secrillion"
       ]
     }
   }
