@@ -2,7 +2,7 @@
 
 Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fair prompts are left out. Points per tier: Plankton 10 · Schooler 30 · Rare 60 · Deep cut 85 · One in a SECrillion 100.
 
-59 prompts.
+60 prompts.
 
 ## Name a school in the Texas A&M University System
 
@@ -658,17 +658,29 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 **Deep cut (85) · 1:** West Texas
 
-## Name a Texas A&M University System agency or research service
+## Name a space or landmark inside Zachry (not a numbered classroom)
 
-`tamus-agencies` · 8 answers · Daily / Unlimited pool · Scheduled dives 12 · Packs: Engineering Life, Aggieland
+`zachry-spaces` · 17 answers · Daily / Unlimited pool · Scheduled dives 12 · Packs: Campus Life, Engineering Life, SEC Insider
 
-**Plankton (10) · 1:** Texas A&M Engineering Experiment Station (TEES, Engineering Experiment Station)
+**Plankton (10) · 3:** ConocoPhillips & Virginia Brown Atrium (ConocoPhillips and Virginia Brown Atrium, ConocoPhillips Atrium, Virginia Brown Atrium, Zach Atrium, Atrium, Conoco Atrium); Zachbucks (Zach Starbucks, Zachry Starbucks, Starbucks); ESO (Zach 450) (ESO, SEC Office, Engineering Student Organizations Office, Zach 450)
 
-**Schooler (30) · 2:** Texas A&M Engineering Extension Service (TEEX, Engineering Extension Service); Texas A&M AgriLife Extension Service (AgriLife Extension, AgriLife, Texas A&M AgriLife, Texas A&M AgriLife Extension)
+**Schooler (30) · 5:** E-Quad (Zach E-Quad, Engineering Quad); Common labs (Zach common labs, Third-floor common labs, Common lab); Fischer Engineering Design Center (FEDC, Fischer Design Center, Engineering Design Center); Chevron Rooms (Zachry Chevron Rooms, Chevron Room); Learning staircase (Learning stairs, Zach staircase)
 
-**Rare (60) · 3:** Texas A&M AgriLife Research (AgriLife Research); Texas A&M Transportation Institute (TTI, Transportation Institute); Texas A&M Forest Service (TFS, Forest Service)
+**Rare (60) · 6:** Skylight (Atrium skylight, Zach skylight); Learning studios (Learning studio); Machine shop (Fabrication Center); Prototyping Center; Project Design Studio (Design Studio); Digital Production Media Rooms (Media rooms, Digital production rooms)
 
-**Deep cut (85) · 2:** Texas A&M Veterinary Medical Diagnostic Laboratory (TVMDL, Veterinary Medical Diagnostic Laboratory); Texas Division of Emergency Management (TDEM, Division of Emergency Management)
+**Deep cut (85) · 3:** Lab Instructional Space; Maker spaces (Makerspace, Maker space); Outdoor green space (Zach green space, Zach lawn)
+
+## Name a Panhellenic sorority at Texas A&M
+
+`panhellenic-sororities` · 14 answers · Daily / Unlimited pool · Packs: Campus Life, Aggieland
+
+**Plankton (10) · 3:** Kappa Alpha Theta (Theta, KAT); Chi Omega (ChiO, Chi O); Delta Delta Delta (Tri Delta, Tri-Delta, DDD)
+
+**Schooler (30) · 5:** Alpha Chi Omega (AXO, A Chi O); Alpha Delta Pi (ADPi, ADPI); Delta Gamma (DG); Pi Beta Phi (Pi Phi, PiPhi); Kappa Delta (KD)
+
+**Rare (60) · 4:** Gamma Phi Beta (Gamma Phi); Kappa Kappa Gamma (KKG, Kappa); Zeta Tau Alpha (ZTA, Zeta); Alpha Omicron Pi (AOPi, AOII)
+
+**Deep cut (85) · 2:** Delta Zeta (DZ); Alpha Epsilon Phi (AEPhi, AEPi)
 
 ## Name an element on the periodic table
 

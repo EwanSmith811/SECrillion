@@ -2,8 +2,8 @@
   "_format": "Each answer is \"Canonical | alias | alias = seed\". The seed is how many imaginary divers gave that answer — big = common = shallow, 0 = nobody = full 100 points. See README.md.",
 
   "_pool": "Daily dives, Unlimited and Puffer Party only draw from these SEC / Aggie-engineering prompts. Everything else is reachable only through its themed pack.",
-  "pool": ["ec-members", "sec-quotes", "sec-slack-channels", "sec-quoted", "sec-emojis", "sec-quotes-characters", "eb-members", "sec-committees", "sec-events", "sec-lunch-and-learns", "sec-events-2526", "eso", "career-fair-s26", "career-fair-f26", "engineering-majors", "engineering-buildings", "course-prefixes", "campus-buildings", "aggie-traditions", "sec-schools", "residence-halls", "aggie-sports", "athletic-facilities", "tamu-colleges", "tamu-campuses", "career-fair-swag", "career-fair-prep", "competition-teams", "engineering-software", "engineering-calculators", "engineering-math", "football-roster", "mbb-roster", "sec-stadiums", "sec-nicknames", "aggie-coaches", "si-derived-units", "engineering-failures", "tamus-schools", "sorting-algorithms", "data-structures", "programming-languages", "famous-engineers", "physics-laws", "nasa", "lab-equipment", "bridge-types", "texas-rivers", "sec-book-club", "sec-movies", "sec-summer-places", "tamus-agencies"],
-  "poolFrom": {"programming-languages": 11, "famous-engineers": 11, "physics-laws": 11, "nasa": 11, "lab-equipment": 11, "bridge-types": 11, "texas-rivers": 13, "sec-book-club": 13, "sec-movies": 13, "sec-summer-places": 13, "tamus-agencies": 13},
+  "pool": ["ec-members", "sec-quotes", "sec-slack-channels", "sec-quoted", "sec-emojis", "sec-quotes-characters", "eb-members", "sec-committees", "sec-events", "sec-lunch-and-learns", "sec-events-2526", "eso", "career-fair-s26", "career-fair-f26", "engineering-majors", "engineering-buildings", "course-prefixes", "campus-buildings", "aggie-traditions", "sec-schools", "residence-halls", "aggie-sports", "athletic-facilities", "tamu-colleges", "tamu-campuses", "career-fair-swag", "career-fair-prep", "competition-teams", "engineering-software", "engineering-calculators", "engineering-math", "football-roster", "mbb-roster", "sec-stadiums", "sec-nicknames", "aggie-coaches", "si-derived-units", "engineering-failures", "tamus-schools", "sorting-algorithms", "data-structures", "programming-languages", "famous-engineers", "physics-laws", "nasa", "lab-equipment", "bridge-types", "texas-rivers", "sec-book-club", "sec-movies", "sec-summer-places", "zachry-spaces", "panhellenic-sororities"],
+  "poolFrom": {"programming-languages": 11, "famous-engineers": 11, "physics-laws": 11, "nasa": 11, "lab-equipment": 11, "bridge-types": 11, "texas-rivers": 13, "sec-book-club": 13, "sec-movies": 13, "sec-summer-places": 13, "zachry-spaces": 13, "panhellenic-sororities": 13},
 
   "_apart": "Prompts in the same group never share a dive.",
   "apart": [["career-fair-f26", "career-fair-s26"], ["sec-events", "sec-events-2526"]],
@@ -20,20 +20,20 @@
     ["eb-members", "engineering-buildings", "engineering-software", "course-prefixes", "aggie-traditions", "career-fair-f26", "sec-committees"],
     ["engineering-calculators", "campus-buildings", "competition-teams", "sec-lunch-and-learns", "sorting-algorithms", "mbb-roster", "ec-members"],
     ["career-fair-swag", "programming-languages", "sec-slack-channels", "bridge-types", "tamu-campuses", "sec-nicknames", "famous-engineers"],
-    ["lab-equipment", "tamu-colleges", "career-fair-prep", "sec-book-club", "sec-movies", "sec-summer-places", "tamus-agencies"]
+    ["lab-equipment", "tamu-colleges", "career-fair-prep", "sec-book-club", "sec-movies", "sec-summer-places", "zachry-spaces"]
   ],
 
   "packs": [
     { "id": "campus-life", "name": "Campus Life", "blurb": "Dorms, sports, venues and the colleges of Aggieland.",
-      "prompts": ["football-roster", "mbb-roster", "residence-halls", "aggie-sports", "athletic-facilities", "tamu-colleges", "tamu-campuses", "campus-buildings", "aggie-traditions"] },
+      "prompts": ["football-roster", "mbb-roster", "residence-halls", "aggie-sports", "athletic-facilities", "tamu-colleges", "tamu-campuses", "campus-buildings", "aggie-traditions", "zachry-spaces", "panhellenic-sororities"] },
     { "id": "engineering-life", "name": "Engineering Life", "blurb": "Software, calculators, math, competition teams and career fair survival.",
-      "prompts": ["engineering-software", "engineering-calculators", "engineering-math", "competition-teams", "career-fair-swag", "career-fair-prep", "course-prefixes", "engineering-buildings", "tamus-agencies"] },
+      "prompts": ["engineering-software", "engineering-calculators", "engineering-math", "competition-teams", "career-fair-swag", "career-fair-prep", "course-prefixes", "engineering-buildings", "zachry-spaces"] },
     { "id": "sec-insider", "name": "SEC Insider", "blurb": "Committees, divisions, events — how well do you know the Council?",
-      "prompts": ["ec-members", "eb-members", "sec-committees", "sec-events", "eso", "career-fair-s26", "career-fair-f26", "engineering-majors", "campus-buildings", "sec-lunch-and-learns", "sec-events-2526", "sec-summer-places"] },
+      "prompts": ["ec-members", "eb-members", "sec-committees", "sec-events", "eso", "career-fair-s26", "career-fair-f26", "engineering-majors", "campus-buildings", "sec-lunch-and-learns", "sec-events-2526", "sec-summer-places", "zachry-spaces"] },
     { "id": "slack-lore", "name": "Slack Lore", "blurb": "#quotes, channels and the people who keep them going.",
       "prompts": ["sec-quotes", "sec-slack-channels", "sec-quoted", "sec-emojis", "sec-quotes-characters", "sec-lunch-and-learns", "sec-events-2526", "ec-members", "sec-book-club", "sec-movies", "sec-summer-places"] },
     { "id": "aggieland", "name": "Aggieland", "blurb": "Traditions, buildings, slang and the other SEC.",
-      "prompts": ["tamus-schools", "sec-stadiums", "sec-nicknames", "aggie-coaches", "aggie-traditions", "residence-halls", "campus-buildings", "sec-schools", "engineering-majors", "texas-cities", "famous-engineers", "texas-rivers", "tamus-agencies"] },
+      "prompts": ["tamus-schools", "sec-stadiums", "sec-nicknames", "aggie-coaches", "aggie-traditions", "residence-halls", "campus-buildings", "sec-schools", "engineering-majors", "texas-cities", "famous-engineers", "texas-rivers", "panhellenic-sororities"] },
     { "id": "lab-rats", "name": "Lab Rats", "blurb": "Elements, units, laws and the stuff on the lab bench.",
       "prompts": ["si-derived-units", "elements", "si-base-units", "lab-equipment", "physics-laws", "greek-letters", "metals", "polygons", "logic-gates"] },
     { "id": "build-it", "name": "Build It", "blurb": "Bridges, machines, tools and materials.",
@@ -12100,18 +12100,47 @@
         "West Texas = deep cut"
       ]
     },
-    "tamus-agencies": {
-      "prompt": "Name a Texas A&M University System agency or research service",
-      "_tiers": "The A&M System agencies other than the universities: engineering (TEES, TEEX), agriculture (AgriLife), transportation, forestry, veterinary diagnostics and emergency management.",
+    "zachry-spaces": {
+      "prompt": "Name a space or landmark inside Zachry (not a numbered classroom)",
+      "_tiers": "Named spaces in Zachry rather than numbered classrooms and study rooms. Levels follow how often they come up in the SEC Slack (Atrium, E-Quad, Chevron Rooms and the ESO host SEC events) and how well students know them; the Fischer Design Center spaces come from its site. Numbered rooms other than the ESO (Zach 450) do not count.",
       "answers": [
-        "Texas A&M Engineering Experiment Station | TEES | Engineering Experiment Station = plankton",
-        "Texas A&M Engineering Extension Service | TEEX | Engineering Extension Service = schooler",
-        "Texas A&M AgriLife Extension Service | AgriLife Extension | AgriLife | Texas A&M AgriLife | Texas A&M AgriLife Extension = schooler",
-        "Texas A&M AgriLife Research | AgriLife Research = rare",
-        "Texas A&M Transportation Institute | TTI | Transportation Institute = rare",
-        "Texas A&M Forest Service | TFS | Forest Service = rare",
-        "Texas A&M Veterinary Medical Diagnostic Laboratory | TVMDL | Veterinary Medical Diagnostic Laboratory = deep cut",
-        "Texas Division of Emergency Management | TDEM | Division of Emergency Management = deep cut"
+        "ConocoPhillips & Virginia Brown Atrium | ConocoPhillips and Virginia Brown Atrium | ConocoPhillips Atrium | Virginia Brown Atrium | Zach Atrium | Atrium | Conoco Atrium = plankton",
+        "Zachbucks | Zach Starbucks | Zachry Starbucks | Starbucks = plankton",
+        "ESO (Zach 450) | ESO | SEC Office | Engineering Student Organizations Office | Zach 450 = plankton",
+        "E-Quad | Zach E-Quad | Engineering Quad = schooler",
+        "Common labs | Zach common labs | Third-floor common labs | Common lab = schooler",
+        "Fischer Engineering Design Center | FEDC | Fischer Design Center | Engineering Design Center = schooler",
+        "Chevron Rooms | Zachry Chevron Rooms | Chevron Room = schooler",
+        "Learning staircase | Learning stairs | Zach staircase = schooler",
+        "Skylight | Atrium skylight | Zach skylight = rare",
+        "Learning studios | Learning studio = rare",
+        "Machine shop | Fabrication Center = rare",
+        "Prototyping Center = rare",
+        "Project Design Studio | Design Studio = rare",
+        "Digital Production Media Rooms | Media rooms | Digital production rooms = rare",
+        "Lab Instructional Space = deep cut",
+        "Maker spaces | Makerspace | Maker space = deep cut",
+        "Outdoor green space | Zach green space | Zach lawn = deep cut"
+      ]
+    },
+    "panhellenic-sororities": {
+      "prompt": "Name a Panhellenic sorority at Texas A&M",
+      "_tiers": "The 14 National Panhellenic Conference sororities in Texas A&M's Collegiate Panhellenic Council (cpc.tamu.edu/chapters). Levels are an estimate of name recognition; the council posts no chapter sizes. Fraternities and the NPHC and MGC chapters are not in this prompt.",
+      "answers": [
+        "Kappa Alpha Theta | Theta | KAT = plankton",
+        "Chi Omega | ChiO | Chi O = plankton",
+        "Delta Delta Delta | Tri Delta | Tri-Delta | DDD = plankton",
+        "Alpha Chi Omega | AXO | A Chi O = schooler",
+        "Alpha Delta Pi | ADPi | ADPI = schooler",
+        "Delta Gamma | DG = schooler",
+        "Pi Beta Phi | Pi Phi | PiPhi = schooler",
+        "Kappa Delta | KD = schooler",
+        "Gamma Phi Beta | Gamma Phi = rare",
+        "Kappa Kappa Gamma | KKG | Kappa = rare",
+        "Zeta Tau Alpha | ZTA | Zeta = rare",
+        "Alpha Omicron Pi | AOPi | AOII = rare",
+        "Delta Zeta | DZ = deep cut",
+        "Alpha Epsilon Phi | AEPhi | AEPi = deep cut"
       ]
     }
   }
