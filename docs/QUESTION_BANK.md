@@ -314,11 +314,11 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name a Texas A&M athletics or rec sports facility
 
-`athletic-facilities` · 19 answers · Daily / Unlimited pool · Scheduled dives 8, 16 · Packs: Campus Life
+`athletic-facilities` · 20 answers · Daily / Unlimited pool · Scheduled dives 8, 16 · Packs: Campus Life
 
 **Plankton (10) · 2:** Kyle Field; Reed Arena (Reed)
 
-**Schooler (30) · 4:** Olsen Field (Olsen Field at Blue Bell Park, Blue Bell Park, Olsen); Davis Diamond (Davis Diamond Softball Stadium); Student Recreation Center (Rec Center, Rec, Student Rec Center); Southside Recreation Center (Southside Rec)
+**Schooler (30) · 5:** Olsen Field (Olsen Field at Blue Bell Park, Blue Bell Park, Olsen); Davis Diamond (Davis Diamond Softball Stadium); Student Recreation Center (Rec Center, Rec, Student Rec Center); Southside Recreation Center (Southside Rec); PEAP (Physical Education Activity Program, Physical Education Activity Program Building, PEAP Building)
 
 **Rare (60) · 5:** Ellis Field (Julia and Mark Ellis Soccer Building); E.B. Cushing Stadium (Cushing Stadium, EB Cushing); George P. Mitchell Tennis Center (Mitchell Tennis Center); Penberthy Rec Sports Complex (Penberthy, Penberthy Intramural Sports Center, Penberthy RecSports Pavilion); Bright Football Complex (Bright-Slocum Center, Bright-Slocum)
 
