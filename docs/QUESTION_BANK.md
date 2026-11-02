@@ -2,7 +2,7 @@
 
 Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fair prompts are left out. Points per tier: Plankton 10 · Schooler 30 · Rare 60 · Deep cut 85 · One in a SECrillion 100.
 
-65 prompts.
+69 prompts.
 
 ## Name the home city of an SEC (conference) school
 
@@ -34,15 +34,15 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name a famous former Texas A&M student
 
-`famous-aggies` · 24 answers · Daily / Unlimited pool · Packs: Aggieland
+`famous-aggies` · 30 answers · Daily / Unlimited pool · Packs: Aggieland
 
-**Plankton (10) · 3:** Johnny Manziel (Johnny Football, Manziel); Rick Perry (Perry); Von Miller
+**Plankton (10) · 4:** Johnny Manziel (Johnny Football, Manziel); Dude Perfect; Rick Perry (Perry); Von Miller
 
 **Schooler (30) · 6:** Myles Garrett; Mike Evans; Ryan Tannehill (Tannehill); Lyle Lovett; John David Crow; Khris Middleton
 
-**Rare (60) · 8:** Robert Earl Keen; Rip Torn; DeAndre Jordan; Christian Kirk; De'Von Achane (Devon Achane, Achane); Kellen Mond; Jake Matthews; Michael Wacha
+**Rare (60) · 10:** Robert Earl Keen; Rip Torn; DeAndre Jordan; Christian Kirk; De'Von Achane (Devon Achane, Achane); Kellen Mond; Jake Matthews; Michael Wacha; Coby Cotton; Tyler Toney
 
-**Deep cut (85) · 6:** Dat Nguyen; Luke Joeckel; Granger Smith; Chennedy Carter; Gene Stallings; Michael Fossum
+**Deep cut (85) · 9:** Dat Nguyen; Luke Joeckel; Granger Smith; Chennedy Carter; Gene Stallings; Michael Fossum; Cory Cotton; Garrett Hilbert; Cody Jones
 
 **One in a SECrillion (100) · 1:** Randy Barnes
 
@@ -59,6 +59,62 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 **Deep cut (85) · 20:** BJT (Bipolar junction transistor); Zener diode; Voltage regulator; Crystal oscillator (Crystal); Thermistor; Photoresistor (LDR); Varistor; Thyristor (SCR); Triac; Solenoid; Buzzer (Piezo buzzer); Speaker; Motor; Circuit breaker; Optocoupler (Optoisolator); Schottky diode; Photodiode; Hall effect sensor; Logic gate; 555 timer
 
 **One in a SECrillion (100) · 2:** Memristor; Varactor
+
+## Name a restaurant or eatery in College Station
+
+`cstat-eats` · 189 answers · Daily / Unlimited pool · Packs: Campus Life
+
+**Plankton (10) · 4:** Chick-fil-A; Layne's Chicken Fingers (Layne's, Laynes); Raising Cane's (Canes, Cane's); Whataburger
+
+**Schooler (30) · 33:** Blue Baker; Buffalo Wild Wings (BWW, B-Dubs); Burger King; Chili's; Chipotle; Dairy Queen; Dixie Chicken; Domino's; Dunkin'; Firehouse Subs; Five Guys; Freebirds World Burrito (Freebirds); Jack in the Box; Jersey Mike's Subs (Jersey Mike's); Jimmy John's; KFC; Madden's Sandwich Shop (Madden's); McDonald's; Olive Garden; Panda Express; Panera Bread; Pizza Hut; Popeyes (Popeyes Louisiana Kitchen); Rudy's Country Store and Bar-B-Q (Rudy's, Rudys); Sonic (Sonic Drive-In); Starbucks; Subway; Sweet Eugene's House of Java (Sweet Eugene's, Sweet Eugene's Java House); Taco Bell; Texas Roadhouse; Torchy's Tacos (Torchy's); Wendy's; Wingstop
+
+**Rare (60) · 75:** Abuelo's; Andy's Frozen Custard (Andy's); Another Broken Egg Cafe (Another Broken Egg); Arby's; Bahama Buck's; BJ's; Blaze Pizza; Burger Mojo (Mojo Burger); Bush's Chicken (Bush's); Cafe Eccell; CAVA; Cheddar's (Cheddar's Scratch Kitchen); Chicken Express; Chicken Salad Chick; Church's Chicken (Church's); Chuy's; Cicis; Cold Stone Creamery (Cold Stone); Cooper's Old Time Pit Bar-B-Que (Cooper's, Coopers BBQ); Denny's; Double Dave's Pizzaworks (Double Dave's); Duncan Dining Hall (Duncan); Dutch Bros. Coffee (Dutch Bros); Fazoli's; Freddy's; Fuzzy's Taco Shop (Fuzzy's); Golden Corral; Grub Burger Bar; Hopdoddy Burger Bar (Hopdoddy); Hullabaloo Diner; Hungry Howie's; IHOP; Insomnia Cookies (Insomnia); Jason's Deli; Juice It Up!; Lick Honest Ice Creams; Little Caesars; Los Cucos Mexican Cafe (Los Cucos); Luigi's Patio Ristorante (Luigi's); Lupe Tortilla; Marble Slab Creamery (Marble Slab); Marco's Pizza; McAllisters Deli; MOD Pizza; Mooyah Burgers (Mooyah); Newks (Newk's Eatery); Nick The Greek; On The Border; Outback Steakhouse (Outback); Papa John's; Pei Wei; Piada Italian Street Food (Piada); Pluckers Wing Bar (Pluckers); Pokeworks; Potbelly; Razzoo's Cajun Cafe (Razzoo's); Red Lobster; Rev's American Grill (Rev's); Rosa's Cafe & Tortilla Factory (Rosa's Cafe, Rosa's); Salata; Salsa Fresca; Saltgrass Steak House (Saltgrass); Sbisa Dining Hall (Sbisa); Schlotzsky's; Scoots; Shipley's Donuts; Smoothie King; Snooze; Tiff's Treats; Velvet Taco; Walk-On’s Sports Bistreaux (Walk-Ons, Walk-On's); Wayback Burgers (Wayback); Wings N' More (Wings and More); Yogurtland; Zaxby's
+
+**Deep cut (85) · 75:** 12 Northgate (Twelve Northgate); 4 Brothers NY Bagels; Aji Sushi; Atami; Azimuth; Bagel Block; Baked or Fried; BonAppeTea; C&J Barbeque (C&J BBQ, CJ Barbeque); Canteen Bar & Grill (Canteen); Carport; Champion Pizza; Chimy's Cervecería Sports Bar (Chimy's); Daisy's Table; Famous Famiglia Pizzeria (Famous Famiglia); Fuego Tortilla Grill; Good Luck Good Time Tea House (Good Luck Good Time); Harvest Coffee Bar (Harvest Coffee); Holy Roastary Coffee Bar (Holy Roastary); Houston Street Subs (Houston Street); Juanita's Tex Mex Cantina (Juanita's); King Buffet College Station; Mai Shan Yun; MESS Waffles, Etc. (MESS Waffles, MESS); Moore Family Creamery (Moore's Creamery); Mugwalls; Nam Cafe; Napa Flats Wood-Fired Kitchen (Napa Flats); Nautical Bowls; Ozona Grill & Bar (Ozona); Paolo's Italian Kitchen; Porter's Steakhouse (Porter's); Red's Ice House; Saber Bar & Grill (Saber); Sakura; Shake Smart; Sharetea; Shiraz Shish Kabob; Shun De Mom; Sweet Paris Crêperie & Café (Sweet Paris); Tacobar; Tanaka Ramen; TAZ Indian Cuisine; The Chicken Oil Co. (Chicken Oil Company, Chicken Oil); The Corner; The Dry Bean; The Republic Steakhouse (Republic Steakhouse); The Spot on Northgate; The Tap; Urban Bricks; Vietnoodle Pho and More; What's the Buzz; Wild Pita; Willie’s Grill & Icehouse (Willie's, Willie's Grill); 1860 Italia; 40 Tempura Japanese Fusion; C&C Asian Garden; Casa do Brasil; Fish Daddy's Grill House (Fish Daddy's); Fusion Peru; Gate 12 Bar & Grill (Gate 12); Gringo's Mexican Kitchen (Gringo's); Gumby’s Pizza (Gumby's); Iza Robata Ramen; Kamei Sushi & Grill (Kamei Sushi, Kamei); Koppe Bridge Bar & Grill (Koppe Bridge); Marfa Texas Kitchen; Minuti Coffee; Mojo Tortilla Co. (Mojo Tortilla); Mong Chon Grill (Mong Chon); Ohana Korean Grill; Poke Stop; Stella Southern Cafe; Tacos La Perlita; TaD's Louisiana Cooking
+
+**One in a SECrillion (100) · 2:** TX Burger (Texas Burger); Yummi Yummi
+
+## Name a Git command
+
+`git-commands` · 34 answers · Daily / Unlimited pool · Packs: Code & Cosmos
+
+**Plankton (10) · 4:** git commit (commit); git push (push); git pull (pull); git clone (clone)
+
+**Schooler (30) · 6:** git add (add); git status (status); git branch (branch); git merge (merge); git checkout (checkout); git init (init)
+
+**Rare (60) · 6:** git log (log); git diff (diff); git fetch (fetch); git stash (stash); git reset (reset); git rebase (rebase)
+
+**Deep cut (85) · 16:** git cherry-pick (cherry-pick, cherry pick); git blame (blame); git bisect (bisect); git reflog (reflog); git tag (tag); git remote (remote); git switch (switch); git restore (restore); git show (show); git revert (revert); git rm; git mv; git gc; git fsck; git worktree (worktree); git submodule (submodule)
+
+**One in a SECrillion (100) · 2:** git filter-branch (filter-branch); git clean
+
+## Name a Linux terminal command
+
+`linux-commands` · 52 answers · Daily / Unlimited pool · Packs: Code & Cosmos
+
+**Plankton (10) · 4:** ls; cd; sudo; mkdir
+
+**Schooler (30) · 8:** pwd; rm; cp; mv; grep; cat; echo; touch
+
+**Rare (60) · 12:** chmod; ssh; man; find; curl; ping; top; vim; nano; apt; clear; kill
+
+**Deep cut (85) · 26:** tail; head; wc; sed; awk; chown; df; du; ps; tar; wget; history; which; ln; sort; uniq; cut; xargs; tee; less; whoami; sleep; dd; lsof; strace; mkfifo
+
+**One in a SECrillion (100) · 2:** nohup; crontab
+
+## Name a professional sports team from Texas
+
+`texas-teams` · 24 answers · Daily / Unlimited pool · Packs: Aggieland
+
+**Plankton (10) · 4:** Dallas Cowboys (Cowboys); Houston Texans (Texans); Houston Astros (Astros); Texas Rangers (Rangers)
+
+**Schooler (30) · 4:** San Antonio Spurs (Spurs); Dallas Mavericks (Mavericks, Mavs); Houston Rockets (Rockets); Dallas Stars (Stars)
+
+**Rare (60) · 6:** FC Dallas; Houston Dynamo (Dynamo); Austin FC; Houston Dash (Dash); Dallas Wings (Wings); Houston Roughnecks (Roughnecks)
+
+**Deep cut (85) · 8:** Austin Spurs; Texas Stars; Round Rock Express; Frisco RoughRiders (RoughRiders); San Antonio Missions (Missions); San Antonio FC; Texas Legends; Amarillo Sod Poodles (Sod Poodles)
+
+**One in a SECrillion (100) · 2:** Corpus Christi Hooks (Hooks); Midland RockHounds (RockHounds)
 
 ## Name a part of an airplane
 
@@ -360,11 +416,11 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 **Plankton (10) · 2:** Tristan Forks; Savannah Giron
 
-**Schooler (30) · 6:** Anika Palacharla; Aadit Shah; Braeden Cochran; Megha Subhash; Vivian Zheng; James Rushing
+**Schooler (30) · 7:** Anika Palacharla; Aadit Shah; Braeden Cochran; John Lehan; Megha Subhash; Vivian Zheng; James Rushing
 
 **Rare (60) · 6:** Pranav Nandakumar; Reese Billedo; Avi Vedala (Ayvay Vedala); Sai Challapalli (Sairam Challapalli); Thomas Ankner; Elizabeth Thomas
 
-**Deep cut (85) · 12:** John Lehan; Sarisha Malla; Sarika Venkat; Sean Bolger; Emmanuel Mendoza; Fernando Hernandez-Brugo; Stefano Micci-Barreca; Vinisha Vasan; Shaham Noorani; Samantha Lo; Cole Oliphant; Tasya Nasoetion
+**Deep cut (85) · 11:** Sarisha Malla; Sarika Venkat; Sean Bolger; Emmanuel Mendoza; Fernando Hernandez-Brugo; Stefano Micci-Barreca; Vinisha Vasan; Shaham Noorani; Samantha Lo; Cole Oliphant; Tasya Nasoetion
 
 **One in a SECrillion (100) · 2:** Sarah Beamer; Alina Borawski
 
@@ -454,7 +510,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name an Aggie tradition
 
-`aggie-traditions` · 31 answers · Daily / Unlimited pool · Scheduled dives 1, 3, 4, 5, 9 · Packs: Campus Life, Aggieland
+`aggie-traditions` · 33 answers · Daily / Unlimited pool · Scheduled dives 1, 3, 4, 5, 9 · Packs: Campus Life, Aggieland
 
 **Plankton (10) · 2:** Midnight Yell (Midnight Yell Practice, Yell Practice); 12th Man (Twelfth Man)
 
@@ -462,7 +518,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 **Rare (60) · 6:** Ring Dunk (Dunking your ring); Reveille (Rev); Ring Day; Fish Camp; The Big Event (Big Event); Elephant Walk
 
-**Deep cut (85) · 15:** Staying off the MSC grass (MSC grass, Not walking on the MSC grass); Maroon Out; Pennies on Sully (Sully, Pennies on Sul Ross); Century Tree; Whoop (Whooping); Kissing your date after a touchdown (Kiss your date); Corps of Cadets (Corps); Yell Leaders; Aggie War Hymn (War Hymn); Saw 'em Off; Standing the whole game (Standing at games); Fightin' Texas Aggie Band (Aggie Band); Bonfire Memorial; Boot Line; Ross Volunteers
+**Deep cut (85) · 17:** Staying off the MSC grass (MSC grass, Not walking on the MSC grass); Maroon Out; Pennies on Sully (Sully, Pennies on Sul Ross); Century Tree; Whoop (Whooping); Kissing your date after a touchdown (Kiss your date); Corps of Cadets (Corps); Yell Leaders; Aggie War Hymn (War Hymn); Saw 'em Off; Standing the whole game (Standing at games); Fightin' Texas Aggie Band (Aggie Band); Bonfire Memorial; Boot Line; Ross Volunteers; Fish Spurs; Flight of the Great Pumpkin (The Flight of the Great Pumpkin, Great Pumpkin)
 
 **One in a SECrillion (100) · 2:** Replant; Hump It (Hump It, Ags, Hump it Ags, Hump it Ag, Hump it Aggies)
 
