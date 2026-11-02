@@ -20,7 +20,11 @@
     ["eb-members", "engineering-buildings", "engineering-software", "course-prefixes", "aggie-traditions", "career-fair-f26", "sec-committees"],
     ["engineering-calculators", "campus-buildings", "competition-teams", "sec-lunch-and-learns", "sorting-algorithms", "mbb-roster", "ec-members"],
     ["career-fair-swag", "programming-languages", "sec-slack-channels", "bridge-types", "tamu-campuses", "sec-nicknames", "famous-engineers"],
-    ["lab-equipment", "tamu-colleges", "career-fair-prep", "sec-book-club", "sec-movies", "sec-summer-places", "zachry-spaces"]
+    ["lab-equipment", "tamu-colleges", "career-fair-prep", "sec-book-club", "sec-movies", "sec-summer-places", "zachry-spaces"],
+    ["residence-halls", "sec-stadiums", "si-derived-units", "nasa", "sec-emojis", "data-structures", "greek-chapters"],
+    ["physics-laws", "engineering-majors", "eso", "engineering-failures", "texas-rivers", "sec-events", "football-roster"],
+    ["engineering-buildings", "course-prefixes", "aggie-coaches", "sec-quoted", "sec-quotes-characters", "tamus-schools", "sec-committees"],
+    ["sorting-algorithms", "engineering-software", "aggie-sports", "aggie-traditions", "eb-members", "sec-lunch-and-learns", "athletic-facilities"]
   ],
 
   "packs": [

@@ -132,7 +132,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name a school in the Texas A&M University System
 
-`tamus-schools` · 13 answers · Daily / Unlimited pool · Scheduled dives 7 · Packs: Aggieland
+`tamus-schools` · 13 answers · Daily / Unlimited pool · Scheduled dives 7, 15 · Packs: Aggieland
 
 **Plankton (10) · 1:** Texas A&M University (Texas A&M, TAMU, A&M College Station)
 
@@ -146,7 +146,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name a sorting algorithm
 
-`sorting-algorithms` · 28 answers · Daily / Unlimited pool · Scheduled dives 6, 10 · Packs: Code & Cosmos
+`sorting-algorithms` · 28 answers · Daily / Unlimited pool · Scheduled dives 6, 10, 16 · Packs: Code & Cosmos
 
 **Plankton (10) · 3:** Bubble sort (Bubble); Quicksort (Quick sort, Quick); Merge sort (Mergesort, Merge)
 
@@ -160,7 +160,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name a data structure
 
-`data-structures` · 39 answers · Daily / Unlimited pool · Scheduled dives 7 · Packs: Code & Cosmos
+`data-structures` · 39 answers · Daily / Unlimited pool · Scheduled dives 7, 13 · Packs: Code & Cosmos
 
 **Plankton (10) · 3:** Array; Linked list; Stack
 
@@ -174,7 +174,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name an SEC (conference) football stadium
 
-`sec-stadiums` · 16 answers · Daily / Unlimited pool · Scheduled dives 6 · Packs: Aggieland
+`sec-stadiums` · 16 answers · Daily / Unlimited pool · Scheduled dives 6, 13 · Packs: Aggieland
 
 **Plankton (10) · 4:** Kyle Field; Tiger Stadium (Death Valley); Bryant-Denny Stadium (Bryant-Denny); Darrell K Royal-Texas Memorial Stadium (Darrell K Royal Stadium, DKR, DKR-Texas Memorial Stadium)
 
@@ -202,7 +202,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name a Texas A&M head football coach
 
-`aggie-coaches` · 14 answers · Daily / Unlimited pool · Packs: Aggieland
+`aggie-coaches` · 14 answers · Daily / Unlimited pool · Scheduled dives 15 · Packs: Aggieland
 
 **Plankton (10) · 2:** Mike Elko (Elko); Jimbo Fisher (Jimbo)
 
@@ -216,7 +216,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name an SI derived unit
 
-`si-derived-units` · 22 answers · Daily / Unlimited pool · Scheduled dives 7 · Packs: Lab Rats
+`si-derived-units` · 22 answers · Daily / Unlimited pool · Scheduled dives 7, 13 · Packs: Lab Rats
 
 **Plankton (10) · 3:** Newton (N); Joule (J); Watt (W)
 
@@ -230,7 +230,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name a famous engineering failure or disaster
 
-`engineering-failures` · 41 answers · Daily / Unlimited pool · Scheduled dives 8 · Packs: Build It
+`engineering-failures` · 41 answers · Daily / Unlimited pool · Scheduled dives 8, 14 · Packs: Build It
 
 **Plankton (10) · 4:** Titanic (RMS Titanic); Challenger (Space Shuttle Challenger, Challenger disaster); Chernobyl; Tacoma Narrows Bridge (Tacoma Narrows, Galloping Gertie)
 
@@ -244,7 +244,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name a player on Texas A&M's 2026 football roster
 
-`football-roster` · 122 answers · Daily / Unlimited pool · Scheduled dives 8 · Packs: Campus Life
+`football-roster` · 122 answers · Daily / Unlimited pool · Scheduled dives 8, 14 · Packs: Campus Life
 
 **Plankton (10) · 5:** Marcel Reed; KJ Edwards; Rueben Owens II (Rueben Owens); Isaiah Horton; Mario Craver
 
@@ -286,7 +286,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name a residence hall at Texas A&M
 
-`residence-halls` · 39 answers · Daily / Unlimited pool · Scheduled dives 2, 6 · Packs: Campus Life, Aggieland
+`residence-halls` · 39 answers · Daily / Unlimited pool · Scheduled dives 2, 6, 13 · Packs: Campus Life, Aggieland
 
 **Plankton (10) · 4:** Hullabaloo Hall (Hullabaloo, Hullabaloo Residence Hall); Krueger Hall (Krueger, Krueger Residence Hall); Mosher Hall (Mosher, Mosher Residence Hall); Aston Hall (Aston, Aston Residence Hall)
 
@@ -300,7 +300,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name a sport Texas A&M competes in at the varsity, club or competitive-team level
 
-`aggie-sports` · 49 answers · Daily / Unlimited pool · Scheduled dives 7 · Packs: Campus Life
+`aggie-sports` · 49 answers · Daily / Unlimited pool · Scheduled dives 7, 16 · Packs: Campus Life
 
 **Plankton (10) · 3:** Football (Aggie Football); Basketball (Men's Basketball, Women's Basketball); Baseball
 
@@ -314,7 +314,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name a Texas A&M athletics or rec sports facility
 
-`athletic-facilities` · 19 answers · Daily / Unlimited pool · Scheduled dives 8 · Packs: Campus Life
+`athletic-facilities` · 19 answers · Daily / Unlimited pool · Scheduled dives 8, 16 · Packs: Campus Life
 
 **Plankton (10) · 2:** Kyle Field; Reed Arena (Reed)
 
@@ -370,7 +370,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name software you might use in an engineering class
 
-`engineering-software` · 40 answers · Daily / Unlimited pool · Scheduled dives 9 · Packs: Engineering Life
+`engineering-software` · 40 answers · Daily / Unlimited pool · Scheduled dives 9, 16 · Packs: Engineering Life
 
 **Plankton (10) · 3:** MATLAB; Excel (Microsoft Excel); SolidWorks
 
@@ -412,7 +412,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name an EB member from the last 5 years
 
-`eb-members` · 28 answers · Daily / Unlimited pool · Scheduled dives 2, 3, 5, 9 · Packs: SEC Insider
+`eb-members` · 28 answers · Daily / Unlimited pool · Scheduled dives 2, 3, 5, 9, 16 · Packs: SEC Insider
 
 **Plankton (10) · 2:** Tristan Forks; Savannah Giron
 
@@ -426,7 +426,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name a College of Engineering building at Texas A&M
 
-`engineering-buildings` · 29 answers · Daily / Unlimited pool · Scheduled dives 1, 3, 4, 5, 9 · Packs: Engineering Life
+`engineering-buildings` · 29 answers · Daily / Unlimited pool · Scheduled dives 1, 3, 4, 5, 9, 15 · Packs: Engineering Life
 
 **Plankton (10) · 4:** Zachry Engineering Education Complex (Zachry, ZACH, Zachary); Dwight Look Engineering Building (Dwight Look, Look Engineering Building, DLEB); Jack E. Brown Chemical Engineering Building (Jack E. Brown Engineering Building, Jack E. Brown, JEB); Wisenbaker Engineering Building (Wisenbaker, WEB)
 
@@ -440,7 +440,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name a College of Engineering course prefix (like ENGR)
 
-`course-prefixes` · 20 answers · Daily / Unlimited pool · Scheduled dives 1, 3, 5, 9 · Packs: Engineering Life
+`course-prefixes` · 20 answers · Daily / Unlimited pool · Scheduled dives 1, 3, 5, 9, 15 · Packs: Engineering Life
 
 **Plankton (10) · 1:** ENGR
 
@@ -454,7 +454,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name a Student Engineers' Council committee
 
-`sec-committees` · 16 answers · Daily / Unlimited pool · Scheduled dives 1, 3, 4, 9 · Packs: SEC Insider
+`sec-committees` · 16 answers · Daily / Unlimited pool · Scheduled dives 1, 3, 4, 9, 15 · Packs: SEC Insider
 
 **Plankton (10) · 1:** Career Fair
 
@@ -468,7 +468,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name an event or program run by the Student Engineers' Council
 
-`sec-events` · 20 answers · Daily / Unlimited pool · Scheduled dives 2, 4 · Packs: SEC Insider
+`sec-events` · 20 answers · Daily / Unlimited pool · Scheduled dives 2, 4, 14 · Packs: SEC Insider
 
 **Plankton (10) · 2:** Career Fair (Engineering Career Fair, SEC Career Fair); EnVision Conference (EnVision)
 
@@ -482,7 +482,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name an ESO (engineering student organization) at Texas A&M
 
-`eso` · 167 answers · Daily / Unlimited pool · Scheduled dives 1, 2, 3, 5 · Packs: SEC Insider
+`eso` · 167 answers · Daily / Unlimited pool · Scheduled dives 1, 2, 3, 5, 14 · Packs: SEC Insider
 
 **Plankton (10) · 6:** Student Engineers' Council (SEC); Society of Women Engineers (SWE); Society of Hispanic Professional Engineers (SHPE); Institute of Electrical and Electronics Engineers (IEEE); American Society of Mechanical Engineers (ASME); Society of Petroleum Engineers (SPE)
 
@@ -496,7 +496,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name an engineering major at Texas A&M
 
-`engineering-majors` · 21 answers · Daily / Unlimited pool · Scheduled dives 1, 2, 7 · Packs: SEC Insider, Aggieland, Build It
+`engineering-majors` · 21 answers · Daily / Unlimited pool · Scheduled dives 1, 2, 7, 14 · Packs: SEC Insider, Aggieland, Build It
 
 **Plankton (10) · 1:** Mechanical Engineering (Mechanical, MechE, MEEN)
 
@@ -510,7 +510,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name an Aggie tradition
 
-`aggie-traditions` · 33 answers · Daily / Unlimited pool · Scheduled dives 1, 3, 4, 5, 9 · Packs: Campus Life, Aggieland
+`aggie-traditions` · 33 answers · Daily / Unlimited pool · Scheduled dives 1, 3, 4, 5, 9, 16 · Packs: Campus Life, Aggieland
 
 **Plankton (10) · 2:** Midnight Yell (Midnight Yell Practice, Yell Practice); 12th Man (Twelfth Man)
 
@@ -606,7 +606,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name a law, equation, or principle from physics or engineering
 
-`physics-laws` · 49 answers · Daily / Unlimited pool · Packs: Lab Rats
+`physics-laws` · 49 answers · Daily / Unlimited pool · Scheduled dives 14 · Packs: Lab Rats
 
 **Plankton (10) · 2:** Newton's laws (Newton's second law, Newton's first law, Newton's third law, F=ma, fma); Ohm's law (V=IR)
 
@@ -620,7 +620,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name a NASA mission, program, or spacecraft
 
-`nasa` · 62 answers · Daily / Unlimited pool · Packs: Code & Cosmos
+`nasa` · 62 answers · Daily / Unlimited pool · Scheduled dives 13 · Packs: Code & Cosmos
 
 **Plankton (10) · 1:** Apollo
 
@@ -662,7 +662,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name someone who got quoted in #quotes this past year
 
-`sec-quoted` · 72 answers · Daily / Unlimited pool · Scheduled dives 8 · Packs: Slack Lore
+`sec-quoted` · 72 answers · Daily / Unlimited pool · Scheduled dives 8, 15 · Packs: Slack Lore
 
 **Plankton (10) · 7:** Afiz Ashittu (Afiz, Ashittu); Avi Vedala (Avi, Vedala); Sai Ram Challapalli (Sai Ram, Sai, Challapalli); Ameya Khond (Ameya, Khond); John Lehan (John, Lehan); Jorge Garcia Garza (Jorge Garcia, Jorge, Garza); Pranav Nandakumar (Pranav N, Pranav, Nandakumar)
 
@@ -676,7 +676,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name a custom emoji in the SEC Slack
 
-`sec-emojis` · 157 answers · Daily / Unlimited pool · Scheduled dives 6 · Packs: Slack Lore
+`sec-emojis` · 157 answers · Daily / Unlimited pool · Scheduled dives 6, 13 · Packs: Slack Lore
 
 **Plankton (10) · 12:** :party_blob: (partyblob); :catjam: (cat jam); :among-us: (amongus); :happy-monkey: (happymonkey); :sai-clops: (saiclops, sai cyclops); :hungrykevin: (hungry kevin); :this-is-fine-fire: (thisisfinefire, this is fine); :sai:; :tamu:; :sec:; :slack:; :thankyou:
 
@@ -690,7 +690,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name a celebrity or fictional character name-dropped in #quotes this past year
 
-`sec-quotes-characters` · 21 answers · Daily / Unlimited pool · Scheduled dives 8 · Packs: Slack Lore
+`sec-quotes-characters` · 21 answers · Daily / Unlimited pool · Scheduled dives 8, 15 · Packs: Slack Lore
 
 **Plankton (10) · 3:** SpongeBob (SpongeBob SquarePants, Sponge Bob); Drake (Anita Max Wynn, Anita Max Win); Scooby-Doo (Scooby Doo, Scooby)
 
@@ -704,7 +704,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name a company that hosted an SEC Lunch & Learn or Dine & Discuss since fall 2025
 
-`sec-lunch-and-learns` · 33 answers · Daily / Unlimited pool · Scheduled dives 10 · Packs: SEC Insider, Slack Lore
+`sec-lunch-and-learns` · 33 answers · Daily / Unlimited pool · Scheduled dives 10, 16 · Packs: SEC Insider, Slack Lore
 
 **Plankton (10) · 6:** Texas Instruments (TI); Amazon; Boeing; Tesla; Google; Lockheed Martin (Lockheed)
 
@@ -732,7 +732,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name a river in Texas
 
-`texas-rivers` · 41 answers · Daily / Unlimited pool · Packs: Aggieland
+`texas-rivers` · 41 answers · Daily / Unlimited pool · Scheduled dives 14 · Packs: Aggieland
 
 **Plankton (10) · 4:** Rio Grande; Brazos River (Brazos); Colorado River (Colorado); Trinity River (Trinity)
 
@@ -798,7 +798,7 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 ## Name an IFC fraternity or Panhellenic sorority at Texas A&M
 
-`greek-chapters` · 35 answers · Daily / Unlimited pool · Packs: Campus Life, Aggieland
+`greek-chapters` · 35 answers · Daily / Unlimited pool · Scheduled dives 13 · Packs: Campus Life, Aggieland
 
 **Plankton (10) · 5:** Sigma Chi (Sig Chi); Sigma Alpha Epsilon (SAE); Kappa Alpha Theta (Theta, KAT); Chi Omega (ChiO, Chi O); Delta Delta Delta (Tri Delta, Tri-Delta, DDD)
 
