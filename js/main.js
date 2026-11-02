@@ -252,7 +252,7 @@ async function showResults(run, fresh = false) {
   const scores = rows?.map((r) => r.score) ?? null;
   const dist = distribution(scores, run.total);
   const place = placement(scores, run.total);
-  renderResults(el, { run, dist, place, live: store.live });
+  renderResults(el, { run, dist, place, live: store.live, bank, liveCounts: (id) => (store.live ? store.liveCounts([id]) : null) });
   if (fresh) sfx.done();
   el.querySelector('[data-act="share"]').onclick = async (e) => {
     const text = shareText(run);

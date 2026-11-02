@@ -98,19 +98,95 @@ function catchList(results) {
     const said = r.answer
       ? `<b>${esc(r.answer)}</b>${r.input && r.input.toLowerCase() !== r.answer.toLowerCase() ? ` <i>(“${esc(r.input)}”)</i>` : ''}`
       : r.reason === 'timeout' ? 'Ran out of air' : r.reason === 'skip' ? 'Skipped' : `“${esc(r.input)}” wasn't on the chart`;
-    return `<li>
+    return `<li data-i="${i}">
       <span class="num">${String(i + 1).padStart(2, '0')}</span>
-      <div class="body">
+      <div class="body" role="button" tabindex="0" aria-expanded="false">
         <div class="q">${esc(r.prompt)}</div>
         <div class="a">${said}</div>
         <div class="top">Most common: ${r.top.map(esc).join(' · ')}</div>
       </div>
       <span class="pts" style="color:${t.color}">${r.points ? `+${r.points}` : '0'}</span>
+      <div class="chart" hidden></div>
     </li>`;
   }).join('');
 }
 
-export function renderResults(el, { run, dist, place, live }) {
+// Tapping a catch opens every answer on that prompt, filterable by depth and searchable, like Krillion's chart.
+const CHART_PAGE = 100;
+
+function chartHTML(prompt) {
+  const tiers = TIERS.filter((t) => prompt.answers.some((a) => a.tier === t.id));
+  const chips = [`<button class="chip on" data-tier="all">All ${prompt.answers.length.toLocaleString()}</button>`]
+    .concat(tiers.slice().reverse().map((t) => `<button class="chip" data-tier="${t.id}" style="--c:${t.color}">${esc(t.name)} ${prompt.answers.filter((a) => a.tier === t.id).length.toLocaleString()}</button>`));
+  return `<div class="chips">${chips.join('')}</div>
+    <input class="chart-search" type="search" placeholder="Search all answers…" aria-label="Search all answers" autocomplete="off" spellcheck="false">
+    <ul class="chart-list"></ul>
+    <p class="chart-foot"><span class="shown"></span><span class="more"></span></p>`;
+}
+
+function wireChart(box, prompt, r, getLive) {
+  const rank = (t) => TIERS.findIndex((x) => x.id === t);
+  const rows = prompt.answers
+    .map((a) => ({ a, t: TIERS[rank(a.tier)], hay: [a.a, ...a.aka].join(' ').toLowerCase() }))
+    .sort((x, y) => (y.a.a === r.answer) - (x.a.a === r.answer) || y.t.points - x.t.points || x.a.a.localeCompare(y.a.a));
+  const list = box.querySelector('.chart-list');
+  const search = box.querySelector('.chart-search');
+  let tier = 'all', matches = [], shown = 0, live = {};
+  const rowHTML = ({ a, t }) => {
+    const you = r.answer && a.a === r.answer;
+    const n = live[a.key] || 0;
+    return `<li class="${you ? 'you' : ''}">
+      <img src="${spriteURL(t.id, 2)}" alt="">
+      <span class="nm">${esc(a.a)}${you ? ' <i>YOU</i>' : ''}${n ? `<small>${n.toLocaleString()} other ${n === 1 ? 'diver' : 'divers'} chose this</small>` : ''}</span>
+      <span class="p" style="color:${t.color}">+${t.points}</span>
+    </li>`;
+  };
+  const more = () => {
+    list.insertAdjacentHTML('beforeend', matches.slice(shown, shown + CHART_PAGE).map(rowHTML).join(''));
+    shown = Math.min(matches.length, shown + CHART_PAGE);
+    box.querySelector('.shown').textContent = `${shown.toLocaleString()} of ${matches.length.toLocaleString()} answers`;
+    box.querySelector('.more').textContent = shown < matches.length ? 'Scroll for more' : '';
+  };
+  const refresh = () => {
+    const q = search.value.trim().toLowerCase();
+    matches = rows.filter((x) => (tier === 'all' || x.a.tier === tier) && (!q || x.hay.includes(q)));
+    shown = 0; list.innerHTML = ''; list.scrollTop = 0;
+    if (!matches.length) { box.querySelector('.shown').textContent = 'No answers match'; box.querySelector('.more').textContent = ''; } else more();
+  };
+  box.querySelectorAll('.chip').forEach((c) => { c.onclick = () => { tier = c.dataset.tier; box.querySelectorAll('.chip').forEach((x) => x.classList.toggle('on', x === c)); refresh(); }; });
+  search.oninput = refresh;
+  list.onscroll = () => { if (shown < matches.length && list.scrollTop + list.clientHeight >= list.scrollHeight - 40) more(); };
+  refresh();
+  // Live tallies arrive a moment later and just add "N other divers chose this" under each answer.
+  Promise.resolve(getLive()).then((l) => { if (l && Object.keys(l).length) { live = l; const top = list.scrollTop; list.innerHTML = ''; shown = 0; more(); list.scrollTop = top; } }).catch(() => {});
+}
+
+function wireCatch(el, run, bank, liveCounts) {
+  const byText = new Map(Object.values(bank?.prompts || {}).map((p) => [p.prompt, p]));
+  el.querySelectorAll('.catch > li').forEach((li) => {
+    const r = run.results[Number(li.dataset.i)];
+    const prompt = byText.get(r.prompt);
+    const head = li.querySelector('.body');
+    if (!prompt) { head.removeAttribute('role'); head.removeAttribute('tabindex'); head.removeAttribute('aria-expanded'); return; }
+    li.classList.add('tappable');
+    const box = li.querySelector('.chart');
+    const toggle = () => {
+      const open = li.classList.toggle('open');
+      head.setAttribute('aria-expanded', String(open));
+      box.hidden = !open;
+      if (open && !box.dataset.ready) {
+        box.dataset.ready = '1';
+        box.innerHTML = chartHTML(prompt);
+        wireChart(box, prompt, r, () => liveCounts?.(prompt.id).then((all) => all?.[prompt.id] || {}));
+      }
+    };
+    head.onclick = toggle;
+    li.querySelector('.pts').onclick = toggle;
+    head.onkeydown = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } };
+  });
+}
+
+export function renderResults(el, { run, dist, place, live, bank, liveCounts }) {
   const tier = tierForTotal(run.total);
   el.innerHTML = `
   <div class="res">
@@ -141,7 +217,7 @@ export function renderResults(el, { run, dist, place, live }) {
     </section>
 
     <section>
-      <h3>THE CATCH <span>${live ? 'LIVE COUNTS' : 'SEED COUNTS'}</span></h3>
+      <h3>THE CATCH <span>${live ? 'LIVE COUNTS' : 'SEED COUNTS'} · TAP FOR EVERY ANSWER</span></h3>
       <ol class="catch">${catchList(run.results)}</ol>
     </section>
 
@@ -154,6 +230,8 @@ export function renderResults(el, { run, dist, place, live }) {
       </div>
     </div>
   </div>`;
+
+  wireCatch(el, run, bank, liveCounts);
 
   const big = el.querySelector('.big');
   const t0 = performance.now();
