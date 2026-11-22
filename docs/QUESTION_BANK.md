@@ -2,7 +2,141 @@
 
 Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fair prompts are left out. Points per tier: Plankton 10 · Schooler 30 · Rare 60 · Deep cut 85 · One in a SECrillion 100.
 
-69 prompts.
+79 prompts.
+
+## Name a hometown listed for SEC’s EB or EC on the current team page
+
+`sec-leadership-hometowns` · 18 answers · Daily / Unlimited pool · Packs: SEC Insider
+
+**Plankton (10) · 3:** Austin; Katy; Plano
+
+**Schooler (30) · 5:** Sugar Land (Sugarland); Houston; Baton Rouge (Baton Rouge LA); Fort Worth; The Woodlands (Woodlands)
+
+**Rare (60) · 6:** McKinney; Round Rock; Frisco; Kingwood; Missouri City; Dallas
+
+**Deep cut (85) · 3:** Boerne; St. Louis (Saint Louis); El Campo
+
+**One in a SECrillion (100) · 1:** Smyrna (Smyrna Georgia, Smyrna GA)
+
+## Name an SEC Executive Board office
+
+`sec-eb-roles` · 6 answers · Daily / Unlimited pool · Packs: SEC Insider
+
+**Plankton (10) · 1:** President (SEC President)
+
+**Schooler (30) · 1:** Executive Secretary (Exec Secretary, Exec Sec)
+
+**Rare (60) · 2:** Vice President of Development (Vice President of Development Division, VP Development, VP of Development, Development VP); Vice President of External (Vice President of External Division, VP External, VP of External, External VP)
+
+**Deep cut (85) · 2:** Vice President of Internal (Vice President of Internal Division, VP Internal, VP of Internal, Internal VP); Vice President of Operations (Vice President of Operations Division, VP Operations, VP of Operations, Operations VP)
+
+## Name a room or venue announced in SEC’s weekly reminders (Aug 2025–Nov 2026)
+
+`sec-event-locations` · 22 answers · Daily / Unlimited pool · Packs: SEC Insider, Slack Lore
+
+**Plankton (10) · 2:** Chevron Rooms (Zachry Chevron Rooms, Zach 297-299, ZACH 297, ZACH 298, ZACH 299); Zachry Engineering Education Complex (Zachry, ZACH)
+
+**Schooler (30) · 4:** Zachry E-Quad (E-Quad, EQUAD, Engineering Quad); WEB 232 (Wisenbaker 232); Kyle Field; Lincoln Recreation Center (Lincoln Center)
+
+**Rare (60) · 7:** WEB 236C (Wisenbaker 236C); Wisenbaker 202 (WEB 202); MSC 2400 (Memorial Student Center 2400); Legends Event Center (Legends); Peach Creek Ranch; Zachbucks (Zachry Starbucks); Downtown Bryan
+
+**Deep cut (85) · 8:** Neal Recreation Center (Neal Center); Hudson Oaks Active Adult Living (Hudson Oaks); ZACH 212 (Zachry 212); ZACH 215 (Zachry 215); ZACH 240 (Zachry 240); ZACH 244 (Zachry 244); Commons Lobby (The Commons Lobby); Wolf Pen Creek Park (Wolfpen Creek Park)
+
+**One in a SECrillion (100) · 1:** Century Ballroom (Texas A&M Hotel Century Ballroom)
+
+## Name one of Texas A&M’s six Core Values
+
+`aggie-core-values` · 6 answers · Daily / Unlimited pool · Packs: Campus Life, Aggieland
+
+**Plankton (10) · 2:** Respect; Leadership
+
+**Schooler (30) · 2:** Excellence; Integrity
+
+**Rare (60) · 1:** Loyalty
+
+**Deep cut (85) · 1:** Selfless Service (Selfless service to others)
+
+## Name one of the five libraries in Texas A&M University Libraries’ directory
+
+`tamu-libraries` · 5 answers · Daily / Unlimited pool · Packs: Campus Life, Aggieland
+
+**Plankton (10) · 1:** Sterling C. Evans Library & Annex (Evans Library, Evans, Evans Library and Annex, Evans Annex, Library Annex, Sterling C Evans Library)
+
+**Schooler (30) · 1:** West Campus Library (WCL, Business Library and Collaboration Commons, BLCC, West Campus Library and Collaboration Commons)
+
+**Rare (60) · 2:** Cushing Memorial Library & Archives (Cushing Memorial Library, Cushing Library, Cushing, Cushing Memorial Library and Archives); Medical Sciences Library (MSL, Med Sci Library)
+
+**One in a SECrillion (100) · 1:** Jack K. Williams Library (Jack K Williams Library Galveston, Williams Library, Galveston Library)
+
+## Name an AggieSpirit bus route (name or number)
+
+`aggiespirit-routes` · 20 answers · Daily / Unlimited pool · Packs: Campus Life, Aggieland
+
+**Plankton (10) · 2:** Bonfire (01, Route 01, Bus 01, 1, Route 1, Bus 1); Yell Practice (03, Route 03, Bus 03, 3, Route 3, Bus 3)
+
+**Schooler (30) · 6:** Gig Em (Gig 'Em, 04, Route 04, Bus 04, 4, Route 4, Bus 4); Bush School (05, Route 05, Bus 05, 5, Route 5, Bus 5); 12th Man (06, Route 06, Bus 06, 6, Route 6, Bus 6); Howdy (08, Route 08, Bus 08, 8, Route 8, Bus 8); Ring Dance (27, Route 27, Bus 27); Hullabaloo (35, Route 35, Bus 35)
+
+**Rare (60) · 7:** Airport (07, Route 07, Bus 07, 7, Route 7, Bus 7); Reveille (12, Route 12, Bus 12); Old Army (15, Route 15, Bus 15); Rudder (26, Route 26, Bus 26); Elephant Walk (31, Route 31, Bus 31); Fish Camp (34, Route 34, Bus 34); Matthew Gaines (36, Route 36, Bus 36)
+
+**Deep cut (85) · 4:** Excel (22, Route 22, Bus 22); Century Tree (40, Route 40, Bus 40); Good Bull (41, Route 41, Bus 41); RELLIS (47, Route 47, Bus 47)
+
+**One in a SECrillion (100) · 1:** RELLIS Circulator (48, Route 48, Bus 48)
+
+## Name an official SI metric prefix (use the name)
+
+`si-prefixes` · 24 answers · Daily / Unlimited pool · Packs: Engineering Life, Lab Rats
+
+**Plankton (10) · 3:** Kilo; Milli; Centi
+
+**Schooler (30) · 4:** Mega; Giga; Micro; Nano
+
+**Rare (60) · 5:** Tera; Pico; Deci; Deka (Deca); Hecto
+
+**Deep cut (85) · 10:** Peta; Exa; Zetta; Yotta; Femto; Atto; Zepto; Yocto; Ronna; Quetta
+
+**One in a SECrillion (100) · 2:** Ronto; Quecto
+
+## Name one of the seven layers of the OSI model
+
+`osi-layers` · 7 answers · Daily / Unlimited pool · Packs: Code & Cosmos
+
+**Plankton (10) · 1:** Physical (Physical Layer, Layer 1, L1)
+
+**Schooler (30) · 2:** Application (Application Layer, Layer 7, L7); Network (Network Layer, Layer 3, L3)
+
+**Rare (60) · 2:** Transport (Transport Layer, Layer 4, L4); Data Link (Data Link Layer, Datalink, Layer 2, L2)
+
+**Deep cut (85) · 1:** Presentation (Presentation Layer, Layer 6, L6)
+
+**One in a SECrillion (100) · 1:** Session (Session Layer, Layer 5, L5)
+
+## Name one of the U.S. Department of Energy’s 17 National Laboratories
+
+`doe-national-labs` · 17 answers · Daily / Unlimited pool · Packs: Engineering Life, Lab Rats, Code & Cosmos
+
+**Plankton (10) · 1:** Los Alamos National Laboratory (Los Alamos, LANL)
+
+**Schooler (30) · 3:** Sandia National Laboratories (Sandia, SNL); Lawrence Livermore National Laboratory (Lawrence Livermore, Livermore, LLNL); Oak Ridge National Laboratory (Oak Ridge, ORNL)
+
+**Rare (60) · 6:** Argonne National Laboratory (Argonne, ANL); Fermi National Accelerator Laboratory (Fermilab, Fermi Lab, FNAL); Brookhaven National Laboratory (Brookhaven, BNL); Lawrence Berkeley National Laboratory (Lawrence Berkeley, Berkeley Lab, LBNL); Idaho National Laboratory (Idaho, INL); National Laboratory of the Rockies (NLR, National Renewable Energy Laboratory, NREL)
+
+**Deep cut (85) · 5:** Pacific Northwest National Laboratory (Pacific Northwest, PNNL); Princeton Plasma Physics Laboratory (Princeton Plasma Physics, PPPL); SLAC National Accelerator Laboratory (SLAC, Stanford Linear Accelerator Center); Savannah River National Laboratory (Savannah River, SRNL); National Energy Technology Laboratory (NETL)
+
+**One in a SECrillion (100) · 2:** Ames National Laboratory (Ames Laboratory, Ames Lab); Thomas Jefferson National Accelerator Facility (Jefferson Lab, Jefferson Laboratory, TJNAF, JLab)
+
+## Name one of the seven standard additive-manufacturing process categories
+
+`additive-processes` · 7 answers · Daily / Unlimited pool · Packs: Engineering Life, Build It
+
+**Plankton (10) · 1:** Material Extrusion (MEX, Fused Deposition Modeling, Fused Deposition Modelling, FDM, Fused Filament Fabrication, FFF)
+
+**Schooler (30) · 1:** Vat Photopolymerization (VPP, Vat Photo Polymerization, Stereolithography, SLA, Digital Light Processing, DLP)
+
+**Rare (60) · 2:** Powder Bed Fusion (PBF, Selective Laser Sintering, SLS, Selective Laser Melting, SLM, Electron Beam Melting, EBM); Binder Jetting (BJT)
+
+**Deep cut (85) · 2:** Material Jetting (MJT, PolyJet); Directed Energy Deposition (Direct Energy Deposition, DED, Laser Metal Deposition, LMD, Wire Arc Additive Manufacturing, WAAM)
+
+**One in a SECrillion (100) · 1:** Sheet Lamination (SHL, Laminated Object Manufacturing, LOM, Ultrasonic Additive Manufacturing, UAM)
 
 ## Name the home city of an SEC (conference) school
 
@@ -60,19 +194,19 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 **One in a SECrillion (100) · 2:** Memristor; Varactor
 
-## Name a restaurant or eatery in College Station
+## Name a restaurant or eatery within College Station city limits with at least 50 Google reviews
 
-`cstat-eats` · 189 answers · Daily / Unlimited pool · Packs: Campus Life
+`cstat-eats` · 270 answers · Daily / Unlimited pool · Packs: Campus Life
 
-**Plankton (10) · 4:** Chick-fil-A; Layne's Chicken Fingers (Layne's, Laynes); Raising Cane's (Canes, Cane's); Whataburger
+**Plankton (10) · 11:** Chick-fil-A (Chickfila); Chipotle (Chipotle Mexican Grill); Dixie Chicken; Fuego Tortilla Grill (Fuego); Layne's Chicken Fingers (Layne's, Laynes, Layne's Chicken Fingers - College Station); McDonald's; Panda Express; Raising Cane's (Canes, Cane's, Raising Cane's Chicken Fingers); Starbucks; Taco Bell; Whataburger
 
-**Schooler (30) · 33:** Blue Baker; Buffalo Wild Wings (BWW, B-Dubs); Burger King; Chili's; Chipotle; Dairy Queen; Dixie Chicken; Domino's; Dunkin'; Firehouse Subs; Five Guys; Freebirds World Burrito (Freebirds); Jack in the Box; Jersey Mike's Subs (Jersey Mike's); Jimmy John's; KFC; Madden's Sandwich Shop (Madden's); McDonald's; Olive Garden; Panda Express; Panera Bread; Pizza Hut; Popeyes (Popeyes Louisiana Kitchen); Rudy's Country Store and Bar-B-Q (Rudy's, Rudys); Sonic (Sonic Drive-In); Starbucks; Subway; Sweet Eugene's House of Java (Sweet Eugene's, Sweet Eugene's Java House); Taco Bell; Texas Roadhouse; Torchy's Tacos (Torchy's); Wendy's; Wingstop
+**Schooler (30) · 42:** Blue Baker; Buffalo Wild Wings (BWW, B-Dubs); Burger King; Burger Mojo (Mojo Burger); C&J Barbeque (C&J BBQ, CJ Barbeque); CAVA (Cava Mezze Grill); Chili's; Crumbl (Crumbl Cookies); Dairy Queen; Dave's Hot Chicken (Daves Hot Chicken); Domino's (Domino's Pizza); Duncan Dining Hall (Duncan); Dunkin'; Dutch Bros. Coffee (Dutch Bros, Dutch Bros Coffee); Firehouse Subs; Five Guys; Freebirds World Burrito (Freebirds); Grub Burger Bar; Gumby’s Pizza (Gumby's, Gumby's Pizza); Jack in the Box; Jersey Mike's Subs (Jersey Mike's); Jimmy John's; KFC (Brazos Station Food Corp.inc., DBA KFC); Koppe Bridge Bar & Grill (Koppe Bridge); Nam Cafe (Nam Café); Olive Garden (Olive Garden Italian Restaurant); Panera Bread; Piada Italian Street Food (Piada); Pizza Hut; Pluckers Wing Bar (Pluckers); Popeyes (Popeyes Louisiana Kitchen); Rudy's Country Store and Bar-B-Q (Rudy's, Rudys, Rudy's Texas Bar-b-que, Rudy's "Country Store" and Bar-B-Q); Sbisa Dining Hall (Sbisa); Sonic (Sonic Drive-In); Subway (Centex Subway); Sweet Eugene's House of Java (Sweet Eugene's, Sweet Eugene's Java House); Texas Roadhouse; Torchy's Tacos (Torchy's, Torchys Tacos); Velvet Taco; Wendy's; Wings N' More (Wings and More, Wings N More Restaurant & Bar); Wingstop
 
-**Rare (60) · 75:** Abuelo's; Andy's Frozen Custard (Andy's); Another Broken Egg Cafe (Another Broken Egg); Arby's; Bahama Buck's; BJ's; Blaze Pizza; Burger Mojo (Mojo Burger); Bush's Chicken (Bush's); Cafe Eccell; CAVA; Cheddar's (Cheddar's Scratch Kitchen); Chicken Express; Chicken Salad Chick; Church's Chicken (Church's); Chuy's; Cicis; Cold Stone Creamery (Cold Stone); Cooper's Old Time Pit Bar-B-Que (Cooper's, Coopers BBQ); Denny's; Double Dave's Pizzaworks (Double Dave's); Duncan Dining Hall (Duncan); Dutch Bros. Coffee (Dutch Bros); Fazoli's; Freddy's; Fuzzy's Taco Shop (Fuzzy's); Golden Corral; Grub Burger Bar; Hopdoddy Burger Bar (Hopdoddy); Hullabaloo Diner; Hungry Howie's; IHOP; Insomnia Cookies (Insomnia); Jason's Deli; Juice It Up!; Lick Honest Ice Creams; Little Caesars; Los Cucos Mexican Cafe (Los Cucos); Luigi's Patio Ristorante (Luigi's); Lupe Tortilla; Marble Slab Creamery (Marble Slab); Marco's Pizza; McAllisters Deli; MOD Pizza; Mooyah Burgers (Mooyah); Newks (Newk's Eatery); Nick The Greek; On The Border; Outback Steakhouse (Outback); Papa John's; Pei Wei; Piada Italian Street Food (Piada); Pluckers Wing Bar (Pluckers); Pokeworks; Potbelly; Razzoo's Cajun Cafe (Razzoo's); Red Lobster; Rev's American Grill (Rev's); Rosa's Cafe & Tortilla Factory (Rosa's Cafe, Rosa's); Salata; Salsa Fresca; Saltgrass Steak House (Saltgrass); Sbisa Dining Hall (Sbisa); Schlotzsky's; Scoots; Shipley's Donuts; Smoothie King; Snooze; Tiff's Treats; Velvet Taco; Walk-On’s Sports Bistreaux (Walk-Ons, Walk-On's); Wayback Burgers (Wayback); Wings N' More (Wings and More); Yogurtland; Zaxby's
+**Rare (60) · 120:** 1541 Pastries & Coffee (1541 Pastries and Coffee); 1860 Italia; 40 Tempura Japanese Fusion (40 Tempura Sushi Restaurant, 40 Tempura); Abu Omar Halal; Aji Sushi; Andy's Frozen Custard (Andy's); Another Broken Egg Cafe (Another Broken Egg, Another Broken Egg Café); Arby's; Atami (Atami Steak & Sushi); Bahama Buck's; BJ's (Bj's Restaurant & Brewhouse); Blaze Pizza; BonAppeTea (Bon Appetea); Bubba's 33; Bunny Bites; C&C Asian Garden (C & C Asian Garden); Casa do Brasil; Casa Mangiare; Cheddar's (Cheddar's Scratch Kitchen); Chef Cao's; Chicken Express; Chicken Salad Chick; Chimy's Cervecería Sports Bar (Chimy's, Chimy's Cerveceria, Chimy's College Station); Choi's Restaurant; Chuy's (Chuy's Opco); Cicis (Cici's Pizza); Cinnaholic; Coco Loco; Coco Shrimp; Cold Stone Creamery (Cold Stone); Commons Dining Center (Commons Dining Hall, The Commons Dining Hall); Cooper's Old Time Pit Bar-B-Que (Cooper's, Coopers BBQ); Cotton Patch Café (Cotton Patch Cafe); Crust Pizza Co (Crust Pizza Co.); Denny's (Denny's Restaurant); Double Dave's Pizzaworks (Double Dave's); Fazoli's; Fish Daddy's Grill House (Fish Daddy's); Freddy's (Freddy's Frozen Custard); Fusion Peru (Fusion Peru Restaurant); Gate 12 Bar & Grill (Gate 12); Golden Corral; Gringo's Mexican Kitchen (Gringo's); Haraz Coffee House; Harvest Coffee Bar (Harvest Coffee); Hopdoddy Burger Bar (Hopdoddy); Houston TX Hot Chicken; HTeaO (HTeaO College Station); Hungry Howie's (Hungry Howie's Pizza); IHOP; Insomnia Cookies (Insomnia); iWON Korean BBQ & Hot Pot; Jason's Deli; Javi's (Javi’s, Javis); Juanita's Tex Mex Cantina (Juanita's, Juanita's Tex-mex Cantina); Juice It Up!; Karma Kolache (Karma Kolache & Dessert University Drive, Karma Kolache - Wellborn Rd. College Station); King Buffet (King Buffet College Station); Kung Fu Noodles and Dumplings; Kung Fu Tea; La Gabriella Coffeeshop & Pastries; Little Caesars; Los Cucos Mexican Cafe (Los Cucos, Los Cucos Mexican Café); Lucky Goat Coffee; Luigi's Patio Ristorante (Luigi's); Lupe Tortilla; Mai Shan Yun; Marble Slab Creamery (Marble Slab, Great American Cookies / Marble Slab Creamery, Great American Cookies); Marco's Pizza; McAllisters Deli (Mcalister's Deli, McAlister's, McAllister's); MESS Waffles, Etc. (MESS Waffles, MESS); Minuti Coffee; MOD Pizza; Mong Chon Grill (Mong Chon, Mong Chon Korean Food to Go, Mong Chon Grill—Taste Of Korea); Mooyah Burgers (Mooyah, MOOYAH Burgers, Fries & Shakes); Napa Flats Wood-Fired Kitchen (Napa Flats, Napa Flats Bistro); Newks (Newk's Eatery, Newk's); Nick The Greek; Nothing Bundt Cakes; Ohana Korean Grill; Oishi Sushi Asian Fusion; Outback Steakhouse (Outback); Papa John's (Papa John's Pizza); Pokeworks; Porter's Steakhouse (Porter's, Porters Dining & Butcher, Porters, PORTERS Dining + Bar, Porters Dining + Bar, PORTERS); Potbelly (Potbelly Sandwich Shop); Rev's American Grill (Rev's, Revs); Rosa's Cafe & Tortilla Factory (Rosa's Cafe, Rosa's, Rosa's Café); Rx Pizza; Salata; Saltgrass Steak House (Saltgrass, Salt Grass Steakhouse); Schlotzsky's; Sharetea; Shipley's Donuts (Shipley Do-Nuts, Shipley's, Shipley); Shiraz Shish Kabob; Shun De Mom; Smoothie King; Snooze (Snooze Am Eatery, Snooze, an A.M. Eatery); Stella Southern Cafe (Stella Southern Café); Sweet Paris Crêperie & Café (Sweet Paris, Sweet Paris Créperie & Café); Tacos La Perlita; TaD's Louisiana Cooking; Tanaka Ramen; TAZ Indian Cuisine (Taz Food Truck); The Angry Elephant; The Corner (The Corner on Northgate); The Monks Indian Bistro (The Monk's Indian Bistro, The Monks Indian Bistro - College Station, Monks Indian Bistro, The Monks); The Republic Steakhouse (Republic Steakhouse, The Republic); The Spot on Northgate; The Tap; The Toasted Yolk Cafe (The Toasted Yolk Café, The Toasted Yolk, Toasted Yolk); Tiff's Treats; TX Burger (Texas Burger, TX Burger Wellborn); Urban Bird Hot Chicken; Urban Table; Walk-On’s Sports Bistreaux (Walk-Ons, Walk-On's, Walk-on's Sports Bistreaux, Walk-On's Sports Bistreaux - College Station Restaurant); Wild Pita; Willie’s Grill & Icehouse (Willie's, Willie's Grill, Willie's Grill & Icehouse); Ye Star Chinese Buffet; Yummi Yummi (Yummi Yummi Mongolian Grill & Sushi)
 
-**Deep cut (85) · 75:** 12 Northgate (Twelve Northgate); 4 Brothers NY Bagels; Aji Sushi; Atami; Azimuth; Bagel Block; Baked or Fried; BonAppeTea; C&J Barbeque (C&J BBQ, CJ Barbeque); Canteen Bar & Grill (Canteen); Carport; Champion Pizza; Chimy's Cervecería Sports Bar (Chimy's); Daisy's Table; Famous Famiglia Pizzeria (Famous Famiglia); Fuego Tortilla Grill; Good Luck Good Time Tea House (Good Luck Good Time); Harvest Coffee Bar (Harvest Coffee); Holy Roastary Coffee Bar (Holy Roastary); Houston Street Subs (Houston Street); Juanita's Tex Mex Cantina (Juanita's); King Buffet College Station; Mai Shan Yun; MESS Waffles, Etc. (MESS Waffles, MESS); Moore Family Creamery (Moore's Creamery); Mugwalls; Nam Cafe; Napa Flats Wood-Fired Kitchen (Napa Flats); Nautical Bowls; Ozona Grill & Bar (Ozona); Paolo's Italian Kitchen; Porter's Steakhouse (Porter's); Red's Ice House; Saber Bar & Grill (Saber); Sakura; Shake Smart; Sharetea; Shiraz Shish Kabob; Shun De Mom; Sweet Paris Crêperie & Café (Sweet Paris); Tacobar; Tanaka Ramen; TAZ Indian Cuisine; The Chicken Oil Co. (Chicken Oil Company, Chicken Oil); The Corner; The Dry Bean; The Republic Steakhouse (Republic Steakhouse); The Spot on Northgate; The Tap; Urban Bricks; Vietnoodle Pho and More; What's the Buzz; Wild Pita; Willie’s Grill & Icehouse (Willie's, Willie's Grill); 1860 Italia; 40 Tempura Japanese Fusion; C&C Asian Garden; Casa do Brasil; Fish Daddy's Grill House (Fish Daddy's); Fusion Peru; Gate 12 Bar & Grill (Gate 12); Gringo's Mexican Kitchen (Gringo's); Gumby’s Pizza (Gumby's); Iza Robata Ramen; Kamei Sushi & Grill (Kamei Sushi, Kamei); Koppe Bridge Bar & Grill (Koppe Bridge); Marfa Texas Kitchen; Minuti Coffee; Mojo Tortilla Co. (Mojo Tortilla); Mong Chon Grill (Mong Chon); Ohana Korean Grill; Poke Stop; Stella Southern Cafe; Tacos La Perlita; TaD's Louisiana Cooking
+**Deep cut (85) · 95:** 4 Brothers NY Bagels; Auntie Anne's Pretzels (Auntie Annes); Azure Fusion Bistro & Sake; Block T Bar & Grill; Bo's Ramen and Sushi House (Bo's Ramen, Sushi, Tea, and Wings, Bo’s Ramen and Sushi House, Bo's Ramen, Bo's); Brazos - Proper Texas Kitchen; Caminos Mexican Café; Canteen Bar & Grill (Canteen); Carport; Centro American Restaurant & Pupuseria; Champion Pizza; Charleys Philly Steaks (Charleys Cheesesteaks, Charleys); Chuck E. Cheese; Clean Eatz; Cookie Dough Bliss (Cookie Dough Bliss & Creamery); De Baca Steakhouse; Del Rancho Pal Rancho; Dimassi’s Mediterranean Buffet (Dimassi's Mediterranean Buffet); Don Chente Restaurant; Donald's Donuts; Downtown Uncorked; Einstein Bros. Bagel (Einstein Bros Bagels, Einstein Bros); F&f Japanese Grill (F and F Japanese Grill, F&F, F and F); Farmhouse Creamery; FiiZ Drinks (Fiiz); Four Downs Sports Bar; Freezing Cow Rolling Ice Cream; Frice (FRICE CHINESE RESTAURANT); G's Southside Italian Cafe (G's Southside, Gs Southside); Gogh Gogh Coffee Company; Gong Cha (Gongcha); Good Luck Good Time Tea House (Good Luck Good Time); H-E-B Bakery (HEB Bakery); Half Baked Goodness (Half Baked Goodness - College Station); Hey Sugar! Candy Store; Holleman Tavern; Honey Baked Ham; Hullabaloo Diner; iPho (I Pho' Vietnamese Restaurant, iPhở, I Pho); JB's Hibachi & Seafood (JB's Hibachi and Seafood, JB's Hibachi, JBs); Juicy Crawfish (Juicy Crawfish & Seafood); Kolache Rolf's; La Bodega Baja Taco Bar; La Bougainville Kitchen & Lounge; La Familia; Lick Honest Ice Creams; Logies on Campus; Mamaka Bowls (Mamaka Bowl, Mamaka); Marfa Texas Kitchen; Maria Mia Tex-mex Cantina; Masfajitas Restaurant; Master Donut of College Station (Master Donut, Master Donuts); Mi Familia Coco Loco; Midnight Cravingz; Mocean Tea (Mocean Tea(College station), Mocean Oriental Tea, Mocean); Mojo Tortilla Co. (Mojo Tortilla); Nautical Bowls (Nautical); Nova Eatery (Nova Eatery - College Station); Office of the Dean (The Dean Bar, The Dean); Original Chop Shop (Original ChopShop, ChopShop); Pepperoni's (Pepperoni's Pizza - College Station); PJ's Coffee (PJs Coffee, PJ's Coffee of New Orleans); Poché's Seafood Shoppe & Restaurant (Poches Seafood Shoppe & Restaurant, Poche's, Poches Seafood Shoppe, Poche's Seafood Shoppe and Restaurant); Poke Stop (Bkk Street Foods and Hawaiian Poke, Poke Stop by Bangkok St. Food, Bangkok Street Food); Polly's Cocina III; Popstroke; Potato Shack Plus; Primrose Path Wine Bar; Raging Bull Street Tacos (Raging Bull Street Taco's, Raging Bull); Red's Ice House (Red's Icehouse); Reveille Rooftop Bar (Reveille Rooftop); Roni's Mac Bar; Saigonista (Saigonista Banh Mi (Food Truck)); Shogun Japanese Grill Sushi Bar (Shogun Japanese Grill & Sushi bar); Siam Iyara Thai (Siam Iyara Thai Restaurant, Siam Iyara); Side Porch Coffee Co.; Somisomi; South Flo Pizza (South Flo Pizza in H-E-B); Star Cinema Grill; Sweet Bull Creamery; T Jin China Diner (T.Jin China Diner, T Jin's, T Jin); Tao Rice Roll (Tao); Taqueria Los Chavos (Taqueria Los Chavos Authentic Mexican Food); Taste of the Tropics; The Beef and Reef (The Beef and Reef Food Truck, Beef and Reef); The Patty Daddy; Tikka House (Tikka House Indian Eatery); Tim Hortons; Trackside (Trackside Kolache & Pizzarama, Trackside Kolache Bakery); Tropical Smoothie Café; Vietnoodle Pho and More (Viet Noodle (pho & More), Viet Noodle Pho and More); Wanna Taco; Yole's La Familia Taqueria; Yumori (YUMORI College Station); Zake Noodle House
 
-**One in a SECrillion (100) · 2:** TX Burger (Texas Burger); Yummi Yummi
+**One in a SECrillion (100) · 2:** Balanced Foods (Balanced Foods - College Station, Balanced Foods College Station); Do You Like Bapcha (Do you like? Bapcha, Bapcha)
 
 ## Name a Git command
 

@@ -1,0 +1,193 @@
+{
+  "checkedOn": "2026-11-21",
+  "channel": "weekly_reminders",
+  "window": "2025-08-01 through 2026-11-21",
+  "answers": [
+    {
+      "answer": "Chevron Rooms",
+      "sources": [
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1794510359503819",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1793290104293009",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1792015215819159",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1790805602394149",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1790267105718809",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1789596000300459",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1788442320999339",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1775685602090559",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1775080801914039",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1774476003378159",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1773871201075469",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1772665204182809",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1772065447873009",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1771456661520619",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1770851194235569",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1770246109568509",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1769641731721629",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1769060437537389",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1764804315427029",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1764208013395839",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1763593202955199",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1761775202999469",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1759356003405279",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1758773920731579"
+      ]
+    },
+    {
+      "answer": "Zachry Engineering Education Complex",
+      "sources": [
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1792015215819159",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1790805602394149",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1774476003378159",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1761775202999469",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1761170403557899",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1759961525334139",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1759356003405279",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1758773920731579",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1757558886446309"
+      ]
+    },
+    {
+      "answer": "Zachry E-Quad",
+      "sources": [
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1793833204493999",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1792015215819159",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1773871201075469",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1768431601980419",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1761775202999469",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1757558886446309"
+      ]
+    },
+    {
+      "answer": "WEB 232",
+      "sources": [
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1792015215819159",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1789596000300459",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1773871201075469",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1772065447873009",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1769060437537389",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1762383606473049",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1761775202999469"
+      ]
+    },
+    {
+      "answer": "WEB 236C",
+      "sources": [
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1774476003378159",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1760583482685439"
+      ]
+    },
+    {
+      "answer": "Wisenbaker 202",
+      "sources": [
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1795054051169939",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1794510359503819"
+      ]
+    },
+    {
+      "answer": "MSC 2400",
+      "sources": [
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1790805602394149",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1790267105718809"
+      ]
+    },
+    {
+      "answer": "Kyle Field",
+      "sources": [
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1790805602394149"
+      ]
+    },
+    {
+      "answer": "Lincoln Recreation Center",
+      "sources": [
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1791464805075009",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1790805602394149",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1772065447873009",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1771456661520619",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1761775202999469",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1758146402807589",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1757558886446309"
+      ]
+    },
+    {
+      "answer": "Legends Event Center",
+      "sources": [
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1768431601980419",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1763005369065969"
+      ]
+    },
+    {
+      "answer": "Peach Creek Ranch",
+      "sources": [
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1764208013395839",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1763593202955199"
+      ]
+    },
+    {
+      "answer": "Neal Recreation Center",
+      "sources": [
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1772065447873009"
+      ]
+    },
+    {
+      "answer": "Hudson Oaks Active Adult Living",
+      "sources": [
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1761775202999469"
+      ]
+    },
+    {
+      "answer": "ZACH 212",
+      "sources": [
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1790805602394149"
+      ]
+    },
+    {
+      "answer": "ZACH 215",
+      "sources": [
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1795054051169939"
+      ]
+    },
+    {
+      "answer": "ZACH 240",
+      "sources": [
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1757558886446309"
+      ]
+    },
+    {
+      "answer": "ZACH 244",
+      "sources": [
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1770246109568509"
+      ]
+    },
+    {
+      "answer": "Commons Lobby",
+      "sources": [
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1773871201075469"
+      ]
+    },
+    {
+      "answer": "Zachbucks",
+      "sources": [
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1758146402807589"
+      ]
+    },
+    {
+      "answer": "Downtown Bryan",
+      "sources": [
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1790805602394149",
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1790267105718809"
+      ]
+    },
+    {
+      "answer": "Wolf Pen Creek Park",
+      "sources": [
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1795054051169939"
+      ]
+    },
+    {
+      "answer": "Century Ballroom",
+      "sources": [
+        "https://studentengineers.slack.com/archives/C02ER99C3NG/p1793833204493999"
+      ]
+    }
+  ]
+}
