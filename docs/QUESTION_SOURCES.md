@@ -12,19 +12,17 @@ This is a **2026-11-21 research snapshot**, not a live Google Places feed or a p
 
 Rarity estimates familiarity among TAMU students, not quality, star rating, price, or distance from campus. Fuego is plankton; Gumby's and Koppe Bridge are schooler. Familiar sit-down restaurants such as Casa do Brasil, Fish Daddy's, Stella Southern Cafe, and PORTERS are rare. Niche/newer places are deeper. Balanced Foods and Do You Like Bapcha are the only two 100-point answers, matching the game's two-gem cap.
 
-## Ten new prompts
+## Added prompts
 
 | ID | Scope and source |
 | --- | --- |
 | `sec-leadership-hometowns` | All 18 hometowns of the 38 EB/EC profiles on the live [SEC team page](https://home.sec.tamu.edu/our-team), fetched 2026-11-21. Faculty advisors excluded. |
-| `sec-eb-roles` | All six Executive Board offices on the [team page](https://home.sec.tamu.edu/our-team) and [SEC website](https://home.sec.tamu.edu/). |
 | `sec-event-locations` | Rooms and venues from SEC's public `#weekly_reminders`, August 2025–November 2026. `data/sec-event-locations.sources.json` links supporting Slack messages for every answer. It contains no copied message bodies, contact details, passwords, or private-channel content. |
-| `aggie-core-values` | All six [official Core Values](https://www.tamu.edu/about/purpose-values.html). |
-| `tamu-libraries` | All five entries in the [University Libraries directory/navigation](https://library.tamu.edu/spaces/), including Galveston. Evans and the Annex share one answer; former names are aliases. |
 | `aggiespirit-routes` | All 20 routes in the official [How to Ride route-description tables](https://transportation.tamu.edu/Transit/howtoride.aspx); names and route numbers accepted. Historical routes and night combinations excluded. |
 | `si-prefixes` | All 24 [NIST SI prefixes](https://www.nist.gov/pml/owm/metric-si-prefixes), including the four added in 2022. Full names avoid case-insensitive symbol collisions. |
-| `osi-layers` | All seven layers in [IBM's OSI reference](https://www.ibm.com/think/topics/osi-model), with layer-number aliases. |
-| `doe-national-labs` | All 17 [DOE National Laboratories](https://www.energy.gov/national-laboratories), including the National Laboratory of the Rockies and its former NREL names. |
-| `additive-processes` | All seven standard additive-manufacturing categories, checked against [NIST](https://www.nist.gov/additive-manufacturing/research-areas/technologies), [DOE](https://www.energy.gov/documents/advanced-manufacturing-technology-assessment-additive-manufacturingpdf), and [OpenStax](https://openstax.org/books/additive-manufacturing-essentials/pages/2-1-processes-and-process-organization). Common technologies map to their process family as aliases. |
+| `texas-counties` | All 254 counties in the [Texas State Library directory](https://www.tsl.texas.gov/ref/abouttx/countyseats.html), cross-checkable against the [Comptroller county codes](https://comptroller.texas.gov/taxes/resources/county-codes.php). County suffixes and common spacing variants are accepted. |
+| `texas-state-parks` | All 86 distinct state parks/natural areas in [TPWD’s All Parks directory](https://tpwd.texas.gov/state-parks/nearby/all-parks/) on 2026-11-21, including listed sites awaiting opening/restricted access. Multiple units share one park answer. Standalone historic sites, visitor centers, lodges and tramways are excluded. |
 
 The new prompts join their relevant themed packs and the daily/Unlimited pool. `poolFrom: 36` enables them for daily dives starting **2026-11-22**; related prompts are kept apart. Question selection for dives 1–35 remains unchanged. All new prompts use explicit rarity tiers and at most two 100-point answers.
+
+The Executive Board offices, Core Values, libraries, OSI layers, DOE laboratories, and additive-manufacturing process questions were removed at the owner’s request. Texas rarity tiers are editorial estimates of TAMU-student familiarity, with at most two 100-point answers per prompt.

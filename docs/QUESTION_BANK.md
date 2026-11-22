@@ -2,7 +2,35 @@
 
 Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fair prompts are left out. Points per tier: Plankton 10 · Schooler 30 · Rare 60 · Deep cut 85 · One in a SECrillion 100.
 
-79 prompts.
+75 prompts.
+
+## Name one of Texas’s 254 counties
+
+`texas-counties` · 254 answers · Daily / Unlimited pool · Packs: Aggieland
+
+**Plankton (10) · 11:** Bexar (Bexar County); Brazos (Brazos County); Collin (Collin County); Dallas (Dallas County); Denton (Denton County); Fort Bend (Fort Bend County); Harris (Harris County); Montgomery (Montgomery County); Tarrant (Tarrant County); Travis (Travis County); Williamson (Williamson County)
+
+**Schooler (30) · 28:** Bastrop (Bastrop County); Bell (Bell County); Brazoria (Brazoria County); Burleson (Burleson County); Cameron (Cameron County); Comal (Comal County); Ector (Ector County); El Paso (El Paso County); Ellis (Ellis County); Galveston (Galveston County); Grimes (Grimes County); Guadalupe (Guadalupe County); Hays (Hays County); Hidalgo (Hidalgo County); Jefferson (Jefferson County); Kaufman (Kaufman County); Lubbock (Lubbock County); McLennan (McLennan County, Mc Lennan, Mc Lennan County); Midland (Midland County); Nueces (Nueces County); Parker (Parker County); Robertson (Robertson County); Rockwall (Rockwall County); Smith (Smith County); Walker (Walker County); Washington (Washington County); Webb (Webb County); Wichita (Wichita County)
+
+**Rare (60) · 74:** Angelina (Angelina County); Aransas (Aransas County); Atascosa (Atascosa County); Austin (Austin County); Bandera (Bandera County); Bee (Bee County); Blanco (Blanco County); Bowie (Bowie County); Brewster (Brewster County); Brown (Brown County); Burnet (Burnet County); Caldwell (Caldwell County); Calhoun (Calhoun County); Chambers (Chambers County); Cherokee (Cherokee County); Colorado (Colorado County); Cooke (Cooke County); Coryell (Coryell County); Erath (Erath County); Fannin (Fannin County); Fayette (Fayette County); Freestone (Freestone County); Gillespie (Gillespie County); Goliad (Goliad County); Gonzales (Gonzales County); Grayson (Grayson County); Gregg (Gregg County); Hardin (Hardin County); Harrison (Harrison County); Henderson (Henderson County); Hill (Hill County); Hood (Hood County); Hopkins (Hopkins County); Houston (Houston County); Hunt (Hunt County); Jasper (Jasper County); Johnson (Johnson County); Kendall (Kendall County); Kerr (Kerr County); Kleberg (Kleberg County); Lamar (Lamar County); Lampasas (Lampasas County); Lee (Lee County); Leon (Leon County); Liberty (Liberty County); Limestone (Limestone County); Llano (Llano County); Madison (Madison County); Matagorda (Matagorda County); Maverick (Maverick County); Medina (Medina County); Milam (Milam County); Nacogdoches (Nacogdoches County); Navarro (Navarro County); Orange (Orange County); Palo Pinto (Palo Pinto County); Pecos (Pecos County); Polk (Polk County); Potter (Potter County); Randall (Randall County); San Patricio (San Patricio County); Starr (Starr County); Taylor (Taylor County); Tom Green (Tom Green County); Uvalde (Uvalde County); Val Verde (Val Verde County); Van Zandt (Van Zandt County); Victoria (Victoria County); Waller (Waller County); Wharton (Wharton County); Wilson (Wilson County); Wise (Wise County); Wood (Wood County); Young (Young County)
+
+**Deep cut (85) · 139:** Anderson (Anderson County); Andrews (Andrews County); Archer (Archer County); Armstrong (Armstrong County); Bailey (Bailey County); Baylor (Baylor County); Borden (Borden County); Bosque (Bosque County); Briscoe (Briscoe County); Brooks (Brooks County); Callahan (Callahan County); Camp (Camp County); Carson (Carson County); Cass (Cass County); Castro (Castro County); Childress (Childress County); Clay (Clay County); Cochran (Cochran County); Coke (Coke County); Coleman (Coleman County); Collingsworth (Collingsworth County); Comanche (Comanche County); Concho (Concho County); Cottle (Cottle County); Crane (Crane County); Crockett (Crockett County); Crosby (Crosby County); Culberson (Culberson County); Dallam (Dallam County); Dawson (Dawson County); Deaf Smith (Deaf Smith County); Delta (Delta County); DeWitt (DeWitt County, De Witt, De Witt County); Dickens (Dickens County); Dimmit (Dimmit County); Donley (Donley County); Duval (Duval County); Eastland (Eastland County); Edwards (Edwards County); Falls (Falls County); Fisher (Fisher County); Floyd (Floyd County); Foard (Foard County); Franklin (Franklin County); Frio (Frio County); Gaines (Gaines County); Garza (Garza County); Glasscock (Glasscock County); Gray (Gray County); Hale (Hale County); Hall (Hall County); Hamilton (Hamilton County); Hansford (Hansford County); Hardeman (Hardeman County); Hartley (Hartley County); Haskell (Haskell County); Hemphill (Hemphill County); Hockley (Hockley County); Howard (Howard County); Hudspeth (Hudspeth County); Hutchinson (Hutchinson County); Irion (Irion County); Jack (Jack County); Jackson (Jackson County); Jeff Davis (Jeff Davis County); Jim Hogg (Jim Hogg County); Jim Wells (Jim Wells County); Jones (Jones County); Karnes (Karnes County); Kenedy (Kenedy County); Kent (Kent County); Kimble (Kimble County); Kinney (Kinney County); Knox (Knox County); La Salle (La Salle County, LaSalle, LaSalle County); Lamb (Lamb County); Lavaca (Lavaca County); Lipscomb (Lipscomb County); Live Oak (Live Oak County); Lynn (Lynn County); Marion (Marion County); Martin (Martin County); Mason (Mason County); McCulloch (McCulloch County, Mc Culloch, Mc Culloch County); McMullen (McMullen County, Mc Mullen, Mc Mullen County); Menard (Menard County); Mills (Mills County); Mitchell (Mitchell County); Montague (Montague County); Moore (Moore County); Morris (Morris County); Motley (Motley County); Newton (Newton County); Nolan (Nolan County); Ochiltree (Ochiltree County); Oldham (Oldham County); Panola (Panola County); Parmer (Parmer County); Presidio (Presidio County); Rains (Rains County); Reagan (Reagan County); Real (Real County); Red River (Red River County); Reeves (Reeves County); Refugio (Refugio County); Roberts (Roberts County); Runnels (Runnels County); Rusk (Rusk County); Sabine (Sabine County); San Augustine (San Augustine County); San Jacinto (San Jacinto County); San Saba (San Saba County); Schleicher (Schleicher County); Scurry (Scurry County); Shackelford (Shackelford County); Shelby (Shelby County); Sherman (Sherman County); Somervell (Somervell County); Stephens (Stephens County); Sterling (Sterling County); Stonewall (Stonewall County); Sutton (Sutton County); Swisher (Swisher County); Terrell (Terrell County); Terry (Terry County); Throckmorton (Throckmorton County); Titus (Titus County); Trinity (Trinity County); Tyler (Tyler County); Upshur (Upshur County); Upton (Upton County); Ward (Ward County); Wheeler (Wheeler County); Wilbarger (Wilbarger County); Willacy (Willacy County); Winkler (Winkler County); Yoakum (Yoakum County); Zapata (Zapata County); Zavala (Zavala County)
+
+**One in a SECrillion (100) · 2:** King (King County); Loving (Loving County)
+
+## Name a Texas state park or state natural area in TPWD’s directory
+
+`texas-state-parks` · 86 answers · Daily / Unlimited pool · Packs: Aggieland
+
+**Plankton (10) · 5:** Enchanted Rock State Natural Area (Enchanted Rock); Garner State Park (Garner); Huntsville State Park (Huntsville); Lake Somerville State Park (Lake Somerville, Lake Somerville State Park - Birch Creek Unit, Somerville, Lake Somerville State Park - Nails Creek Unit, Birch Creek Unit, Birch Creek, Nails Creek Unit, Nails Creek); Palo Duro Canyon State Park (Palo Duro Canyon)
+
+**Schooler (30) · 20:** Balmorhea State Park (Balmorhea); Bastrop State Park (Bastrop); Big Bend Ranch State Park (Big Bend Ranch); Brazos Bend State Park (Brazos Bend); Caddo Lake State Park (Caddo Lake); Caprock Canyons State Park (Caprock Canyons); Colorado Bend State Park (Colorado Bend); Dinosaur Valley State Park (Dinosaur Valley); Galveston Island State Park (Galveston Island); Guadalupe River State Park (Guadalupe River); Inks Lake State Park (Inks Lake); Lake Livingston State Park (Lake Livingston, Livingston); Lake Mineral Wells State Park (Lake Mineral Wells, Mineral Wells); Lake Whitney State Park (Lake Whitney, Whitney); Longhorn Cavern State Park (Longhorn Cavern); Lost Maples State Natural Area (Lost Maples); McKinney Falls State Park (McKinney Falls); Mustang Island State Park (Mustang Island); Pedernales Falls State Park (Pedernales Falls); Possum Kingdom State Park (Possum Kingdom)
+
+**Rare (60) · 36:** Abilene State Park (Abilene); Bentsen-Rio Grande Valley State Park (Bentsen-Rio Grande Valley, Bentsen, Bentsen Rio Grande); Blanco State Park (Blanco); Cedar Hill State Park (Cedar Hill); Choke Canyon State Park (Choke Canyon); Cleburne State Park (Cleburne); Cooper Lake State Park (Cooper Lake, Cooper State Park - Doctors Creek Unit, Cooper State Park, Cooper, Cooper State Park - South Sulphur Unit, Doctors Creek Unit, Doctors Creek, South Sulphur Unit, South Sulphur); Davis Mountains State Park (Davis Mountains); Devils River State Natural Area (Devils River); Eisenhower State Park (Eisenhower); Fort Boggy State Park (Fort Boggy); Fort Parker State Park (Fort Parker); Fort Richardson State Park & Historic Site (Fort Richardson, Fort Richardson State Park & Historic Site / Lost Creek Reservoir State Trailway, Lost Creek Reservoir State Trailway, Fort Richardson State Park); Franklin Mountains State Park (Franklin Mountains); Goliad State Park & Historic Site (Goliad, Goliad State Park); Goose Island State Park (Goose Island); Government Canyon State Natural Area (Government Canyon); Hill Country State Natural Area (Hill Country); Hueco Tanks State Park & Historic Site (Hueco Tanks, Hueco, Hueco Tanks State Park); Lake Brownwood State Park (Lake Brownwood, Brownwood); Lake Corpus Christi State Park (Lake Corpus Christi, Corpus Christi); Lake Tawakoni State Park (Lake Tawakoni, Tawakoni); Lockhart State Park (Lockhart); Lyndon B. Johnson State Park & Historic Site (Lyndon B. Johnson, Lyndon Johnson, LBJ, LBJ State Park, Lyndon B. Johnson State Park); Martin Dies, Jr. State Park (Martin Dies, Jr., Martin Dies, Martin Dies Jr); Monahans Sandhills State Park (Monahans Sandhills); Mother Neff State Park (Mother Neff); Palmetto State Park (Palmetto); Palo Pinto Mountains State Park (Palo Pinto Mountains); Ray Roberts Lake State Park (Ray Roberts Lake, Ray Roberts Lake State Park - Isle du Bois Unit, Ray Roberts Lake State Park - Johnson Branch Unit, Ray Roberts, Isle du Bois, Johnson Branch, Isle du Bois Unit, Johnson Branch Unit); San Angelo State Park (San Angelo); Sea Rim State Park (Sea Rim); Seminole Canyon State Park & Historic Site (Seminole Canyon, Seminole Canyon State Park); South Llano River State Park (South Llano River); Stephen F. Austin State Park (Stephen F. Austin, Stephen Austin, Stephen F Austin, Stephen F Austin State Park); Tyler State Park (Tyler)
+
+**Deep cut (85) · 23:** Atlanta State Park (Atlanta); Big Spring State Park (Big Spring); Bonham State Park (Bonham); Buescher State Park (Buescher); Copper Breaks State Park (Copper Breaks); Daingerfield State Park (Daingerfield); Devil's Sinkhole State Natural Area (Devil's Sinkhole, Devil's Sinkhole State Natural Area (Rocksprings Visitor Center), Devils Sinkhole); Estero Llano Grande State Park (Estero Llano Grande); Falcon State Park (Falcon); Honey Creek State Natural Area (Honey Creek); Kickapoo Cavern State Park (Kickapoo Cavern); Lake Arrowhead State Park (Lake Arrowhead, Arrowhead); Lake Bob Sandlin State Park (Lake Bob Sandlin, Bob Sandlin); Lake Casa Blanca International State Park (Lake Casa Blanca International, Casa Blanca International, Lake Casa Blanca, Casa Blanca); Lake Colorado City State Park (Lake Colorado City, Colorado City); Martin Creek Lake State Park (Martin Creek Lake); Meridian State Park (Meridian); Mission Tejas State Park (Mission Tejas); Old Tunnel State Park (Old Tunnel); Purtis Creek State Park (Purtis Creek); Resaca de la Palma State Park (Resaca de la Palma); Sheldon Lake State Park & Environmental Learning Center (Sheldon Lake, Sheldon Lake State Park); Village Creek State Park (Village Creek)
+
+**One in a SECrillion (100) · 2:** Albert & Bessie Kronkosky State Natural Area (Albert & Bessie Kronkosky, Kronkosky, Albert and Bessie Kronkosky); Powderhorn State Park (Powderhorn)
 
 ## Name a hometown listed for SEC’s EB or EC on the current team page
 
@@ -18,18 +46,6 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 
 **One in a SECrillion (100) · 1:** Smyrna (Smyrna Georgia, Smyrna GA)
 
-## Name an SEC Executive Board office
-
-`sec-eb-roles` · 6 answers · Daily / Unlimited pool · Packs: SEC Insider
-
-**Plankton (10) · 1:** President (SEC President)
-
-**Schooler (30) · 1:** Executive Secretary (Exec Secretary, Exec Sec)
-
-**Rare (60) · 2:** Vice President of Development (Vice President of Development Division, VP Development, VP of Development, Development VP); Vice President of External (Vice President of External Division, VP External, VP of External, External VP)
-
-**Deep cut (85) · 2:** Vice President of Internal (Vice President of Internal Division, VP Internal, VP of Internal, Internal VP); Vice President of Operations (Vice President of Operations Division, VP Operations, VP of Operations, Operations VP)
-
 ## Name a room or venue announced in SEC’s weekly reminders (Aug 2025–Nov 2026)
 
 `sec-event-locations` · 22 answers · Daily / Unlimited pool · Packs: SEC Insider, Slack Lore
@@ -43,30 +59,6 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 **Deep cut (85) · 8:** Neal Recreation Center (Neal Center); Hudson Oaks Active Adult Living (Hudson Oaks); ZACH 212 (Zachry 212); ZACH 215 (Zachry 215); ZACH 240 (Zachry 240); ZACH 244 (Zachry 244); Commons Lobby (The Commons Lobby); Wolf Pen Creek Park (Wolfpen Creek Park)
 
 **One in a SECrillion (100) · 1:** Century Ballroom (Texas A&M Hotel Century Ballroom)
-
-## Name one of Texas A&M’s six Core Values
-
-`aggie-core-values` · 6 answers · Daily / Unlimited pool · Packs: Campus Life, Aggieland
-
-**Plankton (10) · 2:** Respect; Leadership
-
-**Schooler (30) · 2:** Excellence; Integrity
-
-**Rare (60) · 1:** Loyalty
-
-**Deep cut (85) · 1:** Selfless Service (Selfless service to others)
-
-## Name one of the five libraries in Texas A&M University Libraries’ directory
-
-`tamu-libraries` · 5 answers · Daily / Unlimited pool · Packs: Campus Life, Aggieland
-
-**Plankton (10) · 1:** Sterling C. Evans Library & Annex (Evans Library, Evans, Evans Library and Annex, Evans Annex, Library Annex, Sterling C Evans Library)
-
-**Schooler (30) · 1:** West Campus Library (WCL, Business Library and Collaboration Commons, BLCC, West Campus Library and Collaboration Commons)
-
-**Rare (60) · 2:** Cushing Memorial Library & Archives (Cushing Memorial Library, Cushing Library, Cushing, Cushing Memorial Library and Archives); Medical Sciences Library (MSL, Med Sci Library)
-
-**One in a SECrillion (100) · 1:** Jack K. Williams Library (Jack K Williams Library Galveston, Williams Library, Galveston Library)
 
 ## Name an AggieSpirit bus route (name or number)
 
@@ -95,48 +87,6 @@ Generated from `data/questions.json` by `node tools/export-bank.mjs`. Career-fai
 **Deep cut (85) · 10:** Peta; Exa; Zetta; Yotta; Femto; Atto; Zepto; Yocto; Ronna; Quetta
 
 **One in a SECrillion (100) · 2:** Ronto; Quecto
-
-## Name one of the seven layers of the OSI model
-
-`osi-layers` · 7 answers · Daily / Unlimited pool · Packs: Code & Cosmos
-
-**Plankton (10) · 1:** Physical (Physical Layer, Layer 1, L1)
-
-**Schooler (30) · 2:** Application (Application Layer, Layer 7, L7); Network (Network Layer, Layer 3, L3)
-
-**Rare (60) · 2:** Transport (Transport Layer, Layer 4, L4); Data Link (Data Link Layer, Datalink, Layer 2, L2)
-
-**Deep cut (85) · 1:** Presentation (Presentation Layer, Layer 6, L6)
-
-**One in a SECrillion (100) · 1:** Session (Session Layer, Layer 5, L5)
-
-## Name one of the U.S. Department of Energy’s 17 National Laboratories
-
-`doe-national-labs` · 17 answers · Daily / Unlimited pool · Packs: Engineering Life, Lab Rats, Code & Cosmos
-
-**Plankton (10) · 1:** Los Alamos National Laboratory (Los Alamos, LANL)
-
-**Schooler (30) · 3:** Sandia National Laboratories (Sandia, SNL); Lawrence Livermore National Laboratory (Lawrence Livermore, Livermore, LLNL); Oak Ridge National Laboratory (Oak Ridge, ORNL)
-
-**Rare (60) · 6:** Argonne National Laboratory (Argonne, ANL); Fermi National Accelerator Laboratory (Fermilab, Fermi Lab, FNAL); Brookhaven National Laboratory (Brookhaven, BNL); Lawrence Berkeley National Laboratory (Lawrence Berkeley, Berkeley Lab, LBNL); Idaho National Laboratory (Idaho, INL); National Laboratory of the Rockies (NLR, National Renewable Energy Laboratory, NREL)
-
-**Deep cut (85) · 5:** Pacific Northwest National Laboratory (Pacific Northwest, PNNL); Princeton Plasma Physics Laboratory (Princeton Plasma Physics, PPPL); SLAC National Accelerator Laboratory (SLAC, Stanford Linear Accelerator Center); Savannah River National Laboratory (Savannah River, SRNL); National Energy Technology Laboratory (NETL)
-
-**One in a SECrillion (100) · 2:** Ames National Laboratory (Ames Laboratory, Ames Lab); Thomas Jefferson National Accelerator Facility (Jefferson Lab, Jefferson Laboratory, TJNAF, JLab)
-
-## Name one of the seven standard additive-manufacturing process categories
-
-`additive-processes` · 7 answers · Daily / Unlimited pool · Packs: Engineering Life, Build It
-
-**Plankton (10) · 1:** Material Extrusion (MEX, Fused Deposition Modeling, Fused Deposition Modelling, FDM, Fused Filament Fabrication, FFF)
-
-**Schooler (30) · 1:** Vat Photopolymerization (VPP, Vat Photo Polymerization, Stereolithography, SLA, Digital Light Processing, DLP)
-
-**Rare (60) · 2:** Powder Bed Fusion (PBF, Selective Laser Sintering, SLS, Selective Laser Melting, SLM, Electron Beam Melting, EBM); Binder Jetting (BJT)
-
-**Deep cut (85) · 2:** Material Jetting (MJT, PolyJet); Directed Energy Deposition (Direct Energy Deposition, DED, Laser Metal Deposition, LMD, Wire Arc Additive Manufacturing, WAAM)
-
-**One in a SECrillion (100) · 1:** Sheet Lamination (SHL, Laminated Object Manufacturing, LOM, Ultrasonic Additive Manufacturing, UAM)
 
 ## Name the home city of an SEC (conference) school
 
