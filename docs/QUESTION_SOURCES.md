@@ -26,3 +26,7 @@ Rarity estimates familiarity among TAMU students, not quality, star rating, pric
 The new prompts join their relevant themed packs and the daily/Unlimited pool. `poolFrom: 36` enables them for daily dives starting **2026-11-22**; related prompts are kept apart. Question selection for dives 1–35 remains unchanged. All new prompts use explicit rarity tiers and at most two 100-point answers.
 
 The Executive Board offices, Core Values, libraries, OSI layers, DOE laboratories, and additive-manufacturing process questions were removed at the owner’s request. Texas rarity tiers are editorial estimates of TAMU-student familiarity, with at most two 100-point answers per prompt.
+
+## Full-bank coverage audit — 2026-11-23
+
+See [QUESTION_AUDIT.md](QUESTION_AUDIT.md) for all 80 questions, the flagged gaps, before/after counts, scope changes and remaining snapshot limitations. `data/question-coverage.json` publishes the expanded source catalogs and their canonical answer mappings. `npm run check` now checks every catalog entry and alias in addition to scheduling.

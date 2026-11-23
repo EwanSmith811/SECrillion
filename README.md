@@ -115,3 +115,9 @@ To refresh them for a new year, re-pull #quotes, the channel list and the remind
 Each prompt has exactly one seed-0 company, the "one in a SECrillion" worth the full 100: **Sazerac** (Spring) and **Ellicott Dredge Enterprises** (Fall). Keep it to one per prompt; `node tools/check-questions.mjs` shows the unseen count.
 
 To merge a new roster into a prompt, put one company per line in a text file and run `node tools/import-fair.mjs roster.txt --prompt career-fair-f26`. Companies already in the prompt keep their ranking. New ones are seeded by name recognition (or 1 if unknown) and listed so you can adjust them. While a fair is still upcoming on HireAggies, you can import it directly by its nickname, e.g. `node tools/import-fair.mjs sec_f26_cdf`.
+
+## Question coverage
+
+The [coverage audit](docs/QUESTION_AUDIT.md) records each question’s explicit eligibility scope and the November 2026 additions. Open-ended subjects use a published, dated reference catalog rather than claiming every possible real-world item. `data/question-coverage.json` maps source entries to game answers and enumerates retained original examples.
+
+After editing a covered question, update its catalog evidence and run `npm run check`; the coverage checker rejects missing source answers, broken aliases, rarity-order errors, or excess gems. Refresh source snapshots when external directories change. Export the Markdown with `node tools/export-bank.mjs` (`--all` includes career-fair questions).

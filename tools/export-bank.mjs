@@ -30,6 +30,14 @@ for (const id of ids) {
     inPacks(id).length ? `Packs: ${inPacks(id).join(', ')}` : null,
   ].filter(Boolean).join(' · ');
   out.push(`## ${p.prompt}`, '', `\`${id}\` · ${p.answers.length} answers${where ? ` · ${where}` : ''}`, '');
+  const raw = bank.prompts[id];
+  if (raw._scope) out.push(`Scope: ${raw._scope}`, '');
+  if (raw._sources?.length) {
+    const links = raw._sources.map((url) => url.startsWith('https://')
+      ? `[${new URL(url).hostname}](${url})`
+      : `[${url}](../${url})`);
+    out.push(`Sources: ${links.join(', ')}`, '');
+  }
   for (const t of TIERS) {
     const answers = p.answers.filter((a) => a.tier === t.id);
     if (!answers.length) continue;
